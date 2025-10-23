@@ -8,8 +8,8 @@ $pageContent = <<<'HTML'
     <h1>Your site has 2,847 violations.</h1>
     <p>You just don't know it yet.</p>
     <div class="hero-stats">
-        <div class="stat"><strong>77%</strong> of accessibility lawsuits target companies like yours</div>
-        <div class="stat"><strong>$75K-$250K</strong> average settlement per plaintiff</div>
+        <div class="stat" style="color: #ffffff !important;"><strong style="color: #ffffff !important;">77%</strong> of accessibility lawsuits target companies like yours</div>
+        <div class="stat" style="color: #ffffff !important;"><strong style="color: #ffffff !important;">$75K-$250K</strong> average settlement per plaintiff</div>
     </div>
     <div style="margin-top: 2.5rem;">
         <a href="#scan-form" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 1rem 2.5rem; font-size: 1.1rem;">Scan Your Site Free</a>
