@@ -3,25 +3,22 @@ $pageTitle = 'WCAG Exposure | Accessibility Audits, Expert Testimony & Litigatio
 $pageDescription = 'Free WCAG scanning for accessibility liability assessment. Expert witness testimony. Strategic litigation support for accessibility cases. ADA Title III & NYCHRL compliance.';
 
 $pageContent = <<<'HTML'
-<!-- HERO SECTION - Multi-Audience Value Prop -->
+<!-- HERO SECTION - Clean & Simple -->
 <section class="hero">
-    <h1>WCAG Exposure</h1>
-    <p>Accessibility Risk Assessment, Expert Testimony & Litigation Support</p>
-    <div class="hero-subtext">
-        <strong>77% of accessibility lawsuits target companies under $25M revenue.</strong><br>
-        Settlements average $75K-$250K per plaintiff.<br>
-        We identify violations before the lawsuit. Or we prove them in court.
+    <h1 style="color: #ffffff;">WCAG Exposure</h1>
+    <p style="color: #ffffff; font-size: 1.3rem; font-weight: 500;">Know Your Accessibility Risk</p>
+    <div style="margin-top: 2rem;">
+        <a href="#quick-nav" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 0.9rem 2rem; font-size: 1rem;">See What's Inside</a>
     </div>
 </section>
 
 <!-- QUICK NAVIGATION - 3 PATHS -->
-<section class="section" style="background: #f0f4f9; padding: 1.5rem;">
+<section class="section" id="quick-nav" style="background: #f0f4f9; padding: 2rem 1rem;">
     <div class="section-title" style="text-align: center; max-width: none;">
-        <p style="font-size: 1.1rem; color: var(--primary-blue); font-weight: 600;">What's your situation?</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
-            <button onclick="document.getElementById('company-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Company: Know My Risk</button>
-            <button onclick="document.getElementById('lawyer-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Lawyer: Expert Support</button>
-            <button onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'})" class="btn btn-secondary" style="color: white; font-weight: 600;">Get Free Scan Now</button>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button onclick="document.getElementById('company-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Company Owner</button>
+            <button onclick="document.getElementById('lawyer-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Lawyer</button>
+            <button onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'})" class="btn btn-secondary" style="color: white; font-weight: 600;">Free Scan</button>
         </div>
     </div>
 </section>
