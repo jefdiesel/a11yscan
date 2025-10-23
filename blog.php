@@ -31,7 +31,7 @@ $pageContent = <<<'HTML'
         <p>We're developing comprehensive articles on accessibility compliance, litigation strategy, and remediation best practices. Check back soon.</p>
         
         <div class="success-box">
-            <strong>Subscribe for updates:</strong> Want to know when new articles are published? <a href="mailto:info@wcagexposure.com">Email us</a> to be added to our mailing list.
+            <strong>Subscribe for updates:</strong> Want to know when new articles are published? <a href="mailto:info@a11yscan.xyz">Email us</a> to be added to our mailing list.
         </div>
     </div>
 </section>

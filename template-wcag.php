@@ -822,8 +822,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             
             <section class="footer-section">
                 <h3>Contact</h3>
-                <p>Email: <a href="mailto:info@wcagexposure.com">info@wcagexposure.com</a></p>
-                <p>For legal inquiries: <a href="mailto:legal@wcagexposure.com">legal@wcagexposure.com</a></p>
+                <p>Email: <a href="mailto:info@a11yscan.xyz">info@a11yscan.xyz</a></p>
+                <p>For legal inquiries: <a href="mailto:legal@a11yscan.xyz">legal@a11yscan.xyz</a></p>
             </section>
         </div>
         
