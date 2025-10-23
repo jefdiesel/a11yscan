@@ -619,10 +619,62 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             margin-bottom: 0.5rem;
         }
         
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--text-dark);
-            font-weight: 500;
+        .hero-stats {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            font-size: 1.05rem;
+            color: #ffffff;
+        }
+        
+        .hero-stats .stat {
+            color: #ffffff;
+        }
+        
+        .quick-nav-section {
+            background: #f0f4f9;
+            padding: 2rem 1rem;
+        }
+        
+        .quick-nav-buttons {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .quick-nav-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            min-height: 44px;
+            background-color: var(--primary-blue);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-nav-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .quick-nav-btn:focus {
+            outline: 3px solid var(--accent-orange);
+            outline-offset: 2px;
+        }
+        
+        .quick-nav-btn.secondary {
+            background-color: var(--accent-orange);
+        }
+        
+        .quick-nav-btn.secondary:hover {
+            background-color: #e55a00;
         }
         
         /* ============================================
