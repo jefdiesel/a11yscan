@@ -3,27 +3,25 @@ $pageTitle = 'a11y scan | Free Accessibility Audits & Expert Testimony';
 $pageDescription = 'Free WCAG scanning and accessibility audits. Know your ADA/NYCHRL liability before you get sued. Expert witness testimony for accessibility litigation.';
 
 $pageContent = <<<'HTML'
-<!-- HERO SECTION - Clean & Compelling -->
+<!-- HERO SECTION - PROPER WHITE TEXT -->
 <section class="hero">
-    <h1 style="color: #ffffff; font-size: 3rem;">Your site has 2,847 violations.</h1>
-    <p style="color: #ffffff; font-size: 1.3rem; font-weight: 400; margin: 1rem 0;">You just don't know it yet.</p>
-    <div style="margin-top: 2rem; font-size: 1.05rem; color: rgba(255,255,255,0.9);">
-        <p><strong>77% of accessibility lawsuits</strong> target companies like yours.</p>
-        <p><strong>Settlements: $75K-$250K</strong> per plaintiff.</p>
+    <h1>Your site has 2,847 violations.</h1>
+    <p>You just don't know it yet.</p>
+    <div class="hero-stats">
+        <div class="stat"><strong>77%</strong> of accessibility lawsuits target companies like yours</div>
+        <div class="stat"><strong>$75K-$250K</strong> average settlement per plaintiff</div>
     </div>
     <div style="margin-top: 2.5rem;">
         <a href="#scan-form" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 1rem 2.5rem; font-size: 1.1rem;">Scan Your Site Free</a>
     </div>
 </section>
 
-<!-- QUICK NAVIGATION - 3 PATHS -->
-<section class="section" id="quick-nav" style="background: #f0f4f9; padding: 2rem 1rem;">
-    <div class="section-title" style="text-align: center; max-width: none;">
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <button onclick="document.getElementById('company-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Company Owner</button>
-            <button onclick="document.getElementById('lawyer-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Lawyer</button>
-            <button onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'})" class="btn btn-secondary" style="color: white; font-weight: 600;">Free Scan</button>
-        </div>
+<!-- QUICK NAVIGATION -->
+<section class="section quick-nav-section">
+    <div class="quick-nav-buttons">
+        <button class="quick-nav-btn" onclick="document.getElementById('company-section').scrollIntoView({behavior: 'smooth'})">Company Owner</button>
+        <button class="quick-nav-btn" onclick="document.getElementById('lawyer-section').scrollIntoView({behavior: 'smooth'})">Lawyer</button>
+        <button class="quick-nav-btn secondary" onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'})">Free Scan</button>
     </div>
 </section>
 
@@ -145,7 +143,7 @@ $pageContent = <<<'HTML'
                     <li>PDF report via email</li>
                     <li>24-hour turnaround</li>
                 </ul>
-                <a href="#scan-form" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white;">Get Free Scan</a>
+                <a href="#scan-form" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white; width: 100%;">Get Free Scan</a>
             </div>
             
             <!-- PARTIAL TIER -->
@@ -196,7 +194,7 @@ $pageContent = <<<'HTML'
                     <li>Methodology validation</li>
                     <li>Strategic consultation</li>
                 </ul>
-                <a href="mailto:legal@a11yscan.xyz" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white;">Inquire</a>
+                <a href="mailto:legal@a11yscan.xyz" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white; width: 100%;">Inquire</a>
             </div>
         </div>
     </div>
