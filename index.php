@@ -316,3 +316,4 @@ HTML;
 
 include 'template-wcag.php';
 ?>
+test
