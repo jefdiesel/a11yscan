@@ -204,6 +204,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             font-weight: 700;
             margin-bottom: 0.75rem;
             line-height: 1.2;
+            color: #ffffff;
         }
         
         .hero p {
