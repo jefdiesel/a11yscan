@@ -1,69 +1,84 @@
 <?php
-$pageTitle = 'Blog | WCAG Exposure - Accessibility & Litigation Insights';
-$pageDescription = 'Articles on web accessibility, WCAG compliance, ADA litigation, settlement trends, and expert insights.';
+$pageTitle = 'Blog | A11yscan';
+$pageDescription = 'Web accessibility tips, WCAG guidelines, and accessibility best practices';
+$currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <section class="hero">
-    <h1>Accessibility & WCAG Blog</h1>
-    <p>Expert insights on web accessibility, compliance, litigation, and business strategy</p>
+    <h1>Accessibility & WCAG Insights</h1>
+    <p>Articles, tips, and best practices for building accessible websites.</p>
 </section>
 
-<section class="section">
-    <div class="section-title">
-        <h2>Featured Articles</h2>
-        
-        <div class="highlight-box">
-            <strong>Coming Soon:</strong> Blog posts on:
-            <ul style="margin-left: 1.5rem; margin-top: 0.75rem;">
-                <li>WCAG Settlement Amounts: What Companies Are Actually Paying</li>
-                <li>Your Accessibility Liability in 2026: New Compliance Deadlines</li>
-                <li>Accessibility Lawsuits Are Up 13% YoY. Is Your Site Next?</li>
-                <li>The Hidden Cost of Bad Accessibility: Traffic Loss + Legal Exposure</li>
-                <li>What Your Accessibility Report Will Look Like (And Why It Matters)</li>
-                <li>E-commerce Sites: WCAG Violations by Industry Benchmark</li>
-                <li>SaaS Platforms: Common Accessibility Gaps & Litigation Risk</li>
-                <li>The Difference Between Automated Scanning & Expert Analysis</li>
-                <li>Building an Accessibility Case: Documentation & Evidence Strategy</li>
-            </ul>
-        </div>
-        
-        <h3 style="margin-top: 2rem;">In Progress</h3>
-        <p>We're developing comprehensive articles on accessibility compliance, litigation strategy, and remediation best practices. Check back soon.</p>
-        
-        <div class="success-box">
-            <strong>Subscribe for updates:</strong> Want to know when new articles are published? <a href="mailto:info@a11yscan.xyz">Email us</a> to be added to our mailing list.
-        </div>
+<section>
+    <div class="grid">
+        <article class="card blog-card">
+            <time datetime="2025-10-23" class="blog-date">Oct 23, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">Understanding WCAG 2.1 Levels: A vs AA vs AAA</h2>
+            <p>Learn the differences between WCAG conformance levels and which one your organization should target for compliance.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card">
+            <time datetime="2025-10-20" class="blog-date">Oct 20, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">Color Contrast: The Foundation of Visual Accessibility</h2>
+            <p>Discover why color contrast matters, how to calculate it, and tools to ensure your design meets WCAG standards.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card">
+            <time datetime="2025-10-17" class="blog-date">Oct 17, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">Keyboard Navigation: Making Your Site Usable Without a Mouse</h2>
+            <p>Why keyboard accessibility matters, common pitfalls, and how to audit your site for keyboard-only users.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card">
+            <time datetime="2025-10-14" class="blog-date">Oct 14, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">Alt Text That Actually Works: Writing for Screen Readers</h2>
+            <p>Learn how to write descriptive alt text that improves SEO and accessibility for visually impaired users.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card">
+            <time datetime="2025-10-11" class="blog-date">Oct 11, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">The ADA & Your Website: Legal Requirements in 2025</h2>
+            <p>What you need to know about accessibility lawsuits, Section 508, and staying compliant in your jurisdiction.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card">
+            <time datetime="2025-10-08" class="blog-date">Oct 8, 2025</time>
+            <h2 style="font-size: 1.3rem; margin-top: 0.5rem;">ARIA Labels & Semantic HTML: Building for Screen Readers</h2>
+            <p>Understanding the difference between ARIA and semantic HTML, and when to use each for maximum accessibility.</p>
+            <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
     </div>
 </section>
 
-<section class="section" style="background: #f0f4f9;">
-    <div class="section-title">
-        <h2>Popular Topics</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-            <div style="padding: 1.5rem; background: white; border-radius: 4px; border-left: 4px solid #0052cc;">
-                <h3 style="margin-top: 0;">WCAG Compliance</h3>
-                <p>Understand WCAG 2.1 Level AA requirements and how to audit for compliance.</p>
-            </div>
-            
-            <div style="padding: 1.5rem; background: white; border-radius: 4px; border-left: 4px solid #ff6600;">
-                <h3 style="margin-top: 0;">Legal & Litigation</h3>
-                <p>Settlement amounts, legal strategy, and what you need to know about ADA Title III.</p>
-            </div>
-            
-            <div style="padding: 1.5rem; background: white; border-radius: 4px; border-left: 4px solid #28a745;">
-                <h3 style="margin-top: 0;">Business Impact</h3>
-                <p>ROI of accessibility, traffic gains from WCAG compliance, competitive advantages.</p>
-            </div>
-            
-            <div style="padding: 1.5rem; background: white; border-radius: 4px; border-left: 4px solid #6c757d;">
-                <h3 style="margin-top: 0;">Industry-Specific</h3>
-                <p>Accessibility requirements and risks by industry: healthcare, finance, SaaS, e-commerce.</p>
-            </div>
-        </div>
+<section>
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Stay Updated</h2>
+        <p>Get accessibility insights and WCAG tips delivered to your inbox.</p>
+        <form style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+            <input type="email" placeholder="Your email" style="flex: 1; padding: 0.85rem; border: 2px solid var(--border); border-radius: 6px; font-size: 1rem;" required/>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
     </div>
 </section>
+
+<style>
+.blog-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.blog-card h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+</style>
 HTML;
 
-include 'template-wcag.php';
+include 'template.php';
 ?>
