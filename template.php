@@ -93,13 +93,14 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             gap: 0.75rem;
             text-decoration: none;
             color: var(--text-primary);
-            font-size: 1.35rem;
-            font-weight: 700;
+            font-size: 1.65rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
         
         .logo-svg {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
         }
         
         nav {
@@ -380,17 +381,13 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         <div class="header-content">
             <a href="index.php" class="logo">
                 <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <!-- Left hand -->
-                        <path d="M3 14l3-2.5c.5-.375 1.5-.125 2 .375l2 1.5"/>
-                        <!-- Left wrist/forearm -->
-                        <path d="M10 13.375l4-4.375"/>
-                        <!-- Right hand -->
-                        <path d="M21 14l-3-2.5c-.5-.375-1.5-.125-2 .375l-2 1.5"/>
-                        <!-- Right wrist/forearm -->
-                        <path d="M14 13.375l-4-4.375"/>
-                        <!-- Hands meeting in middle -->
-                        <ellipse cx="12" cy="13" rx="1.5" ry="1" fill="currentColor"/>
+                    <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Left hand/arm -->
+                        <path d="M3 13l5-4c1-.8 2.5-.5 3 .5"/>
+                        <!-- Right hand/arm -->
+                        <path d="M21 13l-5-4c-1-.8-2.5-.5-3 .5"/>
+                        <!-- Meeting point -->
+                        <circle cx="12" cy="12.5" r="2" fill="currentColor"/>
                     </g>
                 </svg>
                 <span>A11yscan</span>
