@@ -775,15 +775,15 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <header role="banner">
         <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div>
-                <a href="index.php" class="logo">WCAG Exposure</a>
-                <div class="tagline">Accessibility Risk Assessment</div>
+                <a href="index.php" class="logo">a11y scan</a>
+                <div class="tagline">Know Your Accessibility Risk</div>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
                     onclick="document.querySelector('.nav-menu').classList.toggle('active'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">☰</button>
             <ul class="nav-menu">
                 <li><a href="index.php" <?php if($currentPage === 'index') echo 'class="active"'; ?>>Home</a></li>
                 <li><a href="blog.php" <?php if($currentPage === 'blog') echo 'class="active"'; ?>>Blog</a></li>
-                <li><a href="index.php#pricing" class="btn btn-primary" style="margin-top: 0.5rem;">Get Scan</a></li>
+                <li><a href="index.php#pricing" class="btn btn-primary" style="margin-top: 0.5rem; color: #ffffff !important;">Get Scan</a></li>
             </ul>
         </nav>
     </header>
@@ -798,7 +798,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         <div class="footer-container">
             <section class="footer-section">
                 <h3>About</h3>
-                <p>WCAG Exposure provides accessibility scanning, expert testimony, and litigation support for companies addressing digital accessibility violations.</p>
+                <p>a11y scan provides free accessibility audits, expert-level analysis, and litigation support for companies facing WCAG compliance risks.</p>
             </section>
             
             <section class="footer-section">
@@ -828,7 +828,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 WCAG Exposure. All rights reserved.</p>
+            <p>&copy; 2025 a11y scan. All rights reserved.</p>
             <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 Level AA Compliant | <a href="#">Accessibility</a></p>
         </div>
     </footer>
