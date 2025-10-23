@@ -1,72 +1,133 @@
 <?php
-$pageTitle = 'WCAG Exposure | Know Your Accessibility Risk Before You Get Sued';
-$pageDescription = 'Free WCAG scanning reveals accessibility violations on your website. Understand your ADA/NYCHRL liability. Get expert accessibility audits and expert witness testimony.';
+$pageTitle = 'WCAG Exposure | Accessibility Audits, Expert Testimony & Litigation Support';
+$pageDescription = 'Free WCAG scanning for accessibility liability assessment. Expert witness testimony. Strategic litigation support for accessibility cases. ADA Title III & NYCHRL compliance.';
 
 $pageContent = <<<'HTML'
-<!-- HERO SECTION -->
+<!-- HERO SECTION - Multi-Audience Value Prop -->
 <section class="hero">
     <h1>WCAG Exposure</h1>
-    <p>Know Your Accessibility Risk Before You Get Sued</p>
+    <p>Accessibility Risk Assessment, Expert Testimony & Litigation Support</p>
     <div class="hero-subtext">
-        <strong>94% of websites have WCAG violations.</strong><br>
-        77% of accessibility lawsuits target companies under $25M revenue.<br>
-        Settlements average $75K-$250K per plaintiff.
+        <strong>77% of accessibility lawsuits target companies under $25M revenue.</strong><br>
+        Settlements average $75K-$250K per plaintiff.<br>
+        We identify violations before the lawsuit. Or we prove them in court.
     </div>
 </section>
 
-<!-- PROBLEM SECTION -->
-<section class="section">
+<!-- QUICK NAVIGATION - 3 PATHS -->
+<section class="section" style="background: #f0f4f9; padding: 1.5rem;">
+    <div class="section-title" style="text-align: center; max-width: none;">
+        <p style="font-size: 1.1rem; color: var(--primary-blue); font-weight: 600;">What's your situation?</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+            <button onclick="document.getElementById('company-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Company: Know My Risk</button>
+            <button onclick="document.getElementById('lawyer-section').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary" style="color: white; font-weight: 600;">Lawyer: Expert Support</button>
+            <button onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'})" class="btn btn-secondary" style="color: white; font-weight: 600;">Get Free Scan Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 1: FOR COMPANY OWNERS -->
+<section class="section" id="company-section">
     <div class="section-title">
-        <h2>Your Website May Be Discriminating</h2>
-        <p>Most companies don't know they have WCAG violations until they're served with a lawsuit. We help you find them first.</p>
+        <h2>🏢 For Company Owners & Decision Makers</h2>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">Your website may be discriminating against disabled users—and you could be liable for $50K-$250K per plaintiff, plus attorney fees.</p>
         
         <div class="highlight-box">
-            <strong>What we scan for:</strong>
+            <h3 style="margin-top: 0; color: var(--primary-blue);">The Problem</h3>
             <ul style="margin-left: 1.5rem; margin-top: 0.75rem;">
-                <li>❌ Color contrast failures (visual barriers)</li>
-                <li>❌ Keyboard navigation traps</li>
-                <li>❌ Missing alternative text on images</li>
-                <li>❌ Form accessibility failures</li>
-                <li>❌ Video captioning gaps</li>
-                <li>❌ Semantic HTML violations</li>
-                <li>❌ Focus management issues</li>
+                <li><strong>94% of websites</strong> have WCAG violations</li>
+                <li><strong>77% of lawsuits</strong> target companies under $25M revenue (you)</li>
+                <li><strong>$75K-$250K average</strong> settlement per plaintiff</li>
+                <li><strong>13% annual increase</strong> in accessibility litigation</li>
             </ul>
         </div>
         
-        <p><strong>Legal exposure:</strong> These violations create liability under ADA Title III and NYCHRL. Companies are paying millions to settle.</p>
+        <h3>What Typically Triggers a Lawsuit</h3>
+        <p>A disabled user tries to:</p>
+        <ul style="margin-left: 1.5rem;">
+            <li>Check out on your e-commerce site → keyboard navigation fails → can't complete purchase</li>
+            <li>Apply for a job on your careers page → forms aren't accessible → can't submit application</li>
+            <li>Access pricing/plans on SaaS platform → color contrast is unreadable → can't see information</li>
+            <li>Watch product videos → no captions → can't access content</li>
+        </ul>
+        
+        <p style="margin-top: 1.5rem;"><strong>Then:</strong> They scan your site with automated tools, find violations, and lawyer up.</p>
+        
+        <h3>What We Do</h3>
+        <div class="success-box">
+            <p><strong>We find the violations FIRST.</strong></p>
+            <p>Before you get sued, before you get a demand letter—we scan your site, show you exactly what's wrong, and tell you what it will cost to fix.</p>
+            <p>Then you can decide: fix it proactively, or wait for the lawsuit.</p>
+        </div>
+        
+        <h3>Your Options</h3>
+        <ol style="margin-left: 1.5rem;">
+            <li><strong>Do nothing</strong> → Average payout: $150K-$250K per plaintiff (plus attorney fees, publicity)</li>
+            <li><strong>Get sued, then fix</strong> → Costs more, damages reputation, discovery nightmare</li>
+            <li><strong>Fix proactively</strong> → Shows good faith, prevents lawsuits, improves user experience for everyone</li>
+        </ol>
+        
+        <p style="text-align: center; margin-top: 2rem;">
+            <a href="#scan-form" class="btn btn-primary" style="color: white; font-weight: 600; padding: 1rem 2rem; font-size: 1.1rem;">Get Your Risk Assessment (Free)</a>
+        </p>
     </div>
 </section>
 
-<!-- STATS SECTION -->
-<section class="section" style="background: #f0f4f9;">
+<!-- SECTION 2: FOR LAWYERS/PLAINTIFFS -->
+<section class="section" id="lawyer-section" style="background: #f0f4f9;">
     <div class="section-title">
-        <h2>The Numbers</h2>
-        <div class="stats-container">
-            <div class="stat-box">
-                <div class="stat-number">94%</div>
-                <div class="stat-label">of websites fail basic WCAG compliance</div>
+        <h2>⚖️ For Lawyers & Disability Rights Advocates</h2>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">We provide expert-level accessibility documentation that's defensible in court.</p>
+        
+        <h3>What We Provide</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+            <div style="background: white; padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
+                <h4 style="margin-top: 0;">Systematic Site Documentation</h4>
+                <p>Complete scan of 50-1000+ pages showing violation patterns that prove intent/negligence.</p>
             </div>
-            <div class="stat-box">
-                <div class="stat-number">13%</div>
-                <div class="stat-label">year-over-year increase in accessibility lawsuits</div>
+            
+            <div style="background: white; padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
+                <h4 style="margin-top: 0;">Evidence Packages</h4>
+                <p>Screenshots, code examples, WCAG mapping—everything needed for demand letters and litigation.</p>
             </div>
-            <div class="stat-box">
-                <div class="stat-number">$250K</div>
-                <div class="stat-label">average settlement amount</div>
+            
+            <div style="background: white; padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
+                <h4 style="margin-top: 0;">Expert Testimony</h4>
+                <p>Affidavits, depositions, court testimony with full methodology disclosure ($400-800/hr).</p>
             </div>
-            <div class="stat-box">
-                <div class="stat-number">4%</div>
-                <div class="stat-label">of websites are WCAG 2.1 AA compliant</div>
+            
+            <div style="background: white; padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--primary-blue);">
+                <h4 style="margin-top: 0;">Strategic Targeting</h4>
+                <p>Identify high-value defendants, platform operators, systematic violation patterns.</p>
             </div>
         </div>
+        
+        <h3>Our Approach</h3>
+        <p>We use <strong>axe-core</strong> (industry standard) + <strong>manual accessibility analysis</strong> to catch what automated tools miss. Our methodology is court-defensible because:</p>
+        <ul style="margin-left: 1.5rem;">
+            <li>We use recognized industry standards (WCAG 2.1 AA)</li>
+            <li>We document everything with screenshots and code examples</li>
+            <li>We can explain each violation in plain language for judges/juries</li>
+            <li>We have actual disability experience (not just technical knowledge)</li>
+        </ul>
+        
+        <h3>Recent Work</h3>
+        <div class="highlight-box">
+            <p><strong>BentoBox Platform:</strong> 15,730 violations across 703 pages (90+ NYC restaurant sites). Systematic keyboard navigation failures. Demand letter in progress.</p>
+            <p style="margin-top: 1rem;"><strong>Exhibea Shopify Agency:</strong> 26 client sites, 100% contract failures. Professional negligence case. Third-party liability strategy.</p>
+            <p style="margin-top: 1rem;"><strong>E-Commerce Sites:</strong> Checkout barriers affecting disabled customers. Damages: $150K-$300K per plaintiff.</p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 2rem;">
+            <a href="mailto:legal@a11yscan.xyz" class="btn btn-primary" style="color: white; font-weight: 600; padding: 1rem 2rem; font-size: 1.1rem;">Contact for Litigation Support</a>
+        </p>
     </div>
 </section>
 
-<!-- PRICING SECTION -->
+<!-- SECTION 3: PRICING/SERVICES -->
 <section class="section" id="pricing">
     <div class="section-title">
-        <h2>Choose Your Scan Size</h2>
-        <p>Get started with our accessibility assessment or go deep with a comprehensive audit.</p>
+        <h2>Choose Your Service</h2>
         
         <div class="pricing-container">
             <!-- FREE TIER -->
@@ -74,94 +135,86 @@ $pageContent = <<<'HTML'
                 <div class="pricing-badge">Popular</div>
                 <div class="pricing-title">Free Scan</div>
                 <div class="pricing-price">$0</div>
-                <div class="pricing-description">
-                    Homepage only. Perfect for quick risk check.
-                </div>
+                <div class="pricing-description">Homepage only. Quick risk check.</div>
                 <ul class="pricing-features">
                     <li>Single page scan</li>
-                    <li>Violation summary</li>
-                    <li>Risk assessment</li>
+                    <li>Violation count & severity</li>
+                    <li>Risk assessment (Low/Med/High/Critical)</li>
                     <li>Estimated remediation cost</li>
                     <li>PDF report via email</li>
                     <li>24-hour turnaround</li>
                 </ul>
-                <a href="#scan-form" class="btn btn-primary" style="margin-top: auto;">Get Free Scan</a>
+                <a href="#scan-form" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white;">Get Free Scan</a>
             </div>
             
             <!-- PARTIAL TIER -->
             <div class="pricing-card">
                 <div class="pricing-badge">Best Value</div>
-                <div class="pricing-title">Partial Scan</div>
+                <div class="pricing-title">Partial Audit</div>
                 <div class="pricing-price">$500</div>
-                <div class="pricing-description">
-                    50 pages. Identify site-wide patterns and barriers.
-                </div>
+                <div class="pricing-description">50 critical pages. Site-wide patterns.</div>
                 <ul class="pricing-features">
-                    <li>Up to 50 critical pages</li>
+                    <li>Up to 50 key pages</li>
                     <li>Page-by-page breakdown</li>
-                    <li>Pattern analysis</li>
-                    <li>Cost estimate</li>
+                    <li>Violation patterns identified</li>
+                    <li>Remediation estimate</li>
                     <li>30-min email consultation</li>
-                    <li>3-5 business day turnaround</li>
+                    <li>3-5 business days</li>
                 </ul>
-                <button class="btn btn-primary" style="margin-top: auto;" onclick="document.getElementById('contact-form').querySelector('input[name=service]').value='partial'; document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'});">Book Now</button>
+                <button class="btn btn-primary" style="margin-top: auto; width: 100%; display: block; color: white; font-weight: 600;" onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'}); document.getElementById('contact-form').querySelector('select[name=service]').value='partial';">Book Now</button>
             </div>
             
             <!-- FULL AUDIT TIER (FEATURED) -->
             <div class="pricing-card featured">
                 <div class="pricing-badge">Most Popular</div>
-                <div class="pricing-title">Full Site Audit</div>
+                <div class="pricing-title">Full Audit</div>
                 <div class="pricing-price">$3,500+</div>
-                <div class="pricing-description">
-                    Unlimited pages. Complete remediation roadmap.
-                </div>
+                <div class="pricing-description">Unlimited pages. Complete strategy.</div>
                 <ul class="pricing-features">
                     <li>Unlimited pages (up to 1000)</li>
-                    <li>Comprehensive violation audit</li>
+                    <li>Complete violation audit</li>
                     <li>Site-wide pattern analysis</li>
                     <li>Priority remediation roadmap</li>
                     <li>1.5-hour strategy call</li>
                     <li>60-day revision access</li>
                 </ul>
-                <button class="btn btn-secondary" style="margin-top: auto;" onclick="document.getElementById('contact-form').querySelector('input[name=service]').value='full'; document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'});">Book Consultation</button>
+                <button class="btn btn-secondary" style="margin-top: auto; width: 100%; display: block; color: white; font-weight: 600;" onclick="document.getElementById('scan-form').scrollIntoView({behavior: 'smooth'}); document.getElementById('contact-form').querySelector('select[name=service]').value='full';">Book Now</button>
             </div>
             
             <!-- EXPERT TIER -->
             <div class="pricing-card">
-                <div class="pricing-badge">Legal Support</div>
+                <div class="pricing-badge">Legal</div>
                 <div class="pricing-title">Expert Testimony</div>
                 <div class="pricing-price">$400-800/hr</div>
-                <div class="pricing-description">
-                    Accessibility expert witness services for litigation.
-                </div>
+                <div class="pricing-description">Court-ready accessibility analysis.</div>
                 <ul class="pricing-features">
                     <li>Affidavit preparation</li>
                     <li>Deposition support</li>
                     <li>Court testimony</li>
-                    <li>Report writing</li>
                     <li>Evidence documentation</li>
                     <li>Methodology validation</li>
+                    <li>Strategic consultation</li>
                 </ul>
-                <a href="mailto:legal@wcagexposure.com" class="btn btn-primary" style="margin-top: auto;">Contact for Consultation</a>
+                <a href="mailto:legal@a11yscan.xyz" class="btn btn-primary" style="margin-top: auto; display: block; text-align: center; color: white;">Inquire</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SCAN FORM SECTION -->
+<!-- SECTION 4: SCAN FORM -->
 <section class="section" id="scan-form">
     <div class="section-title">
         <h2>Get Your Free WCAG Scan</h2>
-        <p>Submit your URL below. We'll scan your site and email you a detailed report within 24 hours.</p>
+        <p>Submit your URL. We'll scan it within 24 hours and email you a detailed risk assessment.</p>
         
         <div class="form-container">
             <form id="contact-form" method="POST" action="contact-handler.php" novalidate>
                 <div class="form-group">
-                    <label for="service">Service Type <span class="required">*</span></label>
+                    <label for="service">What are you interested in? <span class="required">*</span></label>
                     <select id="service" name="service" required>
-                        <option value="">-- Select Service --</option>
+                        <option value="">-- Select --</option>
                         <option value="free">Free Scan (Homepage)</option>
-                        <option value="partial">Partial Scan ($500)</option>
+                        <option value="partial">Partial Audit ($500)</option>
                         <option value="full">Full Site Audit ($3,500+)</option>
                         <option value="expert">Expert Testimony Inquiry</option>
                     </select>
@@ -184,13 +237,13 @@ $pageContent = <<<'HTML'
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email Address <span class="required">*</span></label>
+                    <label for="email">Email <span class="required">*</span></label>
                     <input type="email" id="email" name="email" required>
                     <div class="form-note">We'll send your report here</div>
                 </div>
                 
                 <div class="form-group">
-                    <label for="industry">Industry</label>
+                    <label for="industry">Your Industry</label>
                     <select id="industry" name="industry">
                         <option value="">-- Select --</option>
                         <option value="ecommerce">E-commerce</option>
@@ -199,105 +252,97 @@ $pageContent = <<<'HTML'
                         <option value="finance">Finance / Insurance</option>
                         <option value="education">Education</option>
                         <option value="government">Government</option>
+                        <option value="legal">Legal / Law Firm</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="concern">What are you most concerned about? <span class="required">*</span></label>
+                    <label for="concern">Primary Concern <span class="required">*</span></label>
                     <select id="concern" name="concern" required>
                         <option value="">-- Select --</option>
                         <option value="legal_risk">Legal risk / litigation exposure</option>
-                        <option value="remediation">Remediation costs</option>
-                        <option value="compliance_deadline">Compliance deadline</option>
+                        <option value="remediation">Remediation costs & timeline</option>
+                        <option value="compliance_deadline">Compliance deadline (2026/2027)</option>
                         <option value="already_sued">Already been sued</option>
+                        <option value="expert">Need expert for litigation</option>
                         <option value="unknown">Not sure</option>
                     </select>
                 </div>
                 
-                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit for Scan</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; color: white; font-weight: 600; font-size: 1.05rem;">Submit for Scan</button>
                 
                 <div class="form-note" style="margin-top: 1rem; text-align: center;">
-                    No credit card required. Results typically delivered within 24 hours.
+                    ✓ No credit card required &nbsp;|&nbsp; ✓ Results in 24 hours &nbsp;|&nbsp; ✓ No spam
                 </div>
             </form>
         </div>
     </div>
 </section>
 
-<!-- FAQ SECTION -->
-<section class="section">
+<!-- SECTION 5: FAQ -->
+<section class="section" style="background: #f0f4f9;">
     <div class="section-title">
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQs</h2>
         
         <div class="faq-container">
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Is a scan legally defensible?</span>
+                    <span>Is your scan legally defensible?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Yes. We use axe-core (industry standard accessibility engine) plus manual analysis. Our methodology is admissible in court as expert testimony. We document everything for legal defensibility.</p>
+                    <p>Yes. We use axe-core (industry standard) plus manual analysis. Our methodology is admissible as expert testimony in court. We document everything with screenshots and code examples so your lawyer can use it in litigation.</p>
                 </div>
             </div>
             
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>What's the difference between automation and manual review?</span>
+                    <span>How are settlement amounts calculated?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Automated tools catch about 50% of accessibility issues (things like color contrast, missing alt text). Manual review catches the other 50%: keyboard traps, semantic violations, ARIA implementation problems, and structural barriers that break assistive technology. We combine both for comprehensive coverage.</p>
+                    <p>Settlements typically include: (1) compensatory damages for the plaintiff ($50K-$150K), (2) attorney fees ($150K-$500K), (3) remediation costs ($10K-$50K), and sometimes (4) punitive damages if negligence is proven. Total range: $75K-$250K per plaintiff is common.</p>
                 </div>
             </div>
             
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>How accurate are your cost estimates?</span>
+                    <span>What's the difference between your scan and free tools?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Very accurate. We base remediation cost estimates on industry standard rates ($100-200/hour for accessibility work). Timeline estimates account for complexity and development capacity. Our estimates are used as evidence in litigation and settlements.</p>
+                    <p>Free tools (WAVE, Axe, etc) show violations. We show LIABILITY. We quantify: (1) business risk, (2) remediation cost, (3) timeline, (4) legal exposure. We also catch 50% more issues because we do manual review, not just automation. Most importantly, our analysis is defensible in court.</p>
                 </div>
             </div>
             
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>How is this different from free tools like WAVE or Axe?</span>
+                    <span>Do you work with law firms?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Free tools show you violations. We show you LIABILITY. We quantify cost, timeline, and legal risk in business terms. We also catch issues automated tools miss. More importantly, we provide expert-level analysis that's defensible in court and useful for litigation strategy.</p>
+                    <p>Yes. Email legal@a11yscan.xyz for confidential consultation. We provide: expert testimony, evidence packages, strategic site analysis, demand letter support, and litigation strategy. We can also work on contingency for strong cases.</p>
                 </div>
             </div>
             
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Do you work with law firms and plaintiffs?</span>
+                    <span>How long until I get results?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Yes. Email legal@wcagexposure.com for confidential consultation. We provide expert testimony, evidence documentation, strategic analysis, and litigation support for accessibility cases.</p>
+                    <p>Free scan: 24 hours. Partial audit ($500): 3-5 business days. Full audit ($3,500+): 5-10 business days. We prioritize based on urgency and complexity.</p>
                 </div>
             </div>
             
             <div class="faq-item">
                 <button class="faq-question" aria-expanded="false">
-                    <span>Is this applicable to my industry?</span>
+                    <span>What if I'm already being sued?</span>
                     <span class="faq-toggle">▼</span>
                 </button>
                 <div class="faq-answer">
-                    <p>If you have a website, yes. Special considerations apply to healthcare (HIPAA + WCAG), government (Section 508), finance (FINRA + WCAG), and education (Section 504 + WCAG). These industries face heightened scrutiny and larger settlements.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
-                    <span>What happens after I submit a form?</span>
-                    <span class="faq-toggle">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>We scan your website using industry-standard tools and manual analysis. Within 24 hours, you'll receive a PDF report showing: total violations found, critical barriers identified, which disabilities are most impacted, estimated remediation costs, and your risk level. You can then decide if you want a deeper audit or consultation.</p>
+                    <p>Contact legal@a11yscan.xyz immediately. We can: document violations for settlement negotiation, provide expert testimony for defense, conduct discovery analysis, or help establish remediation timeline. Time is critical.</p>
                 </div>
             </div>
         </div>
@@ -305,15 +350,14 @@ $pageContent = <<<'HTML'
 </section>
 
 <!-- CTA SECTION -->
-<section class="section" style="background: linear-gradient(135deg, #0052cc 0%, #003a99 100%); color: white; text-align: center;">
+<section class="section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%); color: white; text-align: center; padding: 3rem 1rem;">
     <div class="section-title">
-        <h2 style="color: white; border-bottom-color: #ff6600;">Ready to Know Your Exposure?</h2>
-        <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem;">Start with a free scan. No credit card required. Get your risk assessment within 24 hours.</p>
-        <a href="#scan-form" class="btn btn-secondary" style="margin-top: 1.5rem;">Get Free Scan</a>
+        <h2 style="color: white; border-bottom-color: var(--accent-orange);">Know Your Risk Today</h2>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.15rem; margin-bottom: 2rem;">Free WCAG scan. No credit card. Results in 24 hours.</p>
+        <a href="#scan-form" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 1rem 2rem; font-size: 1.1rem;">Get Your Free Scan</a>
     </div>
 </section>
 HTML;
 
 include 'template-wcag.php';
 ?>
-test
