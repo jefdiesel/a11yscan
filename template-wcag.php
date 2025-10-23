@@ -11,7 +11,7 @@
  * include 'template-wcag.php';
  */
 
-$pageTitle = $pageTitle ?? 'WCAG Exposure | Accessibility Risk Assessment';
+$pageTitle = $pageTitle ?? 'A11yscan | Accessibility Risk Assessment';
 $pageDescription = $pageDescription ?? 'Free WCAG scanning and accessibility risk assessment. Expert testimony and litigation support.';
 $currentPage = basename($_SERVER['PHP_SELF'], '.php');
 ?>
@@ -108,25 +108,31 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             gap: 1rem;
         }
         
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary-blue);
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             text-decoration: none;
-            white-space: nowrap;
+            color: var(--primary-blue);
         }
         
-        .logo:focus {
+        .logo-wrapper:focus {
             outline: 3px solid var(--accent-orange);
             outline-offset: 2px;
             border-radius: 2px;
         }
         
-        .tagline {
-            font-size: 0.85rem;
-            color: #666;
-            font-weight: 400;
-            display: none;
+        .logo-svg {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            white-space: nowrap;
         }
         
         .mobile-menu-toggle {
@@ -152,6 +158,12 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             gap: 0;
             margin: 0;
             padding: 0;
+            align-items: center;
+        }
+        
+        .nav-menu li {
+            display: flex;
+            align-items: center;
         }
         
         .nav-menu a {
@@ -181,8 +193,20 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         .nav-menu a.active {
             background-color: var(--primary-blue);
             color: #ffffff;
-            border-bottom: 2px solid var(--accent-orange);
             text-decoration: none;
+        }
+        
+        .nav-menu a.btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 0.6rem 1.2rem;
+            margin-left: 0.5rem;
+            white-space: nowrap;
+        }
+        
+        .nav-menu a.btn-primary:hover {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
         }
         
         /* ============================================
@@ -198,30 +222,39 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         .hero {
             background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
             color: var(--text-light);
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             text-align: center;
         }
         
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
             line-height: 1.2;
             color: #ffffff;
         }
         
         .hero p {
-            font-size: 1.15rem;
+            font-size: 0.95rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+            margin-bottom: 0.25rem;
+            font-weight: 400;
         }
         
         .hero-subtext {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #ffffff;
+            margin-top: 0.75rem;
+            font-weight: 400;
+        }
+        
+        .hero-stats {
             margin-top: 1rem;
-            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #ffffff;
         }
         
         .section {
@@ -275,6 +308,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             margin-bottom: 1rem;
             line-height: 1.7;
             max-width: 1200px;
+            color: var(--text-dark);
         }
         
         a {
@@ -590,6 +624,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             background: var(--text-light);
             display: none;
             line-height: 1.7;
+            color: var(--text-dark);
         }
         
         .faq-item.open .faq-answer {
@@ -619,19 +654,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             margin-bottom: 0.5rem;
         }
         
-        .hero-stats {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            font-size: 1.05rem;
-            color: #ffffff;
-        }
-        
-        .hero-stats .stat {
-            color: #ffffff;
-        }
-        
         .quick-nav-section {
             background: #f0f4f9;
             padding: 2rem 1rem;
@@ -658,6 +680,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             background-color: var(--primary-blue);
             color: white;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
         
         .quick-nav-btn:hover {
@@ -733,7 +756,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.9rem;
-            color: rgba(255,255,255,0.75);
+            color: rgba(255,255,255,0.85);
         }
         
         /* ============================================
@@ -762,17 +785,27 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                 display: flex;
             }
             
+            .nav-menu li {
+                width: 100%;
+            }
+            
             .nav-menu a {
                 padding: 1rem;
                 border-bottom: 1px solid var(--border-color);
+                display: block;
+                width: 100%;
+            }
+            
+            .nav-menu a.btn-primary {
+                margin-left: 0;
             }
             
             .hero h1 {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
             
             .hero p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             
             h2 {
@@ -798,11 +831,11 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             }
             
             .hero {
-                padding: 2rem 1rem;
+                padding: 1.5rem 1rem;
             }
             
             .hero h1 {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
             h1 {
@@ -826,16 +859,29 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <!-- HEADER WITH NAVIGATION -->
     <header role="banner">
         <nav class="nav-container" role="navigation" aria-label="Main navigation">
-            <div>
-                <a href="index.php" class="logo">a11y scan</a>
-                <div class="tagline">Know Your Accessibility Risk</div>
-            </div>
+            <a href="index.php" class="logo-wrapper">
+                <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Left hand -->
+                    <path d="M3 10C3 9 3.5 8 4.5 8C5.5 8 6 9 6 10V14C6 15 5.5 16 4.5 16C3.5 16 3 15 3 14V10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <!-- Left forearm -->
+                    <path d="M6 12L11 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- Right hand -->
+                    <path d="M21 10C21 9 20.5 8 19.5 8C18.5 8 18 9 18 10V14C18 15 18.5 16 19.5 16C20.5 16 21 15 21 14V10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <!-- Right forearm -->
+                    <path d="M18 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- Connection point in center -->
+                    <circle cx="12" cy="8" r="1.5" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">A11yscan</span>
+            </a>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
                     onclick="document.querySelector('.nav-menu').classList.toggle('active'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false')">☰</button>
             <ul class="nav-menu">
                 <li><a href="index.php" <?php if($currentPage === 'index') echo 'class="active"'; ?>>Home</a></li>
                 <li><a href="blog.php" <?php if($currentPage === 'blog') echo 'class="active"'; ?>>Blog</a></li>
-                <li><a href="index.php#pricing" class="btn btn-primary" style="margin-top: 0.5rem; color: #ffffff !important;">Get Scan</a></li>
+                <li><a href="index.php#pricing" class="btn-primary">Get Scan</a></li>
             </ul>
         </nav>
     </header>
@@ -850,7 +896,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         <div class="footer-container">
             <section class="footer-section">
                 <h3>About</h3>
-                <p>a11y scan provides free accessibility audits, expert-level analysis, and litigation support for companies facing WCAG compliance risks.</p>
+                <p>A11yscan provides free accessibility audits, expert-level analysis, and litigation support for companies facing WCAG compliance risks.</p>
             </section>
             
             <section class="footer-section">
@@ -880,7 +926,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 a11y scan. All rights reserved.</p>
+            <p>&copy; 2025 A11yscan. All rights reserved.</p>
             <p style="margin-top: 0.5rem; font-size: 0.85rem;">WCAG 2.1 Level AA Compliant | <a href="#">Accessibility</a></p>
         </div>
     </footer>
