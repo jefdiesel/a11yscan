@@ -9,9 +9,9 @@
 
 header('Content-Type: application/json');
 
-// CONFIGURATION - CHANGE THIS TO YOUR EMAIL
-$RECIPIENT_EMAIL = 'your-email@example.com';
-$SENDER_EMAIL = 'noreply@wcagexposure.com';
+// CONFIGURATION
+$RECIPIENT_EMAIL = 'ap@a11yscan.xyz';
+$SENDER_EMAIL = 'noreply@a11yscan.xyz';
 
 // Sanitize and validate input
 function sanitize($input) {

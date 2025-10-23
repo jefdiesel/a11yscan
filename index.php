@@ -1,14 +1,18 @@
 <?php
-$pageTitle = 'WCAG Exposure | Accessibility Audits, Expert Testimony & Litigation Support';
-$pageDescription = 'Free WCAG scanning for accessibility liability assessment. Expert witness testimony. Strategic litigation support for accessibility cases. ADA Title III & NYCHRL compliance.';
+$pageTitle = 'a11y scan | Free Accessibility Audits & Expert Testimony';
+$pageDescription = 'Free WCAG scanning and accessibility audits. Know your ADA/NYCHRL liability before you get sued. Expert witness testimony for accessibility litigation.';
 
 $pageContent = <<<'HTML'
-<!-- HERO SECTION - Clean & Simple -->
+<!-- HERO SECTION - Clean & Compelling -->
 <section class="hero">
-    <h1 style="color: #ffffff;">WCAG Exposure</h1>
-    <p style="color: #ffffff; font-size: 1.3rem; font-weight: 500;">Know Your Accessibility Risk</p>
-    <div style="margin-top: 2rem;">
-        <a href="#quick-nav" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 0.9rem 2rem; font-size: 1rem;">See What's Inside</a>
+    <h1 style="color: #ffffff; font-size: 3rem;">Your site has 2,847 violations.</h1>
+    <p style="color: #ffffff; font-size: 1.3rem; font-weight: 400; margin: 1rem 0;">You just don't know it yet.</p>
+    <div style="margin-top: 2rem; font-size: 1.05rem; color: rgba(255,255,255,0.9);">
+        <p><strong>77% of accessibility lawsuits</strong> target companies like yours.</p>
+        <p><strong>Settlements: $75K-$250K</strong> per plaintiff.</p>
+    </div>
+    <div style="margin-top: 2.5rem;">
+        <a href="#scan-form" class="btn btn-secondary" style="color: white; font-weight: 600; padding: 1rem 2.5rem; font-size: 1.1rem;">Scan Your Site Free</a>
     </div>
 </section>
 
