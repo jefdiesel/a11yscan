@@ -166,20 +166,23 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .nav-menu a:hover {
-            background-color: rgba(0, 82, 204, 0.08);
+            background-color: rgba(0, 82, 204, 0.1);
             color: var(--primary-blue);
+            text-decoration: underline;
         }
         
         .nav-menu a:focus {
             outline: 3px solid var(--accent-orange);
             outline-offset: -3px;
-            background-color: rgba(0, 82, 204, 0.08);
+            background-color: rgba(0, 82, 204, 0.1);
+            text-decoration: underline;
         }
         
         .nav-menu a.active {
             background-color: var(--primary-blue);
-            color: var(--text-light);
+            color: #ffffff;
             border-bottom: 2px solid var(--accent-orange);
+            text-decoration: none;
         }
         
         /* ============================================
@@ -209,15 +212,16 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         
         .hero p {
             font-size: 1.15rem;
-            color: rgba(255,255,255,0.95);
+            color: #ffffff;
             margin-bottom: 0.5rem;
-            font-weight: 400;
+            font-weight: 500;
         }
         
         .hero-subtext {
             font-size: 1rem;
-            color: rgba(255,255,255,0.85);
+            color: #ffffff;
             margin-top: 1rem;
+            font-weight: 500;
         }
         
         .section {
@@ -317,6 +321,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
         
         .pricing-card:hover {
@@ -410,16 +415,23 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         
         .btn-primary {
             background-color: var(--primary-blue);
-            color: var(--text-light);
+            color: #ffffff;
+            font-weight: 600;
         }
         
         .btn-primary:hover {
             background-color: var(--primary-dark);
+            color: #ffffff;
         }
         
         .btn-primary:focus {
             outline: 3px solid var(--accent-orange);
             outline-offset: 2px;
+            color: #ffffff;
+        }
+        
+        .btn-primary:visited {
+            color: #ffffff;
         }
         
         .btn-secondary {
