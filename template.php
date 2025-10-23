@@ -1,19 +1,20 @@
 <?php
 /**
- * A11yscan - Modern Minimal Template
+ * A11yscan Master Template
  * WCAG 2.1 Level AAA Compliant
- * High Contrast Design (7:1+ ratios)
  * 
- * Usage:
- * $pageTitle = 'Your Page Title';
- * $pageDescription = 'Your description';
- * $pageContent = <<<'HTML' ... HTML;
- * include 'template-wcag-v2.php';
+ * Usage in page files:
+ * $pageTitle = 'Page Title';
+ * $pageDescription = 'Description';
+ * $pageContent = <<<'HTML'
+ *   ... your content ...
+ * HTML;
+ * include 'template.php';
  */
 
-$pageTitle = $pageTitle ?? 'A11yscan | Accessibility Compliance';
-$pageDescription = $pageDescription ?? 'Free WCAG scanning and accessibility risk assessment.';
-$currentPage = basename($_SERVER['PHP_SELF'], '.php');
+$pageTitle = $pageTitle ?? 'A11yscan';
+$pageDescription = $pageDescription ?? 'Free WCAG accessibility auditing and compliance';
+$currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,10 +24,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
     <style>
-        /* ============================================
-           WCAG 2.1 LEVEL AAA COMPLIANT DESIGN
-           ============================================ */
-        
         * {
             margin: 0;
             padding: 0;
@@ -34,19 +31,15 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         }
         
         :root {
-            /* High Contrast Palette - AAA Compliant */
-            --text-primary: #0a0e27;      /* Near black 7:1+ */
-            --text-secondary: #2d3142;    /* Dark gray */
-            --bg-primary: #ffffff;        /* Pure white */
-            --bg-secondary: #f8f9fb;      /* Light neutral */
-            --bg-tertiary: #f0f2f7;       /* Slightly darker neutral */
-            --accent-primary: #2563eb;    /* Blue - 4.9:1 on white */
-            --accent-dark: #1e40af;       /* Darker blue */
-            --accent-light: #3b82f6;      /* Lighter blue */
-            --success: #059669;           /* Green */
-            --error: #dc2626;             /* Red */
-            --border: #d1d5db;            /* Light gray border */
-            --border-dark: #9ca3af;       /* Darker border */
+            --text-primary: #0a0e27;
+            --text-secondary: #2d3142;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fb;
+            --bg-tertiary: #f0f2f7;
+            --accent-primary: #2563eb;
+            --accent-dark: #1e40af;
+            --accent-light: #3b82f6;
+            --border: #d1d5db;
         }
         
         html {
@@ -61,9 +54,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             background: var(--bg-primary);
         }
         
-        /* ============================================
-           SKIP LINK
-           ============================================ */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -74,18 +64,12 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             z-index: 10001;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 0 0 4px 0;
         }
         
         .skip-link:focus {
             top: 0;
-            outline: 3px solid var(--accent-primary);
-            outline-offset: 2px;
         }
         
-        /* ============================================
-           HEADER
-           ============================================ */
         header {
             background: var(--bg-primary);
             border-bottom: 1px solid var(--border);
@@ -113,15 +97,9 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             font-weight: 700;
         }
         
-        .logo:focus {
-            outline: 3px solid var(--accent-primary);
-            outline-offset: 2px;
-        }
-        
         .logo-svg {
             width: 28px;
             height: 28px;
-            flex-shrink: 0;
         }
         
         nav {
@@ -137,8 +115,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             font-weight: 500;
             font-size: 0.95rem;
             border-radius: 4px;
-            transition: background 0.2s, color 0.2s;
-            border: 2px solid transparent;
+            transition: all 0.2s;
         }
         
         nav a:hover {
@@ -149,7 +126,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         nav a:focus {
             outline: 3px solid var(--accent-primary);
             outline-offset: -3px;
-            background: var(--bg-secondary);
         }
         
         nav a.active {
@@ -160,7 +136,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         nav a.cta {
             background: var(--accent-primary);
             color: white;
-            font-weight: 600;
             margin-left: 0.5rem;
         }
         
@@ -168,18 +143,12 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             background: var(--accent-dark);
         }
         
-        /* ============================================
-           MAIN CONTENT
-           ============================================ */
         main {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
         }
         
-        /* ============================================
-           HERO SECTION
-           ============================================ */
         .hero {
             padding: 3rem 0 2.5rem;
             text-align: center;
@@ -190,7 +159,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1rem;
-            color: var(--text-primary);
         }
         
         .hero p {
@@ -198,12 +166,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             color: var(--text-secondary);
             max-width: 600px;
             margin: 0 auto 1.5rem;
-            font-weight: 400;
         }
         
-        /* ============================================
-           BUTTONS
-           ============================================ */
         .btn {
             display: inline-block;
             padding: 0.85rem 1.75rem;
@@ -216,7 +180,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             transition: all 0.2s;
             min-height: 44px;
             text-align: center;
-            min-width: 44px;
         }
         
         .btn-primary {
@@ -226,7 +189,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         
         .btn-primary:hover {
             background: var(--accent-dark);
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
         
         .btn-primary:focus {
@@ -242,12 +204,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         
         .btn-secondary:hover {
             background: var(--bg-tertiary);
-            border-color: var(--text-secondary);
         }
         
-        /* ============================================
-           SECTIONS & SPACING
-           ============================================ */
         section {
             padding: 2.5rem 0;
             border-bottom: 1px solid var(--border);
@@ -260,15 +218,12 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         h2 {
             font-size: 2rem;
             font-weight: 700;
-            color: var(--text-primary);
             margin-bottom: 1.5rem;
-            line-height: 1.2;
         }
         
         h3 {
             font-size: 1.3rem;
             font-weight: 600;
-            color: var(--text-primary);
             margin-bottom: 0.75rem;
         }
         
@@ -281,7 +236,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         a {
             color: var(--accent-primary);
             text-decoration: underline;
-            font-weight: 500;
         }
         
         a:hover {
@@ -293,9 +247,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             outline-offset: 2px;
         }
         
-        /* ============================================
-           GRID & CARDS
-           ============================================ */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -317,45 +268,39 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             transform: translateY(-2px);
         }
         
-        .card:focus-within {
-            outline: 3px solid var(--accent-primary);
-            outline-offset: 2px;
-        }
-        
-        /* ============================================
-           HIGHLIGHTS & CALLOUTS
-           ============================================ */
-        .highlight {
-            background: var(--bg-secondary);
-            border-left: 4px solid var(--accent-primary);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-        
         .stat {
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--accent-primary);
             display: block;
-            line-height: 1;
             margin-bottom: 0.5rem;
         }
         
-        /* ============================================
-           FOOTER
-           ============================================ */
+        .highlight {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-primary);
+            padding: 2rem;
+            border-radius: 4px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+        }
+        
         footer {
             background: var(--text-primary);
             color: white;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             margin-top: 3rem;
         }
         
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1rem;
         }
         
         .footer-grid {
@@ -372,11 +317,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             font-weight: 600;
         }
         
-        .footer-section p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
-        }
-        
         .footer-section a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
@@ -387,11 +327,6 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             text-decoration: underline;
         }
         
-        .footer-section a:focus {
-            outline: 3px solid var(--accent-light);
-            outline-offset: 2px;
-        }
-        
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             padding-top: 1.5rem;
@@ -400,12 +335,13 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             color: rgba(255, 255, 255, 0.7);
         }
         
-        /* ============================================
-           RESPONSIVE DESIGN
-           ============================================ */
         @media (max-width: 768px) {
-            .header-content {
-                padding: 0.75rem;
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
             }
             
             nav a {
@@ -416,45 +352,9 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             nav a.cta {
                 margin-left: 0.25rem;
             }
-            
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            section {
-                padding: 2rem 0;
-            }
-            
-            .grid {
-                gap: 1.5rem;
-            }
         }
         
         @media (max-width: 480px) {
-            html {
-                font-size: 15px;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-            
-            nav {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 0.25rem;
-            }
-            
             .hero h1 {
                 font-size: 1.5rem;
             }
@@ -466,6 +366,10 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             .grid {
                 grid-template-columns: 1fr;
             }
+            
+            nav {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -474,17 +378,13 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     
     <header role="banner">
         <div class="header-content">
-            <a href="index.php" class="logo" aria-label="A11yscan home">
+            <a href="index.php" class="logo">
                 <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <!-- Two hands meeting in middle - handshake -->
                     <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <!-- Left hand -->
                         <path d="M3 12c0-.5.224-1 .5-1.5L6 7c.5-.5 1.5-.5 2 0l1 1" fill="none"/>
                         <path d="M8 8v5c0 .5-.224 1-.5 1.5L5 17c-.5.5-1.5.5-2 0l-1-1" fill="none"/>
-                        <!-- Right hand -->
-                        <path d="M21 12c0 .5-.224 1-.5 1.5L18 17c-.5.5-1.5.5-2 0l-1-1" fill="none"/>
+                        <path d="M21 12c0 .5-.224 1 .5 1.5L18 17c-.5.5-1.5.5-2 0l-1-1" fill="none"/>
                         <path d="M16 16v-5c0-.5.224-1 .5-1.5L19 7c.5-.5 1.5-.5 2 0l1 1" fill="none"/>
-                        <!-- Connection/meeting point -->
                         <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
                         <line x1="8.5" y1="11" x2="15.5" y2="13" stroke="currentColor"/>
                     </g>
@@ -500,7 +400,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     </header>
     
     <main id="main">
-        <?php echo $pageContent ?? ''; ?>
+        <?php echo $pageContent; ?>
     </main>
     
     <footer role="contentinfo">
@@ -508,20 +408,19 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             <div class="footer-grid">
                 <div class="footer-section">
                     <h3>About</h3>
-                    <p>A11yscan provides free accessibility audits and expert WCAG compliance analysis to help organizations meet legal and ethical accessibility standards.</p>
+                    <p>A11yscan provides free accessibility audits and expert WCAG compliance analysis.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Services</h3>
-                    <ul style="list-style: none;">
+                    <ul>
                         <li><a href="#pricing">Free WCAG Scan</a></li>
                         <li><a href="#pricing">Partial Audit</a></li>
                         <li><a href="#pricing">Full Audit</a></li>
-                        <li><a href="#pricing">Expert Testimony</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Legal</h3>
-                    <ul style="list-style: none;">
+                    <ul>
                         <li><a href="#">Accessibility Statement</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
@@ -530,18 +429,15 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>Email: <a href="mailto:info@a11yscan.xyz">info@a11yscan.xyz</a></p>
-                    <p>Legal: <a href="mailto:legal@a11yscan.xyz">legal@a11yscan.xyz</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 A11yscan. All rights reserved.</p>
-                <p style="margin-top: 0.5rem;">WCAG 2.1 Level AAA Compliant</p>
+                <p>&copy; 2025 A11yscan. All rights reserved. | WCAG 2.1 Level AAA Compliant</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth anchor navigation
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
