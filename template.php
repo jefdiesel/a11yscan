@@ -380,15 +380,13 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     <header role="banner">
         <div class="header-content">
             <a href="index.php" class="logo">
-                <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <!-- Left hand/arm -->
-                        <path d="M3 13l5-4c1-.8 2.5-.5 3 .5"/>
-                        <!-- Right hand/arm -->
-                        <path d="M21 13l-5-4c-1-.8-2.5-.5-3 .5"/>
-                        <!-- Meeting point -->
-                        <circle cx="12" cy="12.5" r="2" fill="currentColor"/>
-                    </g>
+                <svg class="logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+                    <!-- Left hand -->
+                    <path d="M8 28c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-2h2v2c0 1.1.9 2 2 2h2v-8H8z"/>
+                    <!-- Right hand -->
+                    <path d="M56 28h-12v8h2c1.1 0 2-.9 2-2v-2h2v2c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2z"/>
+                    <!-- Connection -->
+                    <rect x="26" y="32" width="12" height="2" rx="1"/>
                 </svg>
                 <span>A11yscan</span>
             </a>
