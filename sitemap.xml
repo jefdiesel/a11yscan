@@ -25,6 +25,35 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- Blog Posts: Plaintiff Perspective & User Rights -->
+    <url>
+        <loc>https://a11yscan.xyz/disability-rights-by-state.php</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/document-report-barriers.php</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/finding-legal-support.php</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/serial-filers-enforcement-gap.php</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Blog Posts: WCAG & Compliance -->
     <url>
         <loc>https://a11yscan.xyz/blog/wcag-2-1-levels-guide.php</loc>
@@ -199,7 +228,7 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- NEW: Content Strategy Posts -->
+    <!-- Blog Posts: Content Strategy & Implementation -->
     <url>
         <loc>https://a11yscan.xyz/blog/accessibility-demand-letter.php</loc>
         <lastmod>2025-10-24</lastmod>
