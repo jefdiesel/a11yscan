@@ -431,7 +431,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: white;
+            color: #ffffff;
             font-weight: 500;
         }
         
@@ -548,17 +548,32 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             section.setAttribute('tabindex', '0');
         });
         
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    const target = document.querySelector(href);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
+        // Skip link focus management
+        const skipLink = document.querySelector('.skip-link');
+        if (skipLink) {
+            skipLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                const mainContent = document.getElementById('main-content');
+                if (mainContent) {
+                    mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    mainContent.focus();
                 }
             });
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            if (!a.classList.contains('skip-link')) {
+                a.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            }
         });
     </script>
 </body>
