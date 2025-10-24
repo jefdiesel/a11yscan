@@ -5,24 +5,22 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-21">October 21, 2025</time>
-        <h1>Designing for Neurodivergent Users: Accessibility Beyond Disability</h1>
-        <p class="lead">Neurodiversity encompasses differences in how brains are wired and process information—including autism, ADHD, dyslexia, and other neurological variations. Approximately 15-20% of the population is neurodivergent. Designing for neurodivergent users means creating interfaces that work with diverse ways of thinking rather than requiring conformance to neurotypical norms.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-21" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 21, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Designing for Neurodivergent Users: Accessibility Beyond Disability</h1>
+        
         <h2>Understanding Neurodiversity</h2>
+        <p>Neurodiversity encompasses differences in how brains are wired and process information—including autism, ADHD, dyslexia, and other neurological variations. Approximately 15-20% of the population is neurodivergent. Designing for neurodivergent users means creating interfaces that work with diverse ways of thinking rather than requiring conformance to neurotypical norms.</p>
         <p>Neurodiversity is a framework recognizing that neurological differences (autism, ADHD, dyslexia) are variations in brain wiring, not deficits. Many neurodivergent individuals and advocates reject the medical "disability" model, instead emphasizing neurodivergence as natural human variation.</p>
         <p>However, neurodivergent individuals often face accessibility barriers in neurotypical-designed environments. Websites designed for neurotypical users can create significant challenges for neurodivergent users. Neurodivergent-friendly design benefits everyone by creating clearer, more straightforward interfaces.</p>
     </section>
 
-    <section>
+    <section id="autism">
         <h2>Autism and Website Accessibility</h2>
         
         <h3>Sensory Considerations</h3>
         <p>Many autistic individuals experience sensory sensitivities to visual, auditory, or other stimuli. Website design should accommodate sensory sensitivities:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Avoiding flashing/rapid animation:</strong> Can trigger sensory overload or seizures</li>
             <li style="margin-bottom: 0.75rem;"><strong>Reducing visual clutter:</strong> Excessive animation, pop-ups, and ads overwhelm sensory processing</li>
             <li style="margin-bottom: 0.75rem;"><strong>Avoiding auto-playing audio/video:</strong> Unexpected sound is distressing</li>
@@ -44,12 +42,12 @@ $pageContent = <<<'HTML'
         <p>Some autistic users find rapid context switching difficult. Long task flows without breaks, fragmented information scattered across pages, or requiring users to hold multiple concepts simultaneously create barriers.</p>
     </section>
 
-    <section>
+    <section id="adhd">
         <h2>ADHD and Website Accessibility</h2>
         
         <h3>Attention Management</h3>
         <p>Users with ADHD often struggle with sustained attention and are easily distracted. Website design should support attention management:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Minimize distractions:</strong> Remove unnecessary visual elements, auto-playing content, ads, and pop-ups</li>
             <li style="margin-bottom: 0.75rem;"><strong>Clear focus:</strong> Highlight primary task; deprioritize secondary elements</li>
             <li style="margin-bottom: 0.75rem;"><strong>Visual anchors:</strong> Consistent visual structure helps maintain attention and orientation</li>
@@ -58,7 +56,7 @@ $pageContent = <<<'HTML'
 
         <h3>Working Memory Demands</h3>
         <p>Users with ADHD often have working memory challenges. Design should minimize working memory demands:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Reduce information density:</strong> Present essential information only</li>
             <li style="margin-bottom: 0.75rem;"><strong>Visible options:</strong> Don't hide important information; present options where users can see them</li>
             <li style="margin-bottom: 0.75rem;"><strong>Clear instructions:</strong> Step-by-step guidance compensates for working memory limitations</li>
@@ -67,7 +65,7 @@ $pageContent = <<<'HTML'
 
         <h3>Time Blindness Accommodation</h3>
         <p>Many users with ADHD experience "time blindness"—difficulty perceiving time passage. Websites should provide explicit time information:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Clear timestamps:</strong> Show when information was updated</li>
             <li style="margin-bottom: 0.75rem;"><strong>Deadline visibility:</strong> Make time limits and deadlines very explicit</li>
             <li style="margin-bottom: 0.75rem;"><strong>Duration estimates:</strong> Indicate how long tasks will take</li>
@@ -75,7 +73,7 @@ $pageContent = <<<'HTML'
 
         <h3>Executive Function Support</h3>
         <p>Executive function challenges (planning, initiation, task management) affect many ADHD users. Websites should support executive function:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Clear next steps:</strong> Always indicate what action to take next</li>
             <li style="margin-bottom: 0.75rem;"><strong>Task prioritization:</strong> Suggest most important actions</li>
             <li style="margin-bottom: 0.75rem;"><strong>Reduce decision points:</strong> Too many options paralyze decision-making</li>
@@ -83,7 +81,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="universal-principles">
         <h2>Universal Neurodivergent-Friendly Design Principles</h2>
         
         <h3>1. Minimize Cognitive Load</h3>
@@ -117,11 +115,11 @@ $pageContent = <<<'HTML'
         <p>Allow users to customize interface: font size, color schemes, animation speed. What works for one user might not work for another.</p>
     </section>
 
-    <section>
+    <section id="example">
         <h2>Real-World Example: Task Management Application</h2>
         
         <h3>Neurodivergent-Friendly Approach:</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Clear, simple interface with minimal visual clutter</li>
             <li style="margin-bottom: 0.75rem;">Explicit next steps shown prominently</li>
             <li style="margin-bottom: 0.75rem;">No auto-playing media or flashing content</li>
@@ -133,10 +131,10 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Unfriendly Approach:</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">Colorful, busy interface with excessive design elements</li>
             <li style="margin-bottom: 0.75rem;">Unclear what to do next</li>
-            <li style="margin-bottom: 0.75rm;">Auto-playing celebration animations for task completion</li>
+            <li style="margin-bottom: 0.75rem;">Auto-playing celebration animations for task completion</li>
             <li style="margin-bottom: 0.75rem;">Navigation changes between pages</li>
             <li style="margin-bottom: 0.75rem;">All tasks listed without prioritization</li>
             <li style="margin-bottom: 0.75rem;">No time estimates</li>
@@ -144,12 +142,12 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="implementation">
         <h2>Implementation Strategies</h2>
         
         <h3>Accessibility Settings</h3>
         <p>Provide accessibility settings allowing users to customize experience:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Reduce animations/motion</li>
             <li style="margin-bottom: 0.75rem;">Increase text size</li>
             <li style="margin-bottom: 0.75rem;">Change color scheme (high contrast, dark mode options)</li>
@@ -167,15 +165,15 @@ $pageContent = <<<'HTML'
         <p>Continue improving interface based on user feedback. Neurodivergent-friendly design is iterative; initial designs rarely perfect.</p>
     </section>
 
-    <section>
+    <section id="universal-design">
         <h2>Beyond Compliance: Universal Design</h2>
         <p>Designing for neurodivergent users goes beyond minimum WCAG compliance. It represents universal design—creating interfaces working well for everyone, regardless of neurological wiring.</p>
         <p>Universal design benefits extend far beyond neurodivergent users: aging adults benefit from simplified interfaces, second-language speakers benefit from clear language, stressed users benefit from distraction-free design, and everyone benefits from systems they understand clearly.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Approximately 15-20% of the population is neurodivergent; neurodivergent-friendly design benefits everyone.</li>
             <li>Autistic users benefit from structured information, explicit communication, and predictable design.</li>
             <li>Users with ADHD benefit from attention support, clear structure, and reduced working memory demands.</li>
@@ -186,9 +184,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
             <li><a href="https://www.interaction-design.org/literature/article/neurodiversity">Neurodiversity in Design (Interaction Design Foundation)</a></li>
             <li><a href="https://www.a11yproject.com/">The A11y Project</a></li>
@@ -204,85 +202,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

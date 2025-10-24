@@ -5,26 +5,24 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>Designing for Deaf Users: Audio Accessibility</h1>
-        <p class="lead">Approximately 48 million people in the United States have hearing loss, with millions more worldwide. Audio accessibility—providing alternatives to audio content—is essential for deaf and hard-of-hearing users. Captions, transcripts, sign language interpretation, and visual alternatives ensure audio content is accessible to all users.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-24" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 24, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Designing for Deaf Users: Audio Accessibility</h1>
+        
         <h2>Understanding Deaf and Hard-of-Hearing Users</h2>
+        <p>Approximately 48 million people in the United States have hearing loss, with millions more worldwide. Audio accessibility—providing alternatives to audio content—is essential for deaf and hard-of-hearing users. Captions, transcripts, sign language interpretation, and visual alternatives ensure audio content is accessible to all users.</p>
         <p>The deaf and hard-of-hearing community encompasses diverse experiences. Some users are completely deaf from birth or early childhood; others lost hearing later in life. Some use spoken language; others use sign language as primary communication. Hearing aid users might have better hearing in quiet environments but struggle in noisy settings.</p>
         <p>For website design, the key principle is this: audio content must have accessible alternatives. If your site includes videos, podcasts, webinars, or other audio content, that content must be accessible to users who cannot hear it.</p>
         <p>Unlike visual accessibility (which affects 1 in 4 adults at some point), hearing loss is often invisible. Users might not disclose hearing loss, making it easy for organizations to overlook audio accessibility needs.</p>
     </section>
 
-    <section>
+    <section id="core-elements">
         <h2>Core Audio Accessibility Elements</h2>
         
         <h3>1. Captions (Closed Captions)</h3>
         <p>Closed captions (CC) transcribe dialogue and sound effects from video content. They include not just spoken words but also [ambient traffic], [door slams], [music playing]—giving deaf viewers complete audio understanding.</p>
         <p><strong>Good captions include:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">All dialogue and spoken content</li>
             <li style="margin-bottom: 0.75rem;">Sound effects in brackets: [phone ringing], [laughter]</li>
             <li style="margin-bottom: 0.75rem;">Music descriptions: [upbeat jazz music]</li>
@@ -39,11 +37,11 @@ $pageContent = <<<'HTML'
 
         <h3>3. Transcripts</h3>
         <p>Transcripts are written text versions of audio content. For podcasts, webinars, or recorded videos, provide full transcripts. Transcripts provide:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Text access to audio-only content (podcasts)</li>
             <li style="margin-bottom: 0.75rem;">Searchable content (users can find specific topics)</li>
             <li style="margin-bottom: 0.75rem;">Better SEO (search engines index text, not audio)</li>
-            <li style="margin-bottom: 0.75mr;">Multiple accessibility benefit (screen readers can read transcripts)</li>
+            <li style="margin-bottom: 0.75rem;">Multiple accessibility benefit (screen readers can read transcripts)</li>
         </ul>
 
         <h3>4. Sign Language Interpretation</h3>
@@ -54,12 +52,12 @@ $pageContent = <<<'HTML'
         <p>Some content relies on audio cues users must hear: error notifications, confirmation sounds, or alerts. For such content, provide visual equivalents: error messages appear on screen, confirmation icons flash, or alerts are visually highlighted.</p>
     </section>
 
-    <section>
+    <section id="video-design">
         <h2>Designing Video for Accessibility</h2>
         
         <h3>Video Player Accessibility</h3>
         <p>Video players themselves must be accessible:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Caption toggle:</strong> Clear, obvious button to turn captions on/off</li>
             <li style="margin-bottom: 0.75rem;"><strong>Caption visibility:</strong> Captions must be readable with 7:1 contrast, large enough to read, and not blocking important video content</li>
             <li style="margin-bottom: 0.75rem;"><strong>Transcript link:</strong> Direct link to transcript near player</li>
@@ -69,7 +67,7 @@ $pageContent = <<<'HTML'
 
         <h3>Caption Quality Standards</h3>
         <p>Poor captions are sometimes worse than no captions. Guidelines for caption quality:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Accuracy:</strong> Captions must accurately represent spoken content</li>
             <li style="margin-bottom: 0.75rem;"><strong>Completeness:</strong> All dialogue and relevant sounds included</li>
             <li style="margin-bottom: 0.75rem;"><strong>Timing:</strong> Captions appear and disappear synchronized with audio</li>
@@ -83,7 +81,7 @@ $pageContent = <<<'HTML'
 
         <h3>Transcript Formatting</h3>
         <p>Transcripts should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">Be clearly labeled and easily accessible near video player</li>
             <li style="margin-bottom: 0.75rem;">Include speaker identification for clarity in multi-speaker content</li>
             <li style="margin-bottom: 0.75rem;">Include timestamps for reference</li>
@@ -92,7 +90,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="audio-content">
         <h2>Designing for Audio-Only Content (Podcasts)</h2>
         
         <h3>Transcript Requirement</h3>
@@ -100,7 +98,7 @@ $pageContent = <<<'HTML'
 
         <h3>Transcript Quality</h3>
         <p>Podcast transcripts should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Include all spoken content accurately</li>
             <li style="margin-bottom: 0.75rem;">Identify speakers clearly</li>
             <li style="margin-bottom: 0.75rem;">Include timestamps every few minutes</li>
@@ -115,7 +113,7 @@ $pageContent = <<<'HTML'
         <p>Even sponsored segments and advertisements in podcasts should be transcribed. Exclude only truly incidental background audio.</p>
     </section>
 
-    <section>
+    <section id="live-events">
         <h2>Live Events and Webinars</h2>
         
         <h3>Real-Time Captions</h3>
@@ -123,7 +121,7 @@ $pageContent = <<<'HTML'
 
         <h3>Planning for Live Audio</h3>
         <p>When hosting webinars or live events:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Budget for professional CART captioning</li>
             <li style="margin-bottom: 0.75rem;">Provide platform for captions display</li>
             <li style="margin-bottom: 0.75rem;">Allow speakers to review captions (some services provide speaker console)</li>
@@ -134,12 +132,12 @@ $pageContent = <<<'HTML'
         <p>After webinars conclude, captions should be added to recordings before publishing. This requires either recording the CART caption feed or adding captions in post-production.</p>
     </section>
 
-    <section>
+    <section id="audio-descriptions">
         <h2>Audio Descriptions in Detail</h2>
         
         <h3>When Audio Descriptions Are Needed</h3>
         <p>Audio descriptions are most important for:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Instructional videos showing procedures or techniques</li>
             <li style="margin-bottom: 0.75rem;">Training videos with visual demonstrations</li>
             <li style="margin-bottom: 0.75rem;">Narrative videos where visual storytelling is central</li>
@@ -149,7 +147,7 @@ $pageContent = <<<'HTML'
 
         <h3>Audio Description Guidelines</h3>
         <p>Good audio descriptions:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Are concise but complete</li>
             <li style="margin-bottom: 0.75rem;">Fit naturally into content pauses</li>
             <li style="margin-bottom: 0.75rem;">Use clear, simple language</li>
@@ -162,12 +160,12 @@ $pageContent = <<<'HTML'
         <p>For organizations with limited budgets, AI-assisted tools are emerging that automatically identify key visual moments and suggest descriptions, which professionals then refine.</p>
     </section>
 
-    <section>
+    <section id="testing">
         <h2>Testing Audio Accessibility</h2>
         
         <h3>Caption Quality Review</h3>
         <p>Watch videos with captions on, audio off. Verify:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">All dialogue is captured accurately</li>
             <li style="margin-bottom: 0.75rem;">Sound effects are described</li>
             <li style="margin-bottom: 0.75rem;">Captions are visible and readable</li>
@@ -177,7 +175,7 @@ $pageContent = <<<'HTML'
 
         <h3>Transcript Verification</h3>
         <p>Read transcripts independently. Verify:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Transcripts match spoken content</li>
             <li style="margin-bottom: 0.75rem;">Sound descriptions are included where relevant</li>
             <li style="margin-bottom: 0.75rem;">Transcripts are easy to read and navigate</li>
@@ -188,9 +186,9 @@ $pageContent = <<<'HTML'
         <p>If possible, involve deaf users in testing. Deaf users identify caption quality issues that hearing testers miss and provide invaluable feedback on accessibility effectiveness.</p>
     </section>
 
-    <section>
+    <section id="mistakes">
         <h2>Common Mistakes to Avoid</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Auto-generated captions only:</strong> Automated captions are often inaccurate and miss sound effects. They're better than no captions but should be reviewed and corrected.</li>
             <li style="margin-bottom: 0.75rem;"><strong>No transcript:</strong> Videos may have captions but no transcript for easy reference or searching.</li>
             <li style="margin-bottom: 0.75rem;"><strong>Burned-in captions:</strong> Open captions burned into video cannot be turned off or repositioned. Use closed captions.</li>
@@ -201,10 +199,10 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="creators">
         <h2>Content Creator Responsibilities</h2>
         <p>Organizations should establish accessibility requirements for content creators:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">All videos must have captions before publishing</li>
             <li style="margin-bottom: 0.75rem;">Captions must be reviewed for accuracy, not just auto-generated</li>
             <li style="margin-bottom: 0.75rem;">Transcripts must be provided for audio-only content</li>
@@ -213,9 +211,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Approximately 48 million people in the US have hearing loss; audio accessibility is essential.</li>
             <li>Closed captions should include all dialogue, sound effect descriptions, and speaker identification.</li>
             <li>Transcripts must be provided for all audio-only content and videos.</li>
@@ -227,9 +225,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
             <li><a href="https://webaim.org/articles/captions/">Video Captions (WebAIM)</a></li>
             <li><a href="https://www.dcmp.org/">Described and Captioned Media Program</a></li>
@@ -246,85 +244,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

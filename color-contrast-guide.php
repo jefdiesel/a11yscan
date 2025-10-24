@@ -5,13 +5,10 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-20">October 20, 2025</time>
-        <h1>Color Contrast: The Foundation of Visual Accessibility</h1>
-        <p class="lead">Color contrast is one of the most critical yet frequently overlooked aspects of web accessibility. Poor contrast creates barriers for users with low vision, color blindness, and even those viewing content in bright environments. Understanding contrast requirements and implementing them correctly is essential for WCAG compliance and user experience.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-20" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 20, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Color Contrast: The Foundation of Visual Accessibility</h1>
+        
         <h2>What Is Color Contrast and Why Does It Matter?</h2>
         <p>Color contrast refers to the difference in brightness between text and its background, or between any two colors used in user interface elements. When contrast is insufficient, text becomes difficult or impossible to read, particularly for users with vision impairments or those viewing content on mobile devices in bright sunlight.</p>
         <p>Approximately 253 million people worldwide have visual impairment, including over 36 million people who are blind. Many more experience low vision, astigmatism, or color blindness. Additionally, age-related vision changes affect billions of people globally. Proper color contrast benefits this entire population while improving readability for everyone.</p>
@@ -19,7 +16,7 @@ $pageContent = <<<'HTML'
         <p>Color contrast isn't merely about making text slightly easier to read. Insufficient contrast creates a complete barrier to access for users with low vision. When someone cannot read your content due to poor contrast, they cannot use your website at all. This represents a fundamental violation of accessibility principles.</p>
     </section>
 
-    <section>
+    <section id="ratios">
         <h2>Understanding Contrast Ratios</h2>
         <p>Contrast ratios measure the difference in luminance (brightness) between two colors on a scale ranging from 1:1 to 21:1. A ratio of 1:1 indicates identical brightness (no contrast), while 21:1 represents maximum contrast such as pure black on pure white.</p>
         <p>The formula for calculating contrast ratio involves determining the relative luminance of each color, then applying a mathematical relationship. Fortunately, you don't need to calculate manually—numerous free online tools instantly calculate contrast ratios for any two colors.</p>
@@ -27,7 +24,7 @@ $pageContent = <<<'HTML'
         <p>The WCAG ratios are as follows: Level A requires no specific text contrast requirement but demands overall visual distinguishability. Level AA requires 4.5:1 for normal text and 3:1 for large text. Level AAA requires 7:1 for normal text and 4.5:1 for large text. These incremental improvements align with how humans perceive and distinguish colors.</p>
     </section>
 
-    <section>
+    <section id="wcag-requirements">
         <h2>WCAG Color Contrast Requirements Explained</h2>
         <p>Each WCAG conformance level establishes progressively stricter color contrast requirements. Understanding these standards is essential for ensuring your website complies with accessibility regulations and serves users with visual impairments effectively.</p>
 
@@ -43,7 +40,7 @@ $pageContent = <<<'HTML'
         <p>Level AAA compliance is challenging across an entire website because it severely limits available color palettes. Most organizations achieve Level AAA for critical content while maintaining Level AA for the broader site.</p>
     </section>
 
-    <section>
+    <section id="practical-guidelines">
         <h2>Practical Contrast Guidelines for Design</h2>
         <p>Implementing proper contrast requires intentional color selection and systematic validation throughout the design process. Consider contrast from the very beginning of design rather than attempting to retrofit it later.</p>
 
@@ -62,7 +59,7 @@ $pageContent = <<<'HTML'
         <p>Beyond contrast ratios, WCAG requires that you never convey information using color alone. For example, don't indicate form errors solely through red highlighting. Use red highlighting plus a clear error message. Don't indicate links solely through color; use underlines or other visual markers in addition to color.</p>
     </section>
 
-    <section>
+    <section id="tools">
         <h2>Tools for Checking Color Contrast</h2>
         <p>Numerous excellent tools are available for checking and validating color contrast. These tools eliminate guesswork and ensure your color choices meet WCAG standards.</p>
 
@@ -79,7 +76,7 @@ $pageContent = <<<'HTML'
         <p>If you're using design tools like Figma, numerous plugins provide real-time contrast checking as you design. Checking contrast while designing prevents rework and ensures accessibility is built in from the start.</p>
     </section>
 
-    <section>
+    <section id="special-considerations">
         <h2>Special Considerations for Different Content Types</h2>
         <p>While the contrast ratio formula is consistent, practical implementation varies depending on what you're designing.</p>
 
@@ -99,7 +96,7 @@ $pageContent = <<<'HTML'
         <p>Data visualizations present unique challenges. Multiple colors must remain distinguishable from each other, not just from the background. If your chart uses red and green lines, users with red-green color blindness won't distinguish them regardless of contrast ratios. Use multiple visual encoding methods: color plus patterns, color plus size variations, or color plus line styles.</p>
     </section>
 
-    <section>
+    <section id="challenges">
         <h2>Addressing Common Contrast Challenges</h2>
         <p>Many designers face specific situations where maintaining contrast feels challenging. These situations have practical solutions.</p>
 
@@ -116,7 +113,7 @@ $pageContent = <<<'HTML'
         <p>Interactive element states like hover, focus, and active must remain distinguishable through contrast. A button that becomes invisible on hover creates an accessibility barrier. Ensure all states provide sufficient contrast to be clearly visible.</p>
     </section>
 
-    <section>
+    <section id="color-blindness">
         <h2>Color Blindness and Beyond</h2>
         <p>While contrast ratios address luminance-based accessibility, color blindness presents an additional consideration. Approximately 8% of men and 0.5% of women have red-green color blindness, the most common type. Other forms of color blindness, though rarer, also exist.</p>
         <p>Contrast ratio formulas account for luminance, which partially addresses color blindness concerns. A 4.5:1 contrast ratio generally provides adequate distinction for individuals with color blindness, though this varies by type and severity.</p>
@@ -124,9 +121,9 @@ $pageContent = <<<'HTML'
         <p>The WebAIM Contrast Checker mentioned earlier includes a preview showing how your color combination appears to individuals with various types of color blindness. Reviewing this preview often reveals potential issues that numerical contrast ratios alone might not catch.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Color contrast is fundamental to accessibility, affecting over 250 million people with visual impairments globally.</li>
             <li>Contrast ratio requirements are 4.5:1 for normal text (Level AA) and 7:1 (Level AAA), with different requirements for large text.</li>
             <li>Test every color combination in your design, not just primary text and background colors.</li>
@@ -137,9 +134,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
             <li><a href="https://webaim.org/articles/visual/colorblind">Color Blindness Information (WebAIM)</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 2.1 Contrast Requirement (W3C)</a></li>
@@ -156,85 +153,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

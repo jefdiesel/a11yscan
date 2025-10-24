@@ -21,7 +21,7 @@ $pageContent = <<<'HTML'
         <h3>1. Sufficient Color Contrast</h3>
         <p>Color contrast is fundamental to low vision accessibility. The difference in brightness (luminance) between text and background directly affects readability for users with low vision.</p>
         <p><strong>WCAG Standards:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Level AA: 4.5:1 contrast for normal text, 3:1 for large text</li>
             <li style="margin-bottom: 0.75rem;">Level AAA: 7:1 contrast for normal text, 4.5:1 for large text</li>
         </ul>
@@ -37,7 +37,7 @@ $pageContent = <<<'HTML'
         <h3>3. Support for Text Sizing and Zoom</h3>
         <p>Websites must support user-initiated text resizing. Users should be able to increase text size up to 200% without losing functionality or requiring horizontal scrolling.</p>
         <p>Testing approach: Zoom your website to 200% in browser DevTools. Verify:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">All content remains accessible and readable</li>
             <li style="margin-bottom: 0.75rem;">No horizontal scrolling required (unless intentional, like for tables)</li>
             <li style="margin-bottom: 0.75rem;">Buttons and interactive elements remain clickable</li>
@@ -67,7 +67,7 @@ $pageContent = <<<'HTML'
         
         <h3>Form Inputs</h3>
         <p>Form fields should have:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Clear labels with 7:1 contrast minimum</li>
             <li style="margin-bottom: 0.75rem;">Input borders with sufficient contrast (ideally dark borders on light backgrounds)</li>
             <li style="margin-bottom: 0.75rem;">Large enough touch targets (44x44px minimum)</li>
@@ -77,7 +77,7 @@ $pageContent = <<<'HTML'
 
         <h3>Buttons and Links</h3>
         <p>Interactive elements should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Have clear visual distinction from surrounding content</li>
             <li style="margin-bottom: 0.75rem;">Display obvious hover and focus states</li>
             <li style="margin-bottom: 0.75rem;">Use at least 44x44px size (or adequate spacing between smaller targets)</li>
@@ -86,7 +86,7 @@ $pageContent = <<<'HTML'
 
         <h3>Data Tables</h3>
         <p>Tables should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Use color AND pattern/style differentiation (not color alone)</li>
             <li style="margin-bottom: 0.75rem;">Have clear, distinct header cells</li>
             <li style="margin-bottom: 0.75rem;">Maintain readability at 200% zoom</li>
@@ -95,7 +95,7 @@ $pageContent = <<<'HTML'
 
         <h3>Images and Graphics</h3>
         <p>Images should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">Have sufficient contrast between elements</li>
             <li style="margin-bottom: 0.75rem;">Avoid relying on color alone for information (charts should use patterns too)</li>
             <li style="margin-bottom: 0.75rem;">Include descriptive alt text</li>
@@ -119,7 +119,7 @@ $pageContent = <<<'HTML'
         
         <h3>Contrast Testing</h3>
         <p>Use WebAIM Contrast Checker or similar tools to verify contrast ratios for:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Body text on background</li>
             <li style="margin-bottom: 0.75rem;">Form inputs and labels</li>
             <li style="margin-bottom: 0.75rem;">Links and buttons</li>
@@ -129,7 +129,7 @@ $pageContent = <<<'HTML'
 
         <h3>Zoom Testing</h3>
         <p>In browser DevTools, zoom to 200% and verify:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">All content remains visible (no horizontal scrolling)</li>
             <li style="margin-bottom: 0.75rem;">Buttons and form fields remain usable</li>
             <li style="margin-bottom: 0.75rem;">Content reflows into single column logically</li>
@@ -148,7 +148,7 @@ $pageContent = <<<'HTML'
 
     <section id="mistakes">
         <h2>Common Mistakes to Avoid</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Insufficient contrast:</strong> Text too close in color to background affects readability significantly.</li>
             <li style="margin-bottom: 0.75rem;"><strong>Small default text sizes:</strong> Starting with 12px or smaller requires users to zoom immediately.</li>
             <li style="margin-bottom: 0.75rem;"><strong>Preventing zoom:</strong> Never use `maximum-scale=1` or `user-scalable=no` in viewport meta tag.</li>
@@ -162,7 +162,7 @@ $pageContent = <<<'HTML'
     <section id="example">
         <h2>Real-World Example: News Website</h2>
         <p><strong>Accessible approach:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">16px+ body text with 1.8 line height</li>
             <li style="margin-bottom: 0.75rem;">7:1 contrast for article text</li>
             <li style="margin-bottom: 0.75rem;">Supports 200% zoom with readable layout</li>
@@ -171,7 +171,7 @@ $pageContent = <<<'HTML'
             <li style="margin-bottom: 0.75rem;">Links clearly distinguished from body text</li>
         </ul>
         <p><strong>Inaccessible approach:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">12px body text with 1.4 line height</li>
             <li style="margin-bottom: 0.75rem;">4:1 contrast barely meeting minimum</li>
             <li style="margin-bottom: 0.75rem;">Content breaks at 200% zoom requiring horizontal scrolling</li>
@@ -183,7 +183,7 @@ $pageContent = <<<'HTML'
 
     <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Low vision users benefit from sufficient color contrast (7:1 Level AAA recommended), readable typography, and support for text sizing.</li>
             <li>Color contrast is crucial; use WebAIM Contrast Checker to verify 7:1 minimum for text.</li>
             <li>Websites must support 200% zoom without losing functionality or readability.</li>
@@ -194,9 +194,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
             <li><a href="https://www.color-blindness.com/">Color Blindness Simulator</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
@@ -213,85 +213,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

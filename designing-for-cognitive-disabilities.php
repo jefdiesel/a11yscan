@@ -5,19 +5,17 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-22">October 22, 2025</time>
-        <h1>Designing for Cognitive Disabilities: Clear & Simple Navigation</h1>
-        <p class="lead">Cognitive disabilities affect approximately 15-20% of the global population and include intellectual disabilities, dyslexia, dyscalculia, ADHD, autism, dementia, and acquired brain injuries. Designing for cognitive accessibility means creating clear, simple, consistent interfaces that reduce cognitive load and support understanding for all users.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-22" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 22, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Designing for Cognitive Disabilities: Clear & Simple Navigation</h1>
+        
         <h2>Understanding Cognitive Disabilities</h2>
+        <p>Cognitive disabilities affect approximately 15-20% of the global population and include intellectual disabilities, dyslexia, dyscalculia, ADHD, autism, dementia, and acquired brain injuries. Designing for cognitive accessibility means creating clear, simple, consistent interfaces that reduce cognitive load and support understanding for all users.</p>
         <p>Cognitive disabilities encompass diverse conditions affecting mental processing, memory, attention, language comprehension, and information processing speed. Unlike physical disabilities with obvious accommodations, cognitive disabilities require design approaches addressing how people think and process information.</p>
         <p>Many cognitive disabilities are invisible. Users might not disclose them, making it easy for organizations to overlook cognitive accessibility needs. Additionally, cognitive accessibility benefits far beyond people with diagnosed disabilities. Stressed users, non-native language speakers, aging adults, and anyone in cognitively demanding situations benefit from clear, simple design.</p>
     </section>
 
-    <section>
+    <section id="core-principles">
         <h2>Core Cognitive Accessibility Principles</h2>
         
         <h3>1. Simplicity and Clarity</h3>
@@ -41,7 +39,7 @@ $pageContent = <<<'HTML'
 
         <h3>5. Reduced Cognitive Load</h3>
         <p>Cognitive load refers to mental effort required to process information. Designs should minimize cognitive load through:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Progressive disclosure:</strong> Show essential information first; advanced options hide by default</li>
             <li style="margin-bottom: 0.75rem;"><strong>Visual chunking:</strong> Group related items; use white space to separate sections</li>
             <li style="margin-bottom: 0.75rem;"><strong>Consistent patterns:</strong> Predictable interactions reduce mental effort</li>
@@ -66,12 +64,12 @@ $pageContent = <<<'HTML'
         <p>Content should follow logical reading order. Unusual content ordering confuses users and breaks comprehension.</p>
     </section>
 
-    <section>
+    <section id="components">
         <h2>Designing Specific Components for Cognitive Accessibility</h2>
         
         <h3>Forms</h3>
         <p>Forms should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Request only necessary information (minimize cognitive load)</li>
             <li style="margin-bottom: 0.75rem;">Have clear labels explaining what each field requires</li>
             <li style="margin-bottom: 0.75rem;">Provide helpful placeholder text or examples</li>
@@ -82,7 +80,7 @@ $pageContent = <<<'HTML'
 
         <h3>Navigation</h3>
         <p>Navigation should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Be consistent across all pages</li>
             <li style="margin-bottom: 0.75rem;">Use clear category labels</li>
             <li style="margin-bottom: 0.75rem;">Avoid excessive nesting (limit depth to 2-3 levels)</li>
@@ -92,7 +90,7 @@ $pageContent = <<<'HTML'
 
         <h3>Search Results</h3>
         <p>Search results should:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Clearly indicate number of results</li>
             <li style="margin-bottom: 0.75rem;">Use meaningful result titles and descriptions</li>
             <li style="margin-bottom: 0.75rem;">Group results logically</li>
@@ -102,20 +100,20 @@ $pageContent = <<<'HTML'
 
         <h3>Instructions and Guidance</h3>
         <p>When instructions are necessary:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">Use simple, step-by-step format</li>
             <li style="margin-bottom: 0.75rem;">Number steps clearly</li>
             <li style="margin-bottom: 0.75rem;">Use visual illustrations with text descriptions</li>
             <li style="margin-bottom: 0.75rem;">Keep steps short and actionable</li>
-            <li style="margin-bottom: 0.75rm;">Avoid optional information; move to footnotes</li>
+            <li style="margin-bottom: 0.75rem;">Avoid optional information; move to footnotes</li>
         </ul>
     </section>
 
-    <section>
+    <section id="language">
         <h2>Language and Readability</h2>
         
         <h3>Plain Language Principles</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Short sentences:</strong> Average 15-20 words per sentence</li>
             <li style="margin-bottom: 0.75rem;"><strong>Simple words:</strong> Use common words instead of jargon or complex synonyms</li>
             <li style="margin-bottom: 0.75rem;"><strong>Active voice:</strong> "You can update your profile" instead of "Your profile can be updated"</li>
@@ -133,7 +131,7 @@ $pageContent = <<<'HTML'
         <p>Explain specialized terms. If you must use jargon, define it immediately: "The viewport (the area where your page appears) has a width of..."</p>
     </section>
 
-    <section>
+    <section id="visual-design">
         <h2>Visual Design for Cognitive Accessibility</h2>
         
         <h3>Visual Hierarchy</h3>
@@ -149,7 +147,7 @@ $pageContent = <<<'HTML'
         <p>Supplement icons with text labels. Icons alone confuse users. "Trash icon" alone doesn't clearly mean "delete"; "Delete" with trash icon is clear.</p>
     </section>
 
-    <section>
+    <section id="testing">
         <h2>Testing Cognitive Accessibility</h2>
         
         <h3>Readability Assessment</h3>
@@ -165,9 +163,9 @@ $pageContent = <<<'HTML'
         <p>Can users complete core tasks? Do they understand error messages? Do they know what to do next?</p>
     </section>
 
-    <section>
+    <section id="mistakes">
         <h2>Common Mistakes to Avoid</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Complex language:</strong> Jargon and complex sentence structures confuse users</li>
             <li style="margin-bottom: 0.75rem;"><strong>Vague instructions:</strong> Users don't know what's expected</li>
             <li style="margin-bottom: 0.75rem;"><strong>Inconsistent navigation:</strong> Users get disoriented</li>
@@ -178,10 +176,10 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="example">
         <h2>Real-World Example: Banking Website</h2>
         <p><strong>Accessible approach:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Clear task descriptions ("Transfer money to savings account")</li>
             <li style="margin-bottom: 0.75rem;">Simple step-by-step process with numbered steps</li>
             <li style="margin-bottom: 0.75rem;">Plain language explanations of banking terms</li>
@@ -190,18 +188,18 @@ $pageContent = <<<'HTML'
             <li style="margin-bottom: 0.75rem;">Consistent navigation between accounts and transactions</li>
         </ul>
         <p><strong>Inaccessible approach:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li style="margin-bottom: 0.75rem;">Technical jargon in descriptions</li>
             <li style="margin-bottom: 0.75rem;">Complex multi-step workflows</li>
-            <li style="margin-bottom: 0.75rm;">Dense information displays</li>
+            <li style="margin-bottom: 0.75rem;">Dense information displays</li>
             <li style="margin-bottom: 0.75rem;">No confirmation step (difficult to correct errors)</li>
             <li style="margin-bottom: 0.75rem;">Cryptic error codes</li>
         </ul>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Cognitive disabilities affect 15-20% of the population; cognitive accessibility benefits everyone.</li>
             <li>Use simple language, short sentences, and plain vocabulary.</li>
             <li>Minimize cognitive load through clear structure and progressive disclosure.</li>
@@ -213,9 +211,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
             <li><a href="https://plainlanguage.gov/">Plain Language Guidelines (U.S. Government)</a></li>
             <li><a href="https://www.readabilityformulas.com/">Readability Formulas and Tools</a></li>
@@ -231,85 +229,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';
