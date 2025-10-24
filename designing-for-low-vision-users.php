@@ -5,12 +5,10 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-25">October 25, 2025</time>
-        <h1>Designing for Low Vision Users: Vision Accessibility</h1>
-    </header>
-
-    <section id="understanding-low-vision">
+    <section id="intro">
+        <time datetime="2025-10-25" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 25, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Designing for Low Vision Users: Vision Accessibility</h1>
+        
         <h2>Understanding Low Vision</h2>
         <p>Low vision encompasses numerous conditions affecting visual perception differently: age-related macular degeneration causes central vision loss, diabetic retinopathy affects peripheral vision, cataracts reduce contrast and clarity, and numerous other conditions create varied visual barriers.</p>
         <p>Low vision users often employ multiple strategies: enlarging text through browser zoom, using screen magnification software, adjusting display contrast, using high-contrast color schemes, and adjusting lighting. Websites should support these strategies, not hinder them.</p>
