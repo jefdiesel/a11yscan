@@ -220,12 +220,13 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         section h2 {
-            scroll-margin-top: 80px;
+            scroll-margin-top: 0;
         }
         
         .post-header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
         
         .post-header time {
@@ -240,6 +241,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 1.2;
+            margin-bottom: 2rem;
         }
         
         .blog-post section {
