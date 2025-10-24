@@ -40,6 +40,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             --accent-dark: #1e40af;
             --accent-light: #3b82f6;
             --border: #d1d5db;
+            --footer-text: #f0f2f7;
         }
         
         html {
@@ -294,7 +295,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         
         footer {
             background: var(--text-primary);
-            color: white;
+            color: var(--footer-text);
             padding: 2rem 1rem;
             margin-top: 3rem;
         }
@@ -312,14 +313,14 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-section h3 {
-            color: white;
+            color: var(--footer-text);
             font-size: 0.95rem;
             margin-bottom: 1rem;
             font-weight: 600;
         }
         
         .footer-section a {
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--footer-text);
             text-decoration: none;
         }
         
@@ -328,12 +329,22 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             text-decoration: underline;
         }
         
+        .footer-section a:focus {
+            outline: 3px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+        
+        .footer-section p {
+            color: var(--footer-text);
+            font-size: 0.95rem;
+        }
+        
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(240, 242, 247, 0.2);
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(240, 242, 247, 0.9);
         }
         
         @media (max-width: 768px) {
@@ -380,8 +391,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     <header role="banner">
         <div class="header-content">
             <a href="index.php" class="logo">
-                <img class="logo-svg" src="logo.svg" alt="A11yscan handshake logo"/>
-                <span>A11yscan</span>
+                <img class="logo-svg" src="logo.svg" alt="A11yscan home"/>
             </a>
             <nav role="navigation" aria-label="Main navigation">
                 <a href="index.php" <?php echo ($currentPage === 'index') ? 'class="active"' : ''; ?>>Home</a>
@@ -405,15 +415,15 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#pricing">Free WCAG Scan</a></li>
-                        <li><a href="#pricing">Partial Audit</a></li>
-                        <li><a href="#pricing">Full Audit</a></li>
+                        <li><a href="index.php#pricing">Free WCAG Scan</a></li>
+                        <li><a href="index.php#pricing">Partial Audit</a></li>
+                        <li><a href="index.php#pricing">Full Audit</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="accessibility-statement.php">Accessibility Statement</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
