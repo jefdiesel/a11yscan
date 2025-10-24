@@ -431,7 +431,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: #ffffff;
+            color: #ffffff !important;
             font-weight: 500;
         }
         
@@ -485,7 +485,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
     
     <header role="banner">
         <div class="header-content">
@@ -502,7 +502,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </header>
     
     <main id="main">
-        <div id="main-content">
+        <div id="main-content" tabindex="-1">
             <?php echo $pageContent; ?>
         </div>
     </main>
@@ -542,38 +542,43 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </footer>
 
     <script>
+        // Skip link focus management
+        const skipLink = document.querySelector('.skip-link');
+        const mainContent = document.getElementById('main-content');
+        
+        if (skipLink && mainContent) {
+            skipLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                mainContent.focus();
+                mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            
+            skipLink.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.code === 'Space') {
+                    e.preventDefault();
+                    mainContent.focus();
+                    mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        }
+        
         // Make sections tabbable and focusable
         const sections = document.querySelectorAll('.blog-post section[id]');
         sections.forEach(section => {
             section.setAttribute('tabindex', '0');
         });
         
-        // Skip link focus management
-        const skipLink = document.querySelector('.skip-link');
-        if (skipLink) {
-            skipLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                const mainContent = document.getElementById('main-content');
-                if (mainContent) {
-                    mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    mainContent.focus();
+        document.querySelectorAll('a[href^="#"]:not(.skip-link)').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
-        }
-        
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            if (!a.classList.contains('skip-link')) {
-                a.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href !== '#') {
-                        const target = document.querySelector(href);
-                        if (target) {
-                            e.preventDefault();
-                            target.scrollIntoView({ behavior: 'smooth' });
-                        }
-                    }
-                });
-            }
         });
     </script>
 </body>
