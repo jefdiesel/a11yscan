@@ -1,24 +1,24 @@
 <?php
-$pageTitle = 'You Sell Widgets, Not Websites. But Your Website Still Violates the ADA. | A11yscan';
-$pageDescription = 'You\'re a product company, not a web agency. Your website isn\'t your core business. But if it\'s inaccessible, you\'re liable for ADA violations—and the lawsuits prove it.';
+$pageTitle = 'You Sell Products, Not Websites. But Your Website Still Needs to Be Accessible. | A11yscan';
+$pageDescription = 'You\'re a product company, not a web agency. Your website isn\'t your core business. But if it\'s inaccessible, you may face legal challenges—here\'s what you need to know.';
 $currentPage = 'blog';
 $pageContent = <<<'HTML'
 <article class="blog-post">
     <section class="post-header">
         <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>You Sell Widgets, Not Websites. But Your Website Still Violates the ADA.</h1>
+        <h1>You Sell Products, Not Websites. But Your Website Still Needs to Be Accessible.</h1>
     </section>
 
     <section id="intro">
         <p>You run a business. You sell products or services. Your website exists to support that business. It's not your main product. It's a necessary tool.</p>
         <p>You probably think: "We're not a web development company. We shouldn't be responsible for complex accessibility requirements."</p>
-        <p>That's understandable. It's also not how the ADA works.</p>
-        <p>If your website is the gateway to your business—and it is, for millions of people—then your website has to be accessible. Whether you're a 5-person team selling fitness equipment or a 500-person team selling software, your liability is the same. And the lawsuits are expensive enough that you can't ignore it.</p>
+        <p>That's understandable. However, accessibility standards generally apply to websites that serve as public accommodations, regardless of whether web development is your core business.</p>
+        <p>If your website is the gateway to your business—and for many customers, it is—then your website's accessibility becomes an important consideration. Whether you're a small team selling fitness equipment or a larger organization selling software, understanding your website's accessibility is increasingly important.</p>
     </section>
 
     <section id="the-argument">
-        <h2>The Argument: "We're Not a Web Company"</h2>
-        <p>Here's what companies tell themselves:</p>
+        <h2>The Common Perspective: "We're Not a Web Company"</h2>
+        <p>Here's what many companies tell themselves:</p>
         <ul>
             <li>"We're a manufacturing company. Our website is incidental."</li>
             <li>"We're a restaurant group. Our site just shows hours and menus."</li>
@@ -26,14 +26,14 @@ $pageContent = <<<'HTML'
             <li>"We're a small business. The accessibility regulations don't apply to us."</li>
             <li>"Our website is just a landing page. It's not core to our business."</li>
         </ul>
-        <p>Every single one of these has lost in court.</p>
-        <p>The ADA doesn't care what your core business is. It cares whether your website is accessible. If it's not, you're liable.</p>
+        <p>These perspectives are common, but they may not align with current legal and business expectations around website accessibility.</p>
     </section>
 
     <section id="why-this-matters">
         <h2>Why This Matters: What Customers Actually Do</h2>
-        <p>Your website isn't incidental. It's essential.</p>
-        <p><strong>Think about your customer journey:</strong></p>
+        <p>Your website isn't incidental. It's often essential to how customers interact with your business.</p>
+        
+        <h3>Think about your customer journey:</h3>
         <ul>
             <li>Customer searches for your product</li>
             <li>Customer lands on your website</li>
@@ -41,136 +41,140 @@ $pageContent = <<<'HTML'
             <li>Customer tries to complete a purchase (or get information, or schedule a service)</li>
             <li>Customer either completes the transaction or leaves</li>
         </ul>
-        <p>Your website is not incidental. It's the primary interaction point between you and your customers.</p>
-        <p>Now consider a blind customer using a screen reader:</p>
+        <p>Your website is not incidental. It's often the primary interaction point between you and your customers.</p>
+        
+        <h3>Now consider a customer using a screen reader:</h3>
         <ul>
             <li>Screen reader user searches for your product</li>
             <li>Screen reader user lands on your website</li>
-            <li>Screen reader cannot navigate your site (broken semantic HTML, missing labels, no skip links)</li>
+            <li>Screen reader cannot effectively navigate your site (broken semantic HTML, missing labels, no skip links)</li>
             <li>Screen reader user cannot find products (images have no alt text)</li>
             <li>Screen reader user cannot complete checkout (form fields are unlabeled)</li>
-            <li>Screen reader user cannot buy from you and instead buys from a competitor</li>
+            <li>Screen reader user cannot buy from you and may go to a competitor</li>
         </ul>
-        <p>Not only did you lose a customer—you created an accessibility barrier that's illegal under the ADA.</p>
-        <p><strong>Now consider a motor disability customer:</strong></p>
+        <p>Not only did you lose a potential customer—you also created an accessibility barrier.</p>
+        
+        <h3>Consider a customer with motor disabilities:</h3>
         <ul>
             <li>Motor disability user tries to navigate your site with keyboard only (can't use a mouse)</li>
             <li>Your site requires precise mouse clicks</li>
-            <li>User can't complete checkout</li>
-            <li>User sues</li>
-            <li>You lose and pay $15,000-$50,000 in settlement + legal fees</li>
+            <li>User can't complete their task</li>
+            <li>User becomes frustrated and may leave</li>
         </ul>
-        <p>Your website went from "incidental" to "expensive liability."</p>
+        <p>Your website went from "incidental" to "barrier to business."</p>
     </section>
 
     <section id="legal-standard">
-        <h2>The Legal Standard: Your Website Must Be Accessible, Period</h2>
-        <p>The ADA doesn't have a "small business exception" for websites. It doesn't have a "not our core business" exception. It doesn't have an "we tried our best" exception.</p>
-        <p>The standard is simple: If you have a website that serves your business, it must be accessible to people with disabilities. This applies regardless of your business model, size, or industry.</p>
-        <p><strong>Size doesn't matter:</strong> The largest companies and smallest startups have the same obligation.</p>
-        <p><strong>Industry doesn't matter:</strong> A manufacturing company's website must be as accessible as a web development agency's website.</p>
-        <p><strong>Revenue doesn't matter:</strong> A nonprofit with $100K in annual revenue has the same legal obligation as a corporation with $100M.</p>
-        <p><strong>Complexity doesn't matter:</strong> A simple landing page must be as accessible as a complex SaaS application.</p>
-        <p>The law is equal-opportunity. Your liability is real.</p>
+        <h2>The Accessibility Landscape: What Organizations Face</h2>
+        <p>Website accessibility has become an increasingly important consideration for businesses of all sizes and industries.</p>
+        <p><strong>General accessibility expectations:</strong> Websites that serve as public accommodations are generally expected to be accessible to people with disabilities. This expectation applies broadly across industries and business types.</p>
+        <p><strong>Size considerations:</strong> While some may assume small businesses have different requirements, accessibility expectations often apply regardless of organization size.</p>
+        <p><strong>Industry considerations:</strong> A manufacturing company's website faces similar accessibility expectations as a web development agency's website.</p>
+        <p><strong>Revenue considerations:</strong> Both nonprofits and for-profit corporations typically face the same basic accessibility expectations.</p>
+        <p><strong>Complexity considerations:</strong> A simple landing page and a complex SaaS application both need to meet accessibility standards.</p>
+        <p>The landscape is evolving, and organizations across sectors are increasingly prioritizing website accessibility.</p>
     </section>
 
-    <section id="real-cases-widget-sellers">
-        <h2>Real Cases: Non-Web Companies That Got Sued (And Lost)</h2>
-        <p><strong>Case 1: Fitness Equipment Retailer</strong></p>
-        <p>A company sold home fitness equipment. Their website was their only sales channel (no physical stores). A blind customer tried to browse their equipment on the website and couldn't because product images had no alt text. The customer sued under Title III of the ADA.</p>
-        <p>The company argued: "We're an equipment manufacturer, not a website company. Website accessibility isn't our responsibility."</p>
-        <p>Court response: "Your website is your primary sales channel. It must be accessible."</p>
-        <p>Settlement: $35,000</p>
-        <p><strong>Case 2: Restaurant Group</strong></p>
-        <p>A restaurant group's website displayed menus, hours, and allowed reservations. A deaf customer visited the website and found a video menu with no captions. The customer sued.</p>
-        <p>The restaurant argued: "Our core business is food and service. The website is just a marketing tool."</p>
-        <p>Court response: "The website is part of your public accommodation. It must be accessible."</p>
-        <p>Settlement: $22,000</p>
-        <p><strong>Case 3: Nonprofit Organization</strong></p>
-        <p>A nonprofit's website was inaccessible to screen reader users. A nonprofit employee (with a disability) tried to access the site to register for an event and couldn't.</p>
-        <p>The nonprofit argued: "We're a nonprofit with limited resources. We can't afford extensive accessibility work."</p>
-        <p>Court response: "Resources don't matter. Accessibility is a legal requirement."</p>
-        <p>Settlement: $18,000 (plus required remediation, which cost another $12,000)</p>
-        <p><strong>Case 4: Insurance Broker</strong></p>
-        <p>An insurance broker's website required customers to upload documents to get quotes. A customer with a motor disability couldn't use the upload interface (it required precise mouse clicks). The customer sued.</p>
-        <p>Broker argued: "We're an insurance company, not a tech company. We're not responsible for UI accessibility."</p>
-        <p>Court response: "Your website is your customer interface. If it's not accessible, it's not compliant."</p>
-        <p>Settlement: $28,000</p>
+    <section id="real-world-patterns">
+        <h2>Common Accessibility Challenges Across Industries</h2>
+        <p>Organizations across many sectors have faced accessibility challenges related to their websites. While specific details vary, some common patterns have emerged:</p>
+        
+        <h3>E-commerce and Retail</h3>
+        <p>Online retailers have faced challenges when customers with disabilities couldn't effectively browse products or complete purchases. Issues have included inaccessible product images, unlabeled form fields, and checkout processes that don't work with assistive technology.</p>
+        
+        <h3>Food Service</h3>
+        <p>Restaurant and food service websites have encountered issues when customers couldn't access menus, make reservations, or order online using assistive technology. Problems have included video content without captions and inaccessible online ordering systems.</p>
+        
+        <h3>Nonprofit Organizations</h3>
+        <p>Nonprofits have learned that limited resources don't exempt them from accessibility considerations. Challenges have included inaccessible event registration and donation systems.</p>
+        
+        <h3>Service Businesses</h3>
+        <p>Service providers have faced accessibility challenges related to customer intake forms, document upload interfaces, and appointment scheduling systems that don't work with assistive technology.</p>
+        
+        <p>These patterns illustrate that accessibility is a cross-industry concern, not limited to technology companies.</p>
     </section>
 
-    <section id="what-gets-sued">
-        <h2>What Actually Gets Sued (It's Worse Than You Think)</h2>
-        <p>Companies think lawsuits happen for complex issues. They don't.</p>
-        <p><strong>Lawsuits happen for basic accessibility failures:</strong></p>
+    <section id="what-gets-challenged">
+        <h2>Common Accessibility Issues</h2>
+        <p>Accessibility challenges often arise from basic, fixable issues:</p>
         <ul>
-            <li><strong>Missing alt text on images:</strong> Most common cause of accessibility lawsuits. Blind users can't see what you're selling. They sue.</li>
-            <li><strong>Unlabeled form fields:</strong> Screen reader users can't tell what information a form is asking for. They can't complete checkout. They sue.</li>
-            <li><strong>No keyboard navigation:</strong> Motor disability users can't tab through your site. They can't access your content. They sue.</li>
-            <li><strong>Poor color contrast:</strong> Low vision users can't read your text. They sue.</li>
-            <li><strong>Autoplay video with no captions:</strong> Deaf users see a video and can't understand it. They sue.</li>
-            <li><strong>Non-responsive layout:</strong> Users on mobile can't navigate or interact. They sue.</li>
-            <li><strong>Broken skip links or navigation:</strong> Users can't bypass repetitive content. They sue.</li>
+            <li><strong>Missing alt text on images:</strong> A frequently cited accessibility issue. Customers using screen readers can't see what you're selling.</li>
+            <li><strong>Unlabeled form fields:</strong> Screen reader users can't tell what information a form is asking for, making checkout difficult or impossible.</li>
+            <li><strong>No keyboard navigation:</strong> Users with motor disabilities who can't use a mouse cannot access your content.</li>
+            <li><strong>Poor color contrast:</strong> Low vision users struggle to read your text.</li>
+            <li><strong>Video without captions:</strong> Deaf users see a video but can't understand it.</li>
+            <li><strong>Non-responsive layout:</strong> Users on mobile devices can't navigate or interact effectively.</li>
+            <li><strong>Broken skip links or navigation:</strong> Users can't efficiently navigate your content.</li>
         </ul>
-        <p>None of these are complex. None of them require expensive engineering. All of them are fixable. And all of them are legally required.</p>
-        <p>If you haven't fixed them, you're vulnerable to litigation.</p>
+        <p>None of these are highly complex. None require expensive engineering. All of them are fixable. And all of them represent barriers to users with disabilities.</p>
+        <p>If you haven't addressed these issues, your website may present accessibility challenges to potential customers.</p>
     </section>
 
     <section id="the-cost-calculus">
-        <h2>The Cost Calculus: Prevention vs. Litigation</h2>
-        <p><strong>Cost to prevent (audit + remediation + ongoing maintenance):</strong></p>
+        <h2>The Cost Consideration: Prevention vs. Remediation</h2>
+        
+        <h3>Proactive accessibility investment:</h3>
         <ul>
             <li>Initial accessibility audit: $2,000-$10,000</li>
             <li>Remediation (fix violations): $5,000-$30,000</li>
             <li>Annual audits + maintenance: $2,000-$5,000/year</li>
-            <li><strong>5-year cost: $15,000-$60,000</strong></li>
+            <li><strong>5-year cost estimate: $15,000-$60,000</strong></li>
         </ul>
-        <p><strong>Cost of litigation (when you get sued):</strong></p>
+        
+        <h3>Reactive approach costs:</h3>
         <ul>
-            <li>Settlement (single lawsuit): $10,000-$50,000</li>
-            <li>Legal defense: $15,000-$80,000</li>
-            <li>Remediation (after lawsuit forces it): $5,000-$30,000</li>
-            <li>Repeat lawsuits (because you didn't fix it the first time): $10,000-$50,000 × 3-5 more suits</li>
-            <li><strong>Total: $50,000-$390,000+</strong></li>
+            <li>Legal challenges can be expensive</li>
+            <li>Remediation after a legal challenge often costs more than proactive fixes</li>
+            <li>Reputation damage</li>
+            <li>Lost customers during remediation</li>
+            <li>Potential repeat challenges if issues aren't properly addressed</li>
+            <li><strong>Total reactive costs can be significantly higher</strong></li>
         </ul>
-        <p>Prevention is 3-10x cheaper than litigation.</p>
-        <p>And it actually makes your website better. Accessible websites convert better. They rank better in search. They're easier to maintain. Everyone wins.</p>
+        <p>Proactive accessibility investment is generally more cost-effective than reactive responses.</p>
+        <p>Additionally, accessible websites often provide business benefits: they convert better, rank better in search engines, and are easier to maintain. Accessibility improvements benefit all users, not just those with disabilities.</p>
     </section>
 
     <section id="your-responsibility">
-        <h2>Your Actual Responsibility (Whether You Like It or Not)</h2>
-        <p>You're responsible for:</p>
+        <h2>What Organizations Typically Need to Address</h2>
+        <p>Organizations are generally responsible for:</p>
         <ul>
-            <li><strong>All content on your website:</strong> Text, images, video, documents. If it's not accessible, you're liable.</li>
-            <li><strong>All functionality:</strong> Forms, checkout, search, navigation. If it's not accessible, you're liable.</li>
-            <li><strong>Third-party integrations:</strong> Payment processors, chatbots, analytics. If they break accessibility, you're liable.</li>
-            <li><strong>Mobile accessibility:</strong> Your site must work on phones and tablets with assistive technology.</li>
-            <li><strong>Ongoing maintenance:</strong> After you fix violations, you must maintain compliance. Updates and new content must stay accessible.</li>
+            <li><strong>All content on their website:</strong> Text, images, video, documents. If it's not accessible, it may create barriers.</li>
+            <li><strong>All functionality:</strong> Forms, checkout, search, navigation. If it's not accessible, users with disabilities may be excluded.</li>
+            <li><strong>Third-party integrations:</strong> Payment processors, chatbots, analytics. If they create accessibility barriers, the host website may be responsible.</li>
+            <li><strong>Mobile accessibility:</strong> Sites should work on phones and tablets with assistive technology.</li>
+            <li><strong>Ongoing maintenance:</strong> After addressing accessibility issues, organizations should maintain compliance. Updates and new content should remain accessible.</li>
         </ul>
-        <p>You can outsource the work (hire an agency, consultant, or freelancer), but you cannot outsource the responsibility. It's your legal obligation.</p>
+        <p>You can work with agencies, consultants, or freelancers to address accessibility (many organizations do), but the responsibility for maintaining an accessible website typically remains with the website owner.</p>
     </section>
 
     <section id="what-to-do">
-        <h2>What You Should Do (Starting Today)</h2>
-        <p><strong>1. Stop thinking "our website is incidental"</strong></p>
-        <p>It's not. It's essential to your business. Treat it that way.</p>
-        <p><strong>2. Get an accessibility audit</strong></p>
-        <p>Find out what's broken. You can't fix what you don't measure. A comprehensive audit will show you exactly what violations exist, where they are, and how much effort it takes to fix them.</p>
-        <p><strong>3. Create a remediation plan</strong></p>
-        <p>Prioritize high-impact issues (missing alt text, unlabeled forms, broken keyboard navigation). Fix them systematically. Document your progress.</p>
-        <p><strong>4. Train your team</strong></p>
-        <p>Accessibility isn't just a technical problem. It's a cultural one. Your team needs to understand why it matters and how to implement it. Before publishing new content or features, verify accessibility.</p>
-        <p><strong>5. Maintain compliance</strong></p>
-        <p>After you fix violations, stay fixed. Test regularly. After platform updates, after design changes, after new features—verify accessibility.</p>
-        <p><strong>6. Document everything</strong></p>
-        <p>Keep records of your accessibility efforts. If you get sued, documentation of good-faith efforts can reduce damages.</p>
+        <h2>Recommended Actions</h2>
+        
+        <h3>1. Recognize your website's importance</h3>
+        <p>Your website may be more central to your business than you realize. Many customers interact with your business primarily through your website.</p>
+        
+        <h3>2. Get an accessibility audit</h3>
+        <p>Find out what accessibility issues exist. You can't fix what you don't measure. A comprehensive audit will show you exactly what barriers exist, where they are, and how much effort it takes to address them.</p>
+        
+        <h3>3. Create a remediation plan</h3>
+        <p>Prioritize high-impact issues (missing alt text, unlabeled forms, broken keyboard navigation). Address them systematically. Document your progress.</p>
+        
+        <h3>4. Train your team</h3>
+        <p>Accessibility isn't just a technical issue—it's a process issue. Your team needs to understand why it matters and how to implement it. Before publishing new content or features, check for accessibility.</p>
+        
+        <h3>5. Maintain compliance</h3>
+        <p>After you address accessibility issues, stay vigilant. Test regularly. After platform updates, design changes, or new features—verify accessibility.</p>
+        
+        <h3>6. Document everything</h3>
+        <p>Keep records of your accessibility efforts. Documentation of good-faith accessibility work can be valuable.</p>
     </section>
 
-    <section id="the-real-truth">
-        <h2>The Real Truth</h2>
-        <p>You're not a web company. Fine. But your website is part of your business. And your business is covered by the ADA. If your website isn't accessible, you're breaking the law. It doesn't matter if web development isn't your core competency.</p>
-        <p>Think of it like this: You're a restaurant. You're not a locksmith. But your front door still needs a lock. You don't get to argue "we're not a locksmith company, so we don't need locks." You're required to have them anyway.</p>
-        <p>Same with accessibility. You're not a web company? Fine. Your website still needs to be accessible. That's the law.</p>
-        <p>The only question is whether you fix it proactively (cheap) or wait until you get sued (expensive).</p>
+    <section id="the-perspective-shift">
+        <h2>The Perspective Shift</h2>
+        <p>You're not a web company. That's true. But your website is part of how you do business. And accessibility standards generally apply to websites that serve as public accommodations.</p>
+        <p>Think of it like this: You're a restaurant. You're not a construction company. But your building still needs to meet building codes. You're not an architect, but you still need accessible entrances, restrooms, and pathways. You don't get to say "we're not a construction company, so we don't need to follow building codes."</p>
+        <p>Similarly with web accessibility: You're not a web company. But your website still needs to be accessible. That's increasingly the expectation.</p>
+        <p>The question is whether you address it proactively (more manageable and cost-effective) or wait until you face a challenge (typically more expensive and disruptive).</p>
     </section>
 
     <section id="resources">
@@ -178,19 +182,28 @@ $pageContent = <<<'HTML'
         <ul>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act (ADA.gov)</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
-            <li><a href="https://www.justice.gov/crt/title-iii">DOJ Civil Rights Division - Title III</a></li>
+            <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
             <li><a href="https://webaim.org/">WebAIM</a></li>
         </ul>
     </section>
-</article>
 
-<section style="margin-top: 3rem;">
-    <div class="highlight">
-        <h2 style="margin-top: 0;">Your Website Is Part of Your Business. Is It Actually Accessible?</h2>
-        <p>Get an audit. Find out what's broken. Get a clear remediation plan. Fix it before someone sues you.</p>
-        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Business Website Accessibility Audit & Liability Assessment')">Audit My Website</button>
-    </div>
-</section>
+    <!-- LEGAL DISCLAIMER (mandatory) -->
+    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
+    <!-- CUSTOMIZED CTA -->
+    <section style="margin-top: 3rem;">
+        <div class="highlight">
+            <h2 style="margin-top: 0;">Is Your Website Accessible?</h2>
+            <p>Get an audit. Find out what accessibility barriers exist. Get a clear remediation plan. Address issues proactively.</p>
+            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Business Website Accessibility Audit')">Audit My Website</button>
+        </div>
+    </section>
+</article>
 HTML;
 include 'template.php';
 ?>

@@ -10,148 +10,113 @@ $pageContent = <<<'HTML'
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">2025 Accessibility Litigation Predictions: What to Expect</h1>
         
         <h2>Litigation Volume Forecast</h2>
-        <p>If current trends continue, 2025 will see 5,000 to 6,000 digital accessibility lawsuits filed—a 25-50% increase over 2024. This acceleration reflects multiple converging factors: increased litigation infrastructure, refined plaintiff strategies, growing legal precedent, and stronger economic incentives for plaintiff attorneys.</p>
-        <p>The trajectory suggests that by 2027, annual accessibility litigation could reach 8,000-10,000 cases. This growth rate rivals the early internet defamation litigation explosion. For organizations, this means accessibility is transitioning from a peripheral concern to a primary legal and business risk.</p>
-        <p>Most concerning for organizations: current remediation capacity cannot keep pace with litigation growth. Skilled accessibility consultants, developers, and testers are in short supply. Organizations seeking remediation in 2025 may face 6-12 month project delays and premium pricing for limited accessibility expertise.</p>
+        <p>Based on current trends, 2025 is expected to see increased digital accessibility litigation. If patterns continue, filing rates will remain substantial. This acceleration reflects multiple converging factors: established litigation infrastructure, refined plaintiff strategies, growing legal precedent, and strong economic incentives for plaintiff attorneys.</p>
+        <p>Legal experts indicate that accessibility litigation will likely continue growing year-over-year. Organizations should plan for accessibility as an ongoing business priority rather than a one-time compliance project.</p>
+        <p>Most concerning for organizations: current remediation capacity cannot keep pace with litigation growth. Skilled accessibility consultants, developers, and testers remain in short supply. Organizations seeking remediation in 2025 may face significant project delays and premium pricing for limited accessibility expertise.</p>
     </section>
 
     <section id="emerging-frontiers">
         <h2>Emerging Litigation Frontiers</h2>
         
         <h3>Artificial Intelligence and Generative Content</h3>
-        <p>AI-generated content and AI-powered interfaces represent an emerging litigation frontier. Questions about accessibility for AI chatbots, AI-generated images without alt text, and AI interfaces with accessibility barriers will likely trigger litigation. Organizations haven't established accessibility standards for AI features, creating numerous potential violations.</p>
-        <p>Prediction: Expect the first major lawsuit against a company for inaccessible AI chatbot implementation by mid-2025. This case will establish whether AI-generated content must meet standard accessibility requirements or warrants exceptions.</p>
+        <p>AI-generated content and AI-powered interfaces represent an emerging litigation frontier. Questions about accessibility for AI chatbots, AI-generated images without alt text, and AI interfaces with accessibility barriers will likely trigger litigation. Organizations haven't established accessibility standards for AI features, creating numerous potential compliance gaps.</p>
+        <p>Industry experts anticipate that accessibility requirements for AI-powered features will emerge as a significant litigation area. Organizations should proactively address AI accessibility.</p>
 
         <h3>Voice Interfaces and Smart Speakers</h3>
-        <p>As voice interfaces proliferate, lawsuits will likely challenge voice-only interfaces that exclude blind users and users with speech disabilities. Questions about whether voice interface vendors have accessibility responsibilities will emerge. Smart home integrations and voice-activated commerce create new accessibility barriers.</p>
+        <p>As voice interfaces proliferate, accessibility questions will emerge regarding voice-only interfaces and voice-activated commerce. Voice interface accessibility represents a developing area of legal attention.</p>
 
         <h3>Mobile App Accessibility</h3>
-        <p>While websites have faced substantial litigation, mobile apps remain less aggressively targeted. However, as legal precedent clarifies that apps must meet accessibility standards, litigation will increase. App-specific barriers like inaccessible gestures and notifications will likely trigger class action suits.</p>
+        <p>While websites have faced substantial litigation, mobile apps remain a developing area of legal focus. Legal precedent clarifying that apps must meet accessibility standards will likely drive increased mobile app litigation. Organizations with mobile applications should prioritize accessibility compliance.</p>
 
         <h3>Third-Party Tool Liability</h3>
-        <p>Websites increasingly rely on third-party tools (analytics, advertising networks, chat widgets). Litigation will likely target tool vendors directly, asking whether vendors creating accessibility barriers are liable. This could shift accountability from website owners to tool developers.</p>
+        <p>Websites increasingly rely on third-party tools (analytics, advertising networks, chat widgets). Litigation will likely address responsibility for accessibility barriers created by third-party tools. This evolving area could shift accountability from website owners to tool developers.</p>
 
         <h3>Accessibility Overlays and Automated Solutions</h3>
-        <p>Multiple lawsuits already challenge accessibility overlays that claim to automatically remediate accessibility problems. 2025 will see aggressive litigation against overlay companies and websites using overlays, establishing that overlays cannot substitute for genuine accessibility remediation.</p>
+        <p>Multiple lawsuits have already challenged accessibility overlay solutions. 2025 will likely see continued litigation questioning the efficacy of overlay-based compliance approaches. Organizations using overlays should understand this emerging legal challenge.</p>
     </section>
 
     <section id="geographic-expansion">
         <h2>Geographic Expansion and New Hotspots</h2>
         
-        <h3>Texas: Emerging Hotspot</h3>
-        <p>Texas is emerging as a new accessibility litigation center. Population size, vibrant tech and e-commerce sectors, and recent court rulings establishing ADA applicability create conditions for increased litigation. Prediction: Texas will rank in the top 5 states for accessibility litigation by 2026.</p>
-
-        <h3>Georgia and North Carolina: Secondary Growth</h3>
-        <p>The southeast generally will see increased litigation as plaintiff advocacy organizations expand operations beyond traditional hotspots. Regional tech hubs in Atlanta, Charlotte, and Research Triangle Park attract litigation attention.</p>
+        <h3>Multi-State Litigation Strategies</h3>
+        <p>Plaintiff attorneys are increasingly pursuing coordinated multi-state litigation strategies. Rather than scattered individual cases, expect organized campaigns targeting specific industries or company types across multiple jurisdictions simultaneously.</p>
 
         <h3>International Expansion</h3>
-        <p>The European Accessibility Act takes full effect in 2025 for large organizations, creating European litigation risk. UK Digital Accessibility Regulations, Canada's Accessible Canada Act, and similar international requirements will likely trigger the first major international accessibility lawsuits.</p>
+        <p>The European Accessibility Act, UK Digital Accessibility Regulations, Canada's Accessible Canada Act, and similar international requirements create international litigation risk. Organizations with international presence should understand varying global accessibility requirements.</p>
 
-        <h3>California Saturation</h3>
-        <p>As California litigation becomes saturated and settlement outcomes mature, plaintiff attorneys will increasingly file in other jurisdictions. This geographically disperses risk and makes industry-wide trends harder for organizations to track.</p>
+        <h3>State-Specific Vulnerabilities</h3>
+        <p>Different states have different accessibility laws and judicial interpretations. Organizations should understand jurisdiction-specific exposure based on where customers are located and where they operate.</p>
     </section>
 
     <section id="industry-vulnerabilities">
         <h2>Industry-Specific Vulnerabilities</h2>
         
-        <h3>Social Media Platforms: New Frontier</h3>
-        <p>Social media platforms have largely escaped accessibility litigation. This gap will likely close in 2025. Core platform accessibility (timeline, messaging, content creation) and creator tools (video editing, filter effects) present numerous accessibility barriers. Prediction: Expect class action suits against major social media platforms by Q2 2025.</p>
+        <h3>Social Media Platforms: Potential Litigation Target</h3>
+        <p>Social media platforms have received less accessibility litigation attention than other industries. Core platform accessibility (timeline, messaging, content creation) and creator tools present accessibility questions. Industry experts anticipate this area will receive increased litigation attention.</p>
 
         <h3>Job Boards and Hiring Platforms</h3>
-        <p>As organizations recognize that inaccessible hiring platforms exclude disabled workers from employment opportunities, litigation will likely target recruiting sites and applicant tracking systems. This area represents a significant blind spot in current accessibility efforts.</p>
+        <p>Inaccessible hiring platforms exclude disabled workers from employment opportunities. As organizations recognize this issue, litigation targeting recruiting sites and applicant tracking systems will likely increase.</p>
 
         <h3>Online Education Platforms</h3>
-        <p>E-learning platforms proliferated during COVID-19, but many retain significant accessibility gaps. As regulatory attention increases, expect enforcement against educational technology companies. Universities will face state attorney general actions regarding learning management systems.</p>
+        <p>E-learning platforms have retained significant accessibility gaps. As regulatory attention increases, expect continued enforcement against educational technology companies and universities regarding learning management system accessibility.</p>
 
-        <h3>Cryptocurrency and Fintech: Underexplored Territory</h3>
-        <p>Cryptocurrency exchanges, fintech applications, and blockchain platforms have largely escaped accessibility oversight. These platforms' complex interfaces and technical nature create numerous accessibility barriers. Early litigation will establish standards for emerging financial technologies.</p>
+        <h3>Cryptocurrency and Fintech</h3>
+        <p>Cryptocurrency exchanges and fintech applications have received limited accessibility oversight. These platforms' complex interfaces present accessibility barriers that will likely trigger litigation and regulatory attention.</p>
 
         <h3>Government Services: Accelerating Enforcement</h3>
-        <p>Federal and state governments will intensify enforcement against inaccessible government websites and services. The Department of Justice will likely bring multiple enforcement actions. Predictions: Expect federal actions against at least one federal agency website for accessibility non-compliance.</p>
+        <p>Federal and state governments will likely continue enforcement against inaccessible government websites and services. The Department of Justice will likely continue monitoring government accessibility.</p>
     </section>
 
     <section id="legal-theories">
         <h2>Evolving Legal Theories and Arguments</h2>
         
-        <h3>Disability Discrimination Combined with Other Discrimination</h3>
-        <p>Intersection litigation combining accessibility claims with racial, gender, or other discrimination will likely emerge. For example, lawsuits might argue that inaccessible website filters make it impossible for disabled people of color to find relevant products, combining disability discrimination with racial discrimination. These combined theories could result in enhanced damages.</p>
+        <h3>Enhanced Damages for Willful Non-Compliance</h3>
+        <p>Courts are increasingly willing to enhance damages against defendants who demonstrated knowledge of accessibility requirements but failed to comply. This distinction between negligent and willful non-compliance will likely drive higher damages, incentivizing proactive remediation.</p>
 
-        <h3>Environmental Justice and Accessibility</h3>
-        <p>Disability advocates will likely connect accessibility to broader social justice frameworks. Environmental justice litigation could extend to digital environmental access, creating novel legal theories.</p>
+        <h3>Class Certification and Aggregate Liability</h3>
+        <p>Expect continued development of class action standards in accessibility litigation. Broader class action certifications could expose organizations to aggregate liability spanning numerous claimants.</p>
 
-        <h3>Damages Enhancement for Willful Non-Compliance</h3>
-        <p>Courts are increasingly willing to enhance damages against defendants who demonstrated knowledge of accessibility requirements but failed to comply. The distinction between negligent and willful non-compliance will likely trigger higher damages, incentivizing early remediation.</p>
-
-        <h3>Class Certification in Mass Litigation</h3>
-        <p>Expect broader class action certifications in 2025, exposing organizations to class-wide liability rather than individual plaintiff claims. Massive classes could create liability spanning millions of potential claimants.</p>
+        <h3>Intersection Litigation</h3>
+        <p>Disability advocates will increasingly connect accessibility to broader social justice frameworks. Combined discrimination theories could emerge, potentially creating enhanced legal exposure.</p>
     </section>
 
     <section id="plaintiff-strategy">
         <h2>Plaintiff Strategy Evolution</h2>
         
-        <h3>Nationwide Coordinated Campaigns</h3>
-        <p>Plaintiff advocacy organizations will increasingly coordinate multistate campaigns targeting specific industries or company types. Rather than scattered individual cases, expect coordinated strikes against entire industry segments simultaneously.</p>
+        <h3>Coordinated Campaign Strategies</h3>
+        <p>Plaintiff advocacy organizations are increasingly coordinating organized campaigns targeting specific industries or company types simultaneously across multiple jurisdictions.</p>
 
         <h3>Public Company Targeting</h3>
         <p>Litigation will increasingly focus on publicly traded companies because public company accessibility liability affects shareholder value and attracts media attention. Expect accessibility to become a shareholder activism issue.</p>
 
-        <h3>Bundled Claims and Settlement Pressure</h3>
-        <p>Sophisticated plaintiffs will bundle accessibility claims with other legal theories (consumer protection, unfair competition), creating maximum settlement pressure. Defending against bundled claims increases litigation costs, incentivizing settlement.</p>
-
-        <h3>Increased International Plaintiff Coordination</h3>
-        <p>International disability organizations will increasingly coordinate with U.S. plaintiffs, creating global litigation pressure on multinational companies.</p>
+        <h3>Enhanced Settlement Strategies</h3>
+        <p>Sophisticated plaintiffs will bundle accessibility claims with other legal theories, creating maximum settlement pressure. Defending against bundled claims increases litigation costs, incentivizing settlement.</p>
     </section>
 
     <section id="legislative-developments">
         <h2>Likely Legislative Developments</h2>
         
-        <h3>Potential ADA Amendments</h3>
-        <p>Congress may propose ADA amendments explicitly addressing digital accessibility. Any formal ADA amendment would clarify requirements and potentially establish stronger safe harbors or compliance frameworks, depending on which direction amendments take.</p>
-
         <h3>State-Level Legislation</h3>
-        <p>Additional states will likely enact digital accessibility statutes. Expected: At least 5-10 states will pass accessibility legislation in 2025, establishing varying requirements and compliance standards.</p>
+        <p>Additional states will likely address digital accessibility through legislation. Expected: continued state-level legislative activity regarding web and digital accessibility requirements.</p>
 
-        <h3>Section 508 Updates</h3>
-        <p>Federal agencies will likely propose updates to Section 508 standards, potentially incorporating newer WCAG recommendations or establishing heightened requirements for critical government services.</p>
+        <h3>Federal Regulatory Evolution</h3>
+        <p>Federal accessibility standards (particularly Section 508) may see updates addressing newer technologies and accessibility requirements. Federal agencies will likely continue monitoring digital accessibility compliance.</p>
 
-        <h3>Platform Accountability Legislation</h3>
-        <p>Legislation targeting social media platforms and large technology companies may emerge, potentially establishing accessibility requirements specific to platform features.</p>
-    </section>
-
-    <section id="defense-strategies">
-        <h2>Defense Strategies and Emerging Arguments</h2>
-        
-        <h3>Technical Feasibility Defense Evolution</h3>
-        <p>Defendants will increasingly argue that certain accessibility features are technically infeasible or create unjustified disproportionality. Courts will likely reject most feasibility arguments, but this legal theory will be refined through litigation.</p>
-
-        <h3>Third-Party Responsibility Arguments</h3>
-        <p>Websites will attempt to shift accessibility responsibility to tool vendors and contractors. Courts will likely reject complete abdication of responsibility but may establish partial liability allocation frameworks.</p>
-
-        <h3>Compliance Investment Safe Harbor</h3>
-        <p>Defendants demonstrating genuine, sustained accessibility investment will potentially face reduced damages. This incentivizes proactive accessibility spending.</p>
+        <h3>Platform Accountability Considerations</h3>
+        <p>Legislation addressing platform accountability and social media regulation may include accessibility components.</p>
     </section>
 
     <section id="settlement-trends">
-        <h2>Settlement Trends for 2025</h2>
+        <h2>Settlement Trends and Litigation Economics</h2>
         
-        <h3>Settlement Amounts</h3>
-        <p>Expected settlement ranges:</p>
-        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
-            <li style="margin-bottom: 0.75rem;"><strong>Individual claims:</strong> $75,000 - $200,000 per plaintiff</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Multi-plaintiff cases:</strong> $500,000 - $2 million aggregate</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Class actions:</strong> $2 million - $10 million (increasing)</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Government enforcement:</strong> Remediation requirements plus monitoring obligations</li>
-        </ul>
+        <h3>Settlement Pressure Dynamics</h3>
+        <p>Litigation economics continue to favor settlement. Defense costs for accessibility cases typically exceed settlement amounts, incentivizing negotiated resolutions.</p>
 
-        <h3>Settlement Terms</h3>
-        <p>2025 settlements will increasingly include:</p>
-        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
-            <li style="margin-bottom: 0.75rem;">Long-term monitoring (3-5 years minimum)</li>
-            <li style="margin-bottom: 0.75rem;">Ongoing compliance reporting to courts or oversight agencies</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility officer hiring requirements</li>
-            <li style="margin-bottom: 0.75rem;">Development team training mandates</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility requirements in vendor contracts</li>
-        </ul>
+        <h3>Long-Term Monitoring Requirements</h3>
+        <p>2025 settlements will increasingly include ongoing monitoring requirements, compliance reporting obligations, and accessibility officer hiring requirements. These ongoing commitments extend accessibility costs beyond initial settlement.</p>
+
+        <h3>Vendor and Contractor Accountability</h3>
+        <p>Settlements increasingly address third-party vendor accountability and accessibility requirements in vendor contracts.</p>
     </section>
 
     <section id="preparation">
@@ -170,14 +135,14 @@ $pageContent = <<<'HTML'
             <li style="margin-bottom: 0.75rem;">Complete remediation of highest-risk vulnerabilities</li>
             <li style="margin-bottom: 0.75rem;">Implement accessibility testing into development processes</li>
             <li style="margin-bottom: 0.75rem;">Train development and design teams on accessibility</li>
-            <li style="margin-bottom: 0.75rem;">Begin monitoring emerging legal theories</li>
+            <li style="margin-bottom: 0.75rem;">Monitor emerging legal theories and litigation patterns</li>
         </ul>
 
         <h3>Ongoing Commitments</h3>
         <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
-            <li style="margin-bottom: 0.75rem;">Maintain documentation of accessibility efforts for good faith defense</li>
+            <li style="margin-bottom: 0.75rem;">Maintain documentation of accessibility efforts</li>
             <li style="margin-bottom: 0.75rem;">Conduct quarterly accessibility audits</li>
-            <li style="margin-bottom: 0.75rem;">Update accessibility policies as legislation evolves</li>
+            <li style="margin-bottom: 0.75rem;">Update accessibility policies as standards evolve</li>
             <li style="margin-bottom: 0.75rem;">Establish procedures for accessibility feedback and remediation</li>
         </ul>
     </section>
@@ -185,13 +150,13 @@ $pageContent = <<<'HTML'
     <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li>Expect 5,000-6,000 accessibility lawsuits in 2025, a 25-50% increase over 2024.</li>
+            <li>Expect accessibility litigation to remain a significant business concern in 2025.</li>
             <li>Emerging litigation frontiers include AI interfaces, voice controls, mobile apps, and accessibility overlays.</li>
-            <li>Texas, Georgia, and North Carolina will likely become secondary litigation hotspots.</li>
+            <li>Multi-state coordinated litigation strategies are likely.</li>
             <li>Social media platforms, job boards, and fintech represent emerging industry vulnerabilities.</li>
-            <li>Class action litigation will likely expand, creating larger aggregate liability.</li>
+            <li>Class action litigation will likely continue evolving.</li>
             <li>International accessibility requirements create new geographic exposure.</li>
-            <li>Settlement amounts will likely increase, with enhanced damages for willful non-compliance.</li>
+            <li>Settlement amounts and enhanced damages for willful non-compliance will likely continue.</li>
             <li>Organizations must establish accessibility governance and demonstrate sustained commitment.</li>
         </ul>
     </section>
@@ -202,17 +167,25 @@ $pageContent = <<<'HTML'
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
             <li><a href="https://www.justice.gov/crt/americans-disabilities-act">Department of Justice - ADA</a></li>
-            <li><a href="https://www.ssbbartgroup.com/">SSBB Digital Accessibility Law Blog</a></li>
-            <li><a href="https://www.lflegal.com/">Lainey Feingold's Digital Accessibility Law</a></li>
+            <li><a href="https://webaim.org/">WebAIM Accessibility Resources</a></li>
         </ul>
     </section>
 </article>
 
+<!-- LEGAL DISCLAIMER (mandatory before CTA) -->
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This analysis represents informed predictions based on current litigation trends and industry developments. We operate under best practices based on WCAG Guidelines and ADA requirements, but legal standards vary by jurisdiction and continue to evolve. The predictions presented reflect expert assessment of likely trends but are not guarantees of future outcomes. For specific legal guidance regarding your organization's anticipated accessibility obligations or litigation exposure, consult with a qualified attorney specializing in accessibility law and your jurisdiction's specific requirements.</p>
+    </div>
+</section>
+
+<!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">
     <div class="highlight">
         <h2 style="margin-top: 0;">Prepare for 2025 Now</h2>
-        <p>Don't wait for litigation. Get a comprehensive accessibility audit and establish a remediation plan before 2025 litigation increases.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <p>Don't wait for increased litigation. Get a comprehensive accessibility audit and establish your remediation plan before 2025 litigation volume increases.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', '2025 Litigation Preparation Audit')">Prepare for 2025 Litigation</button>
     </div>
 </section>
 HTML;

@@ -40,7 +40,7 @@ $pageContent = <<<'HTML'
 
         <h3>E-Commerce: The Primary Target</h3>
         <p>E-commerce websites represent the largest source of accessibility lawsuits, accounting for approximately 40% of all digital accessibility claims. Retailers ranging from massive operations to small independent shops have faced litigation. The high transaction value of e-commerce, the complex nature of shopping functionality (product filters, shopping carts, checkout processes), and the broad customer base all contribute to higher litigation rates.</p>
-        <p>Notable settlements include major retailers and online marketplaces. Even small e-commerce platforms have faced multi-plaintiff suits resulting in substantial settlement costs.</p>
+        <p>Industry analysis indicates that retailers and online marketplaces have faced significant settlements. Even small e-commerce platforms have faced multi-plaintiff suits resulting in substantial settlement costs.</p>
 
         <h3>Financial Services: High-Stakes Exposure</h3>
         <p>Banks, insurance companies, and investment firms account for roughly 25% of accessibility litigation. The critical nature of financial services (people depend on these sites for essential financial management), the complexity of financial applications, and substantial transaction values make these targets attractive to plaintiff advocates.</p>
@@ -63,10 +63,8 @@ $pageContent = <<<'HTML'
         <h3>Typical Settlement Ranges</h3>
         <p>Settlement amounts vary dramatically based on case characteristics. Single-plaintiff settlements typically range from $50,000 to $150,000. Multi-plaintiff cases frequently result in per-plaintiff settlements ranging from $100,000 to $250,000. Class action settlements have produced substantially larger awards.</p>
 
-        <h3>Major 2024 Settlements</h3>
-        <p><strong>Domino's Pizza (2020, continuing impact through 2024):</strong> $3 million settlement established precedent for restaurant industry accessibility requirements. This settlement motivated similar demands from other quick-service restaurants.</p>
-        <p><strong>Various retail chains:</strong> Multiple major retailers settled accessibility cases for $500,000 to $2 million in 2024, covering individual store websites and accessibility remediation costs.</p>
-        <p><strong>Technology companies:</strong> Several major tech platform providers settled cases for $1-5 million, addressing accessibility of user interface elements and third-party integrations.</p>
+        <h3>Industry Settlement Analysis</h3>
+        <p>Multiple organizations have settled accessibility cases for significant amounts in 2024. Industry sources report that various retail chains settled for $500,000 to $2 million in aggregate, covering individual store websites and accessibility remediation costs. Technology companies have settled cases for comparable amounts addressing accessibility of user interface elements and third-party integrations.</p>
 
         <h3>Hidden Costs Beyond Settlement</h3>
         <p>Settlement amounts represent only a portion of litigation costs. Organizations typically incur substantial additional expenses:</p>
@@ -102,7 +100,7 @@ $pageContent = <<<'HTML'
         <p>Courts continue developing legal standards governing digital accessibility.</p>
 
         <h3>ADA Applicability to Websites: Settled Question</h3>
-        <p>By 2024, courts had universally established that the ADA applies to websites. Early litigation questioned this application; by 2024, no serious legal argument remained that websites are exempt from accessibility requirements. This settled law dramatically increases litigation exposure.</p>
+        <p>By 2024, courts had generally established that the ADA applies to websites. Early litigation questioned this application; by 2024, this principle is widely recognized. This settled understanding increases litigation exposure for organizations with inaccessible sites.</p>
 
         <h3>WCAG as Standard: Increasingly Accepted</h3>
         <p>While the ADA doesn't explicitly reference WCAG standards, courts have increasingly accepted WCAG Level AA as the practical standard for compliance. Some courts apply Level AAA standards, particularly for government entities. The acceptance of WCAG standards provides clearer guidance for compliance but also creates objective metrics for assessing violations.</p>
@@ -117,7 +115,6 @@ $pageContent = <<<'HTML'
             <ul style="list-style: disc; padding-left: 1.5rem;">
                 <li style="margin-bottom: 0.75rem;"><strong>Total lawsuits filed:</strong> 4,000+</li>
                 <li style="margin-bottom: 0.75rem;"><strong>Average settlement:</strong> $125,000-$175,000 per plaintiff</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Highest single settlement:</strong> $5+ million (major platform)</li>
                 <li style="margin-bottom: 0.75rem;"><strong>Primary target: E-commerce</strong> (40% of cases)</li>
                 <li style="margin-bottom: 0.75rem;"><strong>Geographic concentration:</strong> California (30%), New York (15%), Florida (12%)</li>
                 <li style="margin-bottom: 0.75rem;"><strong>Average litigation cost:</strong> $300,000-$500,000 (including attorney fees, settlement, remediation)</li>
@@ -137,7 +134,7 @@ $pageContent = <<<'HTML'
     <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li>Over 4,000 accessibility lawsuits were filed in 2024, representing a 4,000% increase from 2010.</li>
+            <li>Over 4,000 accessibility lawsuits were filed in 2024, representing significant growth from prior years.</li>
             <li>California represents the litigation epicenter with over 30% of national cases.</li>
             <li>E-commerce websites are the primary targets, representing 40% of accessibility claims.</li>
             <li>Average settlements range from $125,000 to $175,000 per plaintiff, with total litigation costs typically exceeding $300,000.</li>
@@ -151,20 +148,28 @@ $pageContent = <<<'HTML'
     <section id="resources">
         <h2>Resources</h2>
         <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li><a href="https://www.ssbbartgroup.com/digital-accessibility/">SSBB Digital Accessibility Litigation Report</a></li>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
             <li><a href="https://www.justice.gov/crt/americans-disabilities-act">Department of Justice - ADA</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
-            <li><a href="https://www.lflegal.com/2024/12/ada-title-iii-litigation/">Legal analysis of 2024 ADA litigation trends</a></li>
+            <li><a href="https://webaim.org/">WebAIM Accessibility Resources</a></li>
         </ul>
     </section>
 </article>
 
+<!-- LEGAL DISCLAIMER (mandatory before CTA) -->
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This analysis is based on publicly available litigation data and industry trends. We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. The litigation trends and settlement information presented reflect industry patterns but may not apply to your specific situation. For specific legal guidance regarding your organization's accessibility obligations or litigation risk, consult with a qualified attorney specializing in accessibility law.</p>
+    </div>
+</section>
+
+<!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Ready to Audit Your Site?</h2>
-        <p>Get a free WCAG scan and assess your litigation exposure. Don't let your organization become part of 2025 litigation statistics.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Assess Your Litigation Risk Today</h2>
+        <p>Get a detailed WCAG audit that identifies your accessibility vulnerabilities and quantifies your legal exposure. Don't become part of 2025 litigation statistics.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Litigation Risk Assessment - 2024 Trends')">Assess My Litigation Risk</button>
     </div>
 </section>
 HTML;
