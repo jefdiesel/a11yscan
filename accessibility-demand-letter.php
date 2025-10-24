@@ -47,17 +47,24 @@ $pageContent = <<<'HTML'
 
     <section id="step-2-verify-violations">
         <h2>Step 2: Verify the Actual Violations (48-72 Hours)</h2>
-        <p>The demand letter makes specific accessibility claims. Your next move: verify if they're accurate.</p>
-        <p>Run accessibility audits yourself:</p>
+        <p>The demand letter makes specific accessibility claims. Your next move: verify if they're accurate and understand your real exposure. This is where most companies make mistakes.</p>
+        <p>You have a few options:</p>
+        <p><strong>Option 1: Free automated scanning</strong></p>
+        <p>You can run free accessibility scanners to get a baseline sense of violations. These catch obvious issues (missing alt text, low contrast, basic semantic problems). But they're incomplete—they miss 60% of real violations, including keyboard navigation failures, screen reader incompatibilities, mobile accessibility issues, and context-specific problems that only human review catches.</p>
+        <p><strong>Option 2: A11yscan's detailed audit</strong></p>
+        <p>A proper accessibility audit does what free tools can't: it documents EVERY violation across your entire site in a line-item CSV export that shows:</p>
         <ul>
-            <li><strong>Use axe DevTools:</strong> Free browser extension that scans for WCAG violations</li>
-            <li><strong>Test keyboard navigation:</strong> Can you tab through your entire site? Do all interactive elements respond to Enter/Space?</li>
-            <li><strong>Test with a screen reader:</strong> Download NVDA (free) or use built-in readers. Does your site make sense when read aloud?</li>
-            <li><strong>Check color contrast:</strong> Use a contrast checker. Are text/background combinations 4.5:1 or higher?</li>
-            <li><strong>Test on mobile:</strong> Mobile accessibility has different requirements. Does your site work on a small screen?</li>
+            <li>Exact page/URL where violation occurs</li>
+            <li>Specific element and code causing the violation</li>
+            <li>WCAG criterion violated</li>
+            <li>Severity (critical, major, minor)</li>
+            <li>Step-by-step remediation instructions</li>
+            <li>Estimated effort to fix</li>
         </ul>
-        <p><strong>Why this matters:</strong> Some demand letters are based on legitimate violations. Some are based on automated scanner false positives. Knowing which you have determines your response strategy.</p>
-        <p>If violations are real and widespread, settlement might be your best option. If violations are minor or the letter is frivolous, pushing back might make sense.</p>
+        <p>This level of detail matters when you're negotiating with the plaintiff's lawyer. You can say "we have X violations, here's exactly what they are, here's our plan to fix them, here's the timeline." That's negotiating from a position of knowledge, not panic.</p>
+        <p><strong>Why this matters in a demand letter situation:</strong> Some letters cite violations that don't actually exist (false positives). Some cite minor issues as major violations. A comprehensive audit reveals whether you're dealing with legitimate problems or a frivolous claim. That changes your negotiating position dramatically.</p>
+        <p><strong>For example:</strong> Plaintiff claims 500 accessibility violations. Free scanner finds 300. A11yscan's detailed audit breaks down all violations by type, severity, and location—revealing that 200 of the claimed violations are duplicates or false positives, your actual issue count is 200, and 80% are fixable in under 60 days. That information is worth thousands in settlement negotiations.</p>
+        <p><strong>Litigation-grade documentation:</strong> If this goes to court, your audit needs to be defensible and thorough. A free scanner report won't cut it. Courts expect detailed, professional documentation of what violations exist, their impact, and your remediation plan.</p>
     </section>
 
     <section id="step-3-get-legal-counsel">
