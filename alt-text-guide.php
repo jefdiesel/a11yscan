@@ -10,7 +10,7 @@ $pageContent = <<<'HTML'
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Alt Text That Actually Works: Writing for Screen Readers</h1>
         
         <h2>Why Alt Text Matters</h2>
-        <p>Approximately 2.2 billion people worldwide have vision impairments, including over 43 million who are blind. Many of these individuals use screen readers—software that reads web content aloud—to access websites and other digital content. Screen readers can read text, but they cannot interpret images. Alt text provides the textual description that allows screen readers to convey image meaning to their users.</p>
+        <p>Approximately 2.2 billion people worldwide have vision impairments, including over 43 million who are blind. Many of these individuals use screen readers—software that reads web content aloud—to access websites. Screen readers can read text, but they cannot interpret images. Alt text provides the textual description that allows screen readers to convey image meaning to their users.</p>
         <p>For screen reader users, alt text isn't just helpful—it's essential. Without alt text, an image communicates nothing. A website full of meaningful images becomes useless. Alt text transforms images from inaccessible barriers into accessible components of the user experience.</p>
         <p>Beyond accessibility, alt text provides practical benefits: it appears when images fail to load, provides context when CSS is disabled, and improves search engine optimization by helping search engines understand image content. Proper alt text is genuinely useful for everyone.</p>
         <p>WCAG requires alt text for all images. This requirement is absolute—there are no exceptions for decorative images or images already described in adjacent text. The distinction between decorative and informative images determines what goes in the alt attribute, but every image requires consideration.</p>
@@ -32,14 +32,14 @@ $pageContent = <<<'HTML'
         <p><strong>Poor alt text:</strong> "Photo"</p>
         <p><strong>Better alt text:</strong> "A developer reviewing accessibility guidelines on a computer screen"</p>
         <p><strong>Best alt text (context dependent):</strong> "A developer reviewing WCAG 2.1 Level AAA accessibility guidelines on a computer screen in an office setting"</p>
-        <p>The "best" version includes more detail, but length should be appropriate to context. A small thumbnail image doesn't need as much detail as a large featured image. Consider what information is important and what detail would be distracting for a screen reader user.</p>
+        <p>The "best" version includes more detail, but length should be appropriate to context. A small thumbnail doesn't need as much detail as a large featured image. Consider what information is important and what detail would be distracting for a screen reader user.</p>
 
         <h3>Charts and Graphs</h3>
         <p>Charts and graphs present particular challenges because they communicate information visually that must be conveyed through alt text. A simple bar chart showing sales trends cannot be adequately described in a single line.</p>
         <p><strong>Poor alt text:</strong> "Chart"</p>
         <p><strong>Better alt text:</strong> "Bar chart showing quarterly sales trends for 2024"</p>
-        <p><strong>Best approach:</strong> Combined alt text and data table. Use alt text to describe the chart type, purpose, and overall trend, then provide a data table below the chart containing the actual numbers. This allows screen reader users to understand both the visual trend and the precise data.</p>
-        <p>Example: "Bar chart showing quarterly sales increasing from Q1 2024 ($250K) to Q4 2024 ($450K). See the table below for detailed numbers."</p>
+        <p><strong>Best approach:</strong> Combined alt text and data table. Use alt text to describe the chart type, purpose, and overall trend, then provide a data table below the chart containing the actual numbers.</p>
+        <p>Example: "Bar chart showing quarterly sales increasing from Q1 2024 to Q4 2024. See the table below for detailed numbers."</p>
 
         <h3>Screenshots</h3>
         <p>Screenshots require alt text describing their content. Describe what's visible and why the screenshot is relevant to the surrounding text.</p>
@@ -49,8 +49,7 @@ $pageContent = <<<'HTML'
         <h3>Maps</h3>
         <p>Maps present information visually through geography and markers. Alt text should describe the geographic area, any marked locations, and the purpose of the map.</p>
         <p><strong>Poor alt text:</strong> "Map"</p>
-        <p><strong>Better alt text:</strong> "Map of Western United States showing A11yscan office locations in Seattle, San Francisco, Denver, and Austin"</p>
-        <p>For complex maps, combine alt text with a text description: "Map showing our five regional offices" followed by a bulleted list of office locations and details.</p>
+        <p><strong>Better alt text:</strong> "Map of Western United States showing office locations in Seattle, San Francisco, Denver, and Austin"</p>
     </section>
 
     <section id="functional-images">
@@ -66,7 +65,6 @@ $pageContent = <<<'HTML'
         <p>Images used as buttons should describe the button's function, not the image appearance.</p>
         <p><strong>Poor alt text:</strong> "Magnifying glass icon"</p>
         <p><strong>Better alt text:</strong> "Search" (when used in a search button)</p>
-        <p>The visual appearance of the icon is less important than understanding the button's function.</p>
 
         <h3>Social Media Icons</h3>
         <p>Social media follow buttons with icon images should describe the social platform.</p>
@@ -76,15 +74,11 @@ $pageContent = <<<'HTML'
     <section id="decorative-images">
         <h2>Decorative Images and the Empty Alt Attribute</h2>
         <p>Decorative images—images that serve no informative purpose—should use an empty alt attribute: alt=""</p>
-        <p>This tells screen readers to skip the image entirely, which is appropriate for purely decorative elements. Do not omit the alt attribute entirely; screen readers will read the filename, creating noise for users.</p>
+        <p>This tells screen readers to skip the image entirely, which is appropriate for purely decorative elements. Do not omit the alt attribute entirely; screen readers will read the filename instead.</p>
 
         <h3>Identifying Decorative Images</h3>
         <p>A decorative image is one where removing it wouldn't change the page's meaning or functionality. Examples include design flourishes, background pattern images, divider lines, and visual spacing elements.</p>
-        <p>However, many images that appear "decorative" actually convey information. A photo illustrating a concept isn't merely decorative—it provides visual explanation. An icon next to text that's central to the message isn't decorative—it reinforces the message. When in doubt, include descriptive alt text rather than using an empty alt attribute.</p>
-
-        <h3>The aria-hidden Attribute</h3>
-        <p>For images included as part of other elements that are already described, you can use aria-hidden="true" to hide the image from screen readers if necessary. However, proper alt text is usually the better approach.</p>
-        <p><strong>Example:</strong> &lt;img src="logo.svg" alt="" aria-hidden="true"&gt; is appropriate only if the logo is already described in adjacent text, such as within an h1 element.</p>
+        <p>However, many images that appear "decorative" actually convey information. A photo illustrating a concept isn't merely decorative—it provides visual explanation. An icon next to text that's central to the message isn't decorative—it reinforces the message. When in doubt, include descriptive alt text.</p>
     </section>
 
     <section id="length-guidelines">
@@ -102,9 +96,6 @@ $pageContent = <<<'HTML'
 
         <h3>Avoid Phrases Like "Image of" or "Picture of"</h3>
         <p>Screen readers already announce that they're reading an image. Prefacing alt text with "Image of" is redundant. Write directly: "A developer typing code" rather than "Image of a developer typing code."</p>
-
-        <h3>For Complex Images, Consider Extended Descriptions</h3>
-        <p>When an image is too complex to describe adequately in short alt text, provide both concise alt text and a longer description using a figure element or longdesc.</p>
     </section>
 
     <section id="common-mistakes">
@@ -124,10 +115,10 @@ $pageContent = <<<'HTML'
         <p>Filling alt text with keywords is both an accessibility and SEO failure. Search engines recognize and penalize keyword stuffing, and it makes alt text unhelpful for screen reader users.</p>
 
         <h3>Mistake 5: Ignoring Image Context</h3>
-        <p>The same image requires different alt text in different contexts. An image of the A11yscan team might need alt text "A11yscan team members at a company offsite" in a team page but "A11yscan leadership team" in a different context. Alt text should relate to why the image is included.</p>
+        <p>The same image requires different alt text in different contexts. Alt text should relate to why the image is included.</p>
 
         <h3>Mistake 6: Using Alt Text Instead of Captions</h3>
-        <p>While both serve different purposes, many developers use alt text where captions would be better. Use alt text for the image itself and captions for additional context that sighted users also should see.</p>
+        <p>While both serve different purposes, many developers use alt text where captions would be better. Use alt text for the image itself and captions for additional context that sighted users should also see.</p>
     </section>
 
     <section id="testing">
@@ -149,7 +140,7 @@ $pageContent = <<<'HTML'
         <p>Certain image types present unique alt text challenges.</p>
 
         <h3>Infographics</h3>
-        <p>Complex infographics require substantial alt text or accompanying text descriptions. Provide both: concise alt text describing the overall message, plus a detailed text breakdown of the infographic's content.</p>
+        <p>Complex infographics require substantial alt text or accompanying text descriptions. Provide both: concise alt text describing the overall message, plus a detailed text breakdown.</p>
 
         <h3>Animated GIFs</h3>
         <p>Alt text for animated GIFs should describe the animation and its purpose.</p>
@@ -159,7 +150,7 @@ $pageContent = <<<'HTML'
         <p>SVG images sometimes require both image-level alt attributes and internal ARIA labels. Test SVGs with screen readers to ensure all necessary information is conveyed.</p>
 
         <h3>Background Images</h3>
-        <p>CSS background images cannot have alt text. If a background image conveys important information, use a standard &lt;img&gt; element instead or provide the information through other means like text.</p>
+        <p>CSS background images cannot have alt text. If a background image conveys important information, use a standard &lt;img&gt; element instead or provide the information through other means.</p>
     </section>
 
     <section id="takeaways">
@@ -188,11 +179,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Alt text is a critical component of WCAG 2.1 compliance.</strong> This guide shares best practices for writing effective alt text based on widely-accepted accessibility principles. For comprehensive information on WCAG text alternative requirements, consult the official WCAG 2.1 Text Alternatives guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Ready to Audit Your Site?</h2>
-        <p>Get a free WCAG scan to identify missing or ineffective alt text and get expert recommendations.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Scan Your Alt Text Coverage</h2>
+        <p>Get a professional audit to identify missing or ineffective alt text on your website and receive expert recommendations for improvement.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Alt Text Audit')">Scan My Alt Text</button>
     </div>
 </section>
 HTML;

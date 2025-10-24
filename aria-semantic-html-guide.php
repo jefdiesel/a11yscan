@@ -32,7 +32,7 @@ $pageContent = <<<'HTML'
         <p><strong>&lt;label&gt;</strong> - Associates text with form input. Screen readers announce label content when input receives focus.</p>
 
         <h3>Why Semantic HTML Is Superior to ARIA</h3>
-        <p>When a semantic element can accomplish your goal, use it instead of ARIA. Why? Because semantic HTML is built-in and requires no additional markup. A `&lt;button&gt;` element automatically provides keyboard support, focus management, and proper screen reader announcement. Creating a button with a div and ARIA requires recreating all this functionality.</p>
+        <p>When a semantic element can accomplish your goal, use it instead of ARIA. A `&lt;button&gt;` element automatically provides keyboard support, focus management, and proper screen reader announcement. Creating a button with a div and ARIA requires recreating all this functionality.</p>
         <p>The principle is straightforward: semantic HTML first, ARIA second. Use semantic elements whenever possible, then use ARIA to supplement where necessary.</p>
     </section>
 
@@ -41,7 +41,7 @@ $pageContent = <<<'HTML'
         <p>ARIA (Accessible Rich Internet Applications) provides attributes that supplement semantic HTML for complex components or situations where semantic HTML doesn't provide adequate information.</p>
 
         <h3>ARIA Landmarks</h3>
-        <p>While semantic elements are preferred, ARIA role attributes can provide landmark information for older browsers:</p>
+        <p>While semantic elements are preferred, ARIA role attributes can provide landmark information:</p>
         <p>&lt;nav role="navigation"&gt;...&lt;/nav&gt;<br/>
         &lt;main role="main"&gt;...&lt;/main&gt;<br/>
         &lt;div role="complementary"&gt;Sidebar&lt;/div&gt;</p>
@@ -59,10 +59,10 @@ $pageContent = <<<'HTML'
         &lt;p id="pwd-hint"&gt;Password must be 8+ characters&lt;/p&gt;</p>
 
         <h3>ARIA States and Properties</h3>
-        <p><strong>aria-hidden="true"</strong> hides elements from screen readers. Use this for decorative elements or elements already described:</p>
+        <p><strong>aria-hidden="true"</strong> hides elements from screen readers. Use this for decorative elements:</p>
         <p>&lt;img src="star.svg" alt="" aria-hidden="true"&gt;</p>
 
-        <p><strong>aria-disabled="true"</strong> indicates disabled state without actually disabling the element:</p>
+        <p><strong>aria-disabled="true"</strong> indicates disabled state:</p>
         <p>&lt;button aria-disabled="true"&gt;Submit&lt;/button&gt;</p>
 
         <p><strong>aria-checked</strong>, <strong>aria-selected</strong>, <strong>aria-pressed</strong> indicate component state:</p>
@@ -102,7 +102,6 @@ $pageContent = <<<'HTML'
         <p><strong>❌ Wrong:</strong> `&lt;div role="button" onclick="..."&gt;Click me&lt;/div&gt;`</p>
         <p>This requires manual implementation of keyboard support, focus management, and screen reader announcements.</p>
         <p><strong>✅ Right:</strong> `&lt;button&gt;Click me&lt;/button&gt;`</p>
-        <p>Native button includes all this automatically.</p>
 
         <h3>Mistake 2: Excessive ARIA</h3>
         <p><strong>❌ Wrong:</strong> Adding ARIA to elements that already have semantic meaning.</p>
@@ -111,18 +110,17 @@ $pageContent = <<<'HTML'
 
         <h3>Mistake 3: Forgetting Keyboard Support</h3>
         <p>Using ARIA to add screen reader support without ensuring keyboard support creates barriers for keyboard-only users. A custom button with aria-label still needs keyboard handlers.</p>
-        <p>Even better, use semantic `&lt;button&gt;` which handles this automatically.</p>
+        <p>Use semantic `&lt;button&gt;` which handles this automatically.</p>
 
         <h3>Mistake 4: Incorrect Heading Hierarchy</h3>
         <p><strong>❌ Wrong:</strong> Jumping heading levels or using headings out of order.</p>
         <p>&lt;h1&gt;Page Title&lt;/h1&gt;<br/>
         &lt;h3&gt;Subsection&lt;/h3&gt; &lt;!-- Should be h2 --&gt;</p>
-        <p>Screen reader users navigate by headings and expect proper hierarchy.</p>
 
         <h3>Mistake 5: Using aria-label Incorrectly</h3>
         <p><strong>❌ Wrong:</strong> Using aria-label on text elements that already have visible text.</p>
         <p>&lt;h2 aria-label="Important Section"&gt;Important Section&lt;/h2&gt;</p>
-        <p>The visible text serves as the label. aria-label isn't needed and may override the visible text for screen reader users.</p>
+        <p>The visible text serves as the label. aria-label isn't needed.</p>
     </section>
 
     <section id="implementation">
@@ -206,11 +204,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>ARIA and semantic HTML are covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted web accessibility principles. For comprehensive information on ARIA and semantic markup requirements, consult the official WCAG 2.1 guidelines and W3C ARIA specifications.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Ready to Audit Your Site?</h2>
-        <p>Get a free WCAG scan to identify semantic HTML and ARIA issues, with expert recommendations.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Check Your Semantic Markup</h2>
+        <p>Get a professional audit to identify ARIA misuse and missing semantic HTML, with expert recommendations for improvement.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Semantic HTML & ARIA Audit')">Audit My Markup</button>
     </div>
 </section>
 HTML;
