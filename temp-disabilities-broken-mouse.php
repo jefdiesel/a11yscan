@@ -1,101 +1,127 @@
 <?php
 $pageTitle = 'Temporary Disabilities & Accessibility: Broken Mice, Injured Arms, Lost Glasses | A11yscan';
-$pageDescription = 'Learn why temporary accessibility needs—broken mouse, arm in a sling, lost glasses—affect millions and why WCAG matters for everyone.';
+$pageDescription = 'Learn why temporary accessibility needs affect millions and why WCAG compliance matters for everyone experiencing a temporary barrier.';
 $currentPage = 'blog';
 $pageContent = <<<'HTML'
 <article class="blog-post">
     <section class="post-header">
         <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>Temporary Disabilities & Unexpected Accessibility Needs: Why Your Website Must Work When Life Gets Hard</h1>
+        <h1>Temporary Disabilities & Accessibility: Broken Mice, Injured Arms, Lost Glasses</h1>
     </section>
-    
+
     <section id="intro">
-        <p>Accessibility is often discussed as if it only matters to people with permanent disabilities. But the truth is far more immediate: most of us will experience a temporary accessibility barrier at some point. A broken mouse. An arm in a sling. Lost glasses. A fractured wrist. Temporary disabilities don't feel temporary when you're trying to work, shop, or access critical information right now.</p>
-        
-        <p>Microsoft's Inclusive Design framework categorizes this brilliantly: permanent disabilities (one arm), temporary disabilities (arm injury), and situational disabilities (new parent holding an infant). All three need the same accessible web. This isn't about charity—it's about designing for reality.</p>
+        <p>Accessibility isn't just for people with permanent disabilities. Every day, millions of people experience temporary barriers that make them rely on accessibility features just to use the web. A broken mouse. An arm in a sling. Lost glasses. A migraine. A noisy coffee shop. A hospital waiting room where you need to navigate with one hand while holding a prescription.</p>
+        <p>These situations are more common than you might think—and they're temporary tests of your website's actual accessibility. If your site doesn't work for someone with a broken mouse, it's not fully accessible. Period.</p>
     </section>
-    
-    <section id="reality-check">
-        <h2>The Reality: How Many People Actually Face Temporary Barriers?</h2>
-        
-        <p>The CDC reports that over 70 million U.S. adults have a disability—more than 1 in 4 people. But temporary disabilities dwarf this number. Consider the scope: approximately 5–10% of adults experience repetitive strain injury (RSI) severe enough that mouse use becomes painful. In certain occupations like tech, data entry, and design, that number climbs to 40%. One injury—a broken wrist, a sports accident, carpal tunnel—and suddenly a person can't use a mouse at all.</p>
-        
-        <p>Add in people recovering from surgery, treating tendonitis, or managing temporary vision changes like cataracts or post-procedure recovery. Add the millions who've simply lost their glasses or broken their laptop trackpad. These aren't edge cases. These are mainstream experiences.</p>
-        
-        <p>Mobility impairments affect approximately 12.2% of the U.S. population. Common causes include arthritis, muscular dystrophy, cerebral palsy, and temporary injuries. But temporary arm injuries alone touch far more people each year—an estimated 2+ million emergency room visits for arm and wrist fractures annually in the U.S.</p>
+
+    <section id="temp-disability-stats">
+        <h2>The Scale of Temporary Accessibility Needs</h2>
+        <p>Research suggests that at any given time, roughly 15-20% of the population is experiencing some form of temporary disability or situational limitation. This includes:</p>
+        <ul>
+            <li><strong>Musculoskeletal injuries:</strong> Broken arms, wrists, shoulders. Sports injuries, workplace accidents, car accidents. Average recovery time: 6-12 weeks.</li>
+            <li><strong>Vision problems:</strong> Lost glasses, scratched contact lenses, dry eyes from screen time, post-surgery vision correction. Many people don't keep backup glasses.</li>
+            <li><strong>Hearing disruptions:</strong> Working in loud environments, using devices in public, temporary hearing loss from infections.</li>
+            <li><strong>Cognitive load:</strong> Exhaustion, medication side effects, sleep deprivation, stress, learning new systems.</li>
+            <li><strong>Motor control barriers:</strong> Holding a baby while browsing, sitting in an awkward position at a doctor's office, using a phone with one hand while eating.</li>
+        </ul>
+        <p>These aren't edge cases. They're situations your actual users face regularly. And if your website fails for them, you're losing customers, goodwill, and trust.</p>
     </section>
-    
-    <section id="broken-mouse">
-        <h2>The Broken Mouse Scenario</h2>
-        
-        <p>A user's mouse stops working. This should be trivial to work around—just use the keyboard. But if your website requires hover states to reveal navigation, or if form controls only respond to click interactions, that user is stuck. They can't navigate. They can't submit the form. They can't buy your product. They leave.</p>
-        
-        <p>Better websites make keyboard navigation a first-class experience. Every interactive element is reachable by Tab. Every click action has a keyboard equivalent. This isn't a nice-to-have—it's WCAG 2.1 Level AA requirement (2.1.1: Keyboard). And it's trivially easy to test: just disconnect your mouse and try to use your own website.</p>
+
+    <section id="broken-mouse-example">
+        <h2>The Broken Mouse Test: What Accessibility Actually Means</h2>
+        <p>Here's a real scenario: Your mouse breaks. You're waiting for a replacement and need to order something online right now. Can you use most websites with just your keyboard?</p>
+        <p>If the answer is "no," your site is failing an accessibility test that's happening to your users every single day. Someone spilled coffee on their mouse. Someone's USB port is broken. Someone's at an airport and their trackpad isn't working.</p>
+        <p>A truly accessible website should support:</p>
+        <ul>
+            <li><strong>Full keyboard navigation:</strong> Tab through every interactive element without getting stuck.</li>
+            <li><strong>Visible focus indicators:</strong> You need to see where you are on the page.</li>
+            <li><strong>Logical tab order:</strong> The order makes sense. You're not jumping randomly around the page.</li>
+            <li><strong>No keyboard traps:</strong> If you can tab into something, you can tab out of it.</li>
+            <li><strong>Proper semantic HTML:</strong> Links are links, buttons are buttons. Screen reader users and keyboard-only users rely on this.</li>
+        </ul>
+        <p>Most "pretty" websites built with unsemantic divs and JavaScript click handlers fail this test catastrophically. You can't navigate them. You can't submit forms. You're stuck.</p>
     </section>
-    
-    <section id="arm-in-sling">
-        <h2>Arm in a Sling: The One-Hand Reality</h2>
-        
-        <p>Surgery. Car accident. Sports injury. Suddenly a person has full use of only one arm. Typing is fine. Mousing is impossible. Now that person needs a website designed for single-hand operation.</p>
-        
-        <p>What does this mean in practice? Buttons and links must have sufficient spacing (WCAG target size minimums). Double-click interactions become impossible—a single click must suffice. Keyboard navigation must work flawlessly because a mouse is unusable. Time-limited sessions become cruel: that person needs more time to complete forms or navigate carefully.</p>
-        
-        <p>Repetitive strain injury (RSI) doesn't require a visible injury—it's the chronic form of this problem. When mouse use causes pain, people don't add additional clicks. They stop using sites that force unnecessary interactions. They switch to competitors. They never come back.</p>
+
+    <section id="one-handed-browsing">
+        <h2>One-Handed Browsing: The Reality of Situational Limitations</h2>
+        <p>You're on the train. You're standing, holding the handrail. You're checking your bank balance. One hand is spoken for. Can you use your phone with just your thumb or one index finger?</p>
+        <p>You're at the grocery store. You're holding a list in one hand and pushing a cart with the other. You need to check prices on your phone. One hand.</p>
+        <p>You're at a hospital. You've just had surgery and your dominant arm is in a sling. You need to fill out forms online. You have one functional hand.</p>
+        <p>Mobile accessibility becomes essential in these situations. Your touch targets need to be large enough. Your buttons need proper spacing (minimum 44×44 pixels, ideally 48×48). Your forms need to be completable without requiring precise two-handed coordination.</p>
+        <p>Users in these situations don't have a disability—they have a temporary need. But your website either meets that need or it doesn't. There's no middle ground.</p>
     </section>
-    
-    <section id="lost-glasses">
-        <h2>Lost Glasses: Vision Barriers That Aren't Permanent</h2>
-        
-        <p>Millions of people wear glasses or contacts. Lose them temporarily—traveling, at the gym, during an eye exam—and vision changes dramatically. Text that was legible becomes blurry. Color-only coding becomes impossible to distinguish. Tiny UI elements vanish.</p>
-        
-        <p>Temporary vision barriers create the same needs as permanent vision disabilities: sufficient color contrast (WCAG 1.4.3: at least 4.5:1 for normal text), large enough text, and no information conveyed by color alone. A zoom feature (which most browsers provide) should make your site fully usable at 200% zoom—another WCAG requirement (1.4.4).</p>
-        
-        <p>The difference? Someone with permanent vision loss has already adapted their environment. Someone experiencing temporary vision loss hasn't. They're trying to use your site in an unfamiliar state. Your site needs to meet them where they are.</p>
+
+    <section id="vision-barriers">
+        <h2>When Vision Changes: Glasses, Screens, and Readability</h2>
+        <p>You lose your glasses. You can still see, but small text is blurry. You zoom your browser to 200%. Does your website still work? Or does it break into a horizontal scrolling nightmare?</p>
+        <p>You're reading at maximum brightness in sunlight. The contrast on your website makes text almost invisible. You leave.</p>
+        <p>You've been staring at screens all day and your eyes are strained. You enable dark mode or use a blue light filter. Your website's colors become hard to distinguish. You get frustrated and go to a competitor.</p>
+        <p>True accessibility means:</p>
+        <ul>
+            <li><strong>Minimum contrast ratio of 4.5:1 for normal text:</strong> This isn't a nice-to-have. It's WCAG AA standard.</li>
+            <li><strong>Scalability to 200%:</strong> Browsers zoom, users zoom, and your site needs to adapt.</li>
+            <li><strong>No reliance on color alone:</strong> If you use green to mean "valid" and red to mean "error," colorblind users miss the entire message.</li>
+            <li><strong>Readable font sizes:</strong> 14px minimum for body text. Larger is better.</li>
+            <li><strong>Adequate line spacing:</strong> 1.5x minimum. People with dyslexia and anyone reading on a small screen benefit from this.</li>
+        </ul>
+        <p>Someone with lost glasses will find your site eventually when they put their glasses back on. But users with situational vision barriers might not come back—they'll just go to your competitor whose site actually works.</p>
     </section>
-    
-    <section id="why-it-matters">
-        <h2>Why Temporary Disabilities Matter for Your Business</h2>
-        
-        <p>The business case is stark: 71% of disabled customers will abandon a site that isn't accessible. That includes people experiencing temporary barriers. An injury doesn't need to be permanent to cause someone to leave your site forever—they just need to encounter friction once.</p>
-        
-        <p>Conversely, accessible sites benefit everyone. Keyboard navigation helps power users. Zoom functionality helps anyone in bright sunlight trying to read a mobile screen. Clear language and good structure helps people learning the language. Fast load times help people on slow connections. Accessible design is better design.</p>
-        
-        <p>And legally? Temporary disability doesn't exempt you from ADA compliance. A website must be accessible to someone whether their disability is permanent, temporary, or situational. The requirement is the same: equal access.</p>
+
+    <section id="cognitive-load">
+        <h2>Cognitive Load: When Everyone Needs Accessibility</h2>
+        <p>Accessibility isn't just about disabilities. It's about cognitive load. Anyone can experience it.</p>
+        <p>You're exhausted at the end of a long day. Your brain is fried. You're trying to book a flight but the website's navigation is confusing, there are too many options, and there are no clear instructions. You give up and book with a competitor.</p>
+        <p>You're on a medication that causes brain fog. You need a website that's clear, simple, and doesn't require you to hold multiple pieces of information in your head at once.</p>
+        <p>You're learning a new language and using your phone's translation app. The website is full of jargon and complex sentences. You bounce.</p>
+        <p>WCAG compliance directly addresses cognitive load through:</p>
+        <ul>
+            <li><strong>Clear headings and structure:</strong> People can scan and find what they need.</li>
+            <li><strong>Plain language:</strong> Short sentences, common words, clear explanations.</li>
+            <li><strong>Consistent navigation:</strong> Things work the way users expect.</li>
+            <li><strong>Error prevention and recovery:</strong> Forms tell you what went wrong and how to fix it.</li>
+            <li><strong>Focus management:</strong> You always know where you are on the page.</li>
+        </ul>
+        <p>These aren't just for people with cognitive disabilities. They're for everyone having a bad day, in a stressful situation, or operating at reduced capacity.</p>
     </section>
-    
-    <section id="wcag-checklist">
-        <h2>The Core WCAG Principles for Temporary Accessibility Needs</h2>
-        
-        <p><strong>Keyboard Navigation (WCAG 2.1.1):</strong> Every function must be operable via keyboard. No mouse-only interactions. Test this by using your site without touching your trackpad.</p>
-        
-        <p><strong>Color Contrast (WCAG 1.4.3):</strong> Text must contrast at least 4.5:1 against its background. This helps anyone whose vision is temporarily compromised, and it's not about dark mode—it's about readability.</p>
-        
-        <p><strong>Target Size (WCAG 2.5.5):</strong> Interactive elements should be at least 44x44 pixels. This matters when someone has limited motor control or is using one hand.</p>
-        
-        <p><strong>No Time Limits (WCAG 2.2.3):</strong> Don't force users to complete actions in a fixed time. People with temporary motor challenges need extra time. People on slow connections need extra time. Remove artificial urgency.</p>
-        
-        <p><strong>Zoom Functionality (WCAG 1.4.4):</strong> Your site must remain fully functional at 200% zoom. Test in your browser's zoom feature.</p>
+
+    <section id="business-impact">
+        <h2>The Business Case: Accessibility as Customer Retention</h2>
+        <p>Here's what happens when you don't support keyboard navigation:</p>
+        <ul>
+            <li>Someone's mouse breaks. They try your site. They can't navigate it. They use a competitor.</li>
+            <li>Someone is recovering from an injury. They need keyboard navigation. Your site doesn't support it. They use a competitor.</li>
+            <li>Someone is on a slow connection. JavaScript loads slowly. Your mouse-dependent interactions don't work. They use a competitor.</li>
+        </ul>
+        <p>Here's what happens when you do support accessibility:</p>
+        <ul>
+            <li>Everyone can use your site, regardless of their situation.</li>
+            <li>Your site works better on slow connections (simpler HTML and CSS).</li>
+            <li>Your SEO improves (search engines reward semantic HTML).</li>
+            <li>Your site is more maintainable (semantic HTML is easier to work with).</li>
+            <li>You avoid ADA litigation risk.</li>
+            <li>You reach a broader market (15-20% of the population experiences temporary accessibility needs at any given time).</li>
+        </ul>
+        <p>Accessibility isn't a feature. It's a prerequisite for being in business in 2025.</p>
     </section>
-    
-    <section id="implementation">
-        <h2>What This Looks Like in Code</h2>
-        
-        <p>None of this requires special markup or complex frameworks. It's basic HTML done correctly. Semantic HTML (`<button>` instead of `<div onclick>`). Form labels that are actually connected to form fields. Links that look like links. Tab order that makes sense. Sufficient color contrast.</p>
-        
-        <p>Your developer probably knows how to build this. They might not know it's being measured against their work. Accessibility isn't a feature—it's a foundation.</p>
+
+    <section id="getting-started">
+        <h2>Getting Started: Test Your Accessibility</h2>
+        <p>Want to know if your site actually works? Start with these tests:</p>
+        <ul>
+            <li><strong>Keyboard test:</strong> Put your mouse away and try to use your site with just your keyboard. Can you reach everything? Is it obvious where you are?</li>
+            <li><strong>Zoom test:</strong> Zoom your browser to 200%. Does everything still work? Can you read it?</li>
+            <li><strong>Contrast test:</strong> Use a contrast checker tool on your colors. Are they WCAG AA compliant?</li>
+            <li><strong>One-handed test:</strong> Can you navigate on mobile with one hand?</li>
+            <li><strong>Screen reader test:</strong> Turn on your device's screen reader and try to use your site. What's missing?</li>
+        </ul>
+        <p>These tests reveal the gap between "looks good" and "actually works." And they're tests your real users are conducting every day, sometimes without meaning to.</p>
     </section>
-    
-    <section id="conclusion">
-        <p>Temporary disabilities aren't rare or edge cases. They're moments most of us will face. Building accessible websites isn't about sympathy—it's about recognizing that your users' needs are temporary and varied. A broken mouse today. An arm in a sling tomorrow. Lost glasses next week. Your website should work for all of it.</p>
-        
-        <p>WCAG compliance ensures that temporary barriers don't become permanent reasons for users to leave.</p>
-    </section>
-    
+
     <section style="margin-top: 3rem;">
         <div class="highlight">
-            <h2 style="margin-top: 0;">Is Your Site Ready for Real Users?</h2>
-            <p>Test how your website works when a user can't use their mouse, can't see clearly, or has limited use of one hand.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Keyboard & Input Accessibility Audit')">Check My Keyboard Navigation</button>
+            <h2 style="margin-top: 0;">Test Your Accessibility Today</h2>
+            <p>Find out if your website actually works for everyone—including people with broken mice, injured arms, and temporary vision barriers. Get a free WCAG accessibility audit and discover what's blocking your users.</p>
+            <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Temporary Disability Accessibility Audit')">Test My Keyboard Navigation</button>
         </div>
     </section>
 </article>

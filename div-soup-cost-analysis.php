@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Div Soup: The Hidden Cost of Pretty But Broken Websites | A11yscan';
-$pageDescription = 'Why building websites with unsemantic <div> tags instead of semantic HTML costs more, ranks worse, and excludes users. A cost analysis.';
+$pageTitle = 'Div Soup: Why Pretty But Broken Websites Cost More Than You Think | A11yscan';
+$pageDescription = 'Why building websites with unsemantic divs instead of semantic HTML costs more, ranks worse, and excludes users. A cost analysis.';
 $currentPage = 'blog';
 $pageContent = <<<'HTML'
 <article class="blog-post">
@@ -8,152 +8,311 @@ $pageContent = <<<'HTML'
         <time datetime="2025-10-24">October 24, 2025</time>
         <h1>Div Soup: Why Pretty But Broken Websites Cost More Than You Think</h1>
     </section>
-    
+
     <section id="intro">
-        <p>"Div soup" is what developers call websites built entirely with `<div>` tags, styled with CSS classes, but devoid of semantic HTML structure. The site might look beautiful. Performance metrics might look good. But underneath: a meaningless tangle of presentational divs with no actual structure or meaning.</p>
-        
-        <p>This approach seems faster to build initially. You skip the "boring" semantic HTML stuff and jump straight to styling. Ship quick, iterate later, right? Except later never comes. And the costs compound: lost search rankings, failed accessibility audits, higher maintenance burden, reduced conversion rates, and the very real legal liability of an inaccessible website.</p>
-        
-        <p>What looks like time saved in development becomes time (and money) lost across the entire lifecycle of the product.</p>
+        <p>"Div soup" is a term for websites built with <code>&lt;div&gt;</code> tags instead of semantic HTML. A navigation is a <code>&lt;div&gt;</code> with JavaScript click handlers, not a <code>&lt;nav&gt;</code>. A button is a <code>&lt;div&gt;</code> styled with CSS, not a <code>&lt;button&gt;</code>. Headings are <code>&lt;span&gt;</code> tags with large font sizes, not <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
+        <p>These websites look beautiful. They pass design reviews. They impress stakeholders at presentations. But they're broken in ways that cost companies millions of dollars in lost revenue, remediation expenses, and litigation risk.</p>
+        <p>Let's break down what "pretty but broken" actually costs.</p>
     </section>
-    
+
     <section id="what-is-div-soup">
-        <h2>What Exactly is Div Soup?</h2>
-        
-        <p>Here's what div soup looks like:</p>
-        
-        <p style="background: #f5f5f5; padding: 1rem; font-family: monospace; font-size: 0.9em; overflow: auto;">
-&lt;div class="navigation-container"&gt;<br>
-&nbsp;&nbsp;&lt;div class="nav-item"&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div class="nav-item"&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/div&gt;<br>
-&lt;/div&gt;<br>
-&lt;div class="page-content"&gt;<br>
-&nbsp;&nbsp;&lt;div class="heading" style="font-size: 2em; font-weight: bold;"&gt;Welcome&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div class="body-text"&gt;...&lt;/div&gt;<br>
-&lt;/div&gt;<br>
-&lt;div class="footer-section"&gt;...&lt;/div&gt;
-        </p>
-        
-        <p>Compare to semantic HTML:</p>
-        
-        <p style="background: #f5f5f5; padding: 1rem; font-family: monospace; font-size: 0.9em; overflow: auto;">
-&lt;nav&gt;<br>
-&nbsp;&nbsp;&lt;a href="/"&gt;Home&lt;/a&gt;<br>
-&nbsp;&nbsp;&lt;a href="/about"&gt;About&lt;/a&gt;<br>
-&lt;/nav&gt;<br>
-&lt;main&gt;<br>
-&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
-&nbsp;&nbsp;&lt;p&gt;...&lt;/p&gt;<br>
-&lt;/main&gt;<br>
-&lt;footer&gt;...&lt;/footer&gt;
-        </p>
-        
-        <p>Same visual result. But the second one tells the browser, the search engine, the accessibility API, and every tool that touches your code what the page structure actually is. The first one? It's meaningless markup hiding behind CSS.</p>
-    </section>
-    
-    <section id="cost-analysis">
-        <h2>The Cost Analysis: Where Div Soup Bleeds Money</h2>
-        
-        <p><strong>Development Costs (Deferred):</strong> Div soup seems faster initially. You're not thinking about semantics, hierarchy, or accessibility. But you're also not thinking about the cumulative cost. When you don't use semantic elements, you end up writing more CSS to force styling. You write more JavaScript to add behaviors that semantic elements provide for free. You write more manual testing because automation can't find elements. Time saved becomes time spent.</p>
-        
-        <p><strong>SEO Costs (Organic Traffic Lost):</strong> Google can't understand your page structure from unsemantic divs. You lose heading hierarchy signals. You lose landmark navigation signals. You lose semantic relationships between content. Studies show that websites with proper semantic HTML rank 20-30% higher for the same keywords because they're structurally clearer. If your site gets 10,000 organic visitors monthly, poor semantic structure might cost you 2,000-3,000 visitors. At an average conversion rate of 3%, that's 60-90 lost conversions per month. At $50 average order value, that's $3,000-4,500 monthly in lost revenue from a poor HTML structure alone.</p>
-        
-        <p><strong>Accessibility Costs (Legal):</strong> A website that relies entirely on CSS-styled divs will fail WCAG 2.1 Level AA compliance. Screen readers can't navigate the page properly. Keyboard users can't access interactive elements. This opens you to ADA Title III claims. The average settlement for website accessibility lawsuits is $25,000-$100,000+. And that's before the cost of remediation. Rewriting a poorly-structured site to semantic HTML often requires rebuilding from scratch: $5,000-$50,000+ depending on site size.</p>
-        
-        <p><strong>Maintenance Costs (Ongoing):</strong> Semantic HTML is self-documenting. Any developer looking at your code can see that `<nav>` is navigation, `<main>` is content, `<article>` is an article. Div soup is mystery meat. New team members spend hours understanding the structure. Bugs are harder to track because the HTML doesn't explain intent. Refactoring is risky because you can't see relationships. Most companies report that codebases built with semantic HTML have 30-40% lower maintenance costs over 3+ years.</p>
-        
-        <p><strong>Conversion Costs (Lost Users):</strong> Websites that are keyboard-navigable, well-structured, and fast have 20% higher conversion rates (per accessibility research). Poorly structured sites that rely entirely on mouse interactions and complex styling confuse users, increase cognitive load, and increase friction. A site losing even 10% of conversions due to poor structure is losing $10,000+ monthly on a $100,000/month revenue site.</p>
-    </section>
-    
-    <section id="real-world-example">
-        <h2>Real-World Example: The Numbers Add Up</h2>
-        
-        <p>Let's imagine a mid-market SaaS company with a website generating $100,000 monthly in revenue (3% conversion rate from 333,000 monthly visitors).</p>
-        
-        <p><strong>Impact of Div Soup vs. Semantic HTML:</strong></p>
-        
-        <ul style="margin-left: 2rem;">
-            <li>SEO impact: -25% organic reach = 83,000 fewer visitors/month</li>
-            <li>At 3% conversion: 2,500 lost conversions/month</li>
-            <li>At $40 average value: $100,000 lost monthly revenue</li>
-            <li>Annual cost: $1,200,000 in lost revenue</li>
+        <h2>What Is Div Soup? (And Why Everyone's Building It)</h2>
+        <p>Div soup happens when developers use <code>&lt;div&gt;</code> tags as generic containers and then layer on JavaScript and CSS to make them behave like proper HTML elements.</p>
+        <p>Example of div soup:</p>
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;">
+&lt;div class="nav-button" onclick="submitForm()"&gt;
+    &lt;span class="button-text"&gt;Submit&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
+        <p>Example of semantic HTML:</p>
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;">
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+        </pre>
+        <p>The button version works with:</p>
+        <ul>
+            <li>Keyboards (Enter and Space trigger submission)</li>
+            <li>Screen readers (announced as a button)</li>
+            <li>Mobile voice control (recognized as interactive)</li>
+            <li>Assistive technology (proper semantics)</li>
+            <li>Browsers (built-in form submission)</li>
+            <li>Search engines (understood as an action)</li>
         </ul>
-        
-        <p><strong>Plus legal liability:</strong> One accessibility lawsuit costs $50,000+ in legal fees and settlement. One year of poor accessibility practices plus even one lawsuit costs more than properly building the site with semantic HTML from the start.</p>
-        
-        <p><strong>Plus maintenance:</strong> A developer spending 30% extra time debugging poorly-structured code at $100/hour costs $5,000/month extra. Over a year: $60,000.</p>
-        
-        <p><strong>Total cost of div soup for this company over 3 years:</strong> ~$3.6M in lost revenue, $150K-250K in legal exposure, $180K in maintenance overhead. Total: $3.9M+ to save maybe $2,000-3,000 in initial development time.</p>
-        
-        <p>No company would knowingly make this tradeoff. Yet this is the economics of div soup.</p>
-    </section>
-    
-    <section id="why-developers-choose-soup">
-        <h2>Why Do Developers Choose Div Soup? (And Why They're Wrong)</h2>
-        
-        <p><strong>Reason 1: "It's Faster."</strong> Only at first. Once you factor in testing, debugging, maintenance, and accessibility fixes post-launch, semantic HTML is faster overall.</p>
-        
-        <p><strong>Reason 2: "Styling is Easier."</strong> Nope. CSS is actually easier to manage when you're styling semantic elements. You have fewer classes to invent and maintain. Cascade actually works in your favor when HTML structure is clear.</p>
-        
-        <p><strong>Reason 3: "The Designer Wants This Layout."</strong> Good news: semantic HTML doesn't constrain layout. CSS Grid, Flexbox, and positioning work the same whether you're using divs or semantic elements. You get the exact same visual design with proper HTML underneath.</p>
-        
-        <p><strong>Reason 4: "I Don't Know How to Use Semantic HTML."</strong> Fair. This is a knowledge gap. But it's not a reason to build broken sites—it's a reason to learn or hire developers who know better.</p>
-    </section>
-    
-    <section id="what-counts">
-        <h2>What Counts as Semantic HTML (Not Divs)</h2>
-        
-        <p>You don't need to memorize 50 semantic tags. The key ones account for 95% of structural markup:</p>
-        
-        <ul style="margin-left: 2rem;">
-            <li>`&lt;header&gt;` - Page header, site header</li>
-            <li>`&lt;nav&gt;` - Navigation menus</li>
-            <li>`&lt;main&gt;` - Primary content of the page</li>
-            <li>`&lt;article&gt;` - Blog posts, news articles, standalone content</li>
-            <li>`&lt;section&gt;` - Thematic grouping of content</li>
-            <li>`&lt;aside&gt;` - Sidebars, related content</li>
-            <li>`&lt;footer&gt;` - Page footer, site footer</li>
-            <li>`&lt;h1&gt;` through `&lt;h6&gt;` - Headings (not for styling—for structure)</li>
-            <li>`&lt;p&gt;` - Paragraphs (not for spacing—for semantic meaning)</li>
-            <li>`&lt;ul&gt;`/`&lt;ol&gt;` - Lists (not for layout—for semantic lists)</li>
+        <p>The div version requires JavaScript for all of this. And if that JavaScript fails (connection issues, browser incompatibility, old device), the button doesn't work at all.</p>
+        <p>Why do developers build div soup?</p>
+        <ul>
+            <li><strong>Design freedom:</strong> A <code>&lt;div&gt;</code> is a blank canvas. It looks like you have infinite styling options.</li>
+            <li><strong>Framework habits:</strong> Modern SPA frameworks (React, Vue, Angular) often abstract away semantic HTML in favor of components.</li>
+            <li><strong>Inexperience:</strong> Developers who've never worked with semantic HTML don't know what they're missing.</li>
+            <li><strong>Design tools:</strong> Figma exports often produce divs, not semantic HTML.</li>
+            <li><strong>Misguided optimization:</strong> Some developers think less HTML = faster loading. (It's the opposite.)</li>
         </ul>
-        
-        <p>That's it. These 10 tag types and their appropriate nesting handle 95% of page structure. If you're using anything else, you're building div soup.</p>
+        <p>But div soup has costs. Lots of them.</p>
     </section>
-    
-    <section id="migration">
-        <h2>If You Already Have Div Soup</h2>
-        
-        <p>The good news: semantic HTML retrofitting doesn't require a complete rebuild if your HTML structure is logical underneath the meaningless divs. Developers can often replace div containers with semantic elements and immediately improve accessibility, SEO, and maintainability without changing the visual design.</p>
-        
-        <p>The bad news: if your site is a true mess of divs with no underlying structure, you likely do need a rebuild. This is expensive. Which is why you don't want to start this way.</p>
-        
-        <p>The first step: audit your current HTML structure. How many semantic elements are you actually using? If it's fewer than 5-10, you have a div soup problem.</p>
+
+    <section id="cost-1-development">
+        <h2>Cost #1: Development Time and Maintenance</h2>
+        <p>Building interactive elements with divs takes more code. More code means more bugs. More bugs mean more maintenance.</p>
+        <p><strong>Semantic HTML button:</strong></p>
+        <ul>
+            <li>HTML: 1 line (<code>&lt;button&gt;Submit&lt;/button&gt;</code>)</li>
+            <li>JavaScript: 0 lines (built-in form submission)</li>
+            <li>CSS: 2-5 lines (styling)</li>
+            <li>Total: ~1 day to ship a polished button</li>
+        </ul>
+        <p><strong>Div soup button:</strong></p>
+        <ul>
+            <li>HTML: 3-5 lines (nested divs/spans)</li>
+            <li>JavaScript: 15-30 lines (click handler, keyboard support, focus management, hover states)</li>
+            <li>CSS: 20-50 lines (styling all states and responsive variants)</li>
+            <li>Testing: 2-3 hours (keyboard, mouse, mobile, screen readers)</li>
+            <li>Bug fixes: 4-6 hours over the lifetime of the project</li>
+            <li>Total: ~3-5 days to ship a button that mostly works</li>
+        </ul>
+        <p>On a typical website with 20-50 interactive elements, this adds up fast:</p>
+        <ul>
+            <li><strong>Semantic HTML:</strong> 20-50 elements × 1 day = 20-50 days of dev time</li>
+            <li><strong>Div soup:</strong> 20-50 elements × 4 days = 80-200 days of dev time</li>
+            <li><strong>Cost difference:</strong> 60-150 extra days of development = $48,000-$150,000 extra (at $800/day for a developer)</li>
+        </ul>
+        <p>And that's just the initial build. Div soup is harder to maintain:</p>
+        <ul>
+            <li><strong>Onboarding new developers:</strong> They need to understand your custom button system. With semantic HTML, it's obvious.</li>
+            <li><strong>Bug fixes:</strong> When your custom button breaks, you need to debug JavaScript. A semantic button rarely breaks.</li>
+            <li><strong>Refactoring:</strong> If you want to change how buttons work, you're rewriting JavaScript everywhere. Semantic buttons use CSS—one change everywhere.</li>
+            <li><strong>Testing:</strong> Custom JavaScript buttons need extensive testing across browsers and devices. Semantic buttons work everywhere by default.</li>
+        </ul>
+        <p><strong>Lifetime maintenance cost for div soup: +$10,000-$30,000 per year</strong></p>
     </section>
-    
-    <section id="recommendation">
-        <h2>The Recommendation</h2>
-        
-        <p>Build new sites with semantic HTML from day one. It takes five minutes longer to think about structure during development and saves months of problems later. Refactor existing div soup sites incrementally. Start with the homepage and highest-traffic pages. Each page you fix improves SEO immediately and accessibility compliance proportionally.</p>
-        
-        <p>Treat semantic HTML as a non-negotiable requirement in your style guide and code review process. This is as fundamental as using proper variable naming or error handling. It's not optional.</p>
-        
-        <p>And stop measuring development speed in days-to-launch. Measure it in total-cost-of-ownership. When you do, the economics of semantic HTML become undeniable: it's the fastest, cheapest, most accessible way to build.</p>
+
+    <section id="cost-2-accessibility">
+        <h2>Cost #2: Accessibility and ADA Litigation Risk</h2>
+        <p>Div soup is almost always inaccessible. Your custom button doesn't work with keyboards. Your custom navigation doesn't work with screen readers. Your custom form doesn't work with voice control.</p>
+        <p>This creates two costs:</p>
+        <p><strong>Lost customers:</strong> About 15% of the population has a disability. Add another 15% experiencing temporary accessibility barriers (broken mouse, arm in a sling, lost glasses, etc.). That's 30% of your potential customers who can't use your site.</p>
+        <ul>
+            <li>Average e-commerce site: 100,000 annual visitors</li>
+            <li>Visitors excluded by inaccessibility: 30,000</li>
+            <li>Average conversion rate: 2%</li>
+            <li>Lost conversions: 600 per year</li>
+            <li>Average order value: $100</li>
+            <li><strong>Annual revenue loss: $60,000</strong></li>
+        </ul>
+        <p><strong>ADA litigation risk:</strong> Website accessibility lawsuits have exploded. In 2024, there were over 3,000 federal accessibility lawsuits. Settlement amounts averaged $25,000-$100,000 per case.</p>
+        <p>If your website is inaccessible and someone sues:</p>
+        <ul>
+            <li>Legal fees: $15,000-$50,000</li>
+            <li>Settlement: $25,000-$100,000</li>
+            <li>Remediation: $5,000-$50,000 (to fix the accessibility violations)</li>
+            <li>Total: $45,000-$200,000</li>
+        </ul>
+        <p>A single lawsuit can wipe out years of development savings from using div soup.</p>
+        <p><strong>Annual risk calculation:</strong></p>
+        <ul>
+            <li>Probability of lawsuit in a year (inaccessible site): 5-10%</li>
+            <li>Average settlement + legal + remediation: $100,000</li>
+            <li>Expected legal cost: $5,000-$10,000 per year</li>
+            <li>Plus revenue loss: $60,000 per year (as above)</li>
+            <li><strong>Total annual cost of inaccessibility: $65,000-$70,000</strong></li>
+        </ul>
+        <p><strong>Cost to fix with semantic HTML from the start: $0</strong></p>
     </section>
-    
-    <section id="conclusion">
-        <p>Div soup looks fine when you squint at the rendered page. But underneath, it's costing you money every single day. Lost search rankings. Lost conversions. Lost accessibility compliance. Maintenance headaches. Legal exposure.</p>
-        
-        <p>Semantic HTML looks exactly the same to users. It ranks better. It converts better. It costs less to maintain. It's legally compliant. And it takes virtually the same amount of time to build. There's no downside—only the upside of knowing what you're actually shipping.</p>
-        
-        <p>Ship semantically. Your users, your search rankings, and your lawyers will thank you.</p>
+
+    <section id="cost-3-seo">
+        <h2>Cost #3: SEO and Organic Traffic</h2>
+        <p>Search engines struggle with div soup. They can't understand the structure. They don't know what's navigation, what's content, what's important.</p>
+        <p>Semantic HTML signals to search engines:</p>
+        <ul>
+            <li><code>&lt;nav&gt;</code> = navigation (don't rank this heavily)</li>
+            <li><code>&lt;article&gt;</code> = main content (rank this heavily)</li>
+            <li><code>&lt;h1&gt;</code> = page title (important)</li>
+            <li><code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> = subtopics (important)</li>
+            <li><code>&lt;a href&gt;</code> = links (crawlable)</li>
+        </ul>
+        <p>Div soup has no signals. Google has to guess. And when Google guesses wrong, you don't rank.</p>
+        <p>Result: ranking drops 20-40% compared to semantic competitors.</p>
+        <ul>
+            <li>Website with semantic HTML: 100,000 organic visitors per year</li>
+            <li>Website with div soup: 60,000-80,000 organic visitors per year</li>
+            <li>Difference: 20,000-40,000 fewer visitors</li>
+            <li>At 2% conversion and $100 average order: $40,000-$80,000 lost revenue per year</li>
+        </ul>
+        <p>And this gets worse over time. Your competitors with semantic HTML gradually outrank you. By year 3-5, you could be losing 50%+ of organic traffic.</p>
+        <p><strong>Annual SEO cost of div soup: $40,000-$80,000 per year</strong></p>
     </section>
-    
+
+    <section id="cost-4-performance">
+        <h2>Cost #4: Performance and User Experience</h2>
+        <p>Div soup requires more JavaScript. More JavaScript means slower load times. Slower load times mean higher bounce rates and lower conversion.</p>
+        <p><strong>Semantic HTML site:</strong></p>
+        <ul>
+            <li>HTML: 50KB</li>
+            <li>CSS: 20KB</li>
+            <li>JavaScript: 10KB (minimal interaction code)</li>
+            <li>Total: 80KB</li>
+            <li>Load time: ~1.2 seconds (on 4G)</li>
+            <li>Bounce rate: 30%</li>
+        </ul>
+        <p><strong>Div soup site:</strong></p>
+        <ul>
+            <li>HTML: 100KB (divs, divs, more divs)</li>
+            <li>CSS: 80KB (styling all the custom divs)</li>
+            <li>JavaScript: 150KB (making the divs interactive)</li>
+            <li>Plus framework overhead: 100KB (React, Vue, etc.)</li>
+            <li>Total: 430KB</li>
+            <li>Load time: ~4+ seconds (on 4G)</li>
+            <li>Bounce rate: 50%</li>
+        </ul>
+        <p>Research shows:</p>
+        <ul>
+            <li>Every 1 second delay in load time = 7% drop in conversion</li>
+            <li>Every 1 second delay = 11% drop in page views</li>
+            <li>Every 1 second delay = 16% decrease in customer satisfaction</li>
+        </ul>
+        <p>In this example, the div soup site is 3 seconds slower. That's:</p>
+        <ul>
+            <li>21% drop in conversions</li>
+            <li>33% drop in page views</li>
+            <li>48% drop in customer satisfaction</li>
+        </ul>
+        <p>On 100,000 annual visitors:</p>
+        <ul>
+            <li>Semantic: 70,000 stay on site, 1,400 convert = $140,000</li>
+            <li>Div soup: 50,000 stay on site, 1,078 convert = $107,800</li>
+            <li><strong>Annual cost of poor performance: $32,200</strong></li>
+        </ul>
+    </section>
+
+    <section id="cost-5-mobile">
+        <h2>Cost #5: Mobile Performance and Experience</h2>
+        <p>Mobile is where the performance gap widens. 4G connections are slower than desktop. Low-end devices have less processing power. Div soup becomes unusable.</p>
+        <ul>
+            <li><strong>Semantic HTML on mobile:</strong> Fast, snappy, works on 5-year-old phones.</li>
+            <li><strong>Div soup on mobile:</strong> Sluggish, crashes on older devices, JavaScript takes 6+ seconds to load and parse.</li>
+        </ul>
+        <p>Mobile traffic is 60% of web traffic. If your div soup site is slow on mobile, you're losing 60% of your audience.</p>
+        <ul>
+            <li>Desktop visitors: 40,000 (2% conversion) = 800 conversions</li>
+            <li>Mobile visitors: 60,000 (0.5% conversion on slow site) = 300 conversions</li>
+            <li>With semantic HTML mobile: 60,000 (1.8% conversion on fast site) = 1,080 conversions</li>
+            <li><strong>Mobile performance cost: 280 lost conversions per year = $28,000</strong></li>
+        </ul>
+    </section>
+
+    <section id="cost-6-rewriting">
+        <h2>Cost #6: Rewriting Div Soup Later (It's Expensive)</h2>
+        <p>Eventually, someone realizes the site is inaccessible, slow, and not ranking. Then comes the "accessibility overhaul" or "SEO rewrite."</p>
+        <p>This is where div soup gets really expensive. You can't just add semantic HTML—you have to rewrite the entire frontend:</p>
+        <ul>
+            <li>Audit existing code: $5,000-$10,000</li>
+            <li>Rewrite HTML to semantic: $20,000-$50,000</li>
+            <li>Refactor JavaScript (remove custom event handlers): $15,000-$30,000</li>
+            <li>Rewrite CSS (work with actual HTML elements): $10,000-$20,000</li>
+            <li>Add missing alt text, headings, form labels: $5,000-$15,000</li>
+            <li>Testing and QA: $10,000-$20,000</li>
+            <li><strong>Total rewrite cost: $65,000-$145,000</strong></li>
+        </ul>
+        <p>You just spent $100,000+ to build what should have taken an extra 10-20% effort on the first project.</p>
+    </section>
+
+    <section id="total-cost">
+        <h2>The Total Cost of Div Soup Over 5 Years</h2>
+        <p>Let's sum it up for a typical mid-size website:</p>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+            <tr style="border-bottom: 2px solid var(--border);">
+                <th style="text-align: left; padding: 0.5rem;">Cost Category</th>
+                <th style="text-align: right; padding: 0.5rem;">Year 1</th>
+                <th style="text-align: right; padding: 0.5rem;">Year 2-5</th>
+                <th style="text-align: right; padding: 0.5rem;">5-Year Total</th>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">Initial development (extra cost)</td>
+                <td style="text-align: right; padding: 0.5rem;">$75,000</td>
+                <td style="text-align: right; padding: 0.5rem;">—</td>
+                <td style="text-align: right; padding: 0.5rem;">$75,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">Accessibility + litigation risk</td>
+                <td style="text-align: right; padding: 0.5rem;">$65,000</td>
+                <td style="text-align: right; padding: 0.5rem;">$65,000/yr</td>
+                <td style="text-align: right; padding: 0.5rem;">$325,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">SEO/organic traffic loss</td>
+                <td style="text-align: right; padding: 0.5rem;">$40,000</td>
+                <td style="text-align: right; padding: 0.5rem;">$60,000/yr</td>
+                <td style="text-align: right; padding: 0.5rem;">$280,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">Performance/conversion loss</td>
+                <td style="text-align: right; padding: 0.5rem;">$30,000</td>
+                <td style="text-align: right; padding: 0.5rem;">$30,000/yr</td>
+                <td style="text-align: right; padding: 0.5rem;">$150,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">Mobile performance loss</td>
+                <td style="text-align: right; padding: 0.5rem;">$28,000</td>
+                <td style="text-align: right; padding: 0.5rem;">$28,000/yr</td>
+                <td style="text-align: right; padding: 0.5rem;">$140,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;">Maintenance overhead</td>
+                <td style="text-align: right; padding: 0.5rem;">$10,000</td>
+                <td style="text-align: right; padding: 0.5rem;">$20,000/yr</td>
+                <td style="text-align: right; padding: 0.5rem;">$90,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+                <td style="padding: 0.5rem;"><strong>Eventual rewrite</strong></td>
+                <td style="text-align: right; padding: 0.5rem;">—</td>
+                <td style="text-align: right; padding: 0.5rem;">$100,000 (Year 4)</td>
+                <td style="text-align: right; padding: 0.5rem;">$100,000</td>
+            </tr>
+            <tr style="background: var(--bg-secondary); font-weight: 600;">
+                <td style="padding: 0.5rem;"><strong>TOTAL</strong></td>
+                <td style="text-align: right; padding: 0.5rem;"><strong>$248,000</strong></td>
+                <td style="text-align: right; padding: 0.5rem;"><strong>~$175,000/yr</strong></td>
+                <td style="text-align: right; padding: 0.5rem;"><strong>$1,160,000</strong></td>
+            </tr>
+        </table>
+        <p style="margin-top: 1rem;"><strong>That's over $1.1 million in costs over 5 years from choosing div soup over semantic HTML.</strong></p>
+        <p>For comparison, building with semantic HTML from the start would have added maybe 10-15% to initial development costs (not 50%+) and eliminated all of these downstream costs.</p>
+        <ul>
+            <li>Semantic HTML 5-year total: $200,000-$250,000</li>
+            <li>Div soup 5-year total: $1,160,000+</li>
+            <li><strong>Total cost difference: $900,000+</strong></li>
+        </ul>
+    </section>
+
+    <section id="why-it-matters">
+        <h2>Why Companies Still Build Div Soup</h2>
+        <ul>
+            <li><strong>Short-term thinking:</strong> Launch fast, worry about consequences later. But consequences compound.</li>
+            <li><strong>Designer-driven development:</strong> Designers want pixel-perfect control. Div soup seems to offer that (it doesn't—CSS can do it with semantic HTML).</li>
+            <li><strong>Resume-driven development:</strong> Developers want to use the latest framework. Sometimes that means avoiding semantic HTML.</li>
+            <li><strong>Lack of knowledge:</strong> Many developers genuinely don't know semantic HTML exists or why it matters.</li>
+            <li><strong>Tool defaults:</strong> Figma to React pipelines often default to div-based output.</li>
+        </ul>
+        <p>None of these reasons justify $1 million in lost value.</p>
+    </section>
+
+    <section id="the-solution">
+        <h2>The Solution: Build with Semantic HTML From Day One</h2>
+        <p>You don't need to choose between beautiful design and accessible, performant, SEO-friendly code. They're not mutually exclusive.</p>
+        <p>Semantic HTML with modern CSS can be:</p>
+        <ul>
+            <li><strong>Beautiful:</strong> CSS handles all visual design. Semantic HTML is completely customizable.</li>
+            <li><strong>Performant:</strong> Less code, faster load times, better conversion.</li>
+            <li><strong>Accessible:</strong> Works for everyone, reduces litigation risk, expands your market.</li>
+            <li><strong>SEO-friendly:</strong> Search engines rank it higher.</li>
+            <li><strong>Maintainable:</strong> Easier to update, fewer bugs, lower lifetime costs.</li>
+        </ul>
+        <p>Start with semantic HTML. Layer on CSS for design. Add JavaScript only when necessary. You'll ship faster, at lower cost, with better results.</p>
+    </section>
+
     <section style="margin-top: 3rem;">
         <div class="highlight">
-            <h2 style="margin-top: 0;">Audit Your HTML Structure</h2>
-            <p>Is your site built on semantic HTML or div soup? Get a detailed analysis of your markup quality and the cost of non-semantic structure.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Semantic HTML & Cost Analysis')">Analyze My Site</button>
+            <h2 style="margin-top: 0;">Audit Your Site's Code Quality</h2>
+            <p>Find out if your website is built with semantic HTML or div soup. Discover how much you're potentially losing to poor structure, accessibility issues, and performance problems. Get a full cost analysis with our deep audit.</p>
+            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Div Soup Code Quality Assessment')">Analyze My Site Structure</button>
         </div>
     </section>
 </article>
