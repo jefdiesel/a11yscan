@@ -223,6 +223,25 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             scroll-margin-top: 80px;
         }
         
+        .post-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+        
+        .post-header time {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
         .blog-post section {
             scroll-margin-top: 100px;
         }
