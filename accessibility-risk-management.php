@@ -9,11 +9,8 @@ $pageContent = <<<'HTML'
         <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Accessibility as Enterprise Risk Management: 2024-2025 Analysis</h1>
         
-        <h2>Risk</h2>
         <h2>Accessibility as Enterprise Risk</h2>
-        
-        <h3>Financial Impact Quantification</h3>
-        <p>Organizations can now quantify accessibility risk with reasonable precision based on 2024 litigation data. Risk calculators can estimate expected litigation costs based on industry, website complexity, traffic volume, and existing compliance status.</p>
+        <p>Financial impact quantification based on 2024 litigation data allows organizations to quantify accessibility risk with reasonable precision. Risk calculators can estimate expected litigation costs based on industry, website complexity, traffic volume, and existing compliance status.</p>
         <p>For a mid-sized e-commerce site with 1 million monthly visitors, average litigation risk exceeds $150,000 annually. Multiplied across an organization's portfolio, accessibility litigation risk becomes material to enterprise risk profiles.</p>
 
         <h3>Risk Acceptance vs. Mitigation</h3>
@@ -21,7 +18,7 @@ $pageContent = <<<'HTML'
         <p>This economic analysis drives institutional capital allocation toward accessibility. Insurance companies, risk managers, and CFOs increasingly recognize that accessibility investment is risk mitigation with compelling return on investment.</p>
     </section>
 
-    <section>
+    <section id="insurance">
         <h2>Insurance Implications</h2>
         
         <h3>Cyber Insurance Coverage Questions</h3>
@@ -39,7 +36,7 @@ $pageContent = <<<'HTML'
         <p>Insurance providers increasingly offer premium reductions for organizations demonstrating strong accessibility programs. Documented compliance, regular auditing, and accessibility personnel can reduce insurance costs, creating financial incentives for compliance beyond direct litigation risk reduction.</p>
     </section>
 
-    <section>
+    <section id="financial-reporting">
         <h2>Financial Reporting and Disclosure</h2>
         
         <h3>Material Risk Disclosure</h3>
@@ -55,7 +52,7 @@ $pageContent = <<<'HTML'
         <p>For acquisition and valuation purposes, accessibility liability affects target company valuation. Acquirers conducting due diligence increasingly assess accessibility risk. Poor accessibility compliance reduces valuation multiples and creates post-acquisition remediation costs.</p>
     </section>
 
-    <section>
+    <section id="board-accountability">
         <h2>Board and Executive Accountability</h2>
         
         <h3>Board Oversight Expectations</h3>
@@ -69,12 +66,12 @@ $pageContent = <<<'HTML'
         <p>As accessibility emerges as established risk, executive failure to address known accessibility issues creates potential liability. Directors and officers who ignored accessibility warnings despite board awareness face potential personal liability.</p>
     </section>
 
-    <section>
+    <section id="operational-risk">
         <h2>Operational Risk Integration</h2>
         
         <h3>Accessibility in Risk Management Frameworks</h3>
         <p>Organizations should integrate accessibility into enterprise risk management frameworks through:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Risk identification:</strong> Accessibility barriers identified as operational risk</li>
             <li style="margin-bottom: 0.75rem;"><strong>Risk assessment:</strong> Likelihood and impact of accessibility litigation quantified</li>
             <li style="margin-bottom: 0.75rem;"><strong>Risk mitigation:</strong> Accessibility programs designed to reduce accessibility risk</li>
@@ -88,12 +85,12 @@ $pageContent = <<<'HTML'
         <p>IT governance frameworks should include accessibility standards. Procurement processes should verify vendor accessibility. IT audits should assess accessibility compliance. Architecture reviews should ensure accessibility considerations are integrated.</p>
     </section>
 
-    <section>
+    <section id="vendor-management">
         <h2>Vendor and Contractor Risk Management</h2>
         
         <h3>Accessibility in RFP and Contract Language</h3>
         <p>Procurement processes should require accessibility compliance from vendors and contractors. Contract language should establish:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Minimum WCAG conformance requirements</li>
             <li style="margin-bottom: 0.75rem;">Vendor responsibility for accessibility barriers they create</li>
             <li style="margin-bottom: 0.75rem;">Indemnification for vendor accessibility failures</li>
@@ -109,15 +106,15 @@ $pageContent = <<<'HTML'
         <p>Accessibility risk from third parties (payment processors, analytics vendors, CDNs, etc.) should be formally assessed during vendor evaluation and periodically during vendor management.</p>
     </section>
 
-    <section>
+    <section id="crisis-management">
         <h2>Crisis Management and Litigation Preparedness</h2>
         
         <h3>Litigation Readiness Planning</h3>
         <p>Organizations should develop litigation readiness plans addressing potential accessibility disputes:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Identify key spokespersons for accessibility communication</li>
             <li style="margin-bottom: 0.75rem;">Establish document preservation protocols</li>
-            <li style="margin-bottom: 0.75mr;">Maintain relationships with experienced accessibility litigation counsel</li>
+            <li style="margin-bottom: 0.75rem;">Maintain relationships with experienced accessibility litigation counsel</li>
             <li style="margin-bottom: 0.75rem;">Develop media communication strategies for accessibility claims</li>
             <li style="margin-bottom: 0.75rem;">Budget for potential litigation and settlement costs</li>
         </ul>
@@ -129,7 +126,7 @@ $pageContent = <<<'HTML'
         <p>Organizations should consider how accessibility issues affect stakeholder communication: investor relations, customer communication, employee communication, and public relations.</p>
     </section>
 
-    <section>
+    <section id="strategic-opportunity">
         <h2>Strategic Opportunity from Accessibility Investment</h2>
         
         <h3>Competitive Differentiation</h3>
@@ -145,7 +142,7 @@ $pageContent = <<<'HTML'
         <p>Organizations demonstrating strong accessibility commitment develop positive relationships with regulatory agencies and disability advocates, creating potential political advantages in regulatory environments.</p>
     </section>
 
-    <section>
+    <section id="risk-trends">
         <h2>2024-2025 Risk Trends Summary</h2>
         
         <h3>Increasing Quantifiability</h3>
@@ -161,9 +158,9 @@ $pageContent = <<<'HTML'
         <p>Accessibility transitions from compliance function to strategic business concern. Accessibility affects market reach, brand reputation, shareholder value, and enterprise risk profiles.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Accessibility represents quantifiable material business risk affecting enterprise risk management frameworks.</li>
             <li>Insurance markets are pricing accessibility risk through cyber liability and developing dedicated accessibility insurance products.</li>
             <li>Public companies face increasing shareholder pressure and board-level expectations for accessibility governance.</li>
@@ -174,9 +171,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.coso.org/">COSO Enterprise Risk Management Framework</a></li>
             <li><a href="https://www.sec.gov/">SEC Guidance on Risk Factor Disclosure</a></li>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
@@ -193,8 +190,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-
 HTML;
 
 include 'template.php';

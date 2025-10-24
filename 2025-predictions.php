@@ -9,14 +9,13 @@ $pageContent = <<<'HTML'
         <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">2025 Accessibility Litigation Predictions: What to Expect</h1>
         
-        <h2>Volume Forecast</h2>
         <h2>Litigation Volume Forecast</h2>
         <p>If current trends continue, 2025 will see 5,000 to 6,000 digital accessibility lawsuits filed—a 25-50% increase over 2024. This acceleration reflects multiple converging factors: increased litigation infrastructure, refined plaintiff strategies, growing legal precedent, and stronger economic incentives for plaintiff attorneys.</p>
         <p>The trajectory suggests that by 2027, annual accessibility litigation could reach 8,000-10,000 cases. This growth rate rivals the early internet defamation litigation explosion. For organizations, this means accessibility is transitioning from a peripheral concern to a primary legal and business risk.</p>
         <p>Most concerning for organizations: current remediation capacity cannot keep pace with litigation growth. Skilled accessibility consultants, developers, and testers are in short supply. Organizations seeking remediation in 2025 may face 6-12 month project delays and premium pricing for limited accessibility expertise.</p>
     </section>
 
-    <section>
+    <section id="emerging-frontiers">
         <h2>Emerging Litigation Frontiers</h2>
         
         <h3>Artificial Intelligence and Generative Content</h3>
@@ -36,7 +35,7 @@ $pageContent = <<<'HTML'
         <p>Multiple lawsuits already challenge accessibility overlays that claim to automatically remediate accessibility problems. 2025 will see aggressive litigation against overlay companies and websites using overlays, establishing that overlays cannot substitute for genuine accessibility remediation.</p>
     </section>
 
-    <section>
+    <section id="geographic-expansion">
         <h2>Geographic Expansion and New Hotspots</h2>
         
         <h3>Texas: Emerging Hotspot</h3>
@@ -52,7 +51,7 @@ $pageContent = <<<'HTML'
         <p>As California litigation becomes saturated and settlement outcomes mature, plaintiff attorneys will increasingly file in other jurisdictions. This geographically disperses risk and makes industry-wide trends harder for organizations to track.</p>
     </section>
 
-    <section>
+    <section id="industry-vulnerabilities">
         <h2>Industry-Specific Vulnerabilities</h2>
         
         <h3>Social Media Platforms: New Frontier</h3>
@@ -71,7 +70,7 @@ $pageContent = <<<'HTML'
         <p>Federal and state governments will intensify enforcement against inaccessible government websites and services. The Department of Justice will likely bring multiple enforcement actions. Predictions: Expect federal actions against at least one federal agency website for accessibility non-compliance.</p>
     </section>
 
-    <section>
+    <section id="legal-theories">
         <h2>Evolving Legal Theories and Arguments</h2>
         
         <h3>Disability Discrimination Combined with Other Discrimination</h3>
@@ -87,7 +86,7 @@ $pageContent = <<<'HTML'
         <p>Expect broader class action certifications in 2025, exposing organizations to class-wide liability rather than individual plaintiff claims. Massive classes could create liability spanning millions of potential claimants.</p>
     </section>
 
-    <section>
+    <section id="plaintiff-strategy">
         <h2>Plaintiff Strategy Evolution</h2>
         
         <h3>Nationwide Coordinated Campaigns</h3>
@@ -103,7 +102,7 @@ $pageContent = <<<'HTML'
         <p>International disability organizations will increasingly coordinate with U.S. plaintiffs, creating global litigation pressure on multinational companies.</p>
     </section>
 
-    <section>
+    <section id="legislative-developments">
         <h2>Likely Legislative Developments</h2>
         
         <h3>Potential ADA Amendments</h3>
@@ -119,7 +118,7 @@ $pageContent = <<<'HTML'
         <p>Legislation targeting social media platforms and large technology companies may emerge, potentially establishing accessibility requirements specific to platform features.</p>
     </section>
 
-    <section>
+    <section id="defense-strategies">
         <h2>Defense Strategies and Emerging Arguments</h2>
         
         <h3>Technical Feasibility Defense Evolution</h3>
@@ -132,12 +131,12 @@ $pageContent = <<<'HTML'
         <p>Defendants demonstrating genuine, sustained accessibility investment will potentially face reduced damages. This incentivizes proactive accessibility spending.</p>
     </section>
 
-    <section>
+    <section id="settlement-trends">
         <h2>Settlement Trends for 2025</h2>
         
         <h3>Settlement Amounts</h3>
         <p>Expected settlement ranges:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Individual claims:</strong> $75,000 - $200,000 per plaintiff</li>
             <li style="margin-bottom: 0.75rem;"><strong>Multi-plaintiff cases:</strong> $500,000 - $2 million aggregate</li>
             <li style="margin-bottom: 0.75rem;"><strong>Class actions:</strong> $2 million - $10 million (increasing)</li>
@@ -146,7 +145,7 @@ $pageContent = <<<'HTML'
 
         <h3>Settlement Terms</h3>
         <p>2025 settlements will increasingly include:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Long-term monitoring (3-5 years minimum)</li>
             <li style="margin-bottom: 0.75rem;">Ongoing compliance reporting to courts or oversight agencies</li>
             <li style="margin-bottom: 0.75rem;">Accessibility officer hiring requirements</li>
@@ -155,11 +154,11 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="preparation">
         <h2>2025 Preparation Recommendations</h2>
         
         <h3>Immediate Actions (Q4 2024 - Q1 2025)</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Conduct comprehensive accessibility audit to identify current vulnerabilities</li>
             <li style="margin-bottom: 0.75rem;">Prioritize remediation based on severity and litigation risk</li>
             <li style="margin-bottom: 0.75rem;">Establish accessibility governance structure and standards</li>
@@ -167,7 +166,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Mid-Year Actions (Q2-Q3 2025)</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Complete remediation of highest-risk vulnerabilities</li>
             <li style="margin-bottom: 0.75rem;">Implement accessibility testing into development processes</li>
             <li style="margin-bottom: 0.75rem;">Train development and design teams on accessibility</li>
@@ -175,7 +174,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Ongoing Commitments</h3>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;">Maintain documentation of accessibility efforts for good faith defense</li>
             <li style="margin-bottom: 0.75rem;">Conduct quarterly accessibility audits</li>
             <li style="margin-bottom: 0.75rem;">Update accessibility policies as legislation evolves</li>
@@ -183,9 +182,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Expect 5,000-6,000 accessibility lawsuits in 2025, a 25-50% increase over 2024.</li>
             <li>Emerging litigation frontiers include AI interfaces, voice controls, mobile apps, and accessibility overlays.</li>
             <li>Texas, Georgia, and North Carolina will likely become secondary litigation hotspots.</li>
@@ -197,9 +196,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
             <li><a href="https://www.justice.gov/crt/americans-disabilities-act">Department of Justice - ADA</a></li>
@@ -216,8 +215,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-
 HTML;
 
 include 'template.php';

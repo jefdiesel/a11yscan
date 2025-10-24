@@ -9,7 +9,6 @@ $pageContent = <<<'HTML'
         <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">The ADA & Your Website: Legal Requirements in 2025</h1>
         
-        <h2>Landscape</h2>
         <h2>The Legal Landscape of Web Accessibility</h2>
         <p>The Americans with Disabilities Act, enacted in 1990, prohibits discrimination based on disability. For decades, the ADA was applied primarily to physical spaces and employment. However, as commerce and communication moved online, courts began interpreting ADA requirements to apply to digital spaces, including websites.</p>
         <p>The ADA doesn't explicitly reference websites or WCAG standards. Instead, courts interpret the law's requirement that businesses provide "full and equal access" to mean that websites must be accessible to people with disabilities. Multiple court decisions and the Department of Justice have clarified that WCAG conformance, particularly Level AA, represents the practical standard for ADA compliance.</p>
@@ -17,7 +16,7 @@ $pageContent = <<<'HTML'
         <p>Organizations operating across multiple states face additional complexity. While federal law provides baseline requirements through the ADA, individual states have enacted their own accessibility mandates that may exceed federal minimums. A website compliant with federal ADA standards may still violate state-specific requirements.</p>
     </section>
 
-    <section>
+    <section id="ada-overview">
         <h2>The Americans with Disabilities Act (ADA) and Digital Accessibility</h2>
         <p>The ADA applies to private businesses, state and local governments, non-profits, and other covered entities with 15 or more employees. The law prohibits discrimination in all areas of public life, including access to goods and services.</p>
 
@@ -33,14 +32,14 @@ $pageContent = <<<'HTML'
         <p>However, courts have also established that Level A compliance alone is insufficient. Multiple decisions have found that websites meeting only Level A still violate the ADA. The legal trend moves increasingly toward Level AA as the minimum expected standard.</p>
     </section>
 
-    <section>
+    <section id="section-508">
         <h2>Section 508 of the Rehabilitation Act</h2>
         <p>Section 508 applies specifically to federal agencies and federal contractors. It requires that information technology, including websites and software, be accessible to employees and members of the public with disabilities.</p>
         <p>Section 508 explicitly references WCAG 2.0 Level AA as the compliance standard. Federal agencies must meet Level AA conformance, and federal contractors serving agencies must ensure their systems meet these requirements. This makes Section 508 the most precise legal standard in accessibility compliance.</p>
         <p>If your organization is a federal contractor or serves federal agencies, Section 508 compliance is non-negotiable. Additionally, meeting Section 508 requirements typically satisfies ADA requirements, making it an excellent standard to target regardless of direct federal obligations.</p>
     </section>
 
-    <section>
+    <section id="state-laws">
         <h2>State and Local Accessibility Laws</h2>
         <p>Beyond federal requirements, many states have enacted accessibility mandates that may exceed ADA requirements.</p>
 
@@ -57,7 +56,7 @@ $pageContent = <<<'HTML'
         <p>Organizations serving European customers should be aware of the European Accessibility Act, which requires Level AA compliance for large organizations and provides exemptions for small businesses that meet Level AA requirements. The regulations take full effect in 2025, making compliance increasingly important.</p>
     </section>
 
-    <section>
+    <section id="litigation">
         <h2>The Litigation Landscape: Settlement Amounts and Trends</h2>
         <p>The number of accessibility lawsuits has grown exponentially over the past decade. Understanding this trend is essential for appreciating organizational risk.</p>
 
@@ -67,7 +66,7 @@ $pageContent = <<<'HTML'
         <h3>Settlement Amounts</h3>
         <p>Settlements in accessibility cases typically range from $50,000 to $250,000 per plaintiff. However, larger cases, class actions, and cases involving major corporations have resulted in substantially larger settlements.</p>
         <p><strong>Notable settlements include:</strong></p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li>Domino's Pizza: $3 million settlement for inaccessible website and app (2020)</li>
             <li>Google: $20 million settlement for YouTube accessibility issues (2022)</li>
             <li>Nike: $1.5 million settlement for website accessibility barriers (2021)</li>
@@ -81,7 +80,7 @@ $pageContent = <<<'HTML'
         <p>Many lawsuits are filed by plaintiffs or law firms specializing in accessibility litigation. Some cases involve individuals with genuine disabilities seeking access; others involve professional plaintiffs testing websites for violations. Regardless of plaintiff motivation, organizations cannot rely on perceived low violation risk to avoid compliance.</p>
     </section>
 
-    <section>
+    <section id="compliance-standards">
         <h2>Compliance Standards: What Legal Compliance Requires</h2>
         <p>While the legal landscape is complex, practical compliance generally requires achieving WCAG 2.1 Level AA across your entire website.</p>
 
@@ -97,7 +96,7 @@ $pageContent = <<<'HTML'
         <p>Accessibility is not a one-time project. Legal compliance requires maintaining accessibility as your website evolves. New features, updated content, and design changes must all maintain compliance. Regression testing ensures that maintenance and updates don't introduce accessibility barriers.</p>
     </section>
 
-    <section>
+    <section id="legal-defenses">
         <h2>Defending Against Accessibility Claims: Legal Considerations</h2>
         <p>While the best strategy is proactive compliance, understanding potential defenses helps organizations appreciate the legal exposure.</p>
 
@@ -111,7 +110,7 @@ $pageContent = <<<'HTML'
         <p>Courts consider whether organizations made good faith efforts toward compliance. An organization can potentially reduce damages if it can demonstrate genuine commitment to accessibility, even if full compliance hasn't been achieved. This emphasizes the importance of documented accessibility efforts, even if incomplete.</p>
     </section>
 
-    <section>
+    <section id="risk-management">
         <h2>Accessibility as Risk Management</h2>
         <p>Beyond legal compliance, accessibility represents crucial risk management. The cost of accessibility remediation is substantially lower than the cost of litigation.</p>
 
@@ -127,7 +126,7 @@ $pageContent = <<<'HTML'
         <p>Approximately 1 billion people globally have disabilities. In the United States, approximately 43 million people have disabilities. Accessible websites reach this entire market while inaccessible websites exclude it. From a business opportunity perspective, accessibility expands market reach.</p>
     </section>
 
-    <section>
+    <section id="compliance-roadmap">
         <h2>Creating a Compliance Roadmap</h2>
         <p>Organizations seeking to achieve legal compliance should follow this roadmap:</p>
 
@@ -150,9 +149,9 @@ $pageContent = <<<'HTML'
         <p>Maintain documentation of accessibility initiatives, testing results, and remediation efforts. This documentation supports good faith defense if legal issues arise and demonstrates organizational commitment.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>The ADA applies to websites and digital services, with courts establishing WCAG 2.1 Level AA as the practical compliance standard.</li>
             <li>Section 508 explicitly requires federal agencies and contractors to meet WCAG Level AA standards.</li>
             <li>Digital accessibility lawsuits exceed 4,000 annually, with settlements typically ranging from $50,000 to $250,000 per plaintiff.</li>
@@ -164,9 +163,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act (ADA)</a></li>
             <li><a href="https://www.access-board.gov/ict/">Section 508 Standards (Access Board)</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines (W3C)</a></li>
@@ -183,8 +182,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-
 HTML;
 
 include 'template.php';

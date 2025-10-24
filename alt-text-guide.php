@@ -10,21 +10,20 @@ $pageContent = <<<'HTML'
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Alt Text That Actually Works: Writing for Screen Readers</h1>
         
         <h2>Why Alt Text Matters</h2>
-        <h2>Why Alt Text Matters</h2>
         <p>Approximately 2.2 billion people worldwide have vision impairments, including over 43 million who are blind. Many of these individuals use screen readers—software that reads web content aloud—to access websites and other digital content. Screen readers can read text, but they cannot interpret images. Alt text provides the textual description that allows screen readers to convey image meaning to their users.</p>
         <p>For screen reader users, alt text isn't just helpful—it's essential. Without alt text, an image communicates nothing. A website full of meaningful images becomes useless. Alt text transforms images from inaccessible barriers into accessible components of the user experience.</p>
         <p>Beyond accessibility, alt text provides practical benefits: it appears when images fail to load, provides context when CSS is disabled, and improves search engine optimization by helping search engines understand image content. Proper alt text is genuinely useful for everyone.</p>
         <p>WCAG requires alt text for all images. This requirement is absolute—there are no exceptions for decorative images or images already described in adjacent text. The distinction between decorative and informative images determines what goes in the alt attribute, but every image requires consideration.</p>
     </section>
 
-    <section>
+    <section id="purpose">
         <h2>Understanding the Purpose of Alt Text</h2>
         <p>Effective alt text serves a specific purpose: to provide equivalent information to what a sighted person receives from the image. If you remove the image from the page but keep the alt text, would the page still make sense? Would someone understand everything the image was meant to convey?</p>
         <p>This principle prevents common alt text mistakes. Alt text is not a caption—captions appear on screen and supplement alt text. Alt text is not metadata—it should not include technical information about the image file. Alt text is not a space to keyword-stuff for SEO—search engines recognize and penalize this practice.</p>
         <p>Alt text should answer these questions: What is this image? Why is it here? What information does it convey? What would a sighted user understand from this image that someone using a screen reader should also understand?</p>
     </section>
 
-    <section>
+    <section id="informative-images">
         <h2>Alt Text for Informative Images</h2>
         <p>Informative images—those that convey important information—require descriptive alt text that accurately describes the image content.</p>
 
@@ -54,7 +53,7 @@ $pageContent = <<<'HTML'
         <p>For complex maps, combine alt text with a text description: "Map showing our five regional offices" followed by a bulleted list of office locations and details.</p>
     </section>
 
-    <section>
+    <section id="functional-images">
         <h2>Alt Text for Functional Images</h2>
         <p>Functional images—images that are interactive or part of buttons—require different alt text approach.</p>
 
@@ -74,7 +73,7 @@ $pageContent = <<<'HTML'
         <p><strong>HTML:</strong> &lt;a href="https://twitter.com/a11yscan"&gt;&lt;img src="twitter.svg" alt="Follow us on Twitter"&gt;&lt;/a&gt;</p>
     </section>
 
-    <section>
+    <section id="decorative-images">
         <h2>Decorative Images and the Empty Alt Attribute</h2>
         <p>Decorative images—images that serve no informative purpose—should use an empty alt attribute: alt=""</p>
         <p>This tells screen readers to skip the image entirely, which is appropriate for purely decorative elements. Do not omit the alt attribute entirely; screen readers will read the filename, creating noise for users.</p>
@@ -88,7 +87,7 @@ $pageContent = <<<'HTML'
         <p><strong>Example:</strong> &lt;img src="logo.svg" alt="" aria-hidden="true"&gt; is appropriate only if the logo is already described in adjacent text, such as within an h1 element.</p>
     </section>
 
-    <section>
+    <section id="length-guidelines">
         <h2>Alt Text Length and Practical Guidelines</h2>
         <p>No official character limit exists for alt text, but practical guidelines help you write effectively.</p>
 
@@ -105,21 +104,10 @@ $pageContent = <<<'HTML'
         <p>Screen readers already announce that they're reading an image. Prefacing alt text with "Image of" is redundant. Write directly: "A developer typing code" rather than "Image of a developer typing code."</p>
 
         <h3>For Complex Images, Consider Extended Descriptions</h3>
-        <p>When an image is too complex to describe adequately in short alt text, provide both concise alt text and a longer description:</p>
-        <p><strong>HTML approach:</strong></p>
-        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">
-        &lt;img src="chart.png" alt="Sales chart 2024" longdesc="sales-details.html"&gt;<br/>
-        <br/>
-        Or:<br/>
-        <br/>
-        &lt;figure&gt;<br/>
-        &nbsp;&nbsp;&lt;img src="chart.png" alt="Sales chart showing quarterly growth"&gt;<br/>
-        &nbsp;&nbsp;&lt;figcaption&gt;Detailed chart analysis...&lt;/figcaption&gt;<br/>
-        &lt;/figure&gt;
-        </p>
+        <p>When an image is too complex to describe adequately in short alt text, provide both concise alt text and a longer description using a figure element or longdesc.</p>
     </section>
 
-    <section>
+    <section id="common-mistakes">
         <h2>Common Alt Text Mistakes</h2>
         <p>Understanding what not to do helps ensure your alt text is genuinely accessible.</p>
 
@@ -142,7 +130,7 @@ $pageContent = <<<'HTML'
         <p>While both serve different purposes, many developers use alt text where captions would be better. Use alt text for the image itself and captions for additional context that sighted users also should see.</p>
     </section>
 
-    <section>
+    <section id="testing">
         <h2>Testing Alt Text Effectiveness</h2>
         <p>Verify that your alt text is genuinely useful by testing it with screen readers.</p>
 
@@ -156,7 +144,7 @@ $pageContent = <<<'HTML'
         <p>Browser extensions like axe DevTools or WAVE highlight missing alt text and flag images with generic or unhelpful alt attributes.</p>
     </section>
 
-    <section>
+    <section id="special-cases">
         <h2>Special Cases and Image Types</h2>
         <p>Certain image types present unique alt text challenges.</p>
 
@@ -167,16 +155,16 @@ $pageContent = <<<'HTML'
         <p>Alt text for animated GIFs should describe the animation and its purpose.</p>
         <p><strong>Example:</strong> "Animated diagram showing how keyboard navigation flows through a web page"</p>
 
-        <h3>Svg Images</h3>
+        <h3>SVG Images</h3>
         <p>SVG images sometimes require both image-level alt attributes and internal ARIA labels. Test SVGs with screen readers to ensure all necessary information is conveyed.</p>
 
         <h3>Background Images</h3>
         <p>CSS background images cannot have alt text. If a background image conveys important information, use a standard &lt;img&gt; element instead or provide the information through other means like text.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Alt text is essential for screen reader users, providing the only way they can understand image content.</li>
             <li>Write alt text that answers: What is this image? Why is it here? What information does it convey?</li>
             <li>Keep alt text concise (typically 100-125 characters) but complete enough to be meaningful.</li>
@@ -188,9 +176,9 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.w3.org/TR/WCAG21/#text-alternatives">WCAG 2.1 Text Alternatives (W3C)</a></li>
             <li><a href="https://webaim.org/articles/alttext/">Alternative Text (WebAIM)</a></li>
             <li><a href="https://www.a11yproject.com/posts/alt-text/">Alt Text (A11y Project)</a></li>
@@ -207,8 +195,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-
 HTML;
 
 include 'template.php';

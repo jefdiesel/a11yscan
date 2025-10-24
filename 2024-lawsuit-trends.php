@@ -70,7 +70,7 @@ $pageContent = <<<'HTML'
 
         <h3>Hidden Costs Beyond Settlement</h3>
         <p>Settlement amounts represent only a portion of litigation costs. Organizations typically incur substantial additional expenses:</p>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
             <li style="margin-bottom: 0.75rem;"><strong>Attorney fees:</strong> Defending accessibility claims costs $200,000 to $1 million in legal fees depending on case complexity and duration.</li>
             <li style="margin-bottom: 0.75rem;"><strong>Remediation:</strong> Implementing accessibility fixes costs $50,000 to $500,000 depending on website complexity.</li>
             <li style="margin-bottom: 0.75rem;"><strong>Monitoring and compliance:</strong> Many settlements include ongoing monitoring requirements and compliance obligations costing $10,000-$50,000 annually.</li>
@@ -136,7 +136,7 @@ $pageContent = <<<'HTML'
 
     <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li>Over 4,000 accessibility lawsuits were filed in 2024, representing a 4,000% increase from 2010.</li>
             <li>California represents the litigation epicenter with over 30% of national cases.</li>
             <li>E-commerce websites are the primary targets, representing 40% of accessibility claims.</li>
@@ -150,7 +150,7 @@ $pageContent = <<<'HTML'
 
     <section id="resources">
         <h2>Resources</h2>
-        <ul>
+        <ul style="list-style: disc; padding-left: 1.5rem;">
             <li><a href="https://www.ssbbartgroup.com/digital-accessibility/">SSBB Digital Accessibility Litigation Report</a></li>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
             <li><a href="https://www.justice.gov/crt/americans-disabilities-act">Department of Justice - ADA</a></li>
