@@ -5,20 +5,17 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-23">October 23, 2025</time>
-        <h1>Understanding WCAG 2.1 Levels: A vs AA vs AAA</h1>
-        <p class="lead">Web Content Accessibility Guidelines (WCAG) defines three conformance levels that establish the scope of your organization's accessibility commitment. Understanding these levels is essential for legal compliance, business risk management, and serving your entire user base.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Understanding WCAG 2.1 Levels: A vs AA vs AAA</h1>
+        
         <h2>What Are WCAG Conformance Levels?</h2>
         <p>The Web Content Accessibility Guidelines, published by the World Wide Web Consortium (W3C), provide a comprehensive framework for making digital content accessible to people with disabilities. Rather than offering a single "accessibility standard," WCAG instead presents three progressively rigorous conformance levels: A, AA, and AAA.</p>
         <p>Each level builds upon the previous one, introducing additional accessibility criteria that address more specific user needs. The level your organization chooses determines the scope of accessibility features you must implement, the rigor of your testing requirements, and your legal exposure under accessibility regulations like the Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act.</p>
         <p>Think of these levels as rungs on an accessibility ladder. Level A is the foundational entry point. Level AA adds substantially more protections. Level AAA represents the most comprehensive accessibility implementation possible. Where you stop on this ladder depends on your organizational priorities, resources, and legal obligations.</p>
     </section>
 
-    <section>
+    <section id="level-a">
         <h2>WCAG 2.1 Level A: The Foundation</h2>
         <p>WCAG Level A represents the minimum baseline for web accessibility. It addresses the most critical barriers that prevent users with disabilities from accessing digital content. While Level A is the least restrictive standard, it still requires meaningful accessibility improvements that benefit a significant portion of your user base.</p>
         <p>At Level A, you must ensure your website includes text alternatives for images, provides basic keyboard navigation, maintains a logical content structure, and implements color schemes that don't rely solely on color to convey information. Your forms must have associated labels, and multimedia content requires captions or transcripts.</p>
@@ -26,7 +23,7 @@ $pageContent = <<<'HTML'
         <p>The criteria at Level A include proper heading hierarchy, descriptive link text, form labeling, and basic color contrast (4.5:1 for normal text). For many organizations still beginning their accessibility journey, Level A serves as an important first milestone, but it should not be considered a stopping point.</p>
     </section>
 
-    <section>
+    <section id="level-aa">
         <h2>WCAG 2.1 Level AA: The Industry Standard</h2>
         <p>WCAG Level AA has become the de facto standard for web accessibility across most industries and jurisdictions. Level AA includes all Level A criteria plus additional requirements that significantly enhance the accessibility experience for users with disabilities. This level is specifically mentioned in accessibility regulations and legal frameworks worldwide.</p>
         <p>Level AA elevates contrast ratio requirements to 4.5:1 for normal text, making content significantly more readable for users with low vision. It requires that websites support users who navigate exclusively via keyboard, that focus indicators remain visible at all times, and that motion and animation don't create barriers for users with vestibular disorders.</p>
@@ -37,7 +34,7 @@ $pageContent = <<<'HTML'
         </div>
     </section>
 
-    <section>
+    <section id="level-aaa">
         <h2>WCAG 2.1 Level AAA: Enhanced Accessibility</h2>
         <p>WCAG Level AAA represents the highest accessibility conformance level defined by the W3C. It includes all Level AA criteria plus additional requirements that address more nuanced accessibility challenges and serve users with more severe disabilities or multiple disabilities. Achieving Level AAA requires substantial investment in accessibility design and implementation.</p>
         <p>At Level AAA, contrast ratios rise to 7:1 for normal text—a significant enhancement that benefits users with various forms of low vision. Sign language interpretation becomes required for audio content, not just captions. Content must accommodate users with cognitive disabilities through even simpler language and more explicit navigation structures.</p>
@@ -45,7 +42,7 @@ $pageContent = <<<'HTML'
         <p>However, the W3C itself cautions against universal Level AAA compliance. Implementing Level AAA across an entire website often creates other usability problems. For example, extremely simple language required by Level AAA cognitive accessibility criteria can sometimes obscure important information for users without cognitive disabilities. Level AAA works best when applied strategically to critical sections rather than as a universal requirement.</p>
     </section>
 
-    <section>
+    <section id="comparison">
         <h2>Comparing the Three Levels</h2>
         <p>Understanding the practical differences between these levels helps organizations make informed decisions about their accessibility targets. Let's examine key areas where the levels differ:</p>
         
@@ -65,7 +62,7 @@ $pageContent = <<<'HTML'
         <p>Level A requires identifying the page language. Level AA requires identifying language changes within the page. Level AAA requires clear pronunciation guidance for words that could be ambiguous to screen readers. This progression addresses the needs of screen reader users in increasingly specific ways.</p>
     </section>
 
-    <section>
+    <section id="legal">
         <h2>Legal and Regulatory Context</h2>
         <p>Understanding which conformance level applies to your organization requires awareness of relevant regulations. The Americans with Disabilities Act (ADA) doesn't explicitly reference a specific WCAG level, but courts have increasingly interpreted ADA compliance to require at minimum Level AA conformance. Multiple court decisions have held that Level A alone is insufficient.</p>
         <p>Section 508 of the Rehabilitation Act, which applies to federal agencies and contractors, references WCAG 2.0 Level AA as the compliance standard. Many states have adopted similar requirements. The European Accessibility Act requires Level AA for large organizations and provides exemptions for small businesses that meet Level AA requirements.</p>
@@ -73,7 +70,7 @@ $pageContent = <<<'HTML'
         <p>From a business risk perspective, Level AA represents the threshold above which legal exposure significantly increases. While Level AA implementation requires investment, the cost of litigation and settlements far exceeds the investment in proactive accessibility remediation.</p>
     </section>
 
-    <section>
+    <section id="choosing">
         <h2>Making the Right Choice for Your Organization</h2>
         <p>Selecting an appropriate conformance level requires balancing legal requirements, user needs, resources, and organizational capacity. For most organizations, WCAG 2.1 Level AA represents the appropriate target. It provides substantial accessibility benefits, aligns with legal expectations, and remains achievable for organizations of various sizes.</p>
         <p>Organizations in regulated industries such as healthcare, finance, or government typically must achieve Level AA. Educational institutions serving diverse student populations benefit substantially from Level AA compliance. E-commerce platforms should target Level AA to serve the broadest possible customer base.</p>
@@ -81,7 +78,7 @@ $pageContent = <<<'HTML'
         <p>Organizations just beginning their accessibility journey should establish a realistic roadmap. Starting with a comprehensive accessibility audit to identify existing barriers, then setting a target to achieve Level AA across the entire website within a defined timeline typically provides the best outcomes. Budget for both initial remediation and ongoing maintenance, as accessibility is not a one-time project but an continuous commitment.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>WCAG defines three conformance levels that progressively enhance accessibility: A (foundational), AA (industry standard), and AAA (enhanced).</li>
@@ -93,7 +90,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Official Guidelines (W3C)</a></li>
@@ -112,85 +109,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

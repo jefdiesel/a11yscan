@@ -5,13 +5,10 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-17">October 17, 2025</time>
-        <h1>Keyboard Navigation: Making Your Site Usable Without a Mouse</h1>
-        <p class="lead">Millions of users navigate the web without a mouse, relying exclusively on keyboard input. Motor disabilities, temporary injuries, accessibility preferences, and situational constraints all necessitate full keyboard functionality. Websites failing to support keyboard navigation create complete barriers for these users and violate fundamental accessibility requirements.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-17" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 17, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Keyboard Navigation: Making Your Site Usable Without a Mouse</h1>
+        
         <h2>Why Keyboard Navigation Matters</h2>
         <p>Keyboard navigation isn't a niche accessibility concern. Approximately 16% of people globally have some form of motor disability affecting dexterity and mobility. In the United States alone, over 41 million people live with a disability, with motor impairments representing a significant portion of this population. Beyond permanent disabilities, temporary injuries from surgery, accidents, or repetitive strain affect millions more. Additionally, many users without disabilities prefer or need keyboard navigation for productivity reasons.</p>
         <p>From a compliance perspective, keyboard navigation is non-negotiable. WCAG Level A—the most basic accessibility standard—requires full keyboard functionality. Every Level AA and AAA website must support keyboard-only use. Many lawsuits targeting inaccessible websites specifically cite failures in keyboard navigation as a critical barrier.</p>
@@ -19,7 +16,7 @@ $pageContent = <<<'HTML'
         <p>Poor keyboard navigation creates absolute barriers. When a crucial website function is only accessible via mouse, users with motor disabilities cannot complete essential tasks. This might be filling out a loan application, accessing medical records, or completing a purchase. The stakes are literally life-changing.</p>
     </section>
 
-    <section>
+    <section id="fundamentals">
         <h2>The Fundamentals of Keyboard Navigation</h2>
         <p>Keyboard navigation relies on several fundamental mechanisms that allow users to interact with web content using only keyboard inputs.</p>
 
@@ -37,7 +34,7 @@ $pageContent = <<<'HTML'
         <p>Escape closes open menus, modals, and other overlay components. This key provides an exit mechanism for keyboard-only users and is expected in most modern web interfaces.</p>
     </section>
 
-    <section>
+    <section id="focus-indicators">
         <h2>Visible Focus Indicators: The Visual Feedback Users Need</h2>
         <p>Focus indicators represent one of the most violated accessibility requirements. A focus indicator is a visual marker showing which element currently has focus. Without visible focus indicators, keyboard-only users have no way of knowing where they are on the page or which element will be activated when they press Enter.</p>
         <p>WCAG requires that focus indicators remain visible at all times. Specifically, focus indicators must provide sufficient contrast against the background and have a minimum size. A 3-pixel outline is the industry standard, providing excellent visibility while remaining aesthetically acceptable.</p>
@@ -47,19 +44,13 @@ $pageContent = <<<'HTML'
 
         <h3>Styling Custom Focus Indicators</h3>
         <p>Rather than removing focus indicators, design custom indicators that align with your visual identity. Modern browsers support the :focus-visible pseudo-class, which shows focus indicators for keyboard navigation while hiding them for mouse clicks. This allows keyboard users to see focus while providing a cleaner mouse experience.</p>
-        <p>Example CSS:</p>
-        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">
-        button:focus-visible {<br/>
-        &nbsp;&nbsp;outline: 3px solid #2563eb;<br/>
-        &nbsp;&nbsp;outline-offset: 2px;<br/>
-        }
-        </p>
+        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">button:focus-visible {<br/>&nbsp;&nbsp;outline: 3px solid #2563eb;<br/>&nbsp;&nbsp;outline-offset: 2px;<br/>}</p>
 
         <h3>Sufficient Contrast</h3>
         <p>Focus indicators must provide sufficient contrast against their background. A light blue outline on a light gray background is invisible. Ensure your focus indicator color meets the same contrast requirements as other interface elements: 4.5:1 for Level AA, 7:1 for Level AAA.</p>
     </section>
 
-    <section>
+    <section id="tab-order">
         <h2>Logical Tab Order and HTML Structure</h2>
         <p>Tab order typically follows the visual reading order of your page, which should match the order in which elements appear in your HTML source code. Users expect to press Tab and move through elements from top to bottom, left to right, following the reading order.</p>
 
@@ -68,7 +59,7 @@ $pageContent = <<<'HTML'
         <p>The solution is simple: ensure HTML source order matches visual order. If your design requires elements to appear in a different visual order than source order, reconsider the HTML structure rather than relying on CSS to reorder content visually.</p>
 
         <h3>Using Semantic HTML</h3>
-        <p>Semantic HTML elements like `<button>`, `<a>`, `<input>`, and `<select>` are automatically keyboard-accessible. Using these elements rather than recreating them with divs automatically provides correct tab order, keyboard interaction, and focus management. This is why semantic HTML is emphasized so strongly in accessibility guidelines.</p>
+        <p>Semantic HTML elements like <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;select&gt;</code> are automatically keyboard-accessible. Using these elements rather than recreating them with divs automatically provides correct tab order, keyboard interaction, and focus management. This is why semantic HTML is emphasized so strongly in accessibility guidelines.</p>
 
         <h3>When Tabindex Is Appropriate</h3>
         <p>The tabindex attribute explicitly sets tab order. Positive tabindex values create priority focusing; elements with higher tabindex values receive focus before those with lower values. Negative tabindex values remove elements from tab order.</p>
@@ -76,7 +67,7 @@ $pageContent = <<<'HTML'
         <p>Negative tabindex is appropriate for elements that must exist in the DOM for functionality but shouldn't be keyboard-accessible. For example, a decorative element with a click handler might receive tabindex="-1" to remove it from keyboard navigation.</p>
     </section>
 
-    <section>
+    <section id="complex-components">
         <h2>Implementing Keyboard Support for Complex Components</h2>
         <p>Simple links and buttons are straightforward to make keyboard-accessible. Complex interactive components require more careful implementation.</p>
 
@@ -96,36 +87,20 @@ $pageContent = <<<'HTML'
         <p>Lists should support arrow keys for navigation. Space should toggle selection of the focused item. Shift+Arrow and Shift+Space should support range selection. These patterns match user expectations from desktop applications.</p>
     </section>
 
-    <section>
+    <section id="skip-links">
         <h2>Skip Links: Enabling Efficient Navigation</h2>
         <p>Skip links provide keyboard users with a mechanism to bypass repetitive navigation elements and jump directly to main content. Most websites include header navigation, possibly a sidebar, and other repeated elements. Keyboard-only users must Tab through all these elements on every page, which is tedious and inefficient.</p>
         <p>Skip links solve this problem. When a user first presses Tab, focus moves to a skip link that says "Skip to main content." Pressing Enter activates this link, moving focus directly to the main content area. This saves keyboard users from tabbing through dozens of elements on every page.</p>
-        <p>Implement skip links like this:</p>
-        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">
-        &lt;a href="#main" class="skip-link"&gt;Skip to main content&lt;/a&gt;<br/>
-        &lt;header&gt;Navigation...&lt;/header&gt;<br/>
-        &lt;main id="main"&gt;Content...&lt;/main&gt;
-        </p>
-        <p>Style the skip link to be visually hidden by default but visible on focus:</p>
-        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">
-        .skip-link {<br/>
-        &nbsp;&nbsp;position: absolute;<br/>
-        &nbsp;&nbsp;top: -40px;<br/>
-        &nbsp;&nbsp;left: 0;<br/>
-        }<br/>
-        .skip-link:focus {<br/>
-        &nbsp;&nbsp;top: 0;<br/>
-        }
-        </p>
+        <p style="background: #f0f2f7; padding: 1rem; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">&lt;a href="#main" class="skip-link"&gt;Skip to main content&lt;/a&gt;<br/>&lt;header&gt;Navigation...&lt;/header&gt;<br/>&lt;main id="main"&gt;Content...&lt;/main&gt;</p>
     </section>
 
-    <section>
+    <section id="common-problems">
         <h2>Common Keyboard Navigation Problems and Solutions</h2>
         <p>Testing for keyboard accessibility is straightforward, but many websites fail basic keyboard navigation tests. Here are common problems and their solutions.</p>
 
         <h3>Interactive Elements Not Keyboard-Accessible</h3>
         <p><strong>Problem:</strong> Buttons created with divs and click handlers don't receive focus or respond to keyboard input.</p>
-        <p><strong>Solution:</strong> Use semantic `<button>` elements instead. If you absolutely must use divs, add tabindex="0" and handle Enter/Space key events.</p>
+        <p><strong>Solution:</strong> Use semantic <code>&lt;button&gt;</code> elements instead. If you absolutely must use divs, add tabindex="0" and handle Enter/Space key events.</p>
 
         <h3>Keyboard Traps</h3>
         <p><strong>Problem:</strong> Focus enters a component but cannot escape via keyboard.</p>
@@ -144,7 +119,7 @@ $pageContent = <<<'HTML'
         <p><strong>Solution:</strong> Implement arrow key handlers for complex components following standard patterns.</p>
     </section>
 
-    <section>
+    <section id="testing">
         <h2>Testing Keyboard Navigation</h2>
         <p>Testing keyboard navigation is simple and requires no special tools—just a keyboard and attention.</p>
 
@@ -172,7 +147,7 @@ $pageContent = <<<'HTML'
         <p>While automated tools like axe DevTools can identify some keyboard accessibility issues, keyboard navigation testing ultimately requires human testing. Automated tools can verify presence of keyboard handlers but cannot fully assess logical tab order or complex component keyboard behavior.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>Keyboard-only navigation is essential for millions of users with motor disabilities and temporary injuries.</li>
@@ -186,7 +161,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.w3.org/TR/WCAG21/#keyboard">WCAG 2.1 Keyboard Accessibility (W3C)</a></li>
@@ -205,85 +180,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

@@ -5,19 +5,17 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>Major 2024 Accessibility Settlements: Case Studies and Lessons</h1>
-        <p class="lead">2024 produced several landmark accessibility settlements that shed light on litigation patterns, defendant vulnerabilities, and the real-world consequences of inaccessible digital properties. Examining these cases reveals actionable insights for organizations seeking to minimize legal exposure.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-24" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 24, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Major 2024 Accessibility Settlements: Case Studies and Lessons</h1>
+        
         <h2>The Settlement Landscape in 2024</h2>
+        <p>2024 produced several landmark accessibility settlements that shed light on litigation patterns, defendant vulnerabilities, and the real-world consequences of inaccessible digital properties. Examining these cases reveals actionable insights for organizations seeking to minimize legal exposure.</p>
         <p>Settlement data from 2024 accessibility cases reveals important patterns. Average settlements increased from 2023, with more cases involving multiple plaintiffs and class action frameworks. The sophistication of plaintiff claims and defendant defenses both increased, reflecting maturation of digital accessibility litigation.</p>
         <p>While detailed settlement information is often confidential, public filings, press releases, and industry reporting provide sufficient data to identify patterns. These patterns offer guidance for organizations seeking to avoid similar outcomes.</p>
     </section>
 
-    <section>
+    <section id="case-study-1">
         <h2>Case Study 1: Major Retail E-Commerce Platform</h2>
         
         <h3>The Lawsuit</h3>
@@ -30,14 +28,14 @@ $pageContent = <<<'HTML'
         <p><strong>Mobile experience:</strong> The mobile checkout flow was particularly problematic, with touch targets smaller than 44x44 pixels and insufficient contrast in form inputs.</p>
 
         <h3>Settlement Terms</h3>
-        <p>The $1.2 million settlement included: $750,000 to plaintiff's attorney fees, $150,000 for individual plaintiff compensation, $300,000 for website remediation and ongoing accessibility services, and $200,000 for monitoring and compliance over two years.</p>
+        <p>The $1.2 million settlement included $750,000 to plaintiff's attorney fees, $150,000 for individual plaintiff compensation, $300,000 for website remediation and ongoing accessibility services, and $200,000 for monitoring and compliance over two years.</p>
 
-        <h3>Lessons</h4>
+        <h3>Lessons</h3>
         <p>This case illustrates that complex e-commerce functionality creates accessibility barriers. Interactive features like product filters and image zoom require careful ARIA implementation and keyboard support. The settlement's size reflects the scope of remediation required across the entire platform.</p>
         <p>The case also demonstrates that even major retailers with substantial resources face accessibility liability. Large companies cannot assume their technical sophistication translates to accessibility compliance.</p>
     </section>
 
-    <section>
+    <section id="case-study-2">
         <h2>Case Study 2: Financial Services Institution</h2>
         
         <h3>The Lawsuit</h3>
@@ -50,14 +48,14 @@ $pageContent = <<<'HTML'
         <p><strong>Mobile banking:</strong> The mobile app (covered by ADA requirements) had poor contrast and tiny touch targets.</p>
 
         <h3>Settlement Terms</h3>
-        <p>Individual settlements averaged $127,000 per plaintiff. The bank agreed to: full remediation of online banking portal accessibility, hiring an independent accessibility consultant for quarterly audits, implementing accessibility training for development teams, and establishing a dedicated accessibility position.</p>
+        <p>Individual settlements averaged $127,000 per plaintiff. The bank agreed to full remediation of online banking portal accessibility, hiring an independent accessibility consultant for quarterly audits, implementing accessibility training for development teams, and establishing a dedicated accessibility position.</p>
 
         <h3>Lessons</h3>
         <p>Financial services present particular accessibility challenges due to complexity and criticality. Users cannot simply call customer service for account access; the digital interface must be fully functional. The bank's willingness to fund ongoing compliance and hire permanent accessibility staff reflects the seriousness courts attach to digital accessibility in critical services.</p>
         <p>This case demonstrates that organizations cannot remediate once and move on. Ongoing compliance requires sustained investment and organizational commitment.</p>
     </section>
 
-    <section>
+    <section id="case-study-3">
         <h2>Case Study 3: Streaming Entertainment Platform</h2>
         
         <h3>The Lawsuit</h3>
@@ -69,14 +67,14 @@ $pageContent = <<<'HTML'
         <p><strong>Video player interface:</strong> The custom video player interface wasn't fully keyboard-accessible, and captions weren't properly labeled.</p>
 
         <h3>Settlement Terms</h3>
-        <p>The $950,000 settlement required: immediate captioning of all new content, systematic audio description production for major titles, and a plan to caption 80% of existing content within 18 months. The platform agreed to third-party compliance monitoring and accessibility training for content production teams.</p>
+        <p>The $950,000 settlement required immediate captioning of all new content, systematic audio description production for major titles, and a plan to caption 80% of existing content within 18 months. The platform agreed to third-party compliance monitoring and accessibility training for content production teams.</p>
 
         <h3>Lessons</h3>
         <p>Video content accessibility presents ongoing challenges as platforms continually add new content. One-time remediation is insufficient; content production processes must incorporate accessibility requirements. The settlement's substantial size reflects recognition that video accessibility affects millions of people.</p>
         <p>This case shows that even media giants with sophisticated content management systems face accessibility liability. Accessibility must be built into content production from the start, not retrofitted afterward.</p>
     </section>
 
-    <section>
+    <section id="case-study-4">
         <h2>Case Study 4: Educational Institution Website</h2>
         
         <h3>The Lawsuit</h3>
@@ -89,14 +87,14 @@ $pageContent = <<<'HTML'
         <p><strong>Lack of governance:</strong> No university-wide accessibility standards or training existed.</p>
 
         <h3>Settlement Terms</h3>
-        <p>The remediation plan required: development of university-wide accessibility standards, hiring a Chief Accessibility Officer, mandatory accessibility training for web teams, accessibility testing protocols before launch, and quarterly compliance monitoring by state officials.</p>
+        <p>The remediation plan required development of university-wide accessibility standards, hiring a Chief Accessibility Officer, mandatory accessibility training for web teams, accessibility testing protocols before launch, and quarterly compliance monitoring by state officials.</p>
 
         <h3>Lessons</h3>
         <p>Large organizations with distributed web management face particular accessibility challenges. Without centralized governance and standards, departments create inconsistent experiences. This case demonstrates that lack of organizational accessibility commitment creates liability.</p>
         <p>Government enforcement actions often result in more onerous requirements than private litigation because they include monitoring and reporting obligations. The university's requirement to hire a Chief Accessibility Officer reflects recognition that ongoing executive leadership is essential.</p>
     </section>
 
-    <section>
+    <section id="case-study-5">
         <h2>Case Study 5: Healthcare Provider Portal</h2>
         
         <h3>The Lawsuit</h3>
@@ -109,24 +107,24 @@ $pageContent = <<<'HTML'
         <p><strong>Mobile barriers:</strong> The mobile portal's form inputs lacked labels and had poor contrast.</p>
 
         <h3>Settlement Terms</h3>
-        <p>The healthcare system agreed to: full portal remediation, establishment of a patient accessibility coordinator position, accessibility training for clinical and IT staff, and incorporation of accessibility requirements into vendor selection processes.</p>
+        <p>The healthcare system agreed to full portal remediation, establishment of a patient accessibility coordinator position, accessibility training for clinical and IT staff, and incorporation of accessibility requirements into vendor selection processes.</p>
 
         <h3>Lessons</h3>
         <p>Healthcare digital properties create particularly serious accessibility consequences because inaccessibility can affect medical care. Courts view healthcare accessibility failures as more serious than comparable barriers in other contexts.</p>
         <p>The settlement's substantial size reflects recognition that patients depend on portal access for essential medical information. Organizations providing critical services face heightened expectations and liability.</p>
     </section>
 
-    <section>
+    <section id="patterns">
         <h2>Common Patterns Across 2024 Settlements</h2>
         
         <h3>Technical Issues Most Frequently Cited</h3>
         <ul>
-            <li style="margin-bottom: 0.75rem;"><strong>Form accessibility (90% of cases):</strong> Unlabeled form fields, missing error announcements, poor input validation messaging</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Custom interactive components (85%):</strong> ARIA implementation failures, missing keyboard support for sliders, tabs, menus</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Color contrast (75%):</strong> Insufficient text contrast, particularly in form inputs and secondary UI elements</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Image accessibility (70%):</strong> Missing or inadequate alt text, particularly for informative images</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Video accessibility (65%):</strong> Missing captions and audio descriptions</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Focus management (80%):</strong> Invisible focus indicators, focus traps, illogical tab order</li>
+            <li><strong>Form accessibility (90% of cases):</strong> Unlabeled form fields, missing error announcements, poor input validation messaging</li>
+            <li><strong>Custom interactive components (85%):</strong> ARIA implementation failures, missing keyboard support for sliders, tabs, menus</li>
+            <li><strong>Color contrast (75%):</strong> Insufficient text contrast, particularly in form inputs and secondary UI elements</li>
+            <li><strong>Image accessibility (70%):</strong> Missing or inadequate alt text, particularly for informative images</li>
+            <li><strong>Video accessibility (65%):</strong> Missing captions and audio descriptions</li>
+            <li><strong>Focus management (80%):</strong> Invisible focus indicators, focus traps, illogical tab order</li>
         </ul>
 
         <h3>Organizational Factors Contributing to Settlements</h3>
@@ -136,20 +134,13 @@ $pageContent = <<<'HTML'
         <p><strong>No accessibility testing:</strong> Absence of accessibility testing protocols demonstrated insufficient diligence.</p>
     </section>
 
-    <section>
+    <section id="outcomes">
         <h2>Settlement Outcomes and Ongoing Obligations</h2>
-        <p>Beyond financial payments, 2024 settlements increasingly included ongoing compliance obligations:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Hiring accessibility professionals (Chief Accessibility Officer, accessibility coordinators)</li>
-            <li style="margin-bottom: 0.75rem;">Mandatory accessibility training for development and QA teams</li>
-            <li style="margin-bottom: 0.75rem;">Third-party monitoring and compliance verification</li>
-            <li style="margin-bottom: 0.75rem;">Regular accessibility audits and reporting</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility requirements in vendor/contractor agreements</li>
-        </ul>
+        <p>Beyond financial payments, 2024 settlements increasingly included ongoing compliance obligations including hiring accessibility professionals (Chief Accessibility Officer, accessibility coordinators), mandatory accessibility training for development and QA teams, third-party monitoring and compliance verification, regular accessibility audits and reporting, and accessibility requirements in vendor/contractor agreements.</p>
         <p>These ongoing obligations create long-term costs exceeding initial settlement amounts. Organizations can face years of monitoring expenses and required operational changes.</p>
     </section>
 
-    <section>
+    <section id="trends">
         <h2>Trends Predicting 2025 Settlements</h2>
         <p>Analysis of 2024 cases suggests 2025 settlement patterns:</p>
         <p><strong>Increased class action settlements:</strong> More class actions are progressing to settlement stage, potentially resulting in higher aggregate damages.</p>
@@ -158,7 +149,7 @@ $pageContent = <<<'HTML'
         <p><strong>Third-party vendor accountability:</strong> Increased legal action against platform providers and web accessibility tool vendors.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>2024 settlements ranged from $400,000 to $2+ million depending on organization size, violation scope, and market sector.</li>
@@ -171,7 +162,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
@@ -190,85 +181,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

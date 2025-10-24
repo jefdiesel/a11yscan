@@ -5,37 +5,25 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-21">October 21, 2025</time>
-        <h1>Defending Against Accessibility Claims: Good Faith Strategies</h1>
-        <p class="lead">While proactive accessibility remediation remains the optimal strategy, understanding litigation defense mechanics helps organizations appreciate why accessibility investment is critical. Courts increasingly favor defendants demonstrating good faith accessibility commitment, creating material incentives to establish documented accessibility programs before litigation occurs.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-21" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 21, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Defending Against Accessibility Claims: Good Faith Strategies</h1>
+        
         <h2>The Good Faith Defense</h2>
+        <p>While proactive accessibility remediation remains the optimal strategy, understanding litigation defense mechanics helps organizations appreciate why accessibility investment is critical. Courts increasingly favor defendants demonstrating good faith accessibility commitment, creating material incentives to establish documented accessibility programs before litigation occurs.</p>
         
         <h3>How Courts Evaluate Good Faith</h3>
         <p>Courts generally do not recognize an absolute "good faith" defense that eliminates ADA liability. However, defendants demonstrating genuine commitment to accessibility receive substantially reduced damages and more favorable settlement opportunities. Conversely, defendants showing indifference to accessibility face enhanced damages.</p>
         <p>Good faith evaluation considers: whether organizations had accessibility policies, whether development teams received accessibility training, whether accessibility testing was conducted, whether accessibility issues reported were remediated, and whether organizations demonstrated knowledge of accessibility requirements.</p>
 
         <h3>Documentation: The Critical Element</h3>
-        <p>Establishing good faith requires documentation. Organizations cannot claim good faith commitment without evidence. Critical documentation includes:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Accessibility policies and standards</li>
-            <li style="margin-bottom: 0.75rem;">Training records for development teams</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility audit reports</li>
-            <li style="margin-bottom: 0.75rem;">Remediation project records</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility committee meeting minutes</li>
-            <li style="margin-bottom: 0.75rem;">Vendor selection documentation showing accessibility evaluation</li>
-            <li style="margin-bottom: 0.75rem;">Records of accessibility issues reported and remediation timelines</li>
-            <li style="margin-bottom: 0.75rem;">Accessibility expert engagement documentation</li>
-        </ul>
+        <p>Establishing good faith requires documentation. Organizations cannot claim good faith commitment without evidence. Critical documentation includes accessibility policies and standards, training records for development teams, accessibility audit reports, remediation project records, accessibility committee meeting minutes, vendor selection documentation showing accessibility evaluation, records of accessibility issues reported and responses, and accessibility expert engagement documentation.</p>
 
         <h3>Timing Matters</h3>
         <p>Documentation created before litigation carries far more weight than documentation created after litigation filing. Courts are skeptical of organizations establishing accessibility programs only after being sued. Documentation predating any knowledge of claims establishes genuine commitment rather than litigation response.</p>
     </section>
 
-    <section>
+    <section id="damages">
         <h2>Damages Mitigation Through Good Faith</h2>
         
         <h3>Statutory vs. Actual Damages</h3>
@@ -54,7 +42,7 @@ $pageContent = <<<'HTML'
         <p>Plaintiffs typically recover attorney fees in accessibility cases. However, courts consider defendant good faith when assessing reasonable attorney fees. Organizations demonstrating good faith may face reduced attorney fee awards.</p>
     </section>
 
-    <section>
+    <section id="settlement">
         <h2>Settlement Positioning Through Good Faith</h2>
         
         <h3>Negotiation Advantage</h3>
@@ -67,11 +55,11 @@ $pageContent = <<<'HTML'
         <p>Defense counsel should emphasize good faith elements during settlement negotiations: "Our client has invested $X in accessibility, conducted Y audits, and remediated Z issues. These barriers represent inadvertent gaps in otherwise comprehensive accessibility program." This narrative improves settlement positioning.</p>
     </section>
 
-    <section>
+    <section id="building-programs">
         <h2>Building Defensible Accessibility Programs</h2>
         
         <h3>Foundational Elements</h3>
-        <p>Organizations seeking to build litigation-defensible accessibility programs should establish:</p>
+        <p>Organizations seeking to build litigation-defensible accessibility programs should establish clear foundational elements.</p>
         
         <h3>1. Written Accessibility Policy</h3>
         <p>Organizations should adopt formal accessibility policies committing to WCAG Level AA (or AAA) compliance. Policies should be endorsed by executive leadership and publicly available.</p>
@@ -98,60 +86,47 @@ $pageContent = <<<'HTML'
         <p>Implement ongoing monitoring to ensure accessibility maintains as content and functionality change.</p>
     </section>
 
-    <section>
+    <section id="documentation">
         <h2>Documentation Best Practices</h2>
         
         <h3>What to Document</h3>
         <ul>
-            <li style="margin-bottom: 0.75rem;"><strong>Executive decisions:</strong> Board or executive team decisions regarding accessibility investment</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Hiring decisions:</strong> Recruitment of accessibility professionals</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Training:</strong> Training provided to teams with dates and attendance</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Audits:</strong> Accessibility audits conducted with dates, findings, and recommendations</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Remediation:</strong> Issues identified and remediation completion dates</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Vendor selection:</strong> Vendor evaluation criteria and accessibility considerations</li>
-            <li style="margin-bottom: 0.75rem;"><strong>Feedback:</strong> Accessibility feedback received and responses</li>
+            <li><strong>Executive decisions:</strong> Board or executive team decisions regarding accessibility investment</li>
+            <li><strong>Hiring decisions:</strong> Recruitment of accessibility professionals</li>
+            <li><strong>Training:</strong> Training provided to teams with dates and attendance</li>
+            <li><strong>Audits:</strong> Accessibility audits conducted with dates, findings, and recommendations</li>
+            <li><strong>Remediation:</strong> Issues identified and remediation completion dates</li>
+            <li><strong>Vendor selection:</strong> Vendor evaluation criteria and accessibility considerations</li>
+            <li><strong>Feedback:</strong> Accessibility feedback received and responses</li>
         </ul>
 
         <h3>What to Avoid</h3>
         <ul>
-            <li style="margin-bottom: 0.75rem;">Discussing litigation strategy in emails (work with counsel using attorney-client privilege)</li>
-            <li style="margin-bottom: 0.75rem;">Creating documents only after litigation threatens</li>
-            <li style="margin-bottom: 0.75rem;">Documents admitting knowledge of specific violations without remediation plans</li>
-            <li style="margin-bottom: 0.75rem;">Cost-benefit analyses suggesting ignoring accessibility is economically rational</li>
-            <li style="margin-bottom: 0.75rem;">Contractor indemnification statements attempting to escape all accessibility responsibility</li>
+            <li>Discussing litigation strategy in emails (work with counsel using attorney-client privilege)</li>
+            <li>Creating documents only after litigation threatens</li>
+            <li>Documents admitting knowledge of specific violations without remediation plans</li>
+            <li>Cost-benefit analyses suggesting ignoring accessibility is economically rational</li>
+            <li>Contractor indemnification statements attempting to escape all accessibility responsibility</li>
         </ul>
 
         <h3>Document Storage and Retention</h3>
         <p>Maintain documentation in organized, retrieval-ready formats. Establish document retention policies ensuring accessibility records are preserved throughout litigation timeframes. Consult with counsel regarding litigation hold procedures if lawsuits are anticipated.</p>
     </section>
 
-    <section>
+    <section id="post-incident">
         <h2>Post-Incident Strategies if Litigation Arises</h2>
         
         <h3>Immediate Response</h3>
-        <p>Upon learning of accessibility litigation exposure:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Engage experienced accessibility litigation counsel immediately</li>
-            <li style="margin-bottom: 0.75rem;">Preserve all documents related to accessibility and the specific barrier at issue</li>
-            <li style="margin-bottom: 0.75rem;">Conduct preliminary accessibility assessment of potential exposed areas</li>
-            <li style="margin-bottom: 0.75rem;">Implement litigation hold to preserve relevant documents</li>
-            <li style="margin-bottom: 0.75rem;">Avoid public commentary on accessibility or the specific claim</li>
-        </ul>
+        <p>Upon learning of accessibility litigation exposure: engage experienced accessibility litigation counsel immediately, preserve all documents related to accessibility and the specific barrier at issue, conduct preliminary accessibility assessment of potential exposed areas, implement litigation hold to preserve relevant documents, and avoid public commentary on accessibility or the specific claim.</p>
 
         <h3>Assessment and Strategy Development</h3>
-        <p>Work with counsel to:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Evaluate claim strength and potential exposure</li>
-            <li style="margin-bottom: 0.75rem;">Assess whether good faith defense elements exist</li>
-            <li style="margin-bottom: 0.75rem;">Identify remediation opportunities that might support settlement</li>
-            <li style="margin-bottom: 0.75rem;">Develop litigation budget and timeline estimates</li>
-        </ul>
+        <p>Work with counsel to evaluate claim strength and potential exposure, assess whether good faith defense elements exist, identify remediation opportunities that might support settlement, and develop litigation budget and timeline estimates.</p>
 
         <h3>Settlement Evaluation</h3>
         <p>Early settlement often provides advantages over protracted litigation. Cost-benefit analyses comparing litigation costs, potential damages, and settlement amounts should inform settlement decisions.</p>
     </section>
 
-    <section>
+    <section id="trends">
         <h2>Industry Trends in Defense Strategies</h2>
         
         <h3>Increased Technical Defenses</h3>
@@ -164,7 +139,7 @@ $pageContent = <<<'HTML'
         <p>Settlements increasingly focus on remediation requirements rather than pure financial awards. Defendants may agree to accessibility improvements, hiring accessibility staff, and ongoing monitoring in lieu of large financial payments.</p>
     </section>
 
-    <section>
+    <section id="strategic">
         <h2>Long-Term Strategic Implications</h2>
         
         <h3>Cost of Accessibility vs. Cost of Litigation</h3>
@@ -177,7 +152,7 @@ $pageContent = <<<'HTML'
         <p>Organizations establishing strong accessibility programs early position themselves as industry leaders, creating competitive advantages. As accessibility becomes industry norm, early adopters benefit from regulatory goodwill and brand reputation.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>Good faith defense doesn't eliminate liability but substantially reduces damages and improves settlement positioning.</li>
@@ -190,7 +165,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.ada.gov/">Americans with Disabilities Act</a></li>
@@ -209,85 +184,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

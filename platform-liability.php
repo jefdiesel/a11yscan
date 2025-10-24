@@ -5,19 +5,17 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-22">October 22, 2025</time>
-        <h1>Platform Liability: When Third Parties Create Accessibility Barriers</h1>
-        <p class="lead">Modern websites depend on third-party tools, platforms, and services. But responsibility for accessibility barriers created by these third parties remains legally ambiguous. Emerging 2024-2025 litigation clarifies that website owners cannot entirely escape responsibility for third-party accessibility failures, while third-party providers increasingly face direct liability for creating barriers.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-22" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 22, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Platform Liability: When Third Parties Create Accessibility Barriers</h1>
+        
         <h2>The Third-Party Accessibility Problem</h2>
+        <p>Modern websites depend on third-party tools, platforms, and services. But responsibility for accessibility barriers created by these third parties remains legally ambiguous. Emerging 2024-2025 litigation clarifies that website owners cannot entirely escape responsibility for third-party accessibility failures, while third-party providers increasingly face direct liability for creating barriers.</p>
         <p>Website accessibility increasingly depends on third parties: content management systems, analytics platforms, advertising networks, chat widgets, map services, and payment processors. Each third-party tool creates potential accessibility barriers independent of the website owner's efforts.</p>
         <p>This reality creates legal ambiguity. When accessibility barriers result from third-party code, who bears responsibility? Historically, website owners argued that third parties bear responsibility. Plaintiffs countered that website owners remain responsible because they chose to implement inaccessible tools. Emerging litigation is resolving this question—usually not in website owners' favor.</p>
     </section>
 
-    <section>
+    <section id="website-owner">
         <h2>Website Owner Responsibility for Third-Party Barriers</h2>
         
         <h3>The Primary Principle: Responsibility Cannot Be Delegated</h3>
@@ -26,24 +24,16 @@ $pageContent = <<<'HTML'
 
         <h3>Due Diligence Requirements</h3>
         <p>While website owners cannot escape responsibility entirely, courts recognize a distinction between websites using inaccessible tools without knowledge and websites knowingly implementing inaccessible tools. Website owners have a duty to exercise reasonable due diligence when selecting tools and platforms.</p>
-        <p>This duty includes: evaluating tools for accessibility before implementation, monitoring accessibility of implemented tools, requiring vendors to maintain accessibility in contracts, and remediating accessibility issues in third-party implementations when possible.</p>
+        <p>This duty includes evaluating tools for accessibility before implementation, monitoring accessibility of implemented tools, requiring vendors to maintain accessibility in contracts, and remediating accessibility issues in third-party implementations when possible.</p>
 
         <h3>Practical Implications</h3>
-        <p>Website owners implementing third-party tools should:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Require vendors to provide VPAT (Voluntary Product Accessibility Template) or equivalent accessibility documentation</li>
-            <li style="margin-bottom: 0.75rem;">Test third-party implementations for accessibility before going live</li>
-            <li style="margin-bottom: 0.75rem;">Include accessibility requirements in vendor contracts</li>
-            <li style="margin-bottom: 0.75rem;">Maintain records of accessibility evaluation and vendor selection decisions</li>
-            <li style="margin-bottom: 0.75rem;">Monitor third-party tools for accessibility as they're updated</li>
-            <li style="margin-bottom: 0.75rem;">Remediate or replace inaccessible tools promptly upon discovery of barriers</li>
-        </ul>
+        <p>Website owners implementing third-party tools should require vendors to provide VPAT (Voluntary Product Accessibility Template) or equivalent accessibility documentation, test third-party implementations for accessibility before going live, include accessibility requirements in vendor contracts, maintain records of accessibility evaluation and vendor selection decisions, monitor third-party tools for accessibility as they're updated, and remediate or replace inaccessible tools promptly upon discovery of barriers.</p>
 
         <h3>Limitations of Due Diligence Defense</h3>
         <p>Importantly, due diligence doesn't eliminate website owner liability; it merely provides a mitigation factor. Even with reasonable vendor evaluation, website owners remain liable for resulting accessibility barriers. Due diligence helps establish good faith effort, potentially reducing damages in litigation, but doesn't prevent liability.</p>
     </section>
 
-    <section>
+    <section id="third-party-liability">
         <h2>Third-Party Provider Liability</h2>
         
         <h3>Emerging Direct Liability</h3>
@@ -60,7 +50,7 @@ $pageContent = <<<'HTML'
         <p>Inaccessible chat widgets represent a significant liability source. Many third-party chat platforms remain inaccessible despite user requests for accessibility improvements. Litigation will likely target both widget providers and websites implementing inaccessible widgets.</p>
     </section>
 
-    <section>
+    <section id="litigation">
         <h2>2024 Third-Party Accessibility Litigation</h2>
         
         <h3>CMS Provider Disputes</h3>
@@ -77,7 +67,7 @@ $pageContent = <<<'HTML'
         <p>Several cases targeted payment processing platforms for creating accessibility barriers during checkout. Both the retailers and payment processors faced liability, creating mutual incentive for accessibility improvement.</p>
     </section>
 
-    <section>
+    <section id="contracts">
         <h2>Contract and Indemnity Issues</h2>
         
         <h3>Vendor Responsibility Clauses</h3>
@@ -91,7 +81,7 @@ $pageContent = <<<'HTML'
         <p>Website owners should negotiate contract provisions allowing audits of vendor accessibility and rights to remediate or replace vendors if accessibility issues aren't resolved promptly.</p>
     </section>
 
-    <section>
+    <section id="platforms">
         <h2>Platform-Specific Accessibility Challenges</h2>
         
         <h3>E-Commerce Platforms</h3>
@@ -107,7 +97,7 @@ $pageContent = <<<'HTML'
         <p>Video hosting platforms (YouTube, Vimeo) bear responsibility for accessible player functionality, caption support, and accessibility feature discoverability. While content creators provide video content, platforms must enable accessible consumption.</p>
     </section>
 
-    <section>
+    <section id="international">
         <h2>International Third-Party Liability</h2>
         
         <h3>Global Platform Responsibility</h3>
@@ -117,18 +107,11 @@ $pageContent = <<<'HTML'
         <p>Major platforms (Google, Meta, Amazon) serving global users face responsibility for accessibility across multiple legal regimes. This creates pressure for convergence toward highest-standard compliance (essentially Level AAA in most contexts).</p>
     </section>
 
-    <section>
+    <section id="strategy">
         <h2>Strategic Implications for Website Owners</h2>
         
         <h3>Vendor Evaluation Process</h3>
-        <p>Organizations implementing third-party tools should establish formal vendor evaluation processes:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Request VPAT documentation and review accessibility claims</li>
-            <li style="margin-bottom: 0.75rem;">Test tools with actual screen readers and assistive technology</li>
-            <li style="margin-bottom: 0.75rem;">Review vendor accessibility roadmap and track record</li>
-            <li style="margin-bottom: 0.75rem;">Negotiate contract accessibility requirements</li>
-            <li style="margin-bottom: 0.75rem;">Plan for ongoing monitoring and remediation</li>
-        </ul>
+        <p>Organizations implementing third-party tools should establish formal vendor evaluation processes: request VPAT documentation and review accessibility claims, test tools with actual screen readers and assistive technology, review vendor accessibility roadmap and track record, negotiate contract accessibility requirements, and plan for ongoing monitoring and remediation.</p>
 
         <h3>Accessibility in RFP Requirements</h3>
         <p>Organizations should include accessibility requirements in requests for proposals (RFPs) to vendors. Clear accessibility expectations during vendor selection process increase likelihood of compliant tools.</p>
@@ -140,24 +123,17 @@ $pageContent = <<<'HTML'
         <p>Rather than relying on third-party tools to provide accessibility, organizations should build accessibility into their own development processes. In-house accessibility testing and development practices provide more control than dependency on vendor accessibility claims.</p>
     </section>
 
-    <section>
+    <section id="future">
         <h2>The Future of Platform Accountability</h2>
         
         <h3>Anticipated Developments</h3>
-        <p>2025 will likely see:</p>
-        <ul>
-            <li style="margin-bottom: 0.75rem;">Direct lawsuits against platform and tool vendors, not just implementing websites</li>
-            <li style="margin-bottom: 0.75rem;">Platform liability for user-generated content accessibility, with requirements to provide accessible alternatives</li>
-            <li style="margin-bottom: 0.75rem;">Stricter contract requirements regarding vendor accessibility responsibility</li>
-            <li style="margin-bottom: 0.75rem;">Third-party liability insurance emerging to cover platform accessibility risks</li>
-            <li style="margin-bottom: 0.75rem;">Industry standards development around platform accessibility testing and certification</li>
-        </ul>
+        <p>2025 will likely see direct lawsuits against platform and tool vendors, not just implementing websites, platform liability for user-generated content accessibility with requirements to provide accessible alternatives, stricter contract requirements regarding vendor accessibility responsibility, third-party liability insurance emerging to cover platform accessibility risks, and industry standards development around platform accessibility testing and certification.</p>
 
         <h3>Vendor Response Patterns</h3>
         <p>Smart vendors will increasingly invest in accessibility because liability exposure creates business risk. Early accessibility adoption becomes a competitive advantage, attracting customers concerned about accessibility liability.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>Website owners cannot escape accessibility responsibility by delegating to third parties, but due diligence provides mitigation factors.</li>
@@ -170,7 +146,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.vpat.acm.org/">VPAT Documentation Standard</a></li>
@@ -189,85 +165,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';
