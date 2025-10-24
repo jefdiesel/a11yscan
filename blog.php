@@ -189,6 +189,27 @@ $pageContent = <<<'HTML'
             <p>Why building websites with unsemantic divs instead of semantic HTML costs more, ranks worse, and excludes users. A cost analysis.</p>
             <a href="div-soup-cost-analysis.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
+
+        <article class="card blog-card" tabindex="0" id="article-accessibility-demand-letter">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">What to Do If You Receive an Accessibility Demand Letter</h3>
+            <p>Step-by-step guide for handling accessibility violation notices. Learn what it means, your legal options, settlement expectations, and immediate actions to take.</p>
+            <a href="accessibility-demand-letter.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-wcag-2-2">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">WCAG 2.1 vs 2.2: What Changed and Why It Matters for Your Compliance</h3>
+            <p>WCAG 2.2 introduces new requirements for target sizes, persistent authentication, and focus visibility. Learn what's new, what you need to do, and timeline implications.</p>
+            <a href="wcag-2-2-changes.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-mobile-accessibility">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Mobile Accessibility: Why 40% of Your Users Can't Use Your Site on Mobile</h3>
+            <p>Small screens, touch interfaces, and mobile assumptions create accessibility barriers. Learn why mobile accessibility matters and how to fix the most common issues.</p>
+            <a href="mobile-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
     </div>
 </section>
 
