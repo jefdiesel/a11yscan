@@ -157,6 +157,11 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             padding: 0 1rem;
         }
         
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
         .hero {
             padding: 3rem 0 2.5rem;
             text-align: center;
