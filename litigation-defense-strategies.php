@@ -175,13 +175,21 @@ $pageContent = <<<'HTML'
             <li><a href="https://www.a11yproject.com/">The A11y Project</a></li>
         </ul>
     </section>
+
+    <!-- LEGAL DISCLAIMER (mandatory) -->
+    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
 </article>
 
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Start Your Good Faith Program Today</h2>
-        <p>Begin building documented accessibility commitment. Get a free audit and establish defensible accessibility practices before litigation exposure increases.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Build Your Good Faith Program Today</h2>
+        <p>Start establishing documented accessibility commitment before litigation exposure increases. Get a free audit and begin building defensible accessibility practices.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('partial-audit', 'Good Faith Program Assessment')">Start Good Faith Program</button>
     </div>
 </section>
 HTML;

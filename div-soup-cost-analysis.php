@@ -4,19 +4,18 @@ $pageDescription = 'Why building websites with unsemantic divs instead of semant
 $currentPage = 'blog';
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <section class="post-header">
-        <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>Div Soup: Why Pretty But Broken Websites Cost More Than You Think</h1>
-    </section>
-
     <section id="intro">
+        <time datetime="2025-10-24" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 24, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Div Soup: Why Pretty But Broken Websites Cost More Than You Think</h1>
+
+        <h2>What Is Div Soup? (And Why Everyone's Building It)</h2>
         <p>"Div soup" is a term for websites built with <code>&lt;div&gt;</code> tags instead of semantic HTML. A navigation is a <code>&lt;div&gt;</code> with JavaScript click handlers, not a <code>&lt;nav&gt;</code>. A button is a <code>&lt;div&gt;</code> styled with CSS, not a <code>&lt;button&gt;</code>. Headings are <code>&lt;span&gt;</code> tags with large font sizes, not <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</p>
         <p>These websites look beautiful. They pass design reviews. They impress stakeholders at presentations. But they're broken in ways that cost companies millions of dollars in lost revenue, remediation expenses, and litigation risk.</p>
         <p>Let's break down what "pretty but broken" actually costs.</p>
     </section>
 
     <section id="what-is-div-soup">
-        <h2>What Is Div Soup? (And Why Everyone's Building It)</h2>
+        <h2>Why Div Soup Happens</h2>
         <p>Div soup happens when developers use <code>&lt;div&gt;</code> tags as generic containers and then layer on JavaScript and CSS to make them behave like proper HTML elements.</p>
         <p>Example of div soup:</p>
         <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;">
@@ -308,14 +307,33 @@ $pageContent = <<<'HTML'
         <p>Start with semantic HTML. Layer on CSS for design. Add JavaScript only when necessary. You'll ship faster, at lower cost, with better results.</p>
     </section>
 
-    <section style="margin-top: 3rem;">
-        <div class="highlight">
-            <h2 style="margin-top: 0;">Audit Your Site's Code Quality</h2>
-            <p>Find out if your website is built with semantic HTML or div soup. Discover how much you're potentially losing to poor structure, accessibility issues, and performance problems. Get a full cost analysis with our deep audit.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Div Soup Code Quality Assessment')">Analyze My Site Structure</button>
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
+            <li><a href="https://webaim.org/">WebAIM</a></li>
+            <li><a href="https://www.a11yproject.com/">The A11y Project</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">MDN: Semantics</a></li>
+            <li><a href="https://www.a11yproject.com/checklist/">A11y Project Checklist</a></li>
+        </ul>
+    </section>
+
+    <!-- LEGAL DISCLAIMER (mandatory) -->
+    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
         </div>
     </section>
 </article>
+
+<section style="margin-top: 3rem;">
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Audit Your Site's Code Quality</h2>
+        <p>Find out if your website is built with semantic HTML or div soup. Get a full analysis of code structure, accessibility issues, and cost-benefit assessment.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Code Quality and Semantic HTML Assessment')">Analyze My Site Structure</button>
+    </div>
+</section>
 HTML;
 include 'template.php';
 ?>

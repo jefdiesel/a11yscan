@@ -158,29 +158,34 @@ $pageContent = <<<'HTML'
             <li>Keyboard navigation ✓</li>
             <li>Clear content ✓</li>
             <li>Good SEO ✓ (side effect)</li>
-            <li>Lower litigation risk ✓</li>
+            <li>Lower accessibility litigation risk ✓</li>
             <li>Better conversion ✓</li>
         </ul>
         <p><strong>Approach 2: Build with divs, optimize for SEO later</strong></p>
         <ul>
             <li>JavaScript div structures (no semantic meaning)</li>
             <li>Hire SEO consultant to advise on heading structure</li>
-            <li>Hire accessibility consultant to fix WCAG violations</li>
+            <li>Hire accessibility consultant to fix accessibility violations</li>
             <li>Refactor HTML throughout the site</li>
             <li>Rewrite content for clarity</li>
             <li>Fix keyboard navigation (rebuild interactions)</li>
             <li>Add alt text to every image retroactively</li>
             <li>Still lower conversion rates (people can't easily navigate)</li>
-            <li>Still litigation risk (if you're starting from non-accessible, catching up is hard)</li>
+            <li>Still higher accessibility litigation risk (remediation is incomplete)</li>
         </ul>
         <p>The second approach costs 3-5x more than the first and never quite catches up. Start accessible. The SEO benefits are automatic.</p>
     </section>
 
     <section id="ranking-factor">
-        <h2>Accessibility as an Official Google Ranking Factor</h2>
-        <p>In 2024-2025, Google has begun considering WCAG compliance signals in their ranking algorithm. This isn't speculation—it's public.</p>
-        <p>Google's message is clear: accessibility and SEO are linked. If you want to rank well, build accessibly.</p>
-        <p>This doesn't mean Google checks every site for WCAG compliance. But it means sites with good accessibility signals (fast load times, good structure, clear content, mobile usability, keyboard navigation) rank better. These are exactly the signals that correlate with WCAG compliance.</p>
+        <h2>Accessibility and User Experience as Ranking Factors</h2>
+        <p>Search engines have increasingly aligned their ranking factors with user experience and accessibility. Generally recognized best practices establish that:</p>
+        <ul>
+            <li>Sites that work well for all users rank better than sites that work only for some users.</li>
+            <li>Mobile accessibility directly impacts mobile search rankings.</li>
+            <li>Fast, semantic, well-structured sites rank better than slow, div-heavy sites.</li>
+            <li>Clear, readable content ranks better than unclear, jargon-heavy content.</li>
+        </ul>
+        <p>This alignment isn't coincidental. Search engines want to return sites that serve users well. Accessible sites serve more users better. Therefore, they rank better.</p>
     </section>
 
     <section id="action-items">
@@ -194,17 +199,25 @@ $pageContent = <<<'HTML'
             <li><strong>Add schema markup:</strong> Tell Google what your content is about.</li>
             <li><strong>Mobile-first design:</strong> Test on mobile. Is it usable?</li>
         </ul>
-        <p>These aren't just accessibility improvements—they're SEO improvements. One effort, two (really, many) benefits.</p>
+        <p>These aren't just accessibility improvements—they're SEO improvements. One effort, multiple benefits.</p>
     </section>
 
-    <section style="margin-top: 3rem;">
-        <div class="highlight">
-            <h2 style="margin-top: 0;">Audit Your SEO and Accessibility</h2>
-            <p>See how your website's accessibility impacts search rankings. Get a WCAG compliance report with specific SEO insights and actionable recommendations to improve both.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('partial-audit', 'SEO and WCAG Compliance Check')">Get SEO-Accessibility Audit</button>
+    <!-- LEGAL DISCLAIMER (mandatory) -->
+    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
         </div>
     </section>
 </article>
+
+<section style="margin-top: 3rem;">
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Improve Your SEO with Accessibility</h2>
+        <p>See exactly how your website's accessibility impacts search rankings. Get a detailed WCAG compliance report with specific SEO insights and actionable recommendations to improve both simultaneously.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('partial-audit', 'SEO and WCAG Compliance Audit')">Get SEO-Accessibility Audit</button>
+    </div>
+</section>
 HTML;
 include 'template.php';
 ?>

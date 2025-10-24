@@ -4,12 +4,10 @@ $pageDescription = 'Explore demographic shifts in America: 61.2 million seniors 
 $currentPage = 'blog';
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <section class="post-header">
-        <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design</h1>
-    </section>
-    
     <section id="intro">
+        <time datetime="2025-10-24" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 24, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design</h1>
+
         <p>America is aging faster than at any other point in history. This isn't speculation or prediction—it's a demographic reality reshaping the economy, politics, workforce, and consumer behavior. For web designers and business leaders, this represents both a massive opportunity and a critical accessibility mandate that many organizations are still overlooking.</p>
         
         <p>The data tells a compelling story: seniors control more wealth than any generation in American history, they're rapidly adopting digital technology, and they're navigating websites that were often designed without their needs in mind. This convergence of demographics, economics, and accessibility creates urgency for organizations to rethink how they build for the web.</p>
@@ -152,71 +150,35 @@ $pageContent = <<<'HTML'
         
         <p>Organizations that build accessible digital experiences today will be positioned to serve the demographic reality of tomorrow. Organizations that ignore this shift will find themselves increasingly excluded from a market that's rapidly becoming older, and more demanding of design that works for real human beings at every life stage.</p>
     </section>
-    
-    <section style="margin-top: 3rem;">
-        <div class="highlight">
-            <h2 style="margin-top: 0;">Audit Your Site for Senior Accessibility</h2>
-            <p>Is your website truly accessible to older adults with age-related vision changes and reduced motor dexterity? Get a comprehensive audit that identifies contrast failures, navigation barriers, and accessibility gaps—with actionable recommendations specific to serving an aging demographic.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('partial-audit', 'Senior Accessibility Audit')">Start Senior Accessibility Audit</button>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.census.gov/">U.S. Census Bureau</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Guidelines</a></li>
+            <li><a href="https://www.aarp.org/">AARP Research and Resources</a></li>
+            <li><a href="https://webaim.org/">WebAIM</a></li>
+            <li><a href="https://www.a11yproject.com/">The A11y Project</a></li>
+        </ul>
+    </section>
+
+    <!-- LEGAL DISCLAIMER (mandatory) -->
+    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
         </div>
     </section>
 </article>
 
-<script>
-    function openPricingForm(serviceTier, subject) {
-        // This function would open your pricing form modal with pre-filled service tier and subject
-        // Implementation depends on your form system
-        console.log('Opening form with tier: ' + serviceTier + ', subject: ' + subject);
-        // Placeholder for actual form implementation
-        alert('Pricing form would open here for: ' + subject);
-    }
-</script>
-
-<!-- Schema.org JSON-LD for SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design",
-  "description": "Explore demographic shifts in America: 61.2 million seniors (18% of population), $78 trillion in wealth, and why accessibility design for aging eyes matters for business and compliance.",
-  "image": "https://a11yscan.xyz/images/silver-economy-accessibility.jpg",
-  "datePublished": "2025-10-24T08:00:00Z",
-  "dateModified": "2025-10-24T08:00:00Z",
-  "author": {
-    "@type": "Organization",
-    "name": "A11yscan",
-    "url": "https://a11yscan.xyz"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "A11yscan",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://a11yscan.xyz/logo.svg"
-    }
-  },
-  "articleBody": "America is aging faster than at any other point in history. This isn't speculation or prediction—it's a demographic reality reshaping the economy, politics, workforce, and consumer behavior. For web designers and business leaders, this represents both a massive opportunity and a critical accessibility mandate that many organizations are still overlooking. The data tells a compelling story: seniors control more wealth than any generation in American history, they're rapidly adopting digital technology, and they're navigating websites that were often designed without their needs in mind.",
-  "keywords": "senior accessibility, WCAG compliance, aging population, web accessibility, color contrast, older adults, digital accessibility, age-friendly design, demographic trends, accessibility audit",
-  "mainEntity": {
-    "@type": "Thing",
-    "name": "Senior Web Accessibility"
-  }
-}
-</script>
-
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design">
-<meta property="og:description" content="Explore demographic shifts in America: 61.2 million seniors (18% of population), $78 trillion in wealth, and why accessibility design for aging eyes matters for business and compliance.">
-<meta property="og:url" content="https://a11yscan.xyz/silver-economy-accessibility.php">
-<meta property="og:site_name" content="A11yscan">
-<meta property="article:published_time" content="2025-10-24T08:00:00+00:00">
-<meta property="article:author" content="https://a11yscan.xyz">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design">
-<meta name="twitter:description" content="Explore demographic shifts in America: 61.2 million seniors (18% of population), $78 trillion in wealth, and why accessibility design for aging eyes matters for business and compliance.">
-
+<section style="margin-top: 3rem;">
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Is Your Site Ready for the Silver Economy?</h2>
+        <p>Test your website's accessibility for older adults with age-related vision changes. Get a comprehensive audit identifying contrast failures, text size issues, and senior-specific accessibility gaps.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Senior Accessibility Audit')">Audit for Senior Access</button>
+    </div>
+</section>
 HTML;
+
 include 'template.php';
 ?>
