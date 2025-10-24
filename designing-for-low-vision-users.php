@@ -10,18 +10,15 @@ $pageContent = <<<'HTML'
         <h1>Designing for Low Vision Users: Vision Accessibility</h1>
     </header>
 
-    <nav class="section-nav" aria-label="Article sections">
-        <strong>Sections:</strong>
-        <ul style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; list-style: none; padding: 0;">
-            <li><a href="#understanding-low-vision" tabindex="0">Understanding Low Vision</a></li>
-            <li><a href="#core-principles" tabindex="0">Core Principles</a></li>
-            <li><a href="#components" tabindex="0">Components</a></li>
-            <li><a href="#color-blindness" tabindex="0">Color Blindness</a></li>
-            <li><a href="#testing" tabindex="0">Testing</a></li>
-            <li><a href="#mistakes" tabindex="0">Common Mistakes</a></li>
-            <li><a href="#example" tabindex="0">Example</a></li>
-            <li><a href="#takeaways" tabindex="0">Key Takeaways</a></li>
-        </ul>
+    <nav class="section-tabs" aria-label="Article sections" role="tablist">
+        <button role="tab" aria-selected="true" aria-controls="understanding-low-vision">Understanding Low Vision</button>
+        <button role="tab" aria-selected="false" aria-controls="core-principles">Core Principles</button>
+        <button role="tab" aria-selected="false" aria-controls="components">Components</button>
+        <button role="tab" aria-selected="false" aria-controls="color-blindness">Color Blindness</button>
+        <button role="tab" aria-selected="false" aria-controls="testing">Testing</button>
+        <button role="tab" aria-selected="false" aria-controls="mistakes">Common Mistakes</button>
+        <button role="tab" aria-selected="false" aria-controls="example">Example</button>
+        <button role="tab" aria-selected="false" aria-controls="takeaways">Key Takeaways</button>
     </nav>
 
     <section id="understanding-low-vision">

@@ -223,38 +223,51 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             scroll-margin-top: 80px;
         }
         
-        .section-nav {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 8px;
+        .section-tabs {
+            display: flex;
+            gap: 0.25rem;
             margin-bottom: 2rem;
-            border-left: 4px solid var(--accent-primary);
+            border-bottom: 2px solid var(--border);
+            flex-wrap: wrap;
         }
         
-        .section-nav strong {
-            display: block;
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-        }
-        
-        .section-nav a {
-            color: var(--accent-primary);
-            text-decoration: none;
+        .section-tabs button {
+            background: transparent;
+            border: none;
+            padding: 0.75rem 1.25rem;
             font-size: 0.9rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
             transition: all 0.2s;
+            position: relative;
+            bottom: -2px;
         }
         
-        .section-nav a:hover {
-            background: var(--accent-light);
-            color: white;
-            text-decoration: none;
+        .section-tabs button:hover {
+            color: var(--accent-primary);
+            background: var(--bg-secondary);
         }
         
-        .section-nav a:focus {
+        .section-tabs button:focus {
             outline: 2px solid var(--accent-primary);
-            outline-offset: 2px;
+            outline-offset: -3px;
+            color: var(--accent-primary);
+        }
+        
+        .section-tabs button.active {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+        }
+        
+        .blog-post section {
+            scroll-margin-top: 100px;
+        }
+        
+        .blog-post section:focus {
+            outline: 3px solid var(--accent-primary);
+            outline-offset: -3px;
         }
         
         h2 {
@@ -491,6 +504,62 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </footer>
 
     <script>
+        // Section tab navigation
+        const tabs = document.querySelectorAll('[role="tab"]');
+        const sections = document.querySelectorAll('.blog-post section[id]');
+        
+        if (tabs.length > 0) {
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => {
+                        t.setAttribute('aria-selected', 'false');
+                        t.classList.remove('active');
+                    });
+                    tab.setAttribute('aria-selected', 'true');
+                    tab.classList.add('active');
+                    
+                    const sectionId = tab.getAttribute('aria-controls');
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        section.focus();
+                        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+                
+                tab.addEventListener('keydown', (e) => {
+                    let targetIndex = index;
+                    if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        targetIndex = (index + 1) % tabs.length;
+                    } else if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        targetIndex = (index - 1 + tabs.length) % tabs.length;
+                    }
+                    if (targetIndex !== index) {
+                        tabs[targetIndex].focus();
+                        tabs[targetIndex].click();
+                    }
+                });
+            });
+        }
+        
+        // Make sections tabbable
+        sections.forEach(section => {
+            section.setAttribute('tabindex', '0');
+            section.addEventListener('focus', () => {
+                const sectionId = section.id;
+                const activeTab = document.querySelector(`[aria-controls="${sectionId}"]`);
+                if (activeTab) {
+                    tabs.forEach(t => {
+                        t.setAttribute('aria-selected', 'false');
+                        t.classList.remove('active');
+                    });
+                    activeTab.setAttribute('aria-selected', 'true');
+                    activeTab.classList.add('active');
+                }
+            });
+        });
+        
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
