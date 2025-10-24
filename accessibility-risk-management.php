@@ -5,13 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-20">October 20, 2025</time>
-        <h1>Accessibility as Enterprise Risk Management: 2024-2025 Analysis</h1>
-        <p class="lead">Digital accessibility is no longer merely a compliance concern or ethical obligation. It represents a material business risk affecting enterprise risk frameworks, insurance considerations, and shareholder value. Forward-thinking organizations integrate accessibility into comprehensive risk management strategies.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Accessibility as Enterprise Risk Management: 2024-2025 Analysis</h1>
+        
+        <h2>Risk</h2>
         <h2>Accessibility as Enterprise Risk</h2>
         
         <h3>Financial Impact Quantification</h3>
@@ -196,84 +194,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

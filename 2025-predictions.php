@@ -5,13 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-23">October 23, 2025</time>
-        <h1>2025 Accessibility Litigation Predictions: What to Expect</h1>
-        <p class="lead">Based on 2024 trends and emerging legal patterns, 2025 will see unprecedented accessibility litigation. Understanding probable developments allows organizations to anticipate risk and prioritize remediation strategically. This analysis examines likely litigation hotspots, emerging legal theories, and organizational vulnerabilities likely to be targeted in 2025.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">2025 Accessibility Litigation Predictions: What to Expect</h1>
+        
+        <h2>Volume Forecast</h2>
         <h2>Litigation Volume Forecast</h2>
         <p>If current trends continue, 2025 will see 5,000 to 6,000 digital accessibility lawsuits filed—a 25-50% increase over 2024. This acceleration reflects multiple converging factors: increased litigation infrastructure, refined plaintiff strategies, growing legal precedent, and stronger economic incentives for plaintiff attorneys.</p>
         <p>The trajectory suggests that by 2027, annual accessibility litigation could reach 8,000-10,000 cases. This growth rate rivals the early internet defamation litigation explosion. For organizations, this means accessibility is transitioning from a peripheral concern to a primary legal and business risk.</p>
@@ -219,84 +217,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

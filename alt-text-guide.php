@@ -5,13 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-14">October 14, 2025</time>
-        <h1>Alt Text That Actually Works: Writing for Screen Readers</h1>
-        <p class="lead">Alt text—alternative text for images—represents a fundamental accessibility requirement. Yet many websites include alt text that is either missing, unhelpful, or actively misleading. Learning to write effective alt text is essential for screen reader users, SEO performance, and ensuring your website provides genuine accessibility.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-23" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 23, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Alt Text That Actually Works: Writing for Screen Readers</h1>
+        
+        <h2>Why Alt Text Matters</h2>
         <h2>Why Alt Text Matters</h2>
         <p>Approximately 2.2 billion people worldwide have vision impairments, including over 43 million who are blind. Many of these individuals use screen readers—software that reads web content aloud—to access websites and other digital content. Screen readers can read text, but they cannot interpret images. Alt text provides the textual description that allows screen readers to convey image meaning to their users.</p>
         <p>For screen reader users, alt text isn't just helpful—it's essential. Without alt text, an image communicates nothing. A website full of meaningful images becomes useless. Alt text transforms images from inaccessible barriers into accessible components of the user experience.</p>
@@ -210,84 +208,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';

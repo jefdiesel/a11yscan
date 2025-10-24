@@ -5,20 +5,18 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-25">October 25, 2025</time>
-        <h1>2024 Accessibility Lawsuit Trends: What the Data Shows</h1>
-        <p class="lead">2024 marked a dramatic escalation in web accessibility litigation. Over 4,000 digital accessibility lawsuits were filed, representing a 200% increase from 2020. Understanding these trends is critical for organizations seeking to assess legal risk and prioritize accessibility investment appropriately.</p>
-    </header>
-
-    <section>
+    <section id="intro">
+        <time datetime="2025-10-25" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 25, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">2024 Accessibility Lawsuit Trends: What the Data Shows</h1>
+        
         <h2>The Explosive Growth of Digital Accessibility Litigation</h2>
+        <p>2024 marked a dramatic escalation in web accessibility litigation. Over 4,000 digital accessibility lawsuits were filed, representing a 200% increase from 2020. Understanding these trends is critical for organizations seeking to assess legal risk and prioritize accessibility investment appropriately.</p>
         <p>The trajectory of accessibility lawsuits has been steeply upward. In 2010, approximately 100 digital accessibility lawsuits were filed annually. By 2015, this number had grown to roughly 500. In 2020, the count reached 2,000 cases. By 2024, that number had doubled to over 4,000 lawsuits annually. This represents more than a 4,000% increase in a single decade.</p>
         <p>This growth reflects several converging trends: increased awareness of accessibility rights, more sophisticated litigation strategies, emerging legal precedents establishing website accessibility requirements, and greater willingness by courts to hold organizations accountable. The ADA was written in 1990, but digital accessibility enforcement is primarily a phenomenon of the past five years.</p>
         <p>The velocity of litigation is accelerating, not stabilizing. Industry experts predict 2025 will see even higher filing rates as legal precedent strengthens and plaintiff advocacy organizations continue aggressive strategies. Organizations delaying accessibility investment face increasing legal exposure.</p>
     </section>
 
-    <section>
+    <section id="geographic-distribution">
         <h2>Geographic Distribution and Hotspots</h2>
         <p>While accessibility lawsuits are filed across all 50 states, certain jurisdictions have emerged as litigation hotspots.</p>
 
@@ -36,7 +34,7 @@ $pageContent = <<<'HTML'
         <p>Federal courts see accessibility claims filed under Title III of the ADA. Unlike state court proceedings that can involve procedural complications, federal ADA litigation typically follows established patterns from decades of disability rights litigation. Conversely, some defendants view federal courts as more predictable and potentially more favorable than aggressive state courts.</p>
     </section>
 
-    <section>
+    <section id="industries-targeted">
         <h2>Industries Most Heavily Targeted</h2>
         <p>Accessibility lawsuits have not distributed equally across industries. Certain sectors face dramatically higher litigation rates.</p>
 
@@ -58,7 +56,7 @@ $pageContent = <<<'HTML'
         <p>Healthcare websites are surprisingly underrepresented in accessibility litigation relative to their importance. Patient portal accessibility, appointment scheduling systems, and medical information websites all present significant barriers. Industry experts expect healthcare litigation to increase as plaintiffs become aware of these vulnerabilities.</p>
     </section>
 
-    <section>
+    <section id="settlements">
         <h2>Settlement Amounts and Litigation Costs</h2>
         <p>Understanding settlement economics helps organizations assess financial exposure and justify accessibility investment.</p>
 
@@ -84,7 +82,7 @@ $pageContent = <<<'HTML'
         <p>A comprehensive accessibility audit and remediation project typically costs $20,000 to $100,000, depending on website size and complexity. This investment is substantially less than typical litigation costs. From a purely financial perspective, proactive accessibility is invariably the optimal strategy.</p>
     </section>
 
-    <section>
+    <section id="plaintiff-strategies">
         <h2>Plaintiff Strategies and Legal Theories</h2>
         <p>Understanding how plaintiffs structure cases provides insight into litigation risk.</p>
 
@@ -99,7 +97,7 @@ $pageContent = <<<'HTML'
         <p>Many accessibility claims leverage statutory damages provisions. Rather than proving actual harm, plaintiffs seek damages based on violation counts. A website with 50 accessibility violations visited by 100,000 people might theoretically face statutory damages in the millions. While courts have occasionally reduced such damages, the framework creates substantial pressure to settle.</p>
     </section>
 
-    <section>
+    <section id="legal-precedent">
         <h2>Legal Precedent Evolution</h2>
         <p>Courts continue developing legal standards governing digital accessibility.</p>
 
@@ -113,7 +111,7 @@ $pageContent = <<<'HTML'
         <p>Courts have established that even single accessibility barriers can create actionable violations. Organizations cannot argue that "most of the website is accessible" when critical functionality remains inaccessible to disabled users. This means comprehensive accessibility compliance is necessary, not optional.</p>
     </section>
 
-    <section>
+    <section id="data-summary">
         <h2>2024 Lawsuit Data Summary</h2>
         <div class="highlight" style="margin: 2rem 0;">
             <ul style="list-style: disc; padding-left: 1.5rem;">
@@ -127,7 +125,7 @@ $pageContent = <<<'HTML'
         </div>
     </section>
 
-    <section>
+    <section id="implications">
         <h2>What This Means for Organizations</h2>
         <p>The 2024 litigation landscape creates clear imperatives for organizations:</p>
         <p><strong>Risk is not theoretical.</strong> With 4,000+ lawsuits filed annually, accessibility litigation affects organizations across all industries and sizes. Assuming your organization won't be targeted is increasingly unjustifiable.</p>
@@ -136,7 +134,7 @@ $pageContent = <<<'HTML'
         <p><strong>Proactive compliance protects reputationally.</strong> Organizations demonstrating commitment to accessibility build goodwill with disabled users and the broader disability community, creating positive public relations that protects against reputational harm from litigation.</p>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>Over 4,000 accessibility lawsuits were filed in 2024, representing a 4,000% increase from 2010.</li>
@@ -150,7 +148,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="resources">
         <h2>Resources</h2>
         <ul>
             <li><a href="https://www.ssbbartgroup.com/digital-accessibility/">SSBB Digital Accessibility Litigation Report</a></li>
@@ -169,85 +167,6 @@ $pageContent = <<<'HTML'
         <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
     </div>
 </section>
-
-<style>
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.post-header {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--border);
-}
-
-.blog-post time {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.blog-post h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 1rem 0;
-}
-
-.blog-post h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post h3 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.blog-post p {
-    line-height: 1.8;
-}
-
-.blog-post ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.blog-post li {
-    margin-bottom: 0.75rem;
-    line-height: 1.8;
-    color: var(--text-secondary);
-}
-
-.blog-post a {
-    color: var(--accent-primary);
-    text-decoration: underline;
-}
-
-.blog-post a:hover {
-    color: var(--accent-dark);
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-    .blog-post h1 {
-        font-size: 1.75rem;
-    }
-    
-    .blog-post h2 {
-        font-size: 1.35rem;
-    }
-}
-</style>
 HTML;
 
 include 'template.php';
