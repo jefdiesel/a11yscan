@@ -339,6 +339,12 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             border-radius: 8px;
             padding: 2rem;
             transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card button {
+            margin-top: auto;
         }
         
         .card:hover {
