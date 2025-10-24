@@ -7,7 +7,7 @@ $pageContent = <<<'HTML'
 <section class="hero">
     <h1>Accessibility Auditing Made Simple</h1>
     <p>Identify WCAG compliance gaps with a free scan. Get expert analysis and actionable recommendations.</p>
-    <a href="#pricing" class="btn btn-primary">Start Free Scan</a>
+    <button class="btn btn-primary" onclick="openPricingForm('free-scan')">Start Free Scan</button>
 </section>
 
 <section>
@@ -60,7 +60,7 @@ $pageContent = <<<'HTML'
                 <li>✓ Violation summary</li>
                 <li>✓ Email report</li>
             </ul>
-            <a href="#" class="btn btn-secondary" style="width: 100%; display: block; margin-top: 1rem;">Get Started</a>
+            <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('free-scan')">Get Started</button>
         </div>
         
         <div class="card">
@@ -72,19 +72,75 @@ $pageContent = <<<'HTML'
                 <li>✓ Remediation roadmap</li>
                 <li>✓ 2 consultations</li>
             </ul>
-            <a href="#" class="btn btn-primary" style="width: 100%; display: block; margin-top: 1rem;">Learn More</a>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('partial-audit')">Learn More</button>
         </div>
         
         <div class="card">
-            <h3>Full Site Audit</h3>
+            <h3>Deep Audit</h3>
             <span class="stat">$1,999</span>
             <ul>
-                <li>✓ Unlimited pages</li>
+                <li>✓ 1000-page machine audit</li>
+                <li>✓ 10-page manual audit</li>
                 <li>✓ WCAG AAA compliance</li>
-                <li>✓ Full remediation plan</li>
-                <li>✓ Unlimited consultations</li>
+                <li>✓ Remediation plan</li>
+                <li>✓ 3 consultations</li>
             </ul>
-            <a href="#" class="btn btn-primary" style="width: 100%; display: block; margin-top: 1rem;">Get Full Audit</a>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('deep-audit')">Get Full Audit</button>
+        </div>
+    </div>
+    
+    <!-- Pricing Form Modal -->
+    <div id="pricingModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                <h2 style="margin: 0; font-size: 1.5rem;">Request a Scan</h2>
+                <button onclick="closePricingForm()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-secondary);">✕</button>
+            </div>
+            
+            <form id="pricingForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="hidden" id="serviceType" name="service" value="">
+                
+                <div>
+                    <label for="companyName" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Company Name</label>
+                    <input type="text" id="companyName" name="company_name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="websiteUrl" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Website URL</label>
+                    <input type="url" id="websiteUrl" name="website_url" placeholder="https://example.com" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="contactName" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Your Name</label>
+                    <input type="text" id="contactName" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="contactEmail" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="industry" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Industry (Optional)</label>
+                    <input type="text" id="industry" name="industry" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="concern" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Primary Concern</label>
+                    <select id="concern" name="concern" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                        <option value="">Select a concern...</option>
+                        <option value="wcag-compliance">WCAG Compliance</option>
+                        <option value="litigation-risk">Litigation Risk</option>
+                        <option value="user-accessibility">User Accessibility</option>
+                        <option value="legal-requirement">Legal Requirement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div id="formMessage" style="display: none; padding: 1rem; border-radius: 4px; margin-top: 0.5rem;"></div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Request</button>
+            </form>
         </div>
     </div>
 </section>
@@ -124,9 +180,83 @@ $pageContent = <<<'HTML'
     <div class="highlight">
         <h2 style="margin-top: 0;">Ready to Get Started?</h2>
         <p>Start with a free scan. No credit card required.</p>
-        <a href="#" class="btn btn-primary">Start Free Scan</a>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan')">Start Free Scan</button>
     </div>
 </section>
+
+<script>
+function openPricingForm(serviceType) {
+    const serviceNames = {
+        'free-scan': 'Free Scan',
+        'partial-audit': 'Partial Audit',
+        'deep-audit': 'Deep Audit'
+    };
+    
+    document.getElementById('serviceType').value = serviceNames[serviceType] || serviceType;
+    document.getElementById('pricingModal').style.display = 'flex';
+    document.getElementById('pricingForm').reset();
+    document.getElementById('formMessage').style.display = 'none';
+    document.body.style.overflow = 'hidden';
+}
+
+function closePricingForm() {
+    document.getElementById('pricingModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+document.getElementById('pricingModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closePricingForm();
+    }
+});
+
+// Handle form submission
+document.getElementById('pricingForm')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const messageDiv = document.getElementById('formMessage');
+    const submitBtn = this.querySelector('button[type="submit"]');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+    
+    try {
+        const response = await fetch('contact-handler.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            messageDiv.style.background = '#d4edda';
+            messageDiv.style.color = '#155724';
+            messageDiv.style.border = '1px solid #c3e6cb';
+            messageDiv.textContent = data.message;
+            messageDiv.style.display = 'block';
+            this.reset();
+            setTimeout(() => closePricingForm(), 2000);
+        } else {
+            messageDiv.style.background = '#f8d7da';
+            messageDiv.style.color = '#721c24';
+            messageDiv.style.border = '1px solid #f5c6cb';
+            messageDiv.textContent = data.message || 'Error submitting form. Please try again.';
+            messageDiv.style.display = 'block';
+        }
+    } catch (error) {
+        messageDiv.style.background = '#f8d7da';
+        messageDiv.style.color = '#721c24';
+        messageDiv.style.border = '1px solid #f5c6cb';
+        messageDiv.textContent = 'Error submitting form. Please try again.';
+        messageDiv.style.display = 'block';
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Request';
+    }
+});
+</script>
 HTML;
 
 include 'template.php';
