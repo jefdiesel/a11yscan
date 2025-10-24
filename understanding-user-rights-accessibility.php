@@ -5,12 +5,12 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-24">October 24, 2025</time>
-        <h1>Understanding Your Rights as a User Requiring Web Accessibility Features</h1>
-    </header>
-
+    <!-- IMPORTANT: Header (date + title) INSIDE first section to scroll with content -->
     <section id="introduction">
+        <time datetime="2025-10-24" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 24, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Understanding Your Rights as a User Requiring Web Accessibility Features</h1>
+        
+        <h2>Introduction</h2>
         <p>If you rely on screen readers, keyboard navigation, high contrast modes, captions, or any assistive technology to access the web, you have fundamental rights to equal access. These aren't favors. They're not optional accommodations businesses can choose to provide when convenient. They are legal protections you're entitled to as a person with a disability.</p>
         <p>This guide explains your practical rights as a user requiring accessibility features, what accommodations you should expect, and what steps you can take when websites fail to provide equal access.</p>
     </section>
