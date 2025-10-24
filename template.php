@@ -431,7 +431,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: #ffffff !important;
+            color: pink !important;
             font-weight: 500;
         }
         
