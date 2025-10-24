@@ -72,7 +72,8 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         main:focus {
-            outline: none;
+            outline: 3px solid var(--accent-primary);
+            outline-offset: 2px;
         }
         
         header {
@@ -220,6 +221,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         
         .btn-primary:hover {
             background: var(--accent-dark);
+            color: #ffffff;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
@@ -410,7 +412,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-section a:hover {
-            color: #e0e7ff;
+            color: #ffffff;
             text-decoration: underline;
         }
         
@@ -483,7 +485,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </style>
 </head>
 <body>
-    <a href="#intro" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <header role="banner">
         <div class="header-content">
@@ -500,7 +502,9 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </header>
     
     <main id="main">
-        <?php echo $pageContent; ?>
+        <div id="main-content">
+            <?php echo $pageContent; ?>
+        </div>
     </main>
     
     <footer role="contentinfo">
