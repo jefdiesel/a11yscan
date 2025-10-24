@@ -431,8 +431,12 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: pink !important;
             font-weight: 500;
+        }
+        
+        .footer-bottom p {
+            color: #ffffff !important;
+            margin: 0;
         }
         
         @media (max-width: 768px) {
