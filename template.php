@@ -436,7 +436,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     </style>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#intro" class="skip-link">Skip to main content</a>
     
     <header role="banner">
         <div class="header-content">
@@ -452,7 +452,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         </div>
     </header>
     
-    <main id="main" tabindex="-1">
+    <main id="main">
         <?php echo $pageContent; ?>
     </main>
     
