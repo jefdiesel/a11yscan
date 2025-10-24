@@ -71,6 +71,10 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             top: 0;
         }
         
+        main:focus {
+            outline: none;
+        }
+        
         header {
             background: var(--bg-primary);
             border-bottom: 1px solid var(--border);
@@ -448,7 +452,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         </div>
     </header>
     
-    <main id="main">
+    <main id="main" tabindex="-1">
         <?php echo $pageContent; ?>
     </main>
     
