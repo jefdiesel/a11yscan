@@ -82,7 +82,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 0.6rem 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -91,17 +91,17 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             text-decoration: none;
             color: var(--text-primary);
-            font-size: 1.65rem;
+            font-size: 1.4rem;
             font-weight: 800;
             letter-spacing: -0.5px;
         }
         
         .logo-svg {
-            width: 50px;
-            height: 50px;
+            width: 38px;
+            height: 38px;
         }
         
         nav {
@@ -111,11 +111,11 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         nav a {
-            padding: 0.75rem 1.25rem;
+            padding: 0.5rem 1rem;
             text-decoration: none;
             color: var(--text-primary);
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             border-radius: 4px;
             transition: all 0.2s;
         }
@@ -138,7 +138,9 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         nav a.cta {
             background: var(--accent-primary);
             color: white;
-            margin-left: 0.5rem;
+            margin-left: 0.75rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
         }
         
         nav a.cta:hover {
@@ -357,12 +359,22 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             }
             
             nav a {
-                padding: 0.5rem 0.75rem;
-                font-size: 0.9rem;
+                padding: 0.4rem 0.6rem;
+                font-size: 0.85rem;
             }
             
             nav a.cta {
-                margin-left: 0.25rem;
+                margin-left: 0.5rem;
+                padding: 0.4rem 0.75rem;
+            }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .logo-svg {
+                width: 32px;
+                height: 32px;
             }
         }
         
@@ -391,7 +403,8 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     <header role="banner">
         <div class="header-content">
             <a href="index.php" class="logo">
-                <img class="logo-svg" src="logo.svg" alt="A11yscan home"/>
+                <img class="logo-svg" src="logo.svg" alt=""/>
+                A11yscan
             </a>
             <nav role="navigation" aria-label="Main navigation">
                 <a href="index.php" <?php echo ($currentPage === 'index') ? 'class="active"' : ''; ?>>Home</a>
