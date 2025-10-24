@@ -10,17 +10,6 @@ $pageContent = <<<'HTML'
         <h1>Designing for Low Vision Users: Vision Accessibility</h1>
     </header>
 
-    <nav class="section-tabs" aria-label="Article sections" role="tablist">
-        <button role="tab" aria-selected="true" aria-controls="understanding-low-vision">Understanding Low Vision</button>
-        <button role="tab" aria-selected="false" aria-controls="core-principles">Core Principles</button>
-        <button role="tab" aria-selected="false" aria-controls="components">Components</button>
-        <button role="tab" aria-selected="false" aria-controls="color-blindness">Color Blindness</button>
-        <button role="tab" aria-selected="false" aria-controls="testing">Testing</button>
-        <button role="tab" aria-selected="false" aria-controls="mistakes">Common Mistakes</button>
-        <button role="tab" aria-selected="false" aria-controls="example">Example</button>
-        <button role="tab" aria-selected="false" aria-controls="takeaways">Key Takeaways</button>
-    </nav>
-
     <section id="understanding-low-vision">
         <h2>Understanding Low Vision</h2>
         <p>Low vision encompasses numerous conditions affecting visual perception differently: age-related macular degeneration causes central vision loss, diabetic retinopathy affects peripheral vision, cataracts reduce contrast and clarity, and numerous other conditions create varied visual barriers.</p>
