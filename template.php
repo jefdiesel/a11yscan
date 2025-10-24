@@ -145,10 +145,23 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             margin-left: 0.75rem;
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s;
         }
         
         nav a.cta:hover {
             background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+        
+        nav a.cta:active {
+            transform: translateY(0);
+        }
+        
+        nav a.cta:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
         }
         
         main {
@@ -193,20 +206,31 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             transition: all 0.2s;
             min-height: 44px;
             text-align: center;
+            letter-spacing: 0.5px;
         }
         
         .btn-primary {
             background: var(--accent-primary);
             color: white;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-primary:hover {
             background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
         
         .btn-primary:focus {
             outline: 3px solid var(--accent-primary);
             outline-offset: 2px;
+        }
+        
+        .btn-primary:active {
+            transform: translateY(0);
         }
         
         .btn-secondary {
@@ -217,6 +241,12 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         
         .btn-secondary:hover {
             background: var(--bg-tertiary);
+            border-color: var(--accent-primary);
+        }
+        
+        .btn-secondary:focus {
+            outline: 3px solid var(--accent-primary);
+            outline-offset: 2px;
         }
         
         section {
@@ -385,11 +415,12 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-bottom {
-            border-top: 1px solid rgba(240, 242, 247, 0.2);
+            border-top: 2px solid rgba(240, 242, 247, 0.5);
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: rgba(240, 242, 247, 0.9);
+            color: rgba(240, 242, 247, 0.95);
+            font-weight: 500;
         }
         
         @media (max-width: 768px) {
@@ -409,6 +440,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             nav a.cta {
                 margin-left: 0.5rem;
                 padding: 0.4rem 0.75rem;
+                font-size: 0.85rem;
             }
             
             .logo {
