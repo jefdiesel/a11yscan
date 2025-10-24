@@ -148,6 +148,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             font-size: 0.9rem;
             font-weight: 600;
             transition: all 0.2s;
+            cursor: pointer;
         }
         
         nav a.cta:hover {
@@ -507,7 +508,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             <nav role="navigation" aria-label="Main navigation">
                 <a href="index.php" <?php echo ($currentPage === 'index') ? 'class="active"' : ''; ?>>Home</a>
                 <a href="blog.php" <?php echo ($currentPage === 'blog') ? 'class="active"' : ''; ?>>Blog</a>
-                <a href="#pricing" class="cta btn btn-primary">Get Scan</a>
+                <a onclick="openPricingForm()" class="cta btn btn-primary" role="button" tabindex="0">Get Scan</a>
             </nav>
         </div>
     </header>
@@ -528,9 +529,9 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="index.php#pricing">Free WCAG Scan</a></li>
-                        <li><a href="index.php#pricing">Partial Audit</a></li>
-                        <li><a href="index.php#pricing">Full Audit</a></li>
+                        <li><a href="#" onclick="openPricingForm()">Free WCAG Scan</a></li>
+                        <li><a href="#" onclick="openPricingForm()">Partial Audit</a></li>
+                        <li><a href="#" onclick="openPricingForm()">Full Audit</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -592,5 +593,8 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             });
         });
     </script>
+
+    <!-- Pricing Form Modal -->
+    <?php include 'pricing-modal.php'; ?>
 </body>
 </html>
