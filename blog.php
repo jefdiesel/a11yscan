@@ -53,6 +53,13 @@ $pageContent = <<<'HTML'
             <p>Understand accessibility as critical enterprise risk. Learn how litigation trends impact business strategy, insurance, and shareholder value.</p>
             <a href="accessibility-risk-management.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
+
+        <article class="card blog-card" tabindex="0" id="article-ada-lawsuits-2025">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">ADA Website Lawsuits Surge 37% in 2025: Legal Risks, Trends, and Business Impact</h3>
+            <p>4,000+ ADA lawsuits filed in 2024. 37% increase in first half of 2025. Geographic shifts, overlay widget traps, repeat litigation, and what businesses must do to reduce legal exposure.</p>
+            <a href="ada-lawsuits-2025.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
     </div>
 </section>
 
@@ -153,6 +160,13 @@ $pageContent = <<<'HTML'
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Why WCAG Accessibility Overlays Fail: The Hidden Costs of Quick-Fix Solutions</h3>
             <p>Explore why accessibility overlay solutions often fail to meet WCAG compliance and can actually make websites harder to use for people with disabilities.</p>
             <a href="accessibility-overlays-fail.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-silver-economy">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">The Silver Economy & Web Accessibility: Why Demographic Shifts Demand Better Website Design</h3>
+            <p>61.2 million American seniors control $78 trillion in wealth. Explore why demographic shifts make accessibility—especially for aging eyes—a business imperative and legal requirement.</p>
+            <a href="silver-economy-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
     </div>
 </section>
