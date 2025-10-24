@@ -58,7 +58,7 @@ $pageContent = <<<'HTML'
         <p><strong>Jaramillo v. Weyco Group (2018):</strong> "Defendants' reliance on the accessibility features of their website platform is insufficient. They bear ultimate responsibility for the accessibility of their website."</p>
         <p><strong>Frazier v. Flagler Development Co. (2017):</strong> "Using an accessible platform does not guarantee an accessible website if the platform is misused or if content is not properly configured."</p>
         <p>The courts don't care that you used a platform. They care that your website is inaccessible. And that's YOUR liability.</p>
-        <p><strong>From the DOJ (Department of Justice):</strong> "Entities responsible for websites must ensure the website is accessible. Using a third-party platform to build or host a website does not relieve this responsibility."</p>
+        <p><strong>The principle:</strong> Courts consistently hold that using a third-party platform does not relieve you of responsibility for ensuring website accessibility. Your platform choice is irrelevant to your legal obligations under the ADA.</p>
     </section>
 
     <section id="platform-disclaimers">

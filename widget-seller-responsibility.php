@@ -66,8 +66,7 @@ $pageContent = <<<'HTML'
     <section id="legal-standard">
         <h2>The Legal Standard: Your Website Must Be Accessible, Period</h2>
         <p>The ADA doesn't have a "small business exception" for websites. It doesn't have a "not our core business" exception. It doesn't have an "we tried our best" exception.</p>
-        <p>The standard is simple: If you have a website, it must be accessible to people with disabilities.</p>
-        <p><strong>From the DOJ:</strong> "All private websites covered by the ADA must be accessible to individuals with disabilities."</p>
+        <p>The standard is simple: If you have a website that serves your business, it must be accessible to people with disabilities. This applies regardless of your business model, size, or industry.</p>
         <p><strong>Size doesn't matter:</strong> The largest companies and smallest startups have the same obligation.</p>
         <p><strong>Industry doesn't matter:</strong> A manufacturing company's website must be as accessible as a web development agency's website.</p>
         <p><strong>Revenue doesn't matter:</strong> A nonprofit with $100K in annual revenue has the same legal obligation as a corporation with $100M.</p>
