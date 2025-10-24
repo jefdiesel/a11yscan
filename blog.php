@@ -210,6 +210,20 @@ $pageContent = <<<'HTML'
             <p>Small screens, touch interfaces, and mobile assumptions create accessibility barriers. Learn why mobile accessibility matters and how to fix the most common issues.</p>
             <a href="mobile-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
+
+        <article class="card blog-card" tabindex="0" id="article-platform-responsibility">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">You Used a Template. Your Site Is Still Broken. Your Liability Is Still Real.</h3>
+            <p>You didn't build your site from scratch. You used Shopify, Squarespace, or WordPress. That doesn't matter. If your site is inaccessible, you're liable for ADA violations.</p>
+            <a href="platform-responsibility-liability.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-widget-seller-responsibility">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">You Sell Widgets, Not Websites. But Your Website Still Violates the ADA.</h3>
+            <p>You're a product company, not a web agency. Your website is incidental to your business. Except it's not. If it's inaccessible, you're liable—and the courts prove it.</p>
+            <a href="widget-seller-responsibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
     </div>
 </section>
 
