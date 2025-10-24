@@ -8,17 +8,30 @@ $pageContent = <<<'HTML'
     <header class="post-header">
         <time datetime="2025-10-25">October 25, 2025</time>
         <h1>Designing for Low Vision Users: Vision Accessibility</h1>
-        <p class="lead">Approximately 253 million people worldwide have visual impairment, with over 36 million blind. Between these populations lie millions with low vision—people who can see but experience significant visual limitations. Designing for low vision users requires understanding their specific barriers and implementing design practices that support partial vision while maintaining visual design integrity.</p>
     </header>
 
-    <section>
+    <nav class="section-nav" aria-label="Article sections">
+        <strong>Sections:</strong>
+        <ul style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; list-style: none; padding: 0;">
+            <li><a href="#understanding-low-vision" tabindex="0">Understanding Low Vision</a></li>
+            <li><a href="#core-principles" tabindex="0">Core Principles</a></li>
+            <li><a href="#components" tabindex="0">Components</a></li>
+            <li><a href="#color-blindness" tabindex="0">Color Blindness</a></li>
+            <li><a href="#testing" tabindex="0">Testing</a></li>
+            <li><a href="#mistakes" tabindex="0">Common Mistakes</a></li>
+            <li><a href="#example" tabindex="0">Example</a></li>
+            <li><a href="#takeaways" tabindex="0">Key Takeaways</a></li>
+        </ul>
+    </nav>
+
+    <section id="understanding-low-vision">
         <h2>Understanding Low Vision</h2>
         <p>Low vision encompasses numerous conditions affecting visual perception differently: age-related macular degeneration causes central vision loss, diabetic retinopathy affects peripheral vision, cataracts reduce contrast and clarity, and numerous other conditions create varied visual barriers.</p>
         <p>Low vision users often employ multiple strategies: enlarging text through browser zoom, using screen magnification software, adjusting display contrast, using high-contrast color schemes, and adjusting lighting. Websites should support these strategies, not hinder them.</p>
         <p>Unlike blind users relying on screen readers, low vision users typically use visual interfaces. They need design practices supporting their partial vision while maintaining the visual experience.</p>
     </section>
 
-    <section>
+    <section id="core-principles">
         <h2>Core Design Principles for Low Vision Users</h2>
         
         <h3>1. Sufficient Color Contrast</h3>
@@ -65,7 +78,7 @@ $pageContent = <<<'HTML'
         <p>Flashing content (more than 3 flashes per second) can trigger seizures in people with photosensitive epilepsy. Rapid animations distract and disorient users.</p>
     </section>
 
-    <section>
+    <section id="components">
         <h2>Designing Specific Components for Low Vision</h2>
         
         <h3>Form Inputs</h3>
@@ -106,7 +119,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="color-blindness">
         <h2>Color Blindness Considerations</h2>
         <p>Approximately 8% of men and 0.5% of women have red-green color blindness. Other color blindness types (blue-yellow, complete achromatopsia) affect smaller populations.</p>
         
@@ -117,7 +130,7 @@ $pageContent = <<<'HTML'
         <p><strong>High contrast palettes:</strong> Some color combinations that are indistinguishable to some color-blind users remain distinguishable with sufficient brightness contrast. Prioritize luminance (brightness) differences.</p>
     </section>
 
-    <section>
+    <section id="testing">
         <h2>Testing Low Vision Accessibility</h2>
         
         <h3>Contrast Testing</h3>
@@ -149,7 +162,7 @@ $pageContent = <<<'HTML'
         <p>Have low vision users test your site if possible. Actual users identify issues that designers miss and provide invaluable feedback on readability and usability.</p>
     </section>
 
-    <section>
+    <section id="mistakes">
         <h2>Common Mistakes to Avoid</h2>
         <ul>
             <li style="margin-bottom: 0.75rem;"><strong>Insufficient contrast:</strong> Text too close in color to background affects readability significantly.</li>
@@ -162,7 +175,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="example">
         <h2>Real-World Example: News Website</h2>
         <p><strong>Accessible approach:</strong></p>
         <ul>
@@ -184,7 +197,7 @@ $pageContent = <<<'HTML'
         </ul>
     </section>
 
-    <section>
+    <section id="takeaways">
         <h2>Key Takeaways</h2>
         <ul>
             <li>Low vision users benefit from sufficient color contrast (7:1 Level AAA recommended), readable typography, and support for text sizing.</li>

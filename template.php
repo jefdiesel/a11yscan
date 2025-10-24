@@ -219,6 +219,44 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             border-bottom: none;
         }
         
+        section h2 {
+            scroll-margin-top: 80px;
+        }
+        
+        .section-nav {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-primary);
+        }
+        
+        .section-nav strong {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+        
+        .section-nav a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .section-nav a:hover {
+            background: var(--accent-light);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .section-nav a:focus {
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+        
         h2 {
             font-size: 2rem;
             font-weight: 700;
