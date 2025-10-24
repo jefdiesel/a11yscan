@@ -60,7 +60,7 @@ $pageContent = <<<'HTML'
                 <li>✓ Violation summary</li>
                 <li>✓ Email report</li>
             </ul>
-            <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('free-scan')">Get Started</button>
+            <button class="btn btn-secondary" onclick="openPricingForm('free-scan')">Get Started</button>
         </div>
         
         <div class="card">
@@ -72,7 +72,7 @@ $pageContent = <<<'HTML'
                 <li>✓ Remediation roadmap</li>
                 <li>✓ 2 consultations</li>
             </ul>
-            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('partial-audit')">Learn More</button>
+            <button class="btn btn-primary" onclick="openPricingForm('partial-audit')">Learn More</button>
         </div>
         
         <div class="card">
@@ -85,7 +85,7 @@ $pageContent = <<<'HTML'
                 <li>✓ Remediation plan</li>
                 <li>✓ 3 consultations</li>
             </ul>
-            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;" onclick="openPricingForm('deep-audit')">Get Full Audit</button>
+            <button class="btn btn-primary" onclick="openPricingForm('deep-audit')">Get Full Audit</button>
         </div>
     </div>
     

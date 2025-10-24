@@ -345,6 +345,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         
         .card button {
             margin-top: auto;
+            width: 100%;
         }
         
         .card:hover {
