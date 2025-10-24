@@ -40,7 +40,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             --accent-dark: #1e40af;
             --accent-light: #3b82f6;
             --border: #d1d5db;
-            --footer-text: #f0f2f7;
+            --footer-text: #ffffff;
         }
         
         html {
@@ -345,6 +345,16 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             transform: translateY(-2px);
         }
         
+        .blog-card {
+            cursor: pointer;
+        }
+        
+        .blog-card:focus {
+            outline: 3px solid var(--accent-primary);
+            outline-offset: -3px;
+            box-shadow: inset 0 0 0 3px var(--accent-primary), 0 4px 20px rgba(37, 99, 235, 0.15);
+        }
+        
         .stat {
             font-size: 2.5rem;
             font-weight: 700;
@@ -388,19 +398,19 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-section h3 {
-            color: var(--footer-text);
+            color: white;
             font-size: 0.95rem;
             margin-bottom: 1rem;
             font-weight: 600;
         }
         
         .footer-section a {
-            color: var(--footer-text);
+            color: white;
             text-decoration: none;
         }
         
         .footer-section a:hover {
-            color: white;
+            color: #e0e7ff;
             text-decoration: underline;
         }
         
@@ -410,16 +420,16 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         }
         
         .footer-section p {
-            color: var(--footer-text);
+            color: white;
             font-size: 0.95rem;
         }
         
         .footer-bottom {
-            border-top: 2px solid rgba(240, 242, 247, 0.5);
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
             padding-top: 1.5rem;
             text-align: center;
             font-size: 0.85rem;
-            color: rgba(240, 242, 247, 0.95);
+            color: white;
             font-weight: 500;
         }
         
