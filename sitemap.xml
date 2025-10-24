@@ -27,6 +27,13 @@
     
     <!-- Blog Posts: Plaintiff Perspective & User Rights -->
     <url>
+        <loc>https://a11yscan.xyz/understanding-user-rights-accessibility.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://a11yscan.xyz/disability-rights-by-state.php</loc>
         <lastmod>2025-01-20</lastmod>
         <changefreq>monthly</changefreq>

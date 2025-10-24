@@ -12,6 +12,13 @@ $pageContent = <<<'HTML'
 <section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Litigation & Legal Risk (2024-2025)</h2>
     <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-user-rights-accessibility">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Understanding Your Rights as a User Requiring Web Accessibility Features</h3>
+            <p>Learn your fundamental rights as a user requiring accessibility features. Understand what accommodations you deserve, how to request them, and what to do when websites fail to provide equal access.</p>
+            <a href="understanding-user-rights-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
         <article class="card blog-card" tabindex="0" id="article-disability-rights">
             <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Your Rights as a Person with Disabilities: Understanding Web Accessibility Protections</h3>
