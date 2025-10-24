@@ -169,24 +169,24 @@ $pageContent = <<<'HTML'
             <a href="silver-economy-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
 
-        <article class="card blog-card" tabindex="0" id="article-situational-accessibility">
+        <article class="card blog-card" tabindex="0" id="article-temp-disabilities">
             <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
-            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Temporary Disabilities & Situational Accessibility: Why Your Website Must Work With a Broken Mouse</h3>
-            <p>Broken mouse, arm in sling, lost glasses. Explore why situational accessibility needs affect millions of users and why WCAG compliance benefits everyone.</p>
-            <a href="situational-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Temporary Disabilities & Accessibility: Broken Mice, Injured Arms, Lost Glasses</h3>
+            <p>Learn why temporary accessibility needs affect millions and why WCAG compliance matters for everyone experiencing a temporary barrier.</p>
+            <a href="temp-disabilities-broken-mouse.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
 
-        <article class="card blog-card" tabindex="0" id="article-seo-wcag">
+        <article class="card blog-card" tabindex="0" id="article-seo-wcag-linked">
             <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
-            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">SEO and WCAG: How Web Accessibility Actually Improves Your Search Rankings</h3>
-            <p>Semantic HTML, keyboard navigation, and accessibility best practices improve both WCAG compliance and SEO. Discover why accessibility and rankings are aligned.</p>
-            <a href="seo-wcag-alignment.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">SEO and WCAG: How Accessibility and Search Rankings Are Linked</h3>
+            <p>Discover why WCAG compliance and SEO aren't separate concerns—they're the same thing. Accessible sites rank better and convert better.</p>
+            <a href="seo-wcag-linked.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-div-soup">
             <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
-            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Div Soup & Technical Debt: The Hidden Costs of Designing for Aesthetics Over Function</h3>
-            <p>Non-semantic HTML costs $60,000+ in maintenance and accessibility retrofitting. Analyze the real expense of pretty but broken websites.</p>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Div Soup: Why Pretty But Broken Websites Cost More Than You Think</h3>
+            <p>Why building websites with unsemantic divs instead of semantic HTML costs more, ranks worse, and excludes users. A cost analysis.</p>
             <a href="div-soup-cost-analysis.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
     </div>
