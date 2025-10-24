@@ -147,6 +147,13 @@ $pageContent = <<<'HTML'
             <p>Understanding the difference between ARIA and semantic HTML, and when to use each for maximum accessibility.</p>
             <a href="aria-semantic-html-guide.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
         </article>
+
+        <article class="card blog-card" tabindex="0" id="article-overlays-fail">
+            <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Why WCAG Accessibility Overlays Fail: The Hidden Costs of Quick-Fix Solutions</h3>
+            <p>Explore why accessibility overlay solutions often fail to meet WCAG compliance and can actually make websites harder to use for people with disabilities.</p>
+            <a href="accessibility-overlays-fail.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
     </div>
 </section>
 
