@@ -12,6 +12,27 @@ $pageContent = <<<'HTML'
 <section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Litigation & Legal Risk (2024-2025)</h2>
     <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-disability-rights">
+            <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Your Rights as a Person with Disabilities: Understanding Web Accessibility Protections</h3>
+            <p>Learn your legal rights under the ADA and state accessibility laws. Understand what protections apply depending on where you live and the type of website.</p>
+            <a href="disability-rights-by-state.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-finding-legal-support">
+            <time datetime="2025-01-24" class="blog-date">Jan 24, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Finding Legal Support for Your Web Accessibility Claim</h3>
+            <p>Guide to finding qualified attorneys for accessibility cases. Learn what to look for, how to evaluate representation, and alternatives to litigation.</p>
+            <a href="finding-legal-support.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-serial-filers">
+            <time datetime="2025-01-26" class="blog-date">Jan 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Serial Filers and the ADA Enforcement Gap: Why Disabled Users Bear the Burden</h3>
+            <p>Explore the accessibility enforcement gap and why serial filers highlight systemic failures in web accessibility enforcement.</p>
+            <a href="serial-filers-enforcement-gap.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
         <article class="card blog-card" tabindex="0" id="article-lawsuit-trends-2024">
             <time datetime="2025-10-25" class="blog-date">Oct 25, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">2024 Accessibility Lawsuit Trends: What the Data Shows</h3>
@@ -113,6 +134,20 @@ $pageContent = <<<'HTML'
 <section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Fundamentals & Best Practices</h2>
     <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-accessibility-statements">
+            <time datetime="2025-01-22" class="blog-date">Jan 22, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Accessibility Statements: Legal Protection & User Trust</h3>
+            <p>Learn why accessibility statements matter legally and for users. Discover placement, required content, and best practices for comprehensive accessibility commitments.</p>
+            <a href="accessibility-statements.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-document-barriers">
+            <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">How to Document and Report Web Accessibility Issues: A Plaintiff's Guide</h3>
+            <p>Step-by-step guide to documenting accessibility barriers professionally. Learn what to capture, how to communicate with website owners, and what to do next.</p>
+            <a href="document-report-barriers.php" class="btn btn-primary" style="margin-top: 1rem;">Read More</a>
+        </article>
+
         <article class="card blog-card" tabindex="0" id="article-wcag-levels">
             <time datetime="2025-10-23" class="blog-date">Oct 23, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Understanding WCAG 2.1 Levels: A vs AA vs AAA</h3>
