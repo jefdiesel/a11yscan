@@ -228,26 +228,27 @@ $pageContent = <<<'HTML'
 
         <h3>Legal Resources</h3>
         <ul>
-            <li>ADA.gov - Official ADA information from the Department of Justice</li>
-            <li>Disability Rights Education & Defense Fund (DREDF)</li>
-            <li>National Disability Rights Network (NDRN)</li>
+            <li><a href="https://www.ada.gov/">ADA.gov - Official ADA information from the Department of Justice</a></li>
+            <li><a href="https://dredf.org/">Disability Rights Education & Defense Fund (DREDF)</a></li>
+            <li><a href="https://www.ndrn.org/">National Disability Rights Network (NDRN)</a></li>
             <li>Your state's human rights commission or attorney general's office</li>
         </ul>
 
         <h3>Technical Resources</h3>
         <ul>
-            <li>Web Content Accessibility Guidelines (WCAG) 2.1</li>
-            <li>WebAIM - Web accessibility in mind</li>
-            <li>A11y Project - Community-driven accessibility resources</li>
-            <li>NVDA and JAWS screen reader documentation</li>
+            <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
+            <li><a href="https://webaim.org/">WebAIM - Web accessibility in mind</a></li>
+            <li><a href="https://www.a11yproject.com/">A11y Project - Community-driven accessibility resources</a></li>
+            <li><a href="https://download.nvaccess.org/documentation/userGuide.html">NVDA screen reader documentation</a></li>
+            <li><a href="https://www.freedomscientific.com/products/software/jaws/">JAWS screen reader documentation</a></li>
         </ul>
 
         <h3>Advocacy Organizations</h3>
         <ul>
-            <li>American Council of the Blind</li>
-            <li>National Federation of the Blind</li>
-            <li>American Association of People with Disabilities</li>
-            <li>World Institute on Disability</li>
+            <li><a href="https://www.acb.org/">American Council of the Blind</a></li>
+            <li><a href="https://nfb.org/">National Federation of the Blind</a></li>
+            <li><a href="https://www.aapd.com/">American Association of People with Disabilities</a></li>
+            <li><a href="https://wid.org/">World Institute on Disability</a></li>
         </ul>
     </section>
 
