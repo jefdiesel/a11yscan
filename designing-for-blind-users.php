@@ -169,11 +169,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Screen reader accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted web accessibility principles. For comprehensive information on screen reader requirements, consult the official WCAG 2.1 guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Test Your Accessibility</h2>
-        <p>Get a comprehensive audit to ensure your site is fully accessible to screen reader users.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Test Screen Reader Compatibility</h2>
+        <p>Get a comprehensive audit to ensure your site is fully accessible to blind users and screen reader users.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Screen Reader Accessibility Audit')">Audit Screen Reader Access</button>
     </div>
 </section>
 HTML;
