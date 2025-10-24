@@ -237,11 +237,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Audio accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted accessibility principles. For comprehensive information on captions, transcripts, and audio accessibility requirements, consult the official WCAG 2.1 guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Audit Your Audio Accessibility</h2>
-        <p>Get a free scan to identify missing captions, transcripts, and audio accessibility barriers.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Audit Your Video Captions</h2>
+        <p>Get a free scan to identify missing captions, transcripts, and audio accessibility barriers on your video content.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Audio & Video Accessibility Audit')">Check Video Accessibility</button>
     </div>
 </section>
 HTML;

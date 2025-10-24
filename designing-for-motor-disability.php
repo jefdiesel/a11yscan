@@ -230,11 +230,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Motor accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted accessibility principles. For comprehensive information on keyboard navigation, motor accessibility requirements, and operable interface standards, consult the official WCAG 2.1 guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Test Keyboard Accessibility</h2>
-        <p>Get a comprehensive audit to ensure your site is fully accessible to keyboard users and users with motor disabilities.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Verify Keyboard Accessibility</h2>
+        <p>Get a comprehensive audit ensuring your site is fully accessible to keyboard users and those with motor disabilities.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Motor Disability Accessibility Audit')">Test Keyboard Access</button>
     </div>
 </section>
 HTML;

@@ -206,11 +206,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Low vision accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted accessibility principles. For comprehensive information on contrast, zoom, and vision accessibility requirements, consult the official WCAG 2.1 guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Test Your Color Contrast</h2>
-        <p>Get a free audit to verify your site meets color contrast standards and supports low vision users.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Verify Your Contrast & Zoom Support</h2>
+        <p>Get a professional audit to check color contrast levels and zoom functionality for low vision users.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Low Vision Accessibility Audit')">Check Vision Accessibility</button>
     </div>
 </section>
 HTML;

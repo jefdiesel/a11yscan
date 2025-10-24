@@ -222,11 +222,18 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Cognitive accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted design and accessibility principles. For comprehensive information on cognitive accessibility requirements, consult the official WCAG 2.1 guidelines.</p>
+    </div>
+</section>
+
 <section style="margin-top: 3rem;">
     <div class="highlight">
-        <h2 style="margin-top: 0;">Audit Your Content Clarity</h2>
-        <p>Get a free scan to identify content complexity and accessibility barriers for users with cognitive disabilities.</p>
-        <a href="index.php#pricing" class="btn btn-primary">Start Free Scan</a>
+        <h2 style="margin-top: 0;">Improve Content Clarity</h2>
+        <p>Get a free audit analyzing your content readability and identifying barriers for users with cognitive disabilities.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('free-scan', 'Cognitive Accessibility Audit')">Check Content Clarity</button>
     </div>
 </section>
 HTML;
