@@ -502,7 +502,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     <header role="banner">
         <div class="header-content">
             <a href="/" class="logo">
-                <img class="logo-svg" src="/logo.svg" alt=""/>
+                <img class="logo-svg" src="/logo.svg" alt="A11yscan logo"/>
                 A11yscan
             </a>
             <nav role="navigation" aria-label="Main navigation">
