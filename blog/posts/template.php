@@ -9,7 +9,7 @@
  * $pageContent = <<<'HTML'
  *   ... your content ...
  * HTML;
- * include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
+ * include __DIR__ . '/../../template.php';
  */
 
 $pageTitle = $pageTitle ?? 'A11yscan';

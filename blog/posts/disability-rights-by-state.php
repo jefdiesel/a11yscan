@@ -148,5 +148,5 @@ $pageContent = <<<'HTML'
 </article>
 HTML;
 
-include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
+include __DIR__ . '/../../template.php';
 ?>
