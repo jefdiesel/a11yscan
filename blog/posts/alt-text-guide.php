@@ -195,5 +195,5 @@ $pageContent = <<<'HTML'
 </section>
 HTML;
 
-include '../../template.php';
+include 'https://a11yscan.xyz/template.php';
 ?>

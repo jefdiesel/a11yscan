@@ -9,7 +9,7 @@
  * $pageContent = <<<'HTML'
  *   ... your content ...
  * HTML;
- * include '../../template.php';
+ * include 'https://a11yscan.xyz/template.php';
  */
 
 $pageTitle = $pageTitle ?? 'A11yscan';
