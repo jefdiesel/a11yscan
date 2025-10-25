@@ -8,7 +8,11 @@ class BlogGenerator {
     private $postsDir;
     private $posts = [];
 
-    public function __construct($postsDir = '../posts/') {
+    public function __construct($postsDir = null) {
+        // Use absolute path based on this file's location
+        if ($postsDir === null) {
+            $postsDir = __DIR__ . '/../posts/';
+        }
         $this->postsDir = $postsDir;
     }
 
