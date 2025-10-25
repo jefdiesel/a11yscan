@@ -103,7 +103,7 @@ All A11yscan pages must meet WCAG 2.1 Level AAA standards. Key requirements:
 }
 ```
 
-**Cards**
+**Cards with Aligned Buttons (Flexbox)**
 ```css
 .card {
     background: var(--bg-primary);
@@ -111,6 +111,17 @@ All A11yscan pages must meet WCAG 2.1 Level AAA standards. Key requirements:
     border-radius: 8px;
     padding: 2rem;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card a,
+.card button {
+    margin-top: auto;
 }
 
 .card:hover {
@@ -145,6 +156,7 @@ The `template.php` file serves as the master template for all pages. It includes
 
 ### Usage in Page Files
 
+**From root directory (`index.php`):**
 ```php
 <?php
 $pageTitle = 'Page Title';
@@ -167,12 +179,56 @@ include 'template.php';
 ?>
 ```
 
+**From `/blog/` directory (`blog/index.php`):**
+```php
+<?php
+$pageTitle = 'Page Title';
+$pageDescription = 'Meta description for SEO';
+$currentPage = 'pagename'; // For active nav highlighting
+
+$pageContent = <<<'HTML'
+<div class="hero">
+    <h1>Page Heading</h1>
+    <p>Page description</p>
+</div>
+
+<section>
+    <h2>Section Title</h2>
+    <p>Section content</p>
+</section>
+HTML;
+
+include '../template.php';  // Go up one level to root
+?>
+```
+
+**From `/blog/posts/` directory (`blog/posts/post-name.php`):**
+```php
+<?php
+$pageTitle = 'Page Title';
+$pageDescription = 'Meta description for SEO';
+$currentPage = 'pagename'; // For active nav highlighting
+
+$pageContent = <<<'HTML'
+<article class="blog-post">
+    <section id="intro">
+        <h1>Page Heading</h1>
+        <p>Page content</p>
+    </section>
+</article>
+HTML;
+
+include __DIR__ . '/../../template.php';  // Go up two levels to root
+?>
+```
+
 ### Template Features
 
 **Navigation**
 - Sticky header with active page highlighting
 - "Get Scan" CTA button
 - Mobile-responsive (collapses at 768px)
+- All links use absolute URLs: `https://a11yscan.xyz/`
 
 **Skip Link**
 - Positioned absolutely, hidden until focused
@@ -248,7 +304,7 @@ $pageContent = <<<'HTML'
 </article>
 HTML;
 
-include 'template.php';
+include __DIR__ . '/../../template.php';
 ?>
 ```
 
@@ -269,6 +325,7 @@ include 'template.php';
 - Use descriptive link text (not "click here")
 - Open external links in same tab (accessibility best practice)
 - Ensure 3px focus outline
+- Use absolute URLs: `https://a11yscan.xyz/blog/posts/filename.php`
 
 **Lists**
 - Use semantic `<ul>` or `<ol>` tags
@@ -435,16 +492,17 @@ Each blog post CTA includes:
    $currentPage = 'pagename';
    ```
 3. Define content in `$pageContent` heredoc
-4. Include template: `include 'template.php';`
+4. Include template: `include 'template.php';` (or `../template.php` for subdirectories)
 
 ### Creating a New Blog Post
 
-1. Create file: `blog-post-title.php`
+1. Create file in `/blog/posts/`: `post-filename.php`
 2. Use blog post structure template
 3. Include **mandatory legal disclaimer**
 4. Add **customized CTA** based on topic
 5. Set `$currentPage = 'blog'`
-6. Add link to post in `blog.php`
+6. Use `include __DIR__ . '/../../template.php';`
+7. Add link to post in `blog/index.php` with absolute URL
 
 ### Testing Accessibility
 
@@ -523,34 +581,41 @@ Each blog post CTA includes:
 ```
 /
 ├── index.php              # Homepage
-├── blog.php               # Blog listing page
-├── blog-post-name.php     # Individual blog posts
-├── accessibility-statement.php
-├── template.php           # Master template
-├── pricing-modal.php      # Pricing form modal
+├── template.php           # Master template (all pages include this)
+├── contact-handler.php    # Form handler
 ├── logo.svg               # Site logo
+├── sitemap.xml            # XML sitemap
+├── robots.txt             # Search engine rules
+├── blog/
+│   ├── index.php          # Blog listing
+│   └── posts/
+│       ├── post-name-1.php
+│       ├── post-name-2.php
+│       └── ... (individual blog posts)
+├── accessibility-statement.php
 └── README.md             # Project documentation
 ```
 
 ### Key Files
 
-**template.php**
-- Master template with all CSS
-- Navigation and footer
+**template.php** (root)
+- Master template with all CSS and JavaScript
+- Navigation with absolute URLs
+- Pricing modal
 - Skip link implementation
-- Pricing modal integration
+- Footer
 
-**pricing-modal.php**
-- Overlay pricing form
-- Email integration
-- Service tier selection
-- Pre-filled subject lines from CTA buttons
+**blog/index.php**
+- Blog listing page with card grid
+- Includes `../template.php`
+- Blog cards use flexbox for button alignment
 
-**blog.php**
-- Grid of blog post cards
-- Clickable cards with keyboard support
-- Dates and descriptions
+**blog/posts/*.php**
+- Individual blog posts
+- Include `__DIR__ . '/../../template.php'`
+- Must have legal disclaimer
+- Must have customized CTA
 
 ---
 
-**Last Updated**: October 24, 2025
+**Last Updated**: October 25, 2025
