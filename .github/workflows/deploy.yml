@@ -13,16 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: Deploy to DreamHost
+      - name: Trigger DreamHost webhook
+        env:
+          WEBHOOK_URL: https://a11yscan.xyz/deploy.php
+          WEBHOOK_SECRET: 93df1d4034d680aadd8c577c9e429be21f0b95010236c67519ca87e2994d57c6
         run: |
+          PAYLOAD='{"ref":"refs/heads/main","before":"'${{ github.event.before }}'"}'
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$WEBHOOK_SECRET" | sed 's/^.* //')
+          
           curl -X POST \
-            -H "X-Hub-Signature-256: sha256=${{ secrets.DREAMHOST_WEBHOOK_SECRET }}" \
-            -d @- \
-            ${{ secrets.DREAMHOST_WEBHOOK_URL }} << 'EOF'
-          $(cat $GITHUB_EVENT_PATH)
-          EOF
+            -H "X-Hub-Signature-256: sha256=$SIGNATURE" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD" \
+            "$WEBHOOK_URL"
       
-      - name: Verify deployment
-        run: |
-          echo "✅ Deployment triggered"
-          echo "Check your DreamHost server at: a11yscan.xyz"
+      - name: Deployment complete
+        run: echo "✅ Deployment triggered to DreamHost"
