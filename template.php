@@ -501,13 +501,13 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
     
     <header role="banner">
         <div class="header-content">
-            <a href="index.php" class="logo">
-                <img class="logo-svg" src="logo.svg" alt=""/>
+            <a href="/" class="logo">
+                <img class="logo-svg" src="/logo.svg" alt=""/>
                 A11yscan
             </a>
             <nav role="navigation" aria-label="Main navigation">
-                <a href="index.php" <?php echo ($currentPage === 'index') ? 'class="active"' : ''; ?>>Home</a>
-                <a href="blog.php" <?php echo ($currentPage === 'blog') ? 'class="active"' : ''; ?>>Blog</a>
+                <a href="/" <?php echo ($currentPage === 'index') ? 'class="active"' : ''; ?>>Home</a>
+                <a href="/blog/" <?php echo ($currentPage === 'blog') ? 'class="active"' : ''; ?>>Blog</a>
                 <a onclick="openPricingForm()" class="cta btn btn-primary" role="button" tabindex="0">Get Scan</a>
             </nav>
         </div>
@@ -537,7 +537,7 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="accessibility-statement.php">Accessibility Statement</a></li>
+                        <li><a href="/accessibility-statement.php">Accessibility Statement</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
