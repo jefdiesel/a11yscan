@@ -134,5 +134,5 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 HTML;
-include 'https://a11yscan.xyz/template.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/template.php';
 ?>
