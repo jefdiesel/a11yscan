@@ -290,6 +290,16 @@ $pageContent = <<<'HTML'
 .blog-card {
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card p {
+    flex-grow: 1;
+}
+
+.blog-card a {
+    margin-top: auto !important;
 }
 
 .blog-card:focus {
