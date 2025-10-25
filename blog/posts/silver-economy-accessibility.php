@@ -180,5 +180,5 @@ $pageContent = <<<'HTML'
 </section>
 HTML;
 
-include 'template.php';
+include '../../template.php';
 ?>

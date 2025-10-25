@@ -121,5 +121,5 @@ $pageContent = <<<'HTML'
 </article>
 HTML;
 
-include 'template.php';
+include '../../template.php';
 ?>

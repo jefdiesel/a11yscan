@@ -335,5 +335,5 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 HTML;
-include 'template.php';
+include '../../template.php';
 ?>

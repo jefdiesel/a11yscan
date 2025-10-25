@@ -253,5 +253,5 @@ Thank you,<br/>
 </article>
 HTML;
 
-include 'template.php';
+include '../../template.php';
 ?>
