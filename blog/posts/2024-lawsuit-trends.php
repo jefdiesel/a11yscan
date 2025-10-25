@@ -1,13 +1,4 @@
 <?php
-/**
- * @title 2024 lawsuit trends
- * @description Learn more about 2024 lawsuit trends and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured true
- */
-
 $pageTitle = '2024 Accessibility Lawsuit Trends: What the Data Shows | A11yscan Blog';
 $pageDescription = 'Analysis of 2024 web accessibility litigation trends, settlement amounts, defendant profiles, and what these patterns mean for your organization.';
 $currentPage = 'blog';

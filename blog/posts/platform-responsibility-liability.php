@@ -1,13 +1,4 @@
 <?php
-/**
- * @title platform responsiuility liauility
- * @description Learn more about platform responsiuility liauility and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'You Used a Template. Your Site Is Still Broken. Your Liability Is Still Real. | A11yscan';
 $pageDescription = 'You didn\'t build your site from scratch. You used a platform, template, or no-code tool. That doesn\'t matter. If your site is inaccessible, you\'re still liable for accessibility violations.';
 $currentPage = 'blog';

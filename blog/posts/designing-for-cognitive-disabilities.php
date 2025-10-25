@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for cognitive disauilities
- * @description Learn more about designing for cognitive disauilities and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Cognitive Disabilities: Clear & Simple Navigation | A11yscan Blog';
 $pageDescription = 'Learn to design for users with cognitive disabilities. Understand simplicity, clarity, and cognitive accessibility principles for all users.';
 $currentPage = 'blog';

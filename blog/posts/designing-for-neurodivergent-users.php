@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for neurodivergent users
- * @description Learn more about designing for neurodivergent users and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Neurodivergent Users: Accessibility Beyond Disability | A11yscan Blog';
 $pageDescription = 'Design for neurodivergent users including those with autism and ADHD. Learn universal design principles benefiting all users through thoughtful accessibility.';
 $currentPage = 'blog';

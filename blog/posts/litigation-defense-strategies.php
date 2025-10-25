@@ -1,13 +1,4 @@
 <?php
-/**
- * @title litigation defense strategies
- * @description Learn more about litigation defense strategies and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Defending Against Accessibility Claims: Good Faith Strategies | A11yscan Blog';
 $pageDescription = 'Learn litigation defense strategies for accessibility claims. Understand good faith defense, documentation requirements, and how to minimize damages through proactive compliance.';
 $currentPage = 'blog';

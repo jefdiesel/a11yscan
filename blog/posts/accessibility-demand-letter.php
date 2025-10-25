@@ -1,13 +1,4 @@
 <?php
-/**
- * @title accessiuility demand letter
- * @description Learn more about accessiuility demand letter and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'What to Do If You Receive an Accessibility Demand Letter | A11yscan';
 $pageDescription = 'Step-by-step guide for handling accessibility violation notices. Learn your legal options, settlement expectations, and immediate actions to take.';
 $currentPage = 'blog';

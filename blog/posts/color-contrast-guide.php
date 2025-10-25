@@ -1,13 +1,4 @@
 <?php
-/**
- * @title color contrast guide
- * @description Learn more about color contrast guide and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Color Contrast: The Foundation of Visual Accessibility | A11yscan Blog';
 $pageDescription = 'Master color contrast for accessibility. Learn contrast ratios, WCAG standards, tools, and practical techniques to ensure your design meets AAA compliance.';
 $currentPage = 'blog';

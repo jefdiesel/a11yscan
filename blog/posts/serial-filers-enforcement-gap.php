@@ -1,13 +1,4 @@
 <?php
-/**
- * @title serial filers enforcement gap
- * @description Learn more about serial filers enforcement gap and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Serial Filers and the ADA Enforcement Gap: Why Disabled Users Bear the Burden | A11yscan Blog';
 $pageDescription = 'Understand the accessibility enforcement gap in ADA Title III. Why enforcement falls to disabled users, and why serial filers highlight systemic accessibility failures.';
 $currentPage = 'blog';

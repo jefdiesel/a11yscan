@@ -1,13 +1,4 @@
 <?php
-/**
- * @title wcag 2 1 levels guide
- * @description Learn more about wcag 2 1 levels guide and web accessibility best practices.
- * @date 2024-10-25
- * @category wcag
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Understanding WCAG 2.1 Levels: A vs AA vs AAA | A11yscan Blog';
 $pageDescription = 'Learn the differences between WCAG 2.1 conformance levels (A, AA, AAA) and which compliance standard your organization should target.';
 $currentPage = 'blog';

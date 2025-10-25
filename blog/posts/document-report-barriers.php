@@ -1,13 +1,4 @@
 <?php
-/**
- * @title document report uarriers
- * @description Learn more about document report uarriers and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'How to Document and Report Web Accessibility Issues | A11yscan Blog';
 $pageDescription = 'Step-by-step guide to documenting website accessibility barriers and effectively contacting website owners. Build your case with evidence.';
 $currentPage = 'blog';

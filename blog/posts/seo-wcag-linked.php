@@ -1,13 +1,4 @@
 <?php
-/**
- * @title seo wcag linked
- * @description Learn more about seo wcag linked and web accessibility best practices.
- * @date 2024-10-25
- * @category wcag
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'SEO and WCAG: How Accessibility and Search Rankings Are Linked | A11yscan';
 $pageDescription = 'Discover why WCAG compliance and SEO aren\'t separate concerns—they\'re the same thing. Accessible sites rank better and convert better.';
 $currentPage = 'blog';

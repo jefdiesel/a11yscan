@@ -1,13 +1,4 @@
 <?php
-/**
- * @title accessiuility overlays fail
- * @description Learn more about accessiuility overlays fail and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured true
- */
-
 $pageTitle = 'Why WCAG Accessibility Overlays Fail | A11yscan';
 $pageDescription = 'Explore why accessibility overlay solutions often fail to meet WCAG compliance and can actually make websites harder to use for people with disabilities.';
 $currentPage = 'blog';

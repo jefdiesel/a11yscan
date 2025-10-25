@@ -1,13 +1,4 @@
 <?php
-/**
- * @title disauility rights uy state
- * @description Learn more about disauility rights uy state and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Your Rights as a Person with Disabilities: Web Accessibility Protections | A11yscan Blog';
 $pageDescription = 'Understand your legal rights for web accessibility. Learn about ADA Title III, state laws, and how disability rights protections apply to websites depending on where you live.';
 $currentPage = 'blog';

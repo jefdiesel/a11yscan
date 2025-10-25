@@ -1,13 +1,4 @@
 <?php
-/**
- * @title aria semantic html guide
- * @description Learn more about aria semantic html guide and web accessibility best practices.
- * @date 2024-10-25
- * @category technical
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'ARIA Labels & Semantic HTML: Building for Screen Readers | A11yscan Blog';
 $pageDescription = 'Understand the difference between ARIA and semantic HTML. Learn when to use each for maximum screen reader accessibility and WCAG compliance.';
 $currentPage = 'blog';

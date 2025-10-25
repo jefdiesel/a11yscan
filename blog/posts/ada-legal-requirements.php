@@ -1,13 +1,4 @@
 <?php
-/**
- * @title ada legal requirements
- * @description Learn more about ada legal requirements and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'The ADA & Your Website: Legal Requirements in 2025 | A11yscan Blog';
 $pageDescription = 'Understand ADA web accessibility requirements, Section 508 compliance, and state laws. Learn about settlements and legal trends in digital accessibility.';
 $currentPage = 'blog';

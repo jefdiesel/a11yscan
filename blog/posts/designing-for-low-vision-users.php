@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for low vision users
- * @description Learn more about designing for low vision users and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Low Vision Users: Vision Accessibility | A11yscan Blog';
 $pageDescription = 'Learn to design for low vision users. Understand vision accessibility principles including color contrast, text sizing, and zoom functionality.';
 $currentPage = 'blog';

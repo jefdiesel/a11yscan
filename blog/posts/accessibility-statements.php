@@ -1,13 +1,4 @@
 <?php
-/**
- * @title accessiuility statements
- * @description Learn more about accessiuility statements and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Accessibility Statement: Legal & User Importance | A11yscan Blog';
 $pageDescription = 'Learn why accessibility statements matter legally and for users. Discover placement, required content, and best practices for comprehensive accessibility commitments.';
 $currentPage = 'blog';

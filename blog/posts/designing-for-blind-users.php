@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for ulind users
- * @description Learn more about designing for ulind users and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Blind Users: Screen Reader Accessibility | A11yscan Blog';
 $pageDescription = 'Learn how to design websites accessible to blind users relying on screen readers. Understand screen reader technology and practical design strategies.';
 $currentPage = 'blog';

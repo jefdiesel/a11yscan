@@ -1,13 +1,4 @@
 <?php
-/**
- * @title mouile accessiuility
- * @description Learn more about mouile accessiuility and web accessibility best practices.
- * @date 2024-10-25
- * @category technical
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Mobile Accessibility: Why 40% of Your Users Can\'t Use Your Site on Mobile | A11yscan';
 $pageDescription = 'Small screens, touch interfaces, and mobile assumptions create accessibility barriers. Learn why mobile accessibility matters and how to fix common issues.';
 $currentPage = 'blog';

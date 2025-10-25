@@ -1,13 +1,4 @@
 <?php
-/**
- * @title finding legal support
- * @description Learn more about finding legal support and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Finding Legal Support for Web Accessibility Claims | A11yscan Blog';
 $pageDescription = 'Guide to finding qualified attorneys for ADA web accessibility cases. What to look for, how to evaluate legal support, and resources for disability rights representation.';
 $currentPage = 'blog';

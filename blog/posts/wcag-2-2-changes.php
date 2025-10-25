@@ -1,13 +1,4 @@
 <?php
-/**
- * @title wcag 2 2 changes
- * @description Learn more about wcag 2 2 changes and web accessibility best practices.
- * @date 2024-10-25
- * @category wcag
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'WCAG 2.1 vs 2.2: What Changed and Why It Matters for Your Compliance | A11yscan';
 $pageDescription = 'WCAG 2.2 introduces new accessibility requirements. Learn what changed from WCAG 2.1, what you need to do now, and timeline implications.';
 $currentPage = 'blog';

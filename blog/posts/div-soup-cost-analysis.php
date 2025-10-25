@@ -1,13 +1,4 @@
 <?php
-/**
- * @title div soup cost analysis
- * @description Learn more about div soup cost analysis and web accessibility best practices.
- * @date 2024-10-25
- * @category technical
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Div Soup: Why Pretty But Broken Websites Cost More Than You Think | A11yscan';
 $pageDescription = 'Why building websites with unsemantic divs instead of semantic HTML costs more, ranks worse, and excludes users. A cost analysis.';
 $currentPage = 'blog';

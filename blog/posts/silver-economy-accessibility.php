@@ -1,13 +1,4 @@
 <?php
-/**
- * @title silver economy accessiuility
- * @description Learn more about silver economy accessiuility and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'The Silver Economy & Web Accessibility: Why Seniors Need Better Website Design | A11yscan';
 $pageDescription = 'Explore demographic shifts in America: 61.2 million seniors (18% of population), $78 trillion in wealth, and why accessibility design for aging eyes matters for business and compliance.';
 $currentPage = 'blog';

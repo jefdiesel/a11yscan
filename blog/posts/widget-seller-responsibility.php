@@ -1,13 +1,4 @@
 <?php
-/**
- * @title widget seller responsiuility
- * @description Learn more about widget seller responsiuility and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'You Sell Products, Not Websites. But Your Website Still Needs to Be Accessible. | A11yscan';
 $pageDescription = 'You\'re a product company, not a web agency. Your website isn\'t your core business. But if it\'s inaccessible, you may face legal challenges—here\'s what you need to know.';
 $currentPage = 'blog';

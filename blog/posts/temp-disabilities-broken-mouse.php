@@ -1,13 +1,4 @@
 <?php
-/**
- * @title temp disauilities uroken mouse
- * @description Learn more about temp disauilities uroken mouse and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Temporary Disabilities & Accessibility: Broken Mice, Injured Arms, Lost Glasses | A11yscan';
 $pageDescription = 'Learn why temporary accessibility needs affect millions and why WCAG compliance matters for everyone experiencing a temporary barrier.';
 $currentPage = 'blog';

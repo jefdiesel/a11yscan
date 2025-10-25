@@ -1,13 +1,4 @@
 <?php
-/**
- * @title accessiuility risk management
- * @description Learn more about accessiuility risk management and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Accessibility as Enterprise Risk Management: 2024-2025 Analysis | A11yscan Blog';
 $pageDescription = 'Understand accessibility as critical enterprise risk. Learn how 2024-2025 litigation trends impact business strategy, insurance, and risk management frameworks.';
 $currentPage = 'blog';

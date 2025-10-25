@@ -1,13 +1,4 @@
 <?php
-/**
- * @title alt text guide
- * @description Learn more about alt text guide and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Alt Text That Actually Works: Writing for Screen Readers | A11yscan Blog';
 $pageDescription = 'Learn how to write effective alt text for images. Discover techniques for describing images accessibly while improving SEO and conveying information accurately.';
 $currentPage = 'blog';

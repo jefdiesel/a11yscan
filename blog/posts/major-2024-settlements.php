@@ -1,13 +1,4 @@
 <?php
-/**
- * @title major 2024 settlements
- * @description Learn more about major 2024 settlements and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Major 2024 Accessibility Settlements: Case Studies and Lessons | A11yscan Blog';
 $pageDescription = 'Deep dive into landmark accessibility settlements from 2024. Learn what companies were sued, why, settlement amounts, and critical lessons for your organization.';
 $currentPage = 'blog';

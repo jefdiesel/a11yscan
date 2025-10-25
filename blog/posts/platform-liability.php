@@ -1,13 +1,4 @@
 <?php
-/**
- * @title platform liauility
- * @description Learn more about platform liauility and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Platform Liability: When Third Parties Create Accessibility Barriers | A11yscan Blog';
 $pageDescription = 'Understand third-party accessibility liability. Learn when platforms, tools, and vendors share responsibility for accessibility barriers and what 2025 litigation reveals.';
 $currentPage = 'blog';

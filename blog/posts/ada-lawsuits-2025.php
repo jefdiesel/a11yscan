@@ -1,13 +1,4 @@
 <?php
-/**
- * @title ada lawsuits 2025
- * @description Learn more about ada lawsuits 2025 and web accessibility best practices.
- * @date 2024-10-25
- * @category litigation
- * @author A11yscan Team
- * @featured true
- */
-
 $pageTitle = 'ADA Website Lawsuits Surge 37% in 2025: Legal Risks, Trends, and Business Impact | A11yscan';
 $pageDescription = 'Comprehensive analysis of 2024-2025 ADA website accessibility lawsuits: 4,000+ cases filed, overlay widget risks, state-by-state trends, and what businesses need to know to reduce legal exposure.';
 $currentPage = 'blog';

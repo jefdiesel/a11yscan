@@ -1,13 +1,4 @@
 <?php
-/**
- * @title keyuoard navigation guide
- * @description Learn more about keyuoard navigation guide and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Keyboard Navigation: Making Your Site Usable Without a Mouse | A11yscan Blog';
 $pageDescription = 'Learn why keyboard accessibility matters, common pitfalls, and how to audit your site for keyboard-only users. Ensure full keyboard functionality for motor disability accessibility.';
 $currentPage = 'blog';

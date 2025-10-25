@@ -1,13 +1,4 @@
 <?php
-/**
- * @title understanding user rights accessiuility
- * @description Learn more about understanding user rights accessiuility and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Understanding Your Rights as a User Requiring Web Accessibility Features | A11yscan Blog';
 $pageDescription = 'Learn your fundamental rights as a user requiring accessibility features. Understand what accommodations you deserve, how to request them, and what to do when websites fail to provide equal access.';
 $currentPage = 'blog';

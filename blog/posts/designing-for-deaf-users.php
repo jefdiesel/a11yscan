@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for deaf users
- * @description Learn more about designing for deaf users and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Deaf Users: Audio Accessibility | A11yscan Blog';
 $pageDescription = 'Learn to design websites accessible to deaf and hard-of-hearing users. Understand captions, transcripts, and audio accessibility best practices.';
 $currentPage = 'blog';

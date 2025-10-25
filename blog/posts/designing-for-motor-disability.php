@@ -1,13 +1,4 @@
 <?php
-/**
- * @title designing for motor disauility
- * @description Learn more about designing for motor disauility and web accessibility best practices.
- * @date 2024-10-25
- * @category personas
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = 'Designing for Motor Disabilities: Keyboard & Switch Access | A11yscan Blog';
 $pageDescription = 'Learn to design websites accessible to users with motor disabilities. Understand keyboard navigation, switch control, and motor accessibility principles.';
 $currentPage = 'blog';

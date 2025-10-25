@@ -1,13 +1,4 @@
 <?php
-/**
- * @title 2025 predictions
- * @description Learn more about 2025 predictions and web accessibility best practices.
- * @date 2024-10-25
- * @category fundamentals
- * @author A11yscan Team
- * @featured false
- */
-
 $pageTitle = '2025 Accessibility Litigation Predictions: What to Expect | A11yscan Blog';
 $pageDescription = 'Expert predictions for 2025 web accessibility lawsuits. Emerging legal trends, likely litigation hotspots, and how organizations should prepare for evolving exposure.';
 $currentPage = 'blog';
