@@ -49,7 +49,7 @@ $pageContent = <<<'HTML'
 
         <h3>The Natural Tab Order (Correct)</h3>
         <p>In most cases, the natural source code order works perfectly:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Source order = Tab order --&gt;
 &lt;button&gt;First&lt;/button&gt;          &lt;!-- Tab 1 --&gt;
 &lt;button&gt;Second&lt;/button&gt;         &lt;!-- Tab 2 --&gt;
@@ -58,7 +58,7 @@ $pageContent = <<<'HTML'
 
         <h3>When to Use tabindex (Rarely)</h3>
         <p>Only use <code>tabindex</code> when the visual layout doesn't match the logical flow:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- 3-column layout: left, center, right --&gt;
 &lt;aside&gt;
   &lt;nav tabindex="0"&gt;...&lt;/nav&gt;  &lt;!-- Tab 1: Sidebar --&gt;
@@ -75,7 +75,7 @@ $pageContent = <<<'HTML'
 
         <h3>NEVER Use tabindex > 0 (Litigation Risk)</h3>
         <p>Setting <code>tabindex="1"</code>, <code>tabindex="2"</code>, etc. breaks the natural tab order and confuses keyboard users:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- DO NOT DO THIS --&gt;
 &lt;button tabindex="3"&gt;First visible (but tabs last)&lt;/button&gt;
 &lt;button tabindex="1"&gt;Third visible (but tabs first)&lt;/button&gt;
@@ -98,7 +98,7 @@ $pageContent = <<<'HTML'
         <p>Every interactive element must have a clear, visible focus indicator. This is WCAG 2.1 Level AA requirement (2.4.7: Focus Visible).</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 button, a, input {
   outline: 3px solid #2563eb;
   outline-offset: 2px;
@@ -123,7 +123,7 @@ input:focus-visible {
         </ul>
 
         <h3>The Wrong Way (Litigation Risk)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* DO NOT DO THIS */
 
 /* Removing focus outline entirely */
@@ -156,7 +156,7 @@ button:focus {
 
         <h3>1. Modal Dialogs (Overlays)</h3>
         <p>When a modal opens, focus should trap inside the modal, preventing users from accidentally tabbing to background content. But when the modal closes, focus should return to the triggering element.</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Trap focus inside modal */
 const firstButton = modal.querySelector('button:first-of-type');
 const lastButton = modal.querySelector('button:last-of-type');
@@ -176,7 +176,7 @@ modal.addEventListener('keydown', (e) => {
 
         <h3>2. Infinite Scroll (Never Trap)</h3>
         <p>If a page loads infinite content, keyboard users can get stuck tabbing through new content forever. Provide a way to stop tabbing or reach the footer:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Good: Users can always reach the footer --&gt;
 &lt;main id="infinite-content"&gt;...&lt;/main&gt;
 &lt;footer&gt;...&lt;/footer&gt;  &lt;!-- Tab can reach here --&gt;
@@ -188,7 +188,7 @@ modal.addEventListener('keydown', (e) => {
 
         <h3>3. Autocomplete Dropdowns</h3>
         <p>Search fields with autocomplete dropdowns can trap focus if not built properly:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Good: Press Escape to close, then Tab to next element */
 dropdown.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
@@ -215,7 +215,7 @@ dropdown.addEventListener('keydown', (e) => {
         <p>Skip links allow keyboard users to jump over repetitive content (navigation, headers) and go directly to main content.</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- At top of page (before navigation) --&gt;
 &lt;a href="#main-content" class="skip-link"&gt;
   Skip to main content
@@ -256,7 +256,7 @@ dropdown.addEventListener('keydown', (e) => {
 
         <h3>Scenario 1: Page Update</h3>
         <p>When content loads (pagination, filtering), move focus to the new content:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 // After content loads
 const mainContent = document.getElementById('results');
 mainContent.focus();
@@ -269,7 +269,7 @@ mainContent.textContent = 'Results loaded';
 
         <h3>Scenario 2: Form Validation Errors</h3>
         <p>When a form fails validation, move focus to the first error:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 // Find first error
 const firstError = form.querySelector('[aria-invalid="true"]');
 if (firstError) {
@@ -280,7 +280,7 @@ if (firstError) {
 
         <h3>Scenario 3: Search Results</h3>
         <p>After search, focus on results count or first result:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 // After search completes
 const resultsHeading = document.querySelector('.results-count');
 resultsHeading.setAttribute('tabindex', '-1');

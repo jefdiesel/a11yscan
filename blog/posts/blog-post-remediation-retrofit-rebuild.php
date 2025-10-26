@@ -58,7 +58,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Cost Analysis</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Typical Remediation Budget:
 
 Fixed Violations (20-50 issues):
@@ -130,7 +130,7 @@ One-time investment. No ongoing cost.
         </ul>
 
         <h3>Cost Analysis</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Typical Retrofit Budget (50-100 pages):
 
 Audit (professional VPAT): 
@@ -209,7 +209,7 @@ Ongoing annual review: $3,000-$5,000/year
         </ul>
 
         <h3>Cost Analysis</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Typical Rebuild Budget (100+ pages, complex):
 
 Design (accessibility-first):
@@ -312,7 +312,7 @@ Ongoing: Built into regular development cycle
         <h2>Cost Comparison Matrix</h2>
 
         <h3>Initial Investment</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
                       Remediation    Retrofit      Rebuild
 Initial Cost:         $8-20K         $50-100K      $150-500K+
 Timeline:             1-4 weeks      2-6 months    6-18 months
@@ -322,7 +322,7 @@ Chance of success:    30-40%         85-95%        95-99%
         </pre>
 
         <h3>Total Cost of Litigation Risk Over 3 Years</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Remediation-only:
   Year 1: Initial fix ($15K) + Attorney fees ($5K) = $20K
   Year 2: Second lawsuit settlement ($30K) + Fixes ($20K) = $50K
@@ -361,7 +361,7 @@ ROI Insight: Retrofit often cheaper than serial litigation
         <h3>Settlement Language Matters</h3>
 
         <h3>Weak Settlement (Likely to fail)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 "Defendant will fix the violations listed in the 
 complaint by [date]."
 
@@ -370,7 +370,7 @@ Result: You fix those specific issues. Plaintiff finds
         </pre>
 
         <h3>Strong Settlement (Protects you)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 "Defendant will conduct comprehensive accessibility 
 audit (VPAT), fix all WCAG 2.1 Level AA violations 
 found, maintain ongoing annual audits, and document 

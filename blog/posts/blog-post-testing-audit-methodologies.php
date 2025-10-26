@@ -58,7 +58,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Example Scope Document</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Audit Scope - Acme Corp Website
 Standard: WCAG 2.1 Level AA
 Pages Tested: 25 representative pages
@@ -204,7 +204,7 @@ Testing Dates: October 1-15, 2025
         </ol>
 
         <h3>Example Testing Report</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Page: Homepage
 Date: October 5, 2025
 Tester: [Name]
@@ -370,7 +370,7 @@ Findings:
         </ul>
 
         <h3>Example Finding Documentation</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Finding #47
 Page: https://acme.com/products/widgets
 Element: Image in hero section
@@ -407,14 +407,14 @@ Screen Reader Testing:
 
         <h3>True Positive</h3>
         <p>Real violation that needs fixing</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Form input without label = True Positive
 Status: FIX REQUIRED
         </pre>
 
         <h3>False Positive</h3>
         <p>Tool reports an issue, but it's actually compliant</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 axe reports low contrast on:
 &lt;div style="color: #666; background: white"&gt;
   [Decorative design element]
@@ -427,7 +427,7 @@ Status: NO ACTION NEEDED
 
         <h3>Context-Dependent</h3>
         <p>Issue requires manual review to confirm</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Tool detects form has no visible label, but CSS 
 hides label off-screen for design reasons.
 Status: REVIEW CONTEXT
@@ -440,7 +440,7 @@ Result: If visually hidden for design, add aria-label instead
         <p>A proper audit includes a remediation roadmap:</p>
 
         <h3>Remediation Priority Matrix</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 Critical Issues: 12 violations
 Timeline: Fix within 2 weeks
 Owner: Development lead

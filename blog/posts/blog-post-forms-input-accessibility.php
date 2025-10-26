@@ -29,13 +29,13 @@ $pageContent = <<<'HTML'
         
         <h3>The Right Way (WCAG Compliant)</h3>
         <p>Use semantic HTML with <code>&lt;label&gt;</code> tags and <code>for</code> attributes:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;label for="email"&gt;Email Address&lt;/label&gt;
 &lt;input type="email" id="email" name="email" required /&gt;
         </pre>
         
         <h3>The Wrong Way (Litigation Risk)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Label not connected to input --&gt;
 &lt;label&gt;Email Address&lt;/label&gt;
 &lt;input type="email" /&gt;
@@ -71,7 +71,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;label for="phone"&gt;Phone Number&lt;/label&gt;
 &lt;input 
   type="tel" 
@@ -95,7 +95,7 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>The Wrong Way (Litigation Risk)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Color only (fails for colorblind users) --&gt;
 &lt;input type="tel" style="border: 2px solid red;" /&gt;
 
@@ -116,7 +116,7 @@ alert("Please enter a valid phone number");
         <p>HTML5 input types provide native accessibility features. Using them correctly saves time and improves user experience.</p>
 
         <h3>Semantic Input Types (Built-in Accessibility)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Email input (validates + keyboard support) --&gt;
 &lt;input type="email" id="email" /&gt;
 
@@ -155,7 +155,7 @@ alert("Please enter a valid phone number");
         </ul>
 
         <h3>The Right Way: Labels + Optional Placeholder</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;label for="message"&gt;Message (optional)&lt;/label&gt;
 &lt;textarea 
   id="message" 
@@ -172,7 +172,7 @@ alert("Please enter a valid phone number");
         </ul>
 
         <h3>The Wrong Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Placeholder only (no label) --&gt;
 &lt;input type="email" placeholder="Email address" /&gt;
 
@@ -190,7 +190,7 @@ alert("Please enter a valid phone number");
         <p>Buttons must be keyboard-accessible and have descriptive text.</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Semantic button element --&gt;
 &lt;button type="submit"&gt;Submit Form&lt;/button&gt;
 
@@ -202,7 +202,7 @@ alert("Please enter a valid phone number");
         </pre>
 
         <h3>The Wrong Way (Litigation Risk)</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- Div masquerading as button --&gt;
 &lt;div onclick="submitForm()"&gt;Submit&lt;/div&gt;
 
@@ -219,7 +219,7 @@ alert("Please enter a valid phone number");
         <p>Fieldsets and legends are required for grouped form controls.</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;fieldset&gt;
   &lt;legend&gt;Choose Your Subscription:&lt;/legend&gt;
   
@@ -236,7 +236,7 @@ alert("Please enter a valid phone number");
         </pre>
 
         <h3>The Wrong Way</h3>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;!-- No fieldset/legend --&gt;
 &lt;input type="radio" name="plan" /&gt; Basic
 &lt;input type="radio" name="plan" /&gt; Pro
