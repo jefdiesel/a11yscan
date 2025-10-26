@@ -65,6 +65,42 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- NEW: Legal & Compliance Section (5 New Posts) -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/forms-input-accessibility.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/focus-management-tab-order.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/accessibility-conformance-reports.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/testing-audit-methodologies.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/remediation-retrofit-rebuild.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
     <!-- Litigation & Legal Risk Section -->
     <url>
         <loc>https://a11yscan.xyz/blog/posts/understanding-user-rights-accessibility.php</loc>
@@ -143,7 +179,6 @@
         <priority>0.85</priority>
     </url>
 
-    <!-- NEW: WCAG Lawsuit Legal Terms -->
     <url>
         <loc>https://a11yscan.xyz/blog/posts/blog-post-wcag-lawsuit-legal-terms.php</loc>
         <lastmod>2025-10-26</lastmod>
@@ -151,7 +186,6 @@
         <priority>0.85</priority>
     </url>
 
-    <!-- NEW: Corporate Legal Risk -->
     <url>
         <loc>https://a11yscan.xyz/blog/posts/blog-post-corporate-legal-risk.php</loc>
         <lastmod>2025-10-25</lastmod>
@@ -329,7 +363,6 @@
         <priority>0.85</priority>
     </url>
 
-    <!-- NEW: E-Commerce JavaScript Accessibility -->
     <url>
         <loc>https://a11yscan.xyz/blog/posts/blog-post-ecommerce-javascript-accessibility.php</loc>
         <lastmod>2025-10-25</lastmod>
