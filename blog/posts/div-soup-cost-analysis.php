@@ -26,13 +26,13 @@ $pageContent = <<<'HTML'
         <h2>Why Div Soup Happens</h2>
         <p>Div soup happens when developers use <code>&lt;div&gt;</code> tags as generic containers and then layer on JavaScript and CSS to make them behave like proper HTML elements.</p>
         <p>Example of div soup:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" tabindex="0">
 &lt;div class="nav-button" onclick="submitForm()"&gt;
     &lt;span class="button-text"&gt;Submit&lt;/span&gt;
 &lt;/div&gt;
         </pre>
         <p>Example of semantic HTML:</p>
-        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" tabindex="0">
 &lt;button type="submit"&gt;Submit&lt;/button&gt;
         </pre>
         <p>The button version works with:</p>
