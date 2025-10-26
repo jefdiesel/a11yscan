@@ -145,7 +145,7 @@
 
     <!-- NEW: WCAG Lawsuit Legal Terms -->
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/wcag-lawsuit-legal-terms.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-wcag-lawsuit-legal-terms.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
@@ -153,7 +153,7 @@
 
     <!-- NEW: Corporate Legal Risk -->
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/corporate-legal-risk.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-corporate-legal-risk.php</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
@@ -331,7 +331,7 @@
 
     <!-- NEW: E-Commerce JavaScript Accessibility -->
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/ecommerce-javascript-accessibility.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-ecommerce-javascript-accessibility.php</loc>
         <lastmod>2025-10-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
