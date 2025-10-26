@@ -10,6 +10,53 @@ $pageContent = <<<'HTML'
 </section>
 
 <section>
+    <h2 style="text-align: center; margin-bottom: 2rem;">Global Accessibility Laws (2024-2025)</h2>
+    <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-ada-title-iii">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">ADA Title III & Web Accessibility: What You Need to Know</h3>
+            <p>Understanding ADA Title III digital accessibility requirements, WCAG standards, and litigation trends. Comprehensive guide for businesses.</p>
+            <a href="https://a11yscan.xyz/blog/posts/ada-title-iii-explained.php" class="btn btn-primary" style="margin-top: 1rem;">Get Free Audit →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-european-accessibility-act">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">European Accessibility Act (EAA): Understanding EU Digital Accessibility Requirements</h3>
+            <p>Complete guide to the European Accessibility Act, WCAG 2.1 AA requirements, EN 301 549 standard, and June 28 2025 compliance deadline.</p>
+            <a href="https://a11yscan.xyz/blog/posts/european-accessibility-act-eaa.php" class="btn btn-primary" style="margin-top: 1rem;">Get Audit Report →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-aoda-ontario">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">AODA: Accessibility for Ontarians with Disabilities Act</h3>
+            <p>Comprehensive guide to AODA web accessibility requirements, WCAG 2.0 AA standards, penalties, and compliance deadlines for Ontario businesses.</p>
+            <a href="https://a11yscan.xyz/blog/posts/aoda-ontario-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Check Compliance →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-nychrl">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">NYCHRL: New York City Digital Accessibility Rights Law</h3>
+            <p>Guide to NYC Human Rights Law digital accessibility requirements, enforcement by CCHR, and penalties for non-compliance by New York businesses.</p>
+            <a href="https://a11yscan.xyz/blog/posts/new-york-nychrl-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Evaluate Your Risk →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-california-accessibility">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">California Web Accessibility Laws: Unruh Act, AB 434, AB 1757</h3>
+            <p>Complete guide to California digital accessibility requirements, Unruh Civil Rights Act, AB 434, pending AB 1757, and WCAG compliance standards.</p>
+            <a href="https://a11yscan.xyz/blog/posts/california-accessibility-unruh-ab434.php" class="btn btn-primary" style="margin-top: 1rem;">Get Full Audit →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-florida-accessibility">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Florida Web Accessibility Laws: ADA Title III, Section 508, and Florida Standards</h3>
+            <p>Guide to Florida web accessibility requirements, federal ADA Title III application, Section 508 compliance, and WCAG standards for Florida businesses.</p>
+            <a href="https://a11yscan.xyz/blog/posts/florida-ada-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Get Free Audit →</a>
+        </article>
+    </div>
+</section>
+
+<section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Litigation & Legal Risk (2024-2025)</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-user-rights-accessibility">
