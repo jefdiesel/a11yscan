@@ -245,7 +245,120 @@ include __DIR__ . '/../../template.php';  // Go up two levels to root
 
 ## Blog Content Strategy
 
-### Blog Post Structure
+### Blog Listing Page (`blog/index.php`)
+
+The blog listing page displays article cards organized by topic category. Each card must have:
+
+1. **Article metadata** (`id`, `datetime`)
+2. **Date display** (readable format)
+3. **Article title** (h3 heading)
+4. **Excerpt/description** (1-2 sentences)
+5. **Custom CTA button** (topic-specific, NOT generic "Read More")
+
+### Blog Card Structure
+
+```php
+<article class="card blog-card" tabindex="0" id="article-unique-id">
+    <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
+    <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Article Title</h3>
+    <p>Brief excerpt or description of what the article covers.</p>
+    <a href="https://a11yscan.xyz/blog/posts/article-filename.php" class="btn btn-primary" style="margin-top: 1rem;">Custom CTA Button Text →</a>
+</article>
+```
+
+### Blog Card Button Text Guidelines
+
+**NEVER use generic "Read More" buttons.** Each button must be:
+- **Action-oriented**: Start with a verb (View, Learn, Get, Check, See, Try, Master, etc.)
+- **Topic-specific**: Reference what the article covers
+- **Value-driven**: Tell users what they'll get
+- **Concise**: 2-5 words maximum
+- **Includes arrow**: End with ` →` for visual direction
+
+**Examples of Good Button Text:**
+- `Learn Your Rights →` (for user rights article)
+- `View 2024 Data →` (for lawsuit trends)
+- `Get Screen Reader Guide →` (for blind users design)
+- `Test Your Contrast →` (for color contrast guide)
+- `Check Your Risk →` (for liability/risk articles)
+- `Master WCAG Levels →` (for WCAG compliance)
+- `Find An Attorney →` (for legal support)
+- `Fix Mobile Issues →` (for mobile accessibility)
+
+**Examples of Bad Button Text:**
+- ❌ `Read More` (generic, no value)
+- ❌ `Click Here` (not descriptive)
+- ❌ `Learn More About This Topic` (too long)
+- ❌ `Article` (not actionable)
+
+### Customizing Button Text by Topic Category
+
+**Litigation & Legal Risk:**
+- Focus on risk assessment, data, legal protection, and action
+- Examples: 
+  - `View 2024 Data →`
+  - `See 2025 Trends →`
+  - `Check Your Risk →`
+  - `Get Defense Guide →`
+  - `Assess Your Risk →`
+  - `Learn Your Rights →`
+  - `Find An Attorney →`
+  - `Check Your State →`
+  - `Understand The Gap →`
+  - `Review Settlements →`
+
+**User Accessibility Personas:**
+- Focus on solutions, understanding user needs, and implementation
+- Examples: 
+  - `Get Screen Reader Guide →`
+  - `View Visual Solutions →`
+  - `See Audio Solutions →`
+  - `Learn Keyboard Access →`
+  - `Get Clarity Tips →`
+  - `View ND Patterns →` (neurodivergent)
+
+**Fundamentals & Best Practices:**
+- Focus on skill-building, testing, and practical implementation
+- Examples: 
+  - `Master WCAG Levels →`
+  - `Test Your Contrast →`
+  - `Write Better Alt Text →`
+  - `Fix Mobile Issues →`
+  - `Learn ADA Rules →`
+  - `Try Navigation Tips →`
+  - `See HTML Examples →`
+  - `Boost Your SEO →`
+  - `Calculate Your Costs →`
+  - `Get Response Guide →`
+
+### How to Update Blog Card Buttons
+
+When adding a new article to `blog/index.php`:
+
+1. **Write the article excerpt** (1-2 sentences describing what readers will learn)
+2. **Craft custom button text** based on the article topic:
+   - Identify the main takeaway or action
+   - Use an action verb that matches the content
+   - Keep it 2-5 words
+   - Add the arrow: ` →`
+3. **Match the tone to the category**:
+   - Legal = risk/protection focused
+   - Personas = solution focused
+   - Fundamentals = skill/implementation focused
+
+**Example workflow:**
+
+Article: "Color Contrast: The Foundation of Visual Accessibility"
+- Excerpt: "Discover why color contrast matters, how to calculate it, and tools to ensure your design meets WCAG standards."
+- Button text: `Test Your Contrast →`
+- Reasoning: The article teaches testing, so "Test" is the action verb
+
+Article: "2024 Accessibility Lawsuit Trends: What the Data Shows"
+- Excerpt: "Analysis of 4,000+ digital accessibility lawsuits filed in 2024, settlement amounts, defendant profiles, and what this means for your organization."
+- Button text: `View 2024 Data →`
+- Reasoning: The article presents data, so "View" + year specificity works
+
+### Blog Post Structure (Individual Posts)
 
 Every blog post should follow this structure:
 
@@ -502,7 +615,10 @@ Each blog post CTA includes:
 4. Add **customized CTA** based on topic
 5. Set `$currentPage = 'blog'`
 6. Use `include __DIR__ . '/../../template.php';`
-7. Add link to post in `blog/index.php` with absolute URL
+7. Add card to `blog/index.php` with:
+   - Custom button text (NOT "Read More")
+   - Absolute URL: `https://a11yscan.xyz/blog/posts/filename.php`
+   - Compelling excerpt
 
 ### Testing Accessibility
 
@@ -609,6 +725,7 @@ Each blog post CTA includes:
 - Blog listing page with card grid
 - Includes `../template.php`
 - Blog cards use flexbox for button alignment
+- Each card has custom button text (never "Read More")
 
 **blog/posts/*.php**
 - Individual blog posts
@@ -618,4 +735,4 @@ Each blog post CTA includes:
 
 ---
 
-**Last Updated**: October 25, 2025
+**Last Updated**: October 26, 2025

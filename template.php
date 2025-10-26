@@ -388,6 +388,17 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
             margin-bottom: 0.75rem;
         }
         
+        /* Make scrollable code blocks keyboard accessible */
+        pre[style*="overflow"] {
+            outline: 3px solid transparent;
+            outline-offset: 2px;
+            transition: outline-color 0.2s;
+        }
+        
+        pre[style*="overflow"]:focus {
+            outline-color: var(--accent-primary);
+        }
+        
         footer {
             background: var(--text-primary);
             color: var(--footer-text);
@@ -578,6 +589,12 @@ $currentPage = $currentPage ?? basename($_SERVER['PHP_SELF'], '.php');
         const sections = document.querySelectorAll('.blog-post section[id]');
         sections.forEach(section => {
             section.setAttribute('tabindex', '0');
+        });
+        
+        // Make scrollable code blocks keyboard accessible
+        const scrollableCode = document.querySelectorAll('pre[style*="overflow"]');
+        scrollableCode.forEach(pre => {
+            pre.setAttribute('tabindex', '0');
         });
         
         document.querySelectorAll('a[href^="#"]:not(.skip-link)').forEach(a => {
