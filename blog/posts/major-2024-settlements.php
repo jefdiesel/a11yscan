@@ -15,6 +15,14 @@ $pageContent = <<<'HTML'
         <p>While detailed settlement information is often confidential, public filings, press releases, and industry reporting provide sufficient data to identify patterns. These patterns offer guidance for organizations seeking to avoid similar outcomes.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="case-study-1">
         <h2>Case Study 1: Major Retail E-Commerce Platform</h2>
         
@@ -174,12 +182,7 @@ $pageContent = <<<'HTML'
     </section>
 
     <!-- LEGAL DISCLAIMER (mandatory) -->
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
+    
 </article>
 
 <section style="margin-top: 3rem;">

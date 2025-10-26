@@ -16,6 +16,14 @@ $pageContent = <<<'HTML'
         <p>Poor keyboard navigation creates absolute barriers. When a crucial website function is only accessible via mouse, users with motor disabilities cannot complete essential tasks. This might be filling out a loan application, accessing medical records, or completing a purchase. The stakes are literally life-changing.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="fundamentals">
         <h2>The Fundamentals of Keyboard Navigation</h2>
         <p>Keyboard navigation relies on several fundamental mechanisms that allow users to interact with web content using only keyboard inputs.</p>
@@ -173,12 +181,7 @@ $pageContent = <<<'HTML'
     </section>
 
     <!-- LEGAL DISCLAIMER (mandatory) -->
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
+    
 </article>
 
 <section style="margin-top: 3rem;">

@@ -9,6 +9,14 @@ $pageContent = <<<'HTML'
         <h1>Temporary Disabilities & Accessibility: Broken Mice, Injured Arms, Lost Glasses</h1>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="intro">
         <p>Accessibility isn't just for people with permanent disabilities. Every day, millions of people experience temporary barriers that make them rely on accessibility features just to use the web. A broken mouse. An arm in a sling. Lost glasses. A migraine. A noisy coffee shop. A hospital waiting room where you need to navigate with one hand while holding a prescription.</p>
         <p>These situations are more common than you might think—and they're temporary tests of your website's actual accessibility. If your site doesn't work for someone with a broken mouse, it's not fully accessible. Period.</p>
@@ -117,12 +125,7 @@ $pageContent = <<<'HTML'
     </section>
 
     <!-- LEGAL DISCLAIMER (mandatory) -->
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
+    
 
     <!-- CUSTOMIZED CTA -->
     <section style="margin-top: 3rem;">

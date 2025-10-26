@@ -17,6 +17,14 @@ $pageContent = <<<'HTML'
         <p>Screen reader users often develop sophisticated navigation strategies, using keyboard shortcuts to jump between headings, form fields, or landmark regions. Understanding these navigation patterns helps designers create efficient structures.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="core-principles">
         <h2>Core Design Principles for Screen Reader Users</h2>
         
@@ -169,12 +177,7 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Screen reader accessibility is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted web accessibility principles. For comprehensive information on screen reader requirements, consult the official WCAG 2.1 guidelines.</p>
-    </div>
-</section>
+
 
 <section style="margin-top: 3rem;">
     <div class="highlight">

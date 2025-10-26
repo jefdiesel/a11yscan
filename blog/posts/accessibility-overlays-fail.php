@@ -10,6 +10,14 @@ $pageContent = <<<'HTML'
         
         <p>Accessibility overlays have become increasingly popular among website owners seeking a quick solution to WCAG compliance. These tools promise to scan your site and instantly fix accessibility issues with a simple script injection. The appeal is undeniable: no code changes, no redesigns, just add JavaScript and your accessibility problems disappear. But the reality is more complicated. Most overlays fail to achieve genuine WCAG 2.1 compliance, and many create new barriers that make websites harder to use for people with disabilities.</p>
     </section>
+
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
     
     <section id="what-are-overlays">
         <h2>What Are Accessibility Overlays?</h2>
@@ -183,12 +191,7 @@ $pageContent = <<<'HTML'
 </article>
 
 <!-- DISCLAIMER (general, not legal-focused) -->
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">About This Analysis</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;">This article is based on accessibility research, industry analysis, and documented user feedback about overlay technologies. While we've attempted to be thorough and accurate, specific overlay products vary in capabilities, and individual experiences may differ. This analysis is not an endorsement or rejection of any specific product, but rather a discussion of technical limitations that apply to the overlay category generally. For technical guidance on implementing genuine accessibility, consult accessibility specialists. For legal questions about accessibility compliance, consult qualified attorneys.</p>
-    </div>
-</section>
+
 
 <!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">

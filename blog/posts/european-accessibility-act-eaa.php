@@ -14,6 +14,14 @@ $pageContent = <<<'HTML'
         <p>Unlike voluntary guidelines, the EAA is legally binding across all 27 EU member states plus Norway, Iceland, and Liechtenstein. Organizations that fail to comply face significant fines and market restrictions.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="what-is-eaa">
         <h2>What is the European Accessibility Act?</h2>
         <p>The EAA is a directive that harmonizes accessibility requirements across Europe. It establishes mandatory accessibility standards for digital products and services, including websites and mobile applications.</p>
@@ -180,12 +188,7 @@ $pageContent = <<<'HTML'
 </article>
 
 <!-- LEGAL DISCLAIMER (mandatory) -->
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-    </div>
-</section>
+
 
 <!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">

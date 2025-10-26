@@ -213,7 +213,7 @@ $pageContent = <<<'HTML'
             <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">How to Document Website Accessibility Barriers</h3>
             <p>Step-by-step guide to documenting accessibility barriers professionally. Learn what to capture, how to communicate with website owners, and what to do next.</p>
-            <a href="https://a11yscan.xyz/blog/posts/documenting-barriers.php" class="btn btn-primary" style="margin-top: 1rem;">Get Documentation Guide →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-documenting-barriers.php" class="btn btn-primary" style="margin-top: 1rem;">Get Documentation Guide →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-wcag-levels">

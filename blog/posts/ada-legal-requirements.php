@@ -16,6 +16,14 @@ $pageContent = <<<'HTML'
         <p>Organizations operating across multiple states face additional complexity. While federal law provides baseline requirements through the ADA, individual states have enacted their own accessibility mandates that may exceed federal minimums.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="ada-overview">
         <h2>The Americans with Disabilities Act (ADA) and Digital Accessibility</h2>
         <p>The ADA applies to private businesses, state and local governments, non-profits, and other covered entities with 15 or more employees. The law prohibits discrimination in all areas of public life, including access to goods and services.</p>
@@ -166,12 +174,7 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This article discusses ADA requirements and WCAG standards based on widely-accepted accessibility principles. However, legal standards vary by jurisdiction, and courts don't always agree on terms and expectations for web accessibility. For specific legal guidance regarding your organization's compliance obligations or potential liability, consult with a qualified attorney specializing in accessibility law.</p>
-    </div>
-</section>
+
 
 <section style="margin-top: 3rem;">
     <div class="highlight">

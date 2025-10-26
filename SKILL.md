@@ -584,7 +584,7 @@ The template automatically makes blog post sections keyboard-tabbable:
 
 ### Mandatory Blog Post Disclaimer
 
-**Every blog post MUST include this disclaimer at the bottom, before the CTA:**
+**Every blog post MUST include this disclaimer at the TOP, right after the first section (before main content):**
 
 ```php
 <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">

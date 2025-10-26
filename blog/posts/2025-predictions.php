@@ -15,6 +15,14 @@ $pageContent = <<<'HTML'
         <p>Most concerning for organizations: current remediation capacity cannot keep pace with litigation growth. Skilled accessibility consultants, developers, and testers remain in short supply. Organizations seeking remediation in 2025 may face significant project delays and premium pricing for limited accessibility expertise.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="emerging-frontiers">
         <h2>Emerging Litigation Frontiers</h2>
         
@@ -173,12 +181,7 @@ $pageContent = <<<'HTML'
 </article>
 
 <!-- LEGAL DISCLAIMER (mandatory before CTA) -->
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This analysis represents informed predictions based on current litigation trends and industry developments. We operate under best practices based on WCAG Guidelines and ADA requirements, but legal standards vary by jurisdiction and continue to evolve. The predictions presented reflect expert assessment of likely trends but are not guarantees of future outcomes. For specific legal guidance regarding your organization's anticipated accessibility obligations or litigation exposure, consult with a qualified attorney specializing in accessibility law and your jurisdiction's specific requirements.</p>
-    </div>
-</section>
+
 
 <!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">

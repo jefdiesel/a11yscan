@@ -16,6 +16,14 @@ $pageContent = <<<'HTML'
         <p>Color contrast isn't merely about making text slightly easier to read. Insufficient contrast creates a complete barrier to access for users with low vision. When someone cannot read your content due to poor contrast, they cannot use your website at all.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="ratios">
         <h2>Understanding Contrast Ratios</h2>
         <p>Contrast ratios measure the difference in luminance (brightness) between two colors on a scale ranging from 1:1 to 21:1. A ratio of 1:1 indicates identical brightness (no contrast), while 21:1 represents maximum contrast such as pure black on pure white.</p>
@@ -146,12 +154,7 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Color contrast is covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted accessibility principles. For comprehensive information on contrast ratio requirements, consult the official WCAG 2.1 Distinguishability guidelines.</p>
-    </div>
-</section>
+
 
 <section style="margin-top: 3rem;">
     <div class="highlight">

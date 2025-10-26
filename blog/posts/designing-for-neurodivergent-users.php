@@ -15,6 +15,14 @@ $pageContent = <<<'HTML'
         <p>However, neurodivergent individuals often face accessibility barriers in neurotypical-designed environments. Websites designed for neurotypical users can create significant challenges for neurodivergent users. Neurodivergent-friendly design benefits everyone by creating clearer, more straightforward interfaces.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="autism">
         <h2>Autism and Website Accessibility</h2>
         
@@ -195,12 +203,7 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Best Practices Note</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>Universal design and neurodivergent accessibility are covered in WCAG 2.1.</strong> This guide shares best practices based on widely-accepted accessibility and inclusive design principles. For comprehensive information on cognitive disabilities, distractions, and understandable design standards, consult the official WCAG 2.1 guidelines.</p>
-    </div>
-</section>
+
 
 <section style="margin-top: 3rem;">
     <div class="highlight">

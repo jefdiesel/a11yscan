@@ -14,6 +14,14 @@ $pageContent = <<<'HTML'
         <p>Accessibility demand letters are real. They're increasingly common. And how you respond in the next 30 days will significantly affect your situation—whether you resolve the matter quickly, pay substantial legal fees, or end up in prolonged litigation. This guide walks you through what to do, what it means, and how to approach your response.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="what-is-demand-letter">
         <h2>What Is an Accessibility Demand Letter?</h2>
         <p>An accessibility demand letter is a formal legal notice claiming your website violates ADA Title III or similar accessibility laws.</p>
@@ -197,12 +205,7 @@ $pageContent = <<<'HTML'
 </article>
 
 <!-- LEGAL DISCLAIMER (mandatory before CTA) -->
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This guide provides general information about handling accessibility demand letters based on common patterns in accessibility litigation. Settlement amounts, negotiation strategies, and litigation costs vary significantly based on specific facts, jurisdiction, and your particular situation. The guidance presented represents typical practices but may not apply to your circumstances. If you receive an accessibility demand letter, immediately consult with a qualified attorney specializing in accessibility law in your jurisdiction. Do not rely on this guide as a substitute for professional legal counsel.</p>
-    </div>
-</section>
+
 
 <!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">

@@ -16,6 +16,14 @@ $pageContent = <<<'HTML'
         <p>The velocity of litigation is accelerating, not stabilizing. Industry experts predict 2025 will see even higher filing rates as legal precedent strengthens and plaintiff advocacy organizations continue aggressive strategies. Organizations delaying accessibility investment face increasing legal exposure.</p>
     </section>
 
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
+
     <section id="geographic-distribution">
         <h2>Geographic Distribution and Hotspots</h2>
         <p>While accessibility lawsuits are filed across all 50 states, certain jurisdictions have emerged as litigation hotspots.</p>
@@ -157,12 +165,7 @@ $pageContent = <<<'HTML'
 </article>
 
 <!-- LEGAL DISCLAIMER (mandatory before CTA) -->
-<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This analysis is based on publicly available litigation data and industry trends. We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. The litigation trends and settlement information presented reflect industry patterns but may not apply to your specific situation. For specific legal guidance regarding your organization's accessibility obligations or litigation risk, consult with a qualified attorney specializing in accessibility law.</p>
-    </div>
-</section>
+
 
 <!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">

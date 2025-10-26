@@ -12,6 +12,14 @@ $pageContent = <<<'HTML'
         
         <p>For business leaders, this is not a theoretical risk. This is a concrete legal exposure that's accelerating, spreading geographically, and hitting businesses of all sizes. Understanding the current litigation landscape is essential for protecting your organization.</p>
     </section>
+
+    <!-- LEGAL DISCLAIMER -->
+    <section style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--border);">
+        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+        </div>
+    </section>
     
     <section id="scale">
         <h2>The Scale of the Problem: 2024-2025 Lawsuit Data</h2>
@@ -147,12 +155,7 @@ $pageContent = <<<'HTML'
         <p>For business leaders, the message is clear: the days of ignoring web accessibility are over. The financial, legal, and reputational costs of non-compliance are real and measurable. Organizations that prioritize genuine accessibility today will avoid the substantially higher costs of litigation tomorrow.</p>
     </section>
 
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> This article discusses trends in accessibility litigation and references WCAG Guidelines and ADA requirements. However, legal standards vary by jurisdiction, and courts don't always agree on terms and expectations for web accessibility. We operate under best practices based on widely-accepted WCAG Guidelines and ADA principles. For specific legal guidance regarding your organization's potential liability or compliance obligations, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
+    
 
     <section style="margin-top: 3rem;">
         <div class="highlight">
