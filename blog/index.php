@@ -63,35 +63,35 @@ $pageContent = <<<'HTML'
             <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Forms & Input Accessibility: Fixing the #1 Source of ADA Lawsuits</h3>
             <p>Forms cause 40% of ADA litigation. Learn to fix labels, error messages, validation, and placeholders. Step-by-step WCAG compliance guide.</p>
-            <a href="https://a11yscan.xyz/blog/posts/forms-input-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Scan My Forms →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-forms-input-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Scan My Forms →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-focus-management-tab-order">
             <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Focus Management & Tab Order: The Foundation of Keyboard Accessibility</h3>
             <p>Logical tab order, focus traps, and visible focus indicators. WCAG compliance guide for keyboard accessibility and litigation prevention.</p>
-            <a href="https://a11yscan.xyz/blog/posts/focus-management-tab-order.php" class="btn btn-primary" style="margin-top: 1rem;">Check Keyboard Access →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-focus-management-tab-order.php" class="btn btn-primary" style="margin-top: 1rem;">Check Keyboard Access →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-accessibility-conformance-reports">
             <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Accessibility Conformance Reports (ACRs): Your Legal Documentation</h3>
             <p>Understanding VPAT, ACRs, and conformance reports. What courts require, how to create reports, and legal implications for compliance.</p>
-            <a href="https://a11yscan.xyz/blog/posts/accessibility-conformance-reports.php" class="btn btn-primary" style="margin-top: 1rem;">Get Audit Report →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-accessibility-conformance-reports.php" class="btn btn-primary" style="margin-top: 1rem;">Get Audit Report →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-testing-audit-methodologies">
             <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Accessibility Audits: What a Proper Audit Includes</h3>
             <p>Learn what accessibility audits include, testing methodologies, tools, screen readers, and how to evaluate audit quality for WCAG compliance.</p>
-            <a href="https://a11yscan.xyz/blog/posts/testing-audit-methodologies.php" class="btn btn-primary" style="margin-top: 1rem;">Get Full Audit →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-testing-audit-methodologies.php" class="btn btn-primary" style="margin-top: 1rem;">Get Full Audit →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-remediation-retrofit-rebuild">
             <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Remediation vs. Retrofit vs. Rebuild: Strategic Accessibility Decisions</h3>
             <p>Compare remediation, retrofit, and rebuild strategies for accessibility. Cost analysis, timelines, and decision framework for post-demand letter guidance.</p>
-            <a href="https://a11yscan.xyz/blog/posts/remediation-retrofit-rebuild.php" class="btn btn-primary" style="margin-top: 1rem;">Assess My Risk →</a>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-remediation-retrofit-rebuild.php" class="btn btn-primary" style="margin-top: 1rem;">Assess My Risk →</a>
         </article>
     </div>
 </section>

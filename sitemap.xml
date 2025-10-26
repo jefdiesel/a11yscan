@@ -65,37 +65,37 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- NEW: Legal & Compliance Section (5 New Posts) -->
+    <!-- Legal & Compliance Section (5 New Posts) -->
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/forms-input-accessibility.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-forms-input-accessibility.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/focus-management-tab-order.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-focus-management-tab-order.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/accessibility-conformance-reports.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-accessibility-conformance-reports.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/testing-audit-methodologies.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-testing-audit-methodologies.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/remediation-retrofit-rebuild.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-remediation-retrofit-rebuild.php</loc>
         <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
@@ -245,7 +245,7 @@
     </url>
 
     <url>
-        <loc>https://a11yscan.xyz/blog/posts/documenting-barriers.php</loc>
+        <loc>https://a11yscan.xyz/blog/posts/blog-post-documenting-barriers.php</loc>
         <lastmod>2025-01-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
