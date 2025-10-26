@@ -135,6 +135,20 @@ $pageContent = <<<'HTML'
             <p>4,000+ ADA lawsuits filed in 2024. 37% increase in first half of 2025. Geographic shifts, overlay widget traps, repeat litigation, and what businesses must do to reduce legal exposure.</p>
             <a href="https://a11yscan.xyz/blog/posts/ada-lawsuits-2025.php" class="btn btn-primary" style="margin-top: 1rem;">See 2025 Data →</a>
         </article>
+
+        <article class="card blog-card" tabindex="0" id="article-wcag-lawsuit-terms">
+            <time datetime="2025-10-26" class="blog-date">Oct 26, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">WCAG Lawsuit Legal Terms: Standing, Nexus, Harm & Damages</h3>
+            <p>Understand the legal foundations of accessibility lawsuits. Learn how courts evaluate standing, physical nexus, harm, and damages in digital accessibility cases.</p>
+            <a href="https://a11yscan.xyz/blog/posts/wcag-lawsuit-legal-terms.php" class="btn btn-primary" style="margin-top: 1rem;">Understand Legal Terms →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-corporate-legal-risk">
+            <time datetime="2025-10-25" class="blog-date">Oct 25, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Corporate Legal Risk: Your Website vs. Your Marketing Department</h3>
+            <p>Why your website faces 1000x more legal exposure than marketing campaigns. Thousands of accessibility errors, zero legal review. The untold corporate accessibility risk.</p>
+            <a href="https://a11yscan.xyz/blog/posts/corporate-legal-risk.php" class="btn btn-primary" style="margin-top: 1rem;">Assess Your Risk →</a>
+        </article>
     </div>
 </section>
 
@@ -197,9 +211,9 @@ $pageContent = <<<'HTML'
 
         <article class="card blog-card" tabindex="0" id="article-document-barriers">
             <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
-            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">How to Document and Report Web Accessibility Issues: A Plaintiff's Guide</h3>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">How to Document Website Accessibility Barriers</h3>
             <p>Step-by-step guide to documenting accessibility barriers professionally. Learn what to capture, how to communicate with website owners, and what to do next.</p>
-            <a href="https://a11yscan.xyz/blog/posts/document-report-barriers.php" class="btn btn-primary" style="margin-top: 1rem;">Get Documentation Guide →</a>
+            <a href="https://a11yscan.xyz/blog/posts/documenting-barriers.php" class="btn btn-primary" style="margin-top: 1rem;">Get Documentation Guide →</a>
         </article>
 
         <article class="card blog-card" tabindex="0" id="article-wcag-levels">
@@ -312,6 +326,13 @@ $pageContent = <<<'HTML'
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">You Sell Widgets, Not Websites. But Your Website Still Violates the ADA.</h3>
             <p>You're a product company, not a web agency. Your website is incidental to your business. Except it's not. If it's inaccessible, you're liable—and the courts prove it.</p>
             <a href="https://a11yscan.xyz/blog/posts/widget-seller-responsibility.php" class="btn btn-primary" style="margin-top: 1rem;">Understand Your Risk →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-ecommerce-javascript">
+            <time datetime="2025-10-25" class="blog-date">Oct 25, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">E-Commerce Accessibility: One JavaScript Error, Thousands of Broken Products</h3>
+            <p>Learn how JavaScript template errors in e-commerce make entire product catalogs inaccessible. One broken component equals thousands of broken pages and thousands of systemic violations.</p>
+            <a href="https://a11yscan.xyz/blog/posts/ecommerce-javascript-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Scan Product Pages →</a>
         </article>
     </div>
 </section>

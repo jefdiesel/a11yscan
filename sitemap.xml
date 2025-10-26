@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages -->
+    <url>
+        <loc>https://a11yscan.xyz/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://a11yscan.xyz/blog/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/accessibility-statement.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Global Accessibility Laws Section -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/ada-title-iii-explained.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/european-accessibility-act-eaa.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/aoda-ontario-accessibility.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/new-york-nychrl-accessibility.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/california-accessibility-unruh-ab434.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/florida-ada-accessibility.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Litigation & Legal Risk Section -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/understanding-user-rights-accessibility.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/disability-rights-by-state.php</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/finding-legal-support.php</loc>
+        <lastmod>2025-01-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/serial-filers-enforcement-gap.php</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/2024-lawsuit-trends.php</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/major-2024-settlements.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/2025-predictions.php</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/platform-liability.php</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/litigation-defense-strategies.php</loc>
+        <lastmod>2025-10-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/accessibility-risk-management.php</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/ada-lawsuits-2025.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- NEW: WCAG Lawsuit Legal Terms -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/wcag-lawsuit-legal-terms.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- NEW: Corporate Legal Risk -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/corporate-legal-risk.php</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Designing for User Accessibility Needs Section -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-blind-users.php</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-low-vision-users.php</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-deaf-users.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-motor-disability.php</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-cognitive-disabilities.php</loc>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/designing-for-neurodivergent-users.php</loc>
+        <lastmod>2025-10-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Fundamentals & Best Practices Section -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/accessibility-statements.php</loc>
+        <lastmod>2025-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/documenting-barriers.php</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/wcag-2-1-levels-guide.php</loc>
+        <lastmod>2025-10-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/color-contrast-guide.php</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/keyboard-navigation-guide.php</loc>
+        <lastmod>2025-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/alt-text-guide.php</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/ada-legal-requirements.php</loc>
+        <lastmod>2025-10-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/aria-semantic-html-guide.php</loc>
+        <lastmod>2025-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/accessibility-overlays-fail.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/silver-economy-accessibility.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/temp-disabilities-broken-mouse.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/seo-wcag-linked.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/div-soup-cost-analysis.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/accessibility-demand-letter.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/wcag-2-2-changes.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/mobile-accessibility.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/platform-responsibility-liability.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/widget-seller-responsibility.php</loc>
+        <lastmod>2025-10-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- NEW: E-Commerce JavaScript Accessibility -->
+    <url>
+        <loc>https://a11yscan.xyz/blog/posts/ecommerce-javascript-accessibility.php</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+</urlset>
