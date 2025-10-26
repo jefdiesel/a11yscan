@@ -5,12 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-26">October 26, 2025</time>
-        <h1>WCAG Lawsuit Legal Terms: Standing, Nexus, Harm & Damages Explained</h1>
-    </header>
-
     <section id="introduction">
+        <time datetime="2025-10-26" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 26, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">WCAG Lawsuit Legal Terms: Standing, Nexus, Harm & Damages Explained</h1>
+        
+        <h2>Introduction</h2>
         <p>When accessibility lawsuits reach the courtroom, legal arguments hinge on specific terminology that determines whether a case can proceed and what remedies might be available. Understanding these core legal concepts—standing, physical nexus, harm, and damages—is essential for organizations navigating accessibility compliance and litigation risk.</p>
         
         <p>This guide breaks down each legal term, explains how courts evaluate them in accessibility cases, and describes the evidence and arguments used to prove or disprove each element. The landscape of digital accessibility litigation is complex and evolving, with courts taking different approaches to these foundational concepts.</p>
@@ -267,25 +266,25 @@ $pageContent = <<<'HTML'
             <li><a href="https://nfb.org/">National Federation of the Blind</a></li>
         </ul>
     </section>
-
-    <!-- LEGAL DISCLAIMER (mandatory) -->
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
-
-    <!-- CUSTOMIZED CTA -->
-    <section style="margin-top: 3rem;">
-        <div class="highlight">
-            <h2 style="margin-top: 0;">Understand Your Litigation Risk</h2>
-            <p>Know where your website stands on accessibility compliance and identify vulnerabilities before they become litigation exposure.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Litigation Risk Assessment')">Assess My Risk</button>
-        </div>
-    </section>
 </article>
+
+<!-- LEGAL DISCLAIMER (mandatory) -->
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+    </div>
+</section>
+
+<!-- CUSTOMIZED CTA -->
+<section style="margin-top: 3rem;">
+    <div class="highlight">
+        <h2 style="margin-top: 0;">Understand Your Litigation Risk</h2>
+        <p>Know where your website stands on accessibility compliance and identify vulnerabilities before they become litigation exposure.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'Litigation Risk Assessment')">Assess My Risk</button>
+    </div>
+</section>
 HTML;
 
-include __DIR__ . '/../../template.php';
+include 'template.php';
 ?>

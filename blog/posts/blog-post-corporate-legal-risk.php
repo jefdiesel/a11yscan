@@ -5,12 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-25">October 25, 2025</time>
-        <h1>The Unknown Corporate Risk: Your Website vs. Your Marketing Department</h1>
-    </header>
-
     <section id="intro">
+        <time datetime="2025-10-25" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 25, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">The Unknown Corporate Risk: Your Website vs. Your Marketing Department</h1>
+        
+        <h2>Introduction</h2>
         <p>Your legal team reviews every marketing campaign before launch. Compliance approves every HR policy. Risk management oversees every contract.</p>
         
         <p>But your website? The one generating millions in revenue, hosting thousands of pages, accessed by millions of visitors? That gets built by developers with no legal oversight.</p>
@@ -25,7 +24,7 @@ $pageContent = <<<'HTML'
         
         <p>Before your marketing team launches a campaign:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Copy goes to legal review</li>
             <li>Claims are fact-checked against marketing regulations</li>
             <li>Images are reviewed for intellectual property compliance</li>
@@ -42,7 +41,7 @@ $pageContent = <<<'HTML'
         
         <p>Before your HR department releases a policy:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Employment law attorneys review it</li>
             <li>Compliance checks for EEOC requirements</li>
             <li>Non-discrimination clauses are verified</li>
@@ -58,10 +57,10 @@ $pageContent = <<<'HTML'
         
         <p>Before your technology team launches a website or major feature:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li>...legal review happens</li>
-            <li>...compliance signs off</li>
-            <li>...accessibility is audited</li>
+        <ul>
+            <li>Legal review happens</li>
+            <li>Compliance signs off</li>
+            <li>Accessibility is audited</li>
         </ul>
         
         <p>None of this typically occurs.</p>
@@ -76,7 +75,7 @@ $pageContent = <<<'HTML'
         
         <p>Consider the numbers:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>One marketing campaign: reaches 100K people, legal review conducted</li>
             <li>Your website: accessible to 100M+ people monthly, zero legal review</li>
         </ul>
@@ -87,7 +86,7 @@ $pageContent = <<<'HTML'
         
         <p>Accessibility lawsuits aren't about single pages. They're systemic. A typical website audit finds:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Missing alt text on hundreds of images</li>
             <li>Non-keyboard-accessible buttons across dozens of pages</li>
             <li>Form fields without labels on checkout pages</li>
@@ -104,7 +103,7 @@ $pageContent = <<<'HTML'
         
         <p>Accessibility litigation is accelerating:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>2024: 4,500+ ADA Title III lawsuits filed in the U.S.</li>
             <li>2025: Expected to exceed 5,000+ filings</li>
             <li>Average settlement: $50K–$150K per case (plus legal fees)</li>
@@ -143,7 +142,7 @@ $pageContent = <<<'HTML'
         
         <p>Who owns website accessibility in your organization?</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Engineering? They prioritize feature development.</li>
             <li>Product? They focus on user experience for the majority.</li>
             <li>Design? They optimize for aesthetics.</li>
@@ -229,7 +228,7 @@ $pageContent = <<<'HTML'
         
         <p>Every day it remains inaccessible:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Users with disabilities are being excluded</li>
             <li>Violations are compounding</li>
             <li>Evidence of negligence is accumulating</li>
@@ -258,7 +257,7 @@ $pageContent = <<<'HTML'
         
         <p>Website accessibility compliance is fundamentally a legal risk mitigation function. It's no different from:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Contract review</li>
             <li>Employment law compliance</li>
             <li>Privacy and data protection</li>
@@ -271,7 +270,7 @@ $pageContent = <<<'HTML'
         
         <p>Here's the business case: fixing a website's accessibility issues costs far less than defending a lawsuit. Typical costs:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Accessibility audit: $5K–$25K</li>
             <li>Remediation: $50K–$500K depending on site size</li>
             <li>Ongoing compliance: $10K–$50K annually</li>
@@ -279,7 +278,7 @@ $pageContent = <<<'HTML'
         
         <p>Compared to:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Settlement: $50K–$500K+</li>
             <li>Legal fees: $100K–$500K+</li>
             <li>Remediation under duress: $100K–$1M+</li>
@@ -294,7 +293,7 @@ $pageContent = <<<'HTML'
         
         <p>Companies that address it proactively gain competitive advantage:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Larger addressable market (16% more potential customers)</li>
             <li>Better SEO (accessibility improves search ranking)</li>
             <li>Reduced legal risk</li>
@@ -305,7 +304,7 @@ $pageContent = <<<'HTML'
 
     <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Corporate legal departments rigorously review marketing campaigns but overlook website accessibility entirely</li>
             <li>Your website reaches 1000x more people than a single marketing campaign—yet gets zero legal scrutiny</li>
             <li>Website accessibility violations are systematic, not isolated—thousands can exist simultaneously</li>
@@ -321,7 +320,7 @@ $pageContent = <<<'HTML'
 
     <section id="resources">
         <h2>Resources</h2>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><a href="https://www.ada.gov/resources/frequently-asked-questions/about-ada">About the Americans with Disabilities Act (ADA.gov)</a></li>
             <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines 2.1 (W3C)</a></li>
             <li><a href="https://www.justice.gov/crt/digital-accessibility">DOJ Digital Accessibility Resources</a></li>
@@ -330,6 +329,7 @@ $pageContent = <<<'HTML'
     </section>
 </article>
 
+<!-- LEGAL DISCLAIMER (mandatory) -->
 <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
     <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
         <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
@@ -337,6 +337,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
+<!-- CUSTOMIZED CTA -->
 <section style="margin-top: 3rem;">
     <div class="highlight">
         <h2 style="margin-top: 0;">Assess Your Legal Risk Today</h2>
