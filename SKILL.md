@@ -800,6 +800,46 @@ Each blog post CTA includes:
 <input type="email" id="email" name="email" required aria-required="true">
 ```
 
+### Code Blocks & Pre-formatted Text
+
+**For scrollable code blocks:**
+- ✅ `<pre>` with `tabindex="0"` - Makes it keyboard focusable and scrollable
+- ✅ Keep all styling: background, padding, overflow-x, font-family, font-size
+- ❌ Never add `role="region"` to `<pre>` - Creates landmark conflicts
+- ❌ Never add `aria-label="Code example"` - Causes duplicate landmark labeling
+- ❌ Never have duplicate `style` attributes
+
+**Correct Pattern:**
+```html
+<pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: monospace; font-size: 0.9rem;" tabindex="0">
+&lt;div class="example"&gt;
+    code content here
+&lt;/div&gt;
+</pre>
+```
+
+**Incorrect Pattern (DO NOT USE):**
+```html
+<!-- WRONG: Duplicate styles + landmark violations -->
+<pre style="background: var(--bg-secondary);" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
+    code here
+</pre>
+```
+
+**Why This Matters:**
+
+- `role="region"` creates a semantic landmark that screen readers announce
+- Multiple `<pre>` elements with `aria-label="Code example"` creates duplicate landmarks with identical labels
+- This violates WCAG landmark uniqueness rules (moderate severity)
+- Keyboard accessibility is preserved with just `tabindex="0"` - no ARIA needed
+- Code blocks remain focusable and scrollable via keyboard
+
+**Testing Code Blocks:**
+1. Tab through page - code block should be focusable
+2. When focused, arrow keys scroll horizontally
+3. Tab again to move focus out of code block
+4. Run accessibility scan - no landmark-unique errors
+
 ---
 
 ## File Structure

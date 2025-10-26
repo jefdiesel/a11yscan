@@ -99,6 +99,13 @@ $pageContent = <<<'HTML'
 </section>
 
 <section>
+    <h2>Conformance Report (VPAT)</h2>
+    <p>For detailed technical documentation of our accessibility compliance, view our complete <strong>VPAT (Voluntary Product Accessibility Template)</strong> report:</p>
+    <p style="margin-top: 1.5rem;"><a href="https://a11yscan.xyz/vpat_Oct2025.php" class="btn btn-primary">View VPAT Conformance Report →</a></p>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">This report documents our conformance with WCAG 2.1 Level AAA standards, including detailed testing methodology, criteria compliance, and accessibility features.</p>
+</section>
+
+<section>
     <h2>Provide Feedback</h2>
     <p>We welcome feedback about the accessibility of this website. If you encounter any accessibility barriers or have suggestions for improvement, please contact us:</p>
     <p><strong>Email:</strong> <a href="mailto:accessibility@a11yscan.xyz">accessibility@a11yscan.xyz</a></p>
@@ -120,7 +127,7 @@ $pageContent = <<<'HTML'
 
 <section>
     <h2>Last Updated</h2>
-    <p>This accessibility statement was last updated on October 23, 2025. We update this statement regularly as we implement new accessibility features and improvements.</p>
+    <p>This accessibility statement was last updated on October 26, 2025. We update this statement regularly as we implement new accessibility features and improvements.</p>
 </section>
 
 <section style="margin-top: 3rem;">
