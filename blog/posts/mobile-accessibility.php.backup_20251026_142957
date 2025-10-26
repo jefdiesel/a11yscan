@@ -218,7 +218,7 @@ $pageContent = <<<'HTML'
     <section id="implementation-guide">
         <h2>How to Fix Mobile Accessibility: Implementation Guide</h2>
         <p><strong>1. Increase Touch Target Sizes</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Bad: 18px button on mobile */
 .btn { width: 18px; height: 18px; }
 
@@ -228,7 +228,7 @@ $pageContent = <<<'HTML'
 }
         </pre>
         <p><strong>2. Make Zoom Work</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Bad: Disables zoom (accessibility violation) */
 &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt;
 
@@ -236,7 +236,7 @@ $pageContent = <<<'HTML'
 &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"&gt;
         </pre>
         <p><strong>3. Semantic HTML for Screen Readers</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Bad: Screen reader can't tell this is a button */
 &lt;div onclick="submit()"&gt;Submit&lt;/div&gt;
 
@@ -244,7 +244,7 @@ $pageContent = <<<'HTML'
 &lt;button type="submit"&gt;Submit&lt;/button&gt;
         </pre>
         <p><strong>4. Label All Form Fields</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 /* Bad: No label */
 &lt;input type="email" placeholder="Email"&gt;
 
@@ -253,7 +253,7 @@ $pageContent = <<<'HTML'
 &lt;input type="email" id="email" placeholder="name@example.com"&gt;
         </pre>
         <p><strong>5. Add Captions to Video</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
+        <pre style="background: var(--bg-secondary); padding: 1rem; border-radius: 4px; overflow-x: auto;" style="overflow: auto;" tabindex="0" role="region" aria-label="Code example">
 &lt;video controls&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   &lt;track kind="captions" src="captions.vtt" srclang="en" label="English"&gt;
