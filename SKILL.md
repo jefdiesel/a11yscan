@@ -28,13 +28,13 @@ All A11yscan pages must meet WCAG 2.1 Level AAA standards. Key requirements:
 - **Color Contrast**: 7:1 for normal text, 4.5:1 for large text (Level AAA)
 - **Text Resize**: Support up to 200% zoom without loss of functionality
 - **Alternative Text**: All images must have descriptive alt text
-- **Heading Structure**: Logical heading hierarchy (h1 → h2 → h3)
+- **Heading Structure**: Logical heading hierarchy (h1 â†’ h2 â†’ h3)
 
 ### Operable
 - **Keyboard Navigation**: All interactive elements accessible via keyboard
 - **Focus Indicators**: 3px solid outline with 2px offset (visible on all elements)
 - **Skip Links**: "Skip to main content" link at page top
-- **Touch Targets**: Minimum 44×44px for all interactive elements
+- **Touch Targets**: Minimum 44Ã—44px for all interactive elements
 
 ### Understandable
 - **Language Declaration**: `lang="en"` on html element
@@ -262,7 +262,7 @@ The blog listing page displays article cards organized by topic category. Each c
     <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
     <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Article Title</h3>
     <p>Brief excerpt or description of what the article covers.</p>
-    <a href="https://a11yscan.xyz/blog/posts/article-filename.php" class="btn btn-primary" style="margin-top: 1rem;">Custom CTA Button Text →</a>
+    <a href="https://a11yscan.xyz/blog/posts/article-filename.php" class="btn btn-primary" style="margin-top: 1rem;">Custom CTA Button Text â†’</a>
 </article>
 ```
 
@@ -273,63 +273,63 @@ The blog listing page displays article cards organized by topic category. Each c
 - **Topic-specific**: Reference what the article covers
 - **Value-driven**: Tell users what they'll get
 - **Concise**: 2-5 words maximum
-- **Includes arrow**: End with ` →` for visual direction
+- **Includes arrow**: End with ` â†’` for visual direction
 
 **Examples of Good Button Text:**
-- `Learn Your Rights →` (for user rights article)
-- `View 2024 Data →` (for lawsuit trends)
-- `Get Screen Reader Guide →` (for blind users design)
-- `Test Your Contrast →` (for color contrast guide)
-- `Check Your Risk →` (for liability/risk articles)
-- `Master WCAG Levels →` (for WCAG compliance)
-- `Find An Attorney →` (for legal support)
-- `Fix Mobile Issues →` (for mobile accessibility)
+- `Learn Your Rights â†’` (for user rights article)
+- `View 2024 Data â†’` (for lawsuit trends)
+- `Get Screen Reader Guide â†’` (for blind users design)
+- `Test Your Contrast â†’` (for color contrast guide)
+- `Check Your Risk â†’` (for liability/risk articles)
+- `Master WCAG Levels â†’` (for WCAG compliance)
+- `Find An Attorney â†’` (for legal support)
+- `Fix Mobile Issues â†’` (for mobile accessibility)
 
 **Examples of Bad Button Text:**
-- ❌ `Read More` (generic, no value)
-- ❌ `Click Here` (not descriptive)
-- ❌ `Learn More About This Topic` (too long)
-- ❌ `Article` (not actionable)
+- âŒ `Read More` (generic, no value)
+- âŒ `Click Here` (not descriptive)
+- âŒ `Learn More About This Topic` (too long)
+- âŒ `Article` (not actionable)
 
 ### Customizing Button Text by Topic Category
 
 **Litigation & Legal Risk:**
 - Focus on risk assessment, data, legal protection, and action
 - Examples: 
-  - `View 2024 Data →`
-  - `See 2025 Trends →`
-  - `Check Your Risk →`
-  - `Get Defense Guide →`
-  - `Assess Your Risk →`
-  - `Learn Your Rights →`
-  - `Find An Attorney →`
-  - `Check Your State →`
-  - `Understand The Gap →`
-  - `Review Settlements →`
+  - `View 2024 Data â†’`
+  - `See 2025 Trends â†’`
+  - `Check Your Risk â†’`
+  - `Get Defense Guide â†’`
+  - `Assess Your Risk â†’`
+  - `Learn Your Rights â†’`
+  - `Find An Attorney â†’`
+  - `Check Your State â†’`
+  - `Understand The Gap â†’`
+  - `Review Settlements â†’`
 
 **User Accessibility Personas:**
 - Focus on solutions, understanding user needs, and implementation
 - Examples: 
-  - `Get Screen Reader Guide →`
-  - `View Visual Solutions →`
-  - `See Audio Solutions →`
-  - `Learn Keyboard Access →`
-  - `Get Clarity Tips →`
-  - `View ND Patterns →` (neurodivergent)
+  - `Get Screen Reader Guide â†’`
+  - `View Visual Solutions â†’`
+  - `See Audio Solutions â†’`
+  - `Learn Keyboard Access â†’`
+  - `Get Clarity Tips â†’`
+  - `View ND Patterns â†’` (neurodivergent)
 
 **Fundamentals & Best Practices:**
 - Focus on skill-building, testing, and practical implementation
 - Examples: 
-  - `Master WCAG Levels →`
-  - `Test Your Contrast →`
-  - `Write Better Alt Text →`
-  - `Fix Mobile Issues →`
-  - `Learn ADA Rules →`
-  - `Try Navigation Tips →`
-  - `See HTML Examples →`
-  - `Boost Your SEO →`
-  - `Calculate Your Costs →`
-  - `Get Response Guide →`
+  - `Master WCAG Levels â†’`
+  - `Test Your Contrast â†’`
+  - `Write Better Alt Text â†’`
+  - `Fix Mobile Issues â†’`
+  - `Learn ADA Rules â†’`
+  - `Try Navigation Tips â†’`
+  - `See HTML Examples â†’`
+  - `Boost Your SEO â†’`
+  - `Calculate Your Costs â†’`
+  - `Get Response Guide â†’`
 
 ### How to Update Blog Card Buttons
 
@@ -340,7 +340,7 @@ When adding a new article to `blog/index.php`:
    - Identify the main takeaway or action
    - Use an action verb that matches the content
    - Keep it 2-5 words
-   - Add the arrow: ` →`
+   - Add the arrow: ` â†’`
 3. **Match the tone to the category**:
    - Legal = risk/protection focused
    - Personas = solution focused
@@ -350,25 +350,42 @@ When adding a new article to `blog/index.php`:
 
 Article: "Color Contrast: The Foundation of Visual Accessibility"
 - Excerpt: "Discover why color contrast matters, how to calculate it, and tools to ensure your design meets WCAG standards."
-- Button text: `Test Your Contrast →`
+- Button text: `Test Your Contrast â†’`
 - Reasoning: The article teaches testing, so "Test" is the action verb
 
 Article: "2024 Accessibility Lawsuit Trends: What the Data Shows"
 - Excerpt: "Analysis of 4,000+ digital accessibility lawsuits filed in 2024, settlement amounts, defendant profiles, and what this means for your organization."
-- Button text: `View 2024 Data →`
+- Button text: `View 2024 Data â†’`
 - Reasoning: The article presents data, so "View" + year specificity works
 
 ### Blog Post Structure (Individual Posts)
 
-Every blog post should follow this structure:
+⚠️ **CRITICAL: Header Positioning Rule**
 
-1. **Post Header** (time + h1)
-2. **Introduction Section** (context + preview)
-3. **3-5 Main Content Sections** (h2 headings with subsections)
-4. **Legal Disclaimer** (mandatory)
-5. **Customized CTA** (topic-specific)
+Every blog post must follow this exact structure:
 
-### Example Blog Post Structure
+1. **Article wrapper** with `class="blog-post"`
+2. **First section** with `id="intro"` containing:
+   - `<time>` element with date (with inline styles)
+   - `<h1>` with title (with inline styles)
+   - `<h2>` with introduction heading
+   - Introduction content
+3. **Additional sections** (id, h2 headings, content)
+4. **Legal Disclaimer section** (mandatory)
+5. **Customized CTA section** (mandatory)
+
+**IMPORTANT: Header (date + title) MUST be INSIDE the first section, NOT in a separate `<header>` element.**
+
+### Why Header Positioning Matters
+
+Using a separate `<header class="post-header">` element **breaks the layout**:
+- Template CSS for `.post-header` causes positioning conflicts
+- Header becomes disconnected from scrolling content
+- Screen reader users lose semantic structure
+- Keyboard navigation becomes confusing
+- Header may appear "stuck" or misaligned
+
+### ✅ CORRECT Blog Post Structure
 
 ```php
 <?php
@@ -378,12 +395,12 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-01-15">January 15, 2025</time>
-        <h1>Main Blog Post Title</h1>
-    </header>
-
-    <section id="introduction">
+    <!-- CORRECT: Header INSIDE first section with inline styles -->
+    <section id="intro">
+        <time datetime="2025-01-15" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 15, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Main Blog Post Title</h1>
+        
+        <h2>Introduction</h2>
         <p>Opening paragraph that hooks the reader and establishes context.</p>
         <p>Second paragraph that previews what the article covers.</p>
     </section>
@@ -396,7 +413,12 @@ $pageContent = <<<'HTML'
         <p>Subsection content.</p>
     </section>
 
-    <!-- More sections... -->
+    <section id="another-section">
+        <h2>Another Section</h2>
+        <p>More content here.</p>
+    </section>
+
+    <!-- More sections as needed... -->
 
     <!-- LEGAL DISCLAIMER (mandatory) -->
     <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
@@ -406,7 +428,7 @@ $pageContent = <<<'HTML'
         </div>
     </section>
 
-    <!-- CUSTOMIZED CTA -->
+    <!-- CUSTOMIZED CTA (mandatory) -->
     <section style="margin-top: 3rem;">
         <div class="highlight">
             <h2 style="margin-top: 0;">Topic-Specific CTA Heading</h2>
@@ -417,9 +439,97 @@ $pageContent = <<<'HTML'
 </article>
 HTML;
 
-include __DIR__ . '/../../template.php';
+include 'template.php';
 ?>
 ```
+
+### ❌ INCORRECT Blog Post Structure (DO NOT USE)
+
+```php
+<!-- WRONG: Separate <header> element outside sections -->
+<article class="blog-post">
+    <header class="post-header">
+        <time datetime="2025-01-15">January 15, 2025</time>
+        <h1>Main Blog Post Title</h1>
+    </header>
+
+    <section id="intro">
+        <p>Content here...</p>
+    </section>
+</article>
+```
+
+**Problems with separate header:**
+- ❌ CSS `.post-header` class conflicts with template
+- ❌ Header disconnected from section structure
+- ❌ Breaks semantic HTML hierarchy
+- ❌ Screen readers announce elements out of order
+- ❌ Positioning issues on scroll
+- ❌ Keyboard navigation becomes unclear
+
+### Blog Post Header Inline Styles Reference
+
+Use these exact styles for date and h1 elements:
+
+**For `<time>` element:**
+```html
+<time datetime="2025-01-15" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 15, 2025</time>
+```
+
+**For `<h1>` element:**
+```html
+<h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">Article Title</h1>
+```
+
+These styles ensure:
+- Proper sizing and spacing
+- Correct color contrast
+- Alignment with first section content
+- Smooth scrolling behavior
+
+### Blog Post Section Structure Rules
+
+Each section must have:
+1. **Unique `id` attribute** - For keyboard navigation and anchor links
+2. **`<h2>` heading** - Section title (NOT `<h1>` or `<h3>`)
+3. **Content paragraphs** - Can include `<h3>` subheadings
+4. **Semantic markup** - Use `<ul>`, `<ol>`, `<p>` appropriately
+
+**Example section:**
+```php
+<section id="main-content">
+    <h2>Section Heading</h2>
+    
+    <p>First paragraph of content.</p>
+    
+    <h3>Subsection</h3>
+    <p>More content under subsection.</p>
+    
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+</section>
+```
+
+### Keyboard Navigation with Sections
+
+The template automatically makes blog post sections keyboard-tabbable:
+- Each `<section id="...">` is focusable via Tab key
+- Blue outline appears when focused
+- Smooth scroll positions section at top
+- Header scrolls naturally with content (not sticky)
+
+**This is why sections need:**
+- ✅ `id` attribute for focus management
+- ✅ `<h2>` heading for screen readers
+- ✅ Content inside section (not separate)
+
+**This is why separate headers fail:**
+- ❌ Disconnects date/title from section flow
+- ❌ Breaks keyboard navigation
+- ❌ Confuses screen reader users
+- ❌ Creates CSS positioning conflicts
 
 ### Content Guidelines
 
@@ -497,14 +607,14 @@ include __DIR__ . '/../../template.php';
    - "Commonly accepted standards..."
 
 2. **Avoid absolute statements:**
-   - ❌ "The ADA requires WCAG 2.1 AA compliance"
-   - ✅ "WCAG 2.1 Level AA is widely recognized as a benchmark for accessibility"
+   - âŒ "The ADA requires WCAG 2.1 AA compliance"
+   - âœ… "WCAG 2.1 Level AA is widely recognized as a benchmark for accessibility"
    
-   - ❌ "You will be sued if you don't comply"
-   - ✅ "Inaccessible websites face increased litigation risk"
+   - âŒ "You will be sued if you don't comply"
+   - âœ… "Inaccessible websites face increased litigation risk"
    
-   - ❌ "In the case of Smith v. Company (2024)..."
-   - ✅ "Recent litigation trends show..."
+   - âŒ "In the case of Smith v. Company (2024)..."
+   - âœ… "Recent litigation trends show..."
 
 3. **Focus on practical benefits:**
    - Emphasize user experience improvements
@@ -696,20 +806,20 @@ Each blog post CTA includes:
 
 ```
 /
-├── index.php              # Homepage
-├── template.php           # Master template (all pages include this)
-├── contact-handler.php    # Form handler
-├── logo.svg               # Site logo
-├── sitemap.xml            # XML sitemap
-├── robots.txt             # Search engine rules
-├── blog/
-│   ├── index.php          # Blog listing
-│   └── posts/
-│       ├── post-name-1.php
-│       ├── post-name-2.php
-│       └── ... (individual blog posts)
-├── accessibility-statement.php
-└── README.md             # Project documentation
+â”œâ”€â”€ index.php              # Homepage
+â”œâ”€â”€ template.php           # Master template (all pages include this)
+â”œâ”€â”€ contact-handler.php    # Form handler
+â”œâ”€â”€ logo.svg               # Site logo
+â”œâ”€â”€ sitemap.xml            # XML sitemap
+â”œâ”€â”€ robots.txt             # Search engine rules
+â”œâ”€â”€ blog/
+â”‚   â”œâ”€â”€ index.php          # Blog listing
+â”‚   â””â”€â”€ posts/
+â”‚       â”œâ”€â”€ post-name-1.php
+â”‚       â”œâ”€â”€ post-name-2.php
+â”‚       â””â”€â”€ ... (individual blog posts)
+â”œâ”€â”€ accessibility-statement.php
+â””â”€â”€ README.md             # Project documentation
 ```
 
 ### Key Files

@@ -5,12 +5,11 @@ $currentPage = 'blog';
 
 $pageContent = <<<'HTML'
 <article class="blog-post">
-    <header class="post-header">
-        <time datetime="2025-10-26">October 26, 2025</time>
-        <h1>European Accessibility Act (EAA): Understanding EU Digital Accessibility Requirements</h1>
-    </header>
-
     <section id="intro">
+        <time datetime="2025-10-26" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">October 26, 2025</time>
+        <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">European Accessibility Act (EAA): Understanding EU Digital Accessibility Requirements</h1>
+        
+        <h2>Introduction</h2>
         <p>The European Accessibility Act (EAA) represents the most comprehensive accessibility legislation in the world. Adopted in 2019 and enforced starting June 28, 2025, the EAA mandates that digital products and services sold or provided in the EU meet strict accessibility standards.</p>
         <p>Unlike voluntary guidelines, the EAA is legally binding across all 27 EU member states plus Norway, Iceland, and Liechtenstein. Organizations that fail to comply face significant fines and market restrictions.</p>
     </section>
@@ -178,22 +177,24 @@ $pageContent = <<<'HTML'
             <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
         </ul>
     </section>
-
-    <section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
-        <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
-            <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
-        </div>
-    </section>
-
-    <section style="margin-top: 3rem;">
-        <div class="highlight">
-            <h2 style="margin-top: 0;">EAA Compliance Audit</h2>
-            <p>Ensure your digital products meet June 28, 2025 deadline and EN 301 549 requirements.</p>
-            <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'European Accessibility Act Compliance')">Get Audit Report</button>
-        </div>
-    </section>
 </article>
+
+<!-- LEGAL DISCLAIMER (mandatory) -->
+<section style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+    <div style="background: var(--bg-tertiary); padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent-primary);">
+        <h3 style="margin-top: 0; font-size: 1.1rem;">Legal Disclaimer</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0;"><strong>A11yscan is not a law firm and does not provide legal advice.</strong> We operate under best practices based on WCAG Guidelines, ADA requirements, and applicable jurisdictions. Courts don't always agree on terms and expectations for web accessibility, and legal standards can vary by jurisdiction. However, an accessible website works better for all users regardless of legal requirements. For specific legal guidance, consult with a qualified attorney specializing in accessibility law.</p>
+    </div>
+</section>
+
+<!-- CUSTOMIZED CTA -->
+<section style="margin-top: 3rem;">
+    <div class="highlight">
+        <h2 style="margin-top: 0;">EAA Compliance Audit</h2>
+        <p>Ensure your digital products meet June 28, 2025 deadline and EN 301 549 requirements.</p>
+        <button class="btn btn-primary" onclick="openPricingForm('deep-audit', 'European Accessibility Act Compliance')">Get Audit Report</button>
+    </div>
+</section>
 HTML;
 
 include 'template.php';
