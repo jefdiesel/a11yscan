@@ -7,7 +7,7 @@ $pageContent = <<<'HTML'
 <article class="blog-post">
     <!-- CORRECT: Header INSIDE first section with inline styles -->
     <section id="intro">
-        <time datetime="2025-01-20" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 20, 2025</time>
+        <time datetime="2025-10-27" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 20, 2025</time>
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">The CEO's Guide to ADA Compliance</h1>
         
         <h2>Why Digital Accessibility Is Now a Board-Level Priority</h2>
