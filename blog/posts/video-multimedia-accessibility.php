@@ -177,5 +177,5 @@ $pageContent = <<<'HTML'
 </section>
 HTML;
 
-include '../template.php';
+include __DIR__ . '/../../template.php';
 ?>
