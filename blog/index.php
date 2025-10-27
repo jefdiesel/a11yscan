@@ -99,6 +99,13 @@ $pageContent = <<<'HTML'
 <section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Litigation & Legal Risk (2024-2025)</h2>
     <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-ceo-guide">
+            <time datetime="2025-01-20" class="blog-date">Jan 20, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">The CEO's Guide to ADA Compliance</h3>
+            <p>Business leader's guide to digital accessibility compliance. Understand ADA requirements, litigation trends, business impact, and practical next steps for enterprise.</p>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-ceo-guide.php" class="btn btn-primary" style="margin-top: 1rem;">Assess Your Risk →</a>
+        </article>
+
         <article class="card blog-card" tabindex="0" id="article-user-rights-accessibility">
             <time datetime="2025-10-24" class="blog-date">Oct 24, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Understanding Your Rights as a User Requiring Web Accessibility Features</h3>
@@ -242,6 +249,13 @@ $pageContent = <<<'HTML'
 <section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Fundamentals & Best Practices</h2>
     <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-wcag-checklist">
+            <time datetime="2025-01-22" class="blog-date">Jan 22, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">The 10-Point WCAG Pre-Launch Checklist</h3>
+            <p>Essential accessibility checklist before launching your website. 10 critical WCAG 2.1 requirements to verify keyboard access, contrast, structure, and more.</p>
+            <a href="https://a11yscan.xyz/blog/posts/blog-post-wcag-checklist.php" class="btn btn-primary" style="margin-top: 1rem;">Get Checklist →</a>
+        </article>
+
         <article class="card blog-card" tabindex="0" id="article-accessibility-statements">
             <time datetime="2025-01-22" class="blog-date">Jan 22, 2025</time>
             <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Accessibility Statements: Legal Protection & User Trust</h3>
