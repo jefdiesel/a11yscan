@@ -10,6 +10,32 @@ $pageContent = <<<'HTML'
 </section>
 
 <section>
+    <h2 style="text-align: center; margin-bottom: 2rem;">Critical Content Accessibility: Video, PDF & Data</h2>
+    <div class="grid">
+        <article class="card blog-card" tabindex="0" id="article-video-multimedia-accessibility">
+            <time datetime="2025-10-27" class="blog-date">Oct 27, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Video & Multimedia Accessibility: Captions, Descriptions, Transcripts</h3>
+            <p>Master video accessibility: captions, audio descriptions, transcripts, keyboard controls, sign language. 80% of web content is video—make it accessible.</p>
+            <a href="https://a11yscan.xyz/blog/posts/video-multimedia-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Master Video Access →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-pdf-accessibility">
+            <time datetime="2025-10-27" class="blog-date">Oct 27, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">PDF Accessibility: Tagging, Forms, OCR & Legal Compliance</h3>
+            <p>PDFs are lawsuit magnets. Learn proper tagging, form accessibility, OCR, searchability, and why accessible PDFs matter legally and for users.</p>
+            <a href="https://a11yscan.xyz/blog/posts/pdf-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Fix PDF Access →</a>
+        </article>
+
+        <article class="card blog-card" tabindex="0" id="article-maps-data-visualizations">
+            <time datetime="2025-10-27" class="blog-date">Oct 27, 2025</time>
+            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Maps & Data Visualizations: Charts, SVG, Colorblindness</h3>
+            <p>Make maps and charts accessible: keyboard navigation, data tables, colorblind-friendly design, ARIA descriptions, and geographic alternatives.</p>
+            <a href="https://a11yscan.xyz/blog/posts/maps-data-visualizations.php" class="btn btn-primary" style="margin-top: 1rem;">Make Data Accessible →</a>
+        </article>
+    </div>
+</section>
+
+<section>
     <h2 style="text-align: center; margin-bottom: 2rem;">Global Accessibility Laws (2024-2025)</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-ada-title-iii">
