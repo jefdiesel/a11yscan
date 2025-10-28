@@ -9,7 +9,18 @@ $pageContent = <<<'HTML'
     <p>Articles, tips, and best practices for building accessible websites.</p>
 </section>
 
-<section>
+<section style="padding: 1.5rem 0; border-bottom: 2px solid var(--border);">
+    <nav style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+        <a href="#critical-content" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">Critical Content</a>
+        <a href="#global-laws" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">Global Laws</a>
+        <a href="#legal-compliance" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">Legal & Compliance</a>
+        <a href="#litigation-risk" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">Litigation & Risk</a>
+        <a href="#user-needs" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">User Needs</a>
+        <a href="#fundamentals" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); text-decoration: none; border-radius: 4px; font-weight: 500; transition: all 0.2s;" class="section-tab">Fundamentals</a>
+    </nav>
+</section>
+
+<section id="critical-content">
     <h2 style="text-align: center; margin-bottom: 2rem;">Critical Content Accessibility: Video, PDF & Data</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-video-multimedia-accessibility">
@@ -35,7 +46,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<section>
+<section id="global-laws">
     <h2 style="text-align: center; margin-bottom: 2rem;">Global Accessibility Laws (2024-2025)</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-ada-title-iii">
@@ -82,7 +93,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<section>
+<section id="legal-compliance">
     <h2 style="text-align: center; margin-bottom: 2rem;">Legal & Compliance: Forms, Focus, Audits & Strategy</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-forms-input-accessibility">
@@ -122,7 +133,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<section>
+<section id="litigation-risk">
     <h2 style="text-align: center; margin-bottom: 2rem;">Litigation & Legal Risk (2024-2025)</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-ceo-guide">
@@ -225,7 +236,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<section>
+<section id="user-needs">
     <h2 style="text-align: center; margin-bottom: 2rem;">Designing for User Accessibility Needs</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-blind-users">
@@ -272,7 +283,7 @@ $pageContent = <<<'HTML'
     </div>
 </section>
 
-<section>
+<section id="fundamentals">
     <h2 style="text-align: center; margin-bottom: 2rem;">Fundamentals & Best Practices</h2>
     <div class="grid">
         <article class="card blog-card" tabindex="0" id="article-wcag-checklist">
@@ -429,6 +440,22 @@ $pageContent = <<<'HTML'
 </section>
 
 <style>
+.section-tab {
+    transition: all 0.2s ease !important;
+}
+
+.section-tab:hover {
+    background: var(--accent-primary) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.section-tab:focus {
+    outline: 3px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
 .blog-date {
     font-size: 0.85rem;
     color: var(--text-secondary);
