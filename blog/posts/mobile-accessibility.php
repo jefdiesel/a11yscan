@@ -218,47 +218,47 @@ $pageContent = <<<'HTML'
     <section id="implementation-guide">
         <h2>How to Fix Mobile Accessibility: Implementation Guide</h2>
         <p><strong>1. Increase Touch Target Sizes</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Bad: 18px button on mobile */
+        <div style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for touch target sizes">
+<pre>/* Bad: 18px button on mobile */
 .btn { width: 18px; height: 18px; }
 
 /* Good: 48px button on mobile */
 @media (max-width: 768px) {
   .btn { min-width: 48px; min-height: 48px; }
-}
-        </pre>
+}</pre>
+        </div>
         <p><strong>2. Make Zoom Work</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Bad: Disables zoom (accessibility violation) */
+        <div style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for zoom functionality">
+<pre>/* Bad: Disables zoom (accessibility violation) */
 &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt;
 
 /* Good: Allows user zoom */
-&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"&gt;
-        </pre>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"&gt;</pre>
+        </div>
         <p><strong>3. Semantic HTML for Screen Readers</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Bad: Screen reader can't tell this is a button */
+        <div style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for semantic HTML">
+<pre>/* Bad: Screen reader can't tell this is a button */
 &lt;div onclick="submit()"&gt;Submit&lt;/div&gt;
 
 /* Good: Screen reader announces as button */
-&lt;button type="submit"&gt;Submit&lt;/button&gt;
-        </pre>
+&lt;button type="submit"&gt;Submit&lt;/button&gt;</pre>
+        </div>
         <p><strong>4. Label All Form Fields</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Bad: No label */
+        <div style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for form labels">
+<pre>/* Bad: No label */
 &lt;input type="email" placeholder="Email"&gt;
 
 /* Good: Associated label */
 &lt;label for="email"&gt;Email&lt;/label&gt;
-&lt;input type="email" id="email" placeholder="name@example.com"&gt;
-        </pre>
+&lt;input type="email" id="email" placeholder="name@example.com"&gt;</pre>
+        </div>
         <p><strong>5. Add Captions to Video</strong></p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;video controls&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for video captions">
+<pre>&lt;video controls&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   &lt;track kind="captions" src="captions.vtt" srclang="en" label="English"&gt;
-&lt;/video&gt;
-        </pre>
+&lt;/video&gt;</pre>
+        </div>
     </section>
 
     <section id="mobile-checklist">
@@ -306,9 +306,6 @@ $pageContent = <<<'HTML'
             <li><a href="https://www.a11yproject.com/">The A11y Project</a></li>
         </ul>
     </section>
-
-    <!-- LEGAL DISCLAIMER (mandatory) -->
-    
 </article>
 
 <section style="margin-top: 3rem;">

@@ -58,8 +58,8 @@ $pageContent = <<<'HTML'
         </ul>
 
         <h3>Example Scope Document</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Audit Scope - Acme Corp Website
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for audit scope">
+<pre>Audit Scope - Acme Corp Website
 Standard: WCAG 2.1 Level AA
 Pages Tested: 25 representative pages
   - Homepage
@@ -77,8 +77,8 @@ Testing Methodology:
   - Browsers: Chrome, Firefox, Safari
   - Devices: Desktop, Tablet, Mobile
   
-Testing Dates: October 1-15, 2025
-        </pre>
+Testing Dates: October 1-15, 2025</pre>
+        </div>
 
         <h3>2. Automated Testing</h3>
         <p>Use multiple automated tools to catch obvious violations:</p>
@@ -191,7 +191,7 @@ Testing Dates: October 1-15, 2025
         <h2>4. Systematic Testing Process</h2>
 
         <h3>For Each Page Tested:</h3>
-        <ol style="list-style: decimal; padding-left: 1.5rem;">
+        <ol>
             <li>Run automated tools (axe, WAVE, Lighthouse)</li>
             <li>Manually inspect page structure</li>
             <li>Test with keyboard (Tab through entire page)</li>
@@ -204,8 +204,8 @@ Testing Dates: October 1-15, 2025
         </ol>
 
         <h3>Example Testing Report</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Page: Homepage
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for testing report">
+<pre>Page: Homepage
 Date: October 5, 2025
 Tester: [Name]
 
@@ -233,8 +233,8 @@ Manual Testing:
   - All text meets 7:1 ratio
 
 Findings:
-[List of violations and recommendations]
-        </pre>
+[List of violations and recommendations]</pre>
+        </div>
     </section>
 
     <section id="severity-levels">
@@ -370,8 +370,8 @@ Findings:
         </ul>
 
         <h3>Example Finding Documentation</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Finding #47
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for finding documentation">
+<pre>Finding #47
 Page: https://acme.com/products/widgets
 Element: Image in hero section
 Criterion: 1.1.1 Non-text Content (Level A)
@@ -397,8 +397,8 @@ Steps to Reproduce:
 Screen Reader Testing:
 - NVDA: NOT ANNOUNCED (FAIL)
 - JAWS: NOT ANNOUNCED (FAIL)
-- VoiceOver: NOT ANNOUNCED (FAIL)
-        </pre>
+- VoiceOver: NOT ANNOUNCED (FAIL)</pre>
+        </div>
     </section>
 
     <section id="false-positives">
@@ -407,32 +407,32 @@ Screen Reader Testing:
 
         <h3>True Positive</h3>
         <p>Real violation that needs fixing</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Form input without label = True Positive
-Status: FIX REQUIRED
-        </pre>
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for true positive">
+<pre>Form input without label = True Positive
+Status: FIX REQUIRED</pre>
+        </div>
 
         <h3>False Positive</h3>
         <p>Tool reports an issue, but it's actually compliant</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-axe reports low contrast on:
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for false positive">
+<pre>axe reports low contrast on:
 &lt;div style="color: #666; background: white"&gt;
   [Decorative design element]
 &lt;/div&gt;
 
 Manual Review: FALSE POSITIVE
 Reason: Element is decorative (aria-hidden), not text
-Status: NO ACTION NEEDED
-        </pre>
+Status: NO ACTION NEEDED</pre>
+        </div>
 
         <h3>Context-Dependent</h3>
         <p>Issue requires manual review to confirm</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Tool detects form has no visible label, but CSS 
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for context-dependent issue">
+<pre>Tool detects form has no visible label, but CSS 
 hides label off-screen for design reasons.
 Status: REVIEW CONTEXT
-Result: If visually hidden for design, add aria-label instead
-        </pre>
+Result: If visually hidden for design, add aria-label instead</pre>
+        </div>
     </section>
 
     <section id="remediation-plan">
@@ -440,8 +440,8 @@ Result: If visually hidden for design, add aria-label instead
         <p>A proper audit includes a remediation roadmap:</p>
 
         <h3>Remediation Priority Matrix</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Critical Issues: 12 violations
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for remediation plan">
+<pre>Critical Issues: 12 violations
 Timeline: Fix within 2 weeks
 Owner: Development lead
 Examples:
@@ -464,8 +464,8 @@ Owner: Content team + Development
 
 Low Priority: 5 violations
 Timeline: Fix within 12 weeks
-Owner: Backlog for future release
-        </pre>
+Owner: Backlog for future release</pre>
+        </div>
     </section>
 
     <section id="takeaways">

@@ -92,30 +92,30 @@ $pageContent = <<<'HTML'
         <p>A VPAT lists all WCAG 2.1 success criteria. Here's how to read them:</p>
 
         <h3>Example Criterion: 1.1.1 Non-text Content (Level A)</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Criterion 1.1.1 Non-text Content (Level A)
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for Non-text Content criterion">
+<pre>Criterion 1.1.1 Non-text Content (Level A)
 Status: Supports
 Remarks: All images have alt text. Decorative images have 
-empty alt attributes. Icons have aria-labels.
-        </pre>
+empty alt attributes. Icons have aria-labels.</pre>
+        </div>
 
         <h3>Example Criterion: 2.4.3 Focus Order (Level A)</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Criterion 2.4.3 Focus Order (Level A)
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for Focus Order criterion">
+<pre>Criterion 2.4.3 Focus Order (Level A)
 Status: Partially Supports
 Remarks: Tab order is logical on most pages. Contact form 
 has focus trap issue (Tab key gets stuck). Fix planned for 
-Q4 2025.
-        </pre>
+Q4 2025.</pre>
+        </div>
 
         <h3>Example Criterion: 2.1.2 No Keyboard Trap (Level A)</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Criterion 2.1.2 No Keyboard Trap (Level A)
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for No Keyboard Trap criterion">
+<pre>Criterion 2.1.2 No Keyboard Trap (Level A)
 Status: Does Not Support
 Remarks: Autocomplete dropdown can trap keyboard focus. 
 Escape key does not close dropdown. Issue affects search 
-functionality on all pages. Remediation timeline: 30 days.
-        </pre>
+functionality on all pages. Remediation timeline: 30 days.</pre>
+        </div>
 
         <h3>Reading the Levels</h3>
         <ul>
@@ -149,16 +149,16 @@ functionality on all pages. Remediation timeline: 30 days.
         </ul>
 
         <h3>Step 3: Document Each Criterion</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-For each WCAG criterion:
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for documenting WCAG criteria">
+<pre>For each WCAG criterion:
 
 Criterion: [1.1.1 Non-text Content]
 Status: [Supports / Partially Supports / Does Not Support]
 Testing Method: [Automated + Manual Inspection]
 Remarks: [Detailed findings]
 Remediation: [If applicable]
-Timeline: [If applicable]
-        </pre>
+Timeline: [If applicable]</pre>
+        </div>
 
         <h3>Step 4: Identify Non-Compliant Items</h3>
         <p>For each failure:</p>
@@ -171,8 +171,8 @@ Timeline: [If applicable]
         </ul>
 
         <h3>Step 5: Create Remediation Plan</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-Issue: Form labels not properly associated with inputs
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for remediation plan">
+<pre>Issue: Form labels not properly associated with inputs
 Criterion: 1.3.1 Info and Relationships (Level A)
 Affected Pages: All pages with forms
 Severity: High (impacts all users)
@@ -180,8 +180,8 @@ Remediation: Add proper label-for associations to all
   form inputs
 Timeline: 14 days from report date
 Assigned To: Development team
-Status: In Progress
-        </pre>
+Status: In Progress</pre>
+        </div>
 
         <h3>Step 6: Get Professional Review</h3>
         <p>For high-stakes compliance, have an accessibility expert review your report:</p>

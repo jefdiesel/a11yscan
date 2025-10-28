@@ -49,17 +49,17 @@ $pageContent = <<<'HTML'
 
         <h3>The Natural Tab Order (Correct)</h3>
         <p>In most cases, the natural source code order works perfectly:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;!-- Source order = Tab order --&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for natural tab order">
+<pre>&lt;!-- Source order = Tab order --&gt;
 &lt;button&gt;First&lt;/button&gt;          &lt;!-- Tab 1 --&gt;
 &lt;button&gt;Second&lt;/button&gt;         &lt;!-- Tab 2 --&gt;
-&lt;button&gt;Third&lt;/button&gt;          &lt;!-- Tab 3 --&gt;
-        </pre>
+&lt;button&gt;Third&lt;/button&gt;          &lt;!-- Tab 3 --&gt;</pre>
+        </div>
 
         <h3>When to Use tabindex (Rarely)</h3>
         <p>Only use <code>tabindex</code> when the visual layout doesn't match the logical flow:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;!-- 3-column layout: left, center, right --&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for using tabindex">
+<pre>&lt;!-- 3-column layout: left, center, right --&gt;
 &lt;aside&gt;
   &lt;nav tabindex="0"&gt;...&lt;/nav&gt;  &lt;!-- Tab 1: Sidebar --&gt;
 &lt;/aside&gt;
@@ -70,25 +70,25 @@ $pageContent = <<<'HTML'
 
 &lt;article&gt;
   &lt;button tabindex="0"&gt;...&lt;/button&gt; &lt;!-- Tab 3: Secondary --&gt;
-&lt;/article&gt;
-        </pre>
+&lt;/article&gt;</pre>
+        </div>
 
         <h3>NEVER Use tabindex > 0 (Litigation Risk)</h3>
         <p>Setting <code>tabindex="1"</code>, <code>tabindex="2"</code>, etc. breaks the natural tab order and confuses keyboard users:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;!-- DO NOT DO THIS --&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example showing incorrect tabindex usage">
+<pre>&lt;!-- DO NOT DO THIS --&gt;
 &lt;button tabindex="3"&gt;First visible (but tabs last)&lt;/button&gt;
 &lt;button tabindex="1"&gt;Third visible (but tabs first)&lt;/button&gt;
 &lt;button tabindex="2"&gt;Second visible (but tabs second)&lt;/button&gt;
 
-&lt;!-- Result: Tab order is 2, 3, 1 (confusing!) --&gt;
-        </pre>
+&lt;!-- Result: Tab order is 2, 3, 1 (confusing!) --&gt;</pre>
+        </div>
 
         <h3>Best Practice</h3>
         <ul>
             <li>✅ Use natural source code order (no <code>tabindex</code> needed)</li>
             <li>✅ Use <code>tabindex="0"</code> only to make static elements focusable</li>
-            <li>❌ Never use <code>tabindex > 0</code></li>
+            <li>❌ Never use <code>tabindex &gt; 0</code></li>
             <li>❌ Never create a custom tab order</li>
         </ul>
     </section>
@@ -98,8 +98,8 @@ $pageContent = <<<'HTML'
         <p>Every interactive element must have a clear, visible focus indicator. This is WCAG 2.1 Level AA requirement (2.4.7: Focus Visible).</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-button, a, input {
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for visible focus indicators">
+<pre>button, a, input {
   outline: 3px solid #2563eb;
   outline-offset: 2px;
 }
@@ -111,8 +111,8 @@ input:focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 2px;
   background: rgba(37, 99, 235, 0.1);
-}
-        </pre>
+}</pre>
+        </div>
 
         <h3>Contrast Requirements</h3>
         <ul>
@@ -123,8 +123,8 @@ input:focus-visible {
         </ul>
 
         <h3>The Wrong Way (Litigation Risk)</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* DO NOT DO THIS */
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example showing incorrect focus indicator approaches">
+<pre>/* DO NOT DO THIS */
 
 /* Removing focus outline entirely */
 button:focus {
@@ -144,8 +144,8 @@ button:focus {
 /* Invisible focus (same color as background) */
 button:focus {
   outline: 3px solid white; /* on white background */
-}
-        </pre>
+}</pre>
+        </div>
     </section>
 
     <section id="focus-traps">
@@ -156,8 +156,8 @@ button:focus {
 
         <h3>1. Modal Dialogs (Overlays)</h3>
         <p>When a modal opens, focus should trap inside the modal, preventing users from accidentally tabbing to background content. But when the modal closes, focus should return to the triggering element.</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Trap focus inside modal */
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for modal focus trap">
+<pre>/* Trap focus inside modal */
 const firstButton = modal.querySelector('button:first-of-type');
 const lastButton = modal.querySelector('button:last-of-type');
 
@@ -171,25 +171,25 @@ modal.addEventListener('keydown', (e) => {
       firstButton.focus();
     }
   }
-});
-        </pre>
+});</pre>
+        </div>
 
         <h3>2. Infinite Scroll (Never Trap)</h3>
         <p>If a page loads infinite content, keyboard users can get stuck tabbing through new content forever. Provide a way to stop tabbing or reach the footer:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;!-- Good: Users can always reach the footer --&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for infinite scroll">
+<pre>&lt;!-- Good: Users can always reach the footer --&gt;
 &lt;main id="infinite-content"&gt;...&lt;/main&gt;
 &lt;footer&gt;...&lt;/footer&gt;  &lt;!-- Tab can reach here --&gt;
 
 &lt;!-- Bad: Focus trapped in infinite loop --&gt;
 &lt;main id="infinite-content"&gt;...&lt;/main&gt;
-&lt;!-- No footer = no escape --&gt;
-        </pre>
+&lt;!-- No footer = no escape --&gt;</pre>
+        </div>
 
         <h3>3. Autocomplete Dropdowns</h3>
         <p>Search fields with autocomplete dropdowns can trap focus if not built properly:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-/* Good: Press Escape to close, then Tab to next element */
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for autocomplete dropdown">
+<pre>/* Good: Press Escape to close, then Tab to next element */
 dropdown.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     dropdown.hidden = true;
@@ -197,8 +197,8 @@ dropdown.addEventListener('keydown', (e) => {
   }
 });
 
-/* Users can Tab past the dropdown */
-        </pre>
+/* Users can Tab past the dropdown */</pre>
+        </div>
 
         <h3>Testing for Focus Traps</h3>
         <ul>
@@ -215,8 +215,8 @@ dropdown.addEventListener('keydown', (e) => {
         <p>Skip links allow keyboard users to jump over repetitive content (navigation, headers) and go directly to main content.</p>
 
         <h3>The Right Way</h3>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-&lt;!-- At top of page (before navigation) --&gt;
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for skip links">
+<pre>&lt;!-- At top of page (before navigation) --&gt;
 &lt;a href="#main-content" class="skip-link"&gt;
   Skip to main content
 &lt;/a&gt;
@@ -238,8 +238,8 @@ dropdown.addEventListener('keydown', (e) => {
 
 .skip-link:focus {
   top: 0;
-}
-        </pre>
+}</pre>
+        </div>
 
         <h3>Why Skip Links Matter</h3>
         <ul>
@@ -256,43 +256,43 @@ dropdown.addEventListener('keydown', (e) => {
 
         <h3>Scenario 1: Page Update</h3>
         <p>When content loads (pagination, filtering), move focus to the new content:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-// After content loads
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for page update focus">
+<pre>// After content loads
 const mainContent = document.getElementById('results');
 mainContent.focus();
 mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 // Announce to screen readers
 mainContent.setAttribute('role', 'status');
-mainContent.textContent = 'Results loaded';
-        </pre>
+mainContent.textContent = 'Results loaded';</pre>
+        </div>
 
         <h3>Scenario 2: Form Validation Errors</h3>
         <p>When a form fails validation, move focus to the first error:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-// Find first error
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for form validation focus">
+<pre>// Find first error
 const firstError = form.querySelector('[aria-invalid="true"]');
 if (firstError) {
   firstError.focus();
   firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-        </pre>
+}</pre>
+        </div>
 
         <h3>Scenario 3: Search Results</h3>
         <p>After search, focus on results count or first result:</p>
-        <pre style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" tabindex="0">
-// After search completes
+        <div style="background: var(--bg-secondary); border-radius: 4px; font-family: monospace; font-size: 0.9rem; overflow: auto; overflow-x: auto; padding: 1rem" role="region" aria-label="Code example for search results focus">
+<pre>// After search completes
 const resultsHeading = document.querySelector('.results-count');
 resultsHeading.setAttribute('tabindex', '-1');
-resultsHeading.focus();
-        </pre>
+resultsHeading.focus();</pre>
+        </div>
     </section>
 
     <section id="testing">
         <h2>Testing Tab Order & Focus</h2>
 
         <h3>Keyboard Testing Steps</h3>
-        <ol style="list-style: decimal; padding-left: 1.5rem;">
+        <ol>
             <li>Click away from the page</li>
             <li>Press Tab to focus the first element</li>
             <li>Press Tab repeatedly through entire page</li>
@@ -337,7 +337,7 @@ resultsHeading.focus();
         <ul>
             <li>Focus indicates which element is currently active</li>
             <li>Tab order should follow natural source code order</li>
-            <li>Never use <code>tabindex > 0</code>—it breaks keyboard navigation</li>
+            <li>Never use <code>tabindex &gt; 0</code>—it breaks keyboard navigation</li>
             <li>Focus indicators must be visible (3px outline, 3:1 contrast)</li>
             <li>Focus traps are WCAG violations—avoid them (except modals)</li>
             <li>Skip links reduce tab count to reach main content</li>

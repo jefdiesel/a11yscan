@@ -28,7 +28,7 @@ $pageContent = <<<'HTML'
         <p>Screen reader users navigate your page using headings. A broken hierarchy confuses them and makes your content impossible to navigate.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>One H1 per page</strong> — It should be the main page title, not a logo</li>
             <li><strong>No skipped levels</strong> — Never jump from H1 to H3 (always H2 in between)</li>
             <li><strong>H2 for main sections</strong> — Major content areas use H2</li>
@@ -44,7 +44,7 @@ $pageContent = <<<'HTML'
         <p>Low contrast text is invisible to people with low vision. A 7:1 contrast ratio ensures your content is readable for everyone, not just people with perfect eyesight.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>Body text on background</strong> — Minimum 7:1 ratio</li>
             <li><strong>Links and buttons</strong> — All interactive text must meet 7:1</li>
             <li><strong>Borders and dividers</strong> — Sufficient contrast for visual separation</li>
@@ -60,7 +60,7 @@ $pageContent = <<<'HTML'
         <p>Not everyone uses a mouse. Keyboard users (and voice control users) navigate via Tab, Enter, and arrow keys. Every button, link, and form field must be reachable without a mouse.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>Tab navigation works</strong> — Tab through every page section in order</li>
             <li><strong>All buttons are tabbable</strong> — Press Tab, then Enter to activate</li>
             <li><strong>Form fields are accessible</strong> — Tab to inputs, type text, submit form</li>
@@ -77,11 +77,11 @@ $pageContent = <<<'HTML'
         <p>When you Tab to an interactive element, there must be a visible indicator showing which element is focused. This is essential for keyboard navigation.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>Every button has focus outline</strong> — 3px minimum, visible and distinct</li>
             <li><strong>All links have focus outline</strong> — Not removed by CSS</li>
             <li><strong>Form fields show focus</strong> — Border color change or outline</li>
-            <li><strong>Outline isn't hidden</strong> — No `outline: none` without replacement</li>
+            <li><strong>Outline isn't hidden</strong> — No <code>outline: none</code> without replacement</li>
         </ul>
         
         <h3>How to Test</h3>
@@ -93,12 +93,12 @@ $pageContent = <<<'HTML'
         <p>Screen reader users can't see images. They depend on alt text to understand what the image shows. Generic alt text like "image" or "photo" is useless.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li><strong>Decorative images</strong> — Use `alt=""` (empty alt text)</li>
+        <ul>
+            <li><strong>Decorative images</strong> — Use <code>alt=""</code> (empty alt text)</li>
             <li><strong>Informative images</strong> — Describe the content (not just "image")</li>
             <li><strong>Charts and graphs</strong> — Include key data in alt text or nearby text</li>
             <li><strong>Icons with meaning</strong> — Describe what the icon represents</li>
-            <li><strong>Icons that are decoration</strong> — Use `alt=""` to hide from screen readers</li>
+            <li><strong>Icons that are decoration</strong> — Use <code>alt=""</code> to hide from screen readers</li>
         </ul>
         
         <h3>How to Test</h3>
@@ -110,9 +110,9 @@ $pageContent = <<<'HTML'
         <p>Every form field must have a label. Screen reader users rely on labels to understand what to type in an input field. A label that isn't properly connected is as useful as having no label at all.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>Every input has a label</strong> — Even if it seems obvious</li>
-            <li><strong>Label is connected via `for` attribute</strong> — `<label for="email">` matches `<input id="email">`</li>
+            <li><strong>Label is connected via <code>for</code> attribute</strong> — <code>&lt;label for="email"&gt;</code> matches <code>&lt;input id="email"&gt;</code></li>
             <li><strong>No placeholder-only labels</strong> — Placeholders disappear when typing; labels stay visible</li>
             <li><strong>Error messages are clear</strong> — Users know exactly what's wrong</li>
         </ul>
@@ -126,7 +126,7 @@ $pageContent = <<<'HTML'
         <p>Many users enlarge text to read it. Your page must remain functional and readable when text is zoomed to 200%.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>No horizontal scrolling</strong> — Text reflows to fit the screen</li>
             <li><strong>Content remains readable</strong> — No overlapping text or missing elements</li>
             <li><strong>Buttons and links remain clickable</strong> — Minimum 44×44 CSS pixels</li>
@@ -134,7 +134,7 @@ $pageContent = <<<'HTML'
         </ul>
         
         <h3>How to Test</h3>
-        <p>Press Ctrl++ (Windows) or Cmd++ (Mac) to zoom to 200%. Scroll through your page. If content overflows horizontally or overlaps, fix your responsive design. Use `max-width` constraints wisely. Never use fixed-width layouts.</p>
+        <p>Press Ctrl++ (Windows) or Cmd++ (Mac) to zoom to 200%. Scroll through your page. If content overflows horizontally or overlaps, fix your responsive design. Use <code>max-width</code> constraints wisely. Never use fixed-width layouts.</p>
     </section>
 
     <section id="point-8">
@@ -142,16 +142,16 @@ $pageContent = <<<'HTML'
         <p>Auto-playing animations, videos, and sounds distract users and trigger seizures in people with photosensitive epilepsy. Never auto-play anything.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>No auto-playing videos</strong> — User must click to play</li>
             <li><strong>No auto-playing animations</strong> — Must be triggered by user</li>
             <li><strong>No auto-playing audio</strong> — Sound must be user-controlled</li>
             <li><strong>No flashing content</strong> — Nothing flashes more than 3 times per second</li>
-            <li><strong>Respect `prefers-reduced-motion`</strong> — Users can opt out of animations</li>
+            <li><strong>Respect <code>prefers-reduced-motion</code></strong> — Users can opt out of animations</li>
         </ul>
         
         <h3>How to Test</h3>
-        <p>Load your page. Does anything move, flash, or make sound without your permission? It shouldn't. Check your CSS and JavaScript for animations. Use browser DevTools to test `prefers-reduced-motion` media query.</p>
+        <p>Load your page. Does anything move, flash, or make sound without your permission? It shouldn't. Check your CSS and JavaScript for animations. Use browser DevTools to test <code>prefers-reduced-motion</code> media query.</p>
     </section>
 
     <section id="point-9">
@@ -159,16 +159,16 @@ $pageContent = <<<'HTML'
         <p>Screen readers need to know what language your page is in. They also need semantic HTML to understand your content structure—this isn't about style, it's about meaning.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li><strong>HTML lang attribute set</strong> — `<html lang="en">` for English</li>
-            <li><strong>Navigation uses `<nav>`</strong> — Not just styled links</li>
-            <li><strong>Main content in `<main>`</strong> — Not generic `<div>`</li>
-            <li><strong>List items in `<ul>` or `<ol>`</strong> — Never nested `<div>` with `display: list-item`</li>
-            <li><strong>Buttons are `<button>`</strong> — Not styled `<div>` with `onclick`</li>
+        <ul>
+            <li><strong>HTML lang attribute set</strong> — <code>&lt;html lang="en"&gt;</code> for English</li>
+            <li><strong>Navigation uses <code>&lt;nav&gt;</code></strong> — Not just styled links</li>
+            <li><strong>Main content in <code>&lt;main&gt;</code></strong> — Not generic <code>&lt;div&gt;</code></li>
+            <li><strong>List items in <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code></strong> — Never nested <code>&lt;div&gt;</code> with <code>display: list-item</code></li>
+            <li><strong>Buttons are <code>&lt;button&gt;</code></strong> — Not styled <code>&lt;div&gt;</code> with <code>onclick</code></li>
         </ul>
         
         <h3>How to Test</h3>
-        <p>Open your HTML source. Search for semantic elements: `<nav>`, `<main>`, `<article>`, `<section>`, `<button>`. If you see `<div class="nav">` or `<div onclick="...">`, refactor to semantic HTML. Use HTML validator (validator.w3.org) to find semantic errors.</p>
+        <p>Open your HTML source. Search for semantic elements: <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;button&gt;</code>. If you see <code>&lt;div class="nav"&gt;</code> or <code>&lt;div onclick="..."&gt;</code>, refactor to semantic HTML. Use HTML validator (validator.w3.org) to find semantic errors.</p>
     </section>
 
     <section id="point-10">
@@ -176,11 +176,11 @@ $pageContent = <<<'HTML'
         <p>Keyboard users shouldn't have to Tab through your entire header and navigation to reach your main content. A "Skip to Main Content" link lets them jump directly there.</p>
         
         <h3>What to Check</h3>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li><strong>Skip link exists</strong> — Link to main content</li>
             <li><strong>Skip link is first focusable element</strong> — Becomes visible when Tab is pressed</li>
             <li><strong>Skip link actually works</strong> — Focus moves to main content when clicked</li>
-            <li><strong>Main content is focusable</strong> — `<main>` or target element has `tabindex="-1"`</li>
+            <li><strong>Main content is focusable</strong> — <code>&lt;main&gt;</code> or target element has <code>tabindex="-1"</code></li>
         </ul>
         
         <h3>How to Test</h3>
@@ -191,7 +191,7 @@ $pageContent = <<<'HTML'
         <h2>Quick Audit Before Launch</h2>
         <p>Before you deploy your website, run through this final checklist:</p>
         
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>☐ Run Lighthouse accessibility audit (90+ score)</li>
             <li>☐ Check with WAVE browser extension (0 errors)</li>
             <li>☐ Test keyboard navigation (Tab through entire site)</li>
@@ -207,7 +207,7 @@ $pageContent = <<<'HTML'
 
     <section id="takeaways">
         <h2>Key Takeaways</h2>
-        <ul style="list-style: disc; padding-left: 1.5rem;">
+        <ul>
             <li>Logical heading hierarchy tells the story of your page</li>
             <li>7:1 color contrast benefits everyone, not just people with low vision</li>
             <li>Keyboard accessibility is foundational—mouse is optional</li>
@@ -220,7 +220,7 @@ $pageContent = <<<'HTML'
 
     <section id="resources">
         <h2>Resources</h2>
-        <ul style="list-style: none; padding-left: 0;">
+        <ul>
             <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Official Guidelines</a> — Complete standards reference</li>
             <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> — Test color contrast ratios</li>
             <li><a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a> — Browser extension for automated checks</li>
