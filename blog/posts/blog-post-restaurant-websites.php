@@ -40,9 +40,11 @@ $pageContent = <<<'HTML'
     </section>
 
     <section id="pdf-menus-compliance">
-        <h2>PDF Menus: Beautiful, Usable, Yet Legally Risky</h2>
+        <h2>PDF Menus: Convenient for Restaurants, Terrible for Users</h2>
         
-        <p>Almost every restaurant website features a PDF menu. It makes sense: you create the menu once in design software, export it as PDF, and upload it. It looks identical on every device. It preserves your brand's typography and layout. The problem? PDFs are accessibility disasters in most cases.</p>
+        <p>Almost every restaurant website features a PDF menu. The appeal is obvious: you create the menu once in design software, export it as PDF, and you're done. It preserves your brand's typography and layout. Most importantly, when you update your menu next month—new specials, seasonal items, price changes—you just re-export the PDF and upload it. No need to hire a developer. No manual HTML updates. This consistency is why restaurants love PDFs, especially those that change menus frequently.</p>
+        
+        <p>The problem isn't design elegance—it's fundamental usability. PDFs are formatted for print, not screens. They're hard to read on mobile devices (the most common way customers browse restaurants). They often don't work with screen readers. And they create legal compliance issues under accessibility law. The irony: restaurants choose PDFs for convenience, but they create the opposite experience for users with disabilities.</p>
         
         <h3>Why PDFs Fail Accessibility Standards</h3>
         <p>A visually perfect PDF menu often violates WCAG 2.1 requirements in multiple ways:</p>
