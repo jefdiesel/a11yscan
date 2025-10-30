@@ -40,11 +40,11 @@ $pageContent = <<<'HTML'
     </section>
 
     <section id="pdf-menus-compliance">
-        <h2>PDF Menus: Convenient for Restaurants, Terrible for Users</h2>
+        <h2>PDF Menus: Why This Format Creates Accessibility Problems</h2>
         
-        <p>Almost every restaurant website features a PDF menu. The appeal is obvious: you create the menu once in design software, export it as PDF, and you're done. It preserves your brand's typography and layout. Most importantly, when you update your menu next month—new specials, seasonal items, price changes—you just re-export the PDF and upload it. No need to hire a developer. No manual HTML updates. This consistency is why restaurants love PDFs, especially those that change menus frequently.</p>
+        <p>Many restaurants use PDF menus on their websites. When a restaurant chooses this format, there's a clear business logic: you create the menu once in design software, export it as PDF, and when you update your menu next month—new specials, seasonal items, price changes—you simply re-export and upload. No developer needed. No manual HTML updates. For restaurants that change menus frequently, this efficiency is appealing.</p>
         
-        <p>The problem isn't design elegance—it's fundamental usability. PDFs are formatted for print, not screens. They're hard to read on mobile devices (the most common way customers browse restaurants). They often don't work with screen readers. And they create legal compliance issues under accessibility law. The irony: restaurants choose PDFs for convenience, but they create the opposite experience for users with disabilities.</p>
+        <p>But PDFs create real usability problems. They're formatted for print, not screens. They're difficult to read on mobile devices. Most importantly, PDFs often don't work with screen readers—the assistive technology that blind and low-vision users rely on to access web content. And they create legal compliance issues under accessibility standards. The tension is real: restaurants choose PDFs because they're operationally convenient, but that convenience becomes a barrier for users with disabilities.</p>
         
         <h3>Why PDFs Fail Accessibility Standards</h3>
         <p>A visually perfect PDF menu often violates WCAG 2.1 requirements in multiple ways:</p>
