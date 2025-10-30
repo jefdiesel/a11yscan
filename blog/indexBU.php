@@ -425,13 +425,6 @@ $pageContent = <<<'HTML'
             <p>Learn how JavaScript template errors in e-commerce make entire product catalogs inaccessible. One broken component equals thousands of broken pages and thousands of systemic violations.</p>
             <a href="https://a11yscan.xyz/blog/posts/blog-post-ecommerce-javascript-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Scan Product Pages →</a>
         </article>
-
-        <article class="card blog-card" tabindex="0" id="article-restaurant-websites">
-            <time datetime="2025-10-30" class="blog-date">Oct 30, 2025</time>
-            <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">Restaurant Websites & Accessibility: Why Beautiful Menus Fail</h3>
-            <p>Restaurant websites prioritize stunning visuals but often fail accessibility. Learn why PDF menus break for screen reader users, how platform templates hide accessibility gaps, and how to make hospitality websites work for all customers.</p>
-            <a href="https://a11yscan.xyz/blog/posts/blog-post-restaurant-websites.php" class="btn btn-primary" style="margin-top: 1rem;">Audit Restaurant Site →</a>
-        </article>
     </div>
 </section>
 
