@@ -131,7 +131,7 @@ $pageContent = <<<'HTML'
         <p>Describe what's on the plate, not just "food photo." Example: "Pan-seared scallops with lemon beurre blanc, served with roasted asparagus and fingerling potatoes."</p>
         
         <h3>4. Check Color Contrast</h3>
-        <p>Use a free tool like WebAIM's Contrast Checker. Ensure text has at least a 4.5:1 contrast ratio (better: 7:1). This also improves readability for older customers and those in bright restaurant lighting.</p>
+        <p>Use a free tool like WebAIM's Contrast Checker. Ensure text has at least a 4.5:1 contrast ratio (better: 7:1). This also improves readability for older customers as well.</p>
         
         <h3>5. Test Keyboard Navigation</h3>
         <p>Use your website with only the keyboard (no mouse). Can you tab through all sections? Can you submit forms? Can you make a reservation? If not, fix it.</p>
