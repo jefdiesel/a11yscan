@@ -7,7 +7,7 @@ $pageContent = <<<'HTML'
 <article class="blog-post">
     <!-- CORRECT: Header INSIDE first section with inline styles -->
     <section id="intro">
-        <time datetime="2025-01-16" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 16, 2025</time>
+        <time datetime="2025-11-06" style="font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; display: block; margin-bottom: 0.5rem;">January 16, 2025</time>
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 2rem;">TikTok's Captions: How Social Media Accidentally Normalized Accessibility</h1>
         
         <h2>The Unexpected Accessibility Revolution</h2>

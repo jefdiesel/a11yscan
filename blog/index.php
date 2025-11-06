@@ -241,7 +241,7 @@ $pageContent = <<<'HTML'
     <div class="grid">
 
 	<article class="card blog-card" tabindex="0" id="tiktok-captions-accessibility">
-    	    <time datetime="2025-01-16" class="blog-date">Jan 16, 2025</time>
+    	    <time datetime="2025-11-06" class="blog-date">Nov 6, 2025</time>
       	    <h3 style="font-size: 1.3rem; margin-top: 0.5rem;">TikTok's Captions: How Social Media Accidentally Normalized Accessibility</h3>
    	    <p>Discover how TikTok's snappy captions became the most successful accessibility feature ever deployed at scale. Explore the unexpected audiences who benefit: deaf users, ESL learners, neurodivergent viewers, and silent scrollers.</p>
    	    <a href="https://a11yscan.xyz/blog/posts/blog-post-tiktok-captions-accessibility.php" class="btn btn-primary" style="margin-top: 1rem;">Learn How Culture Shifts →</a>
